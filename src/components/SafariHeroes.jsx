@@ -49,7 +49,7 @@ const heroes = [
         color: 'bg-red-100',
         accent: '#F87171',
         image: '/assets/clawdius.jpg',
-        objectPosition: 'center 50%',
+        objectPosition: 'center 30%',
         funFact: "A cat’s whiskers are like tiny feelers that help them “see” in the dark and squeeze through tight spaces. Perfect tools for a sneaky troublemaker."
     },
     {
