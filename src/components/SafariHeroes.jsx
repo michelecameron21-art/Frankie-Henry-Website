@@ -74,7 +74,7 @@ const heroes = [
         color: 'bg-slate-200',
         accent: '#475569',
         image: '/assets/eagle.jpg',
-        objectPosition: '95% 30%',
+        objectPosition: '72% 20%',
         scale: 1.2,
         funFact: "Martial eagles have incredible eyesight — they can spot tiny movement from very far away. And their talons are super strong… strong enough for big grabs (like that branch!)."
     },
@@ -98,7 +98,7 @@ const heroes = [
         color: 'bg-amber-50',
         accent: '#F59E0B',
         image: '/assets/jackal-cub.jpg',
-        objectPosition: 'center 35%',
+        objectPosition: 'center 50%',
         funFact: "A baby jackal is called a pup. Pups learn fast — how to listen, hide, and run — and Tumi just learned the most important thing: friends can show up when you need them most."
     }
 ];
