@@ -98,7 +98,7 @@ const heroes = [
         color: 'bg-amber-50',
         accent: '#F59E0B',
         image: '/assets/jackal-cub.jpg',
-        objectPosition: 'center 50%',
+        objectPosition: 'center 65%',
         funFact: "A baby jackal is called a pup. Pups learn fast — how to listen, hide, and run — and Tumi just learned the most important thing: friends can show up when you need them most."
     }
 ];
