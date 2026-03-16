@@ -49,8 +49,8 @@ const heroes = [
         color: 'bg-red-100',
         accent: '#F87171',
         image: '/assets/clawdius.jpg',
-        objectPosition: 'center 40%',
-        scale: 1.2,
+        objectPosition: 'center center',
+        objectFit: 'contain',
         funFact: "A cat’s whiskers are like tiny feelers that help them “see” in the dark and squeeze through tight spaces. Perfect tools for a sneaky troublemaker."
     },
     {
@@ -99,6 +99,7 @@ const heroes = [
         color: 'bg-amber-50',
         accent: '#F59E0B',
         image: '/assets/jackal-cub.jpg',
+        objectFit: 'contain',
         funFact: "A baby jackal is called a pup. Pups learn fast — how to listen, hide, and run — and Tumi just learned the most important thing: friends can show up when you need them most."
     }
 ];
@@ -148,7 +149,7 @@ function HeroCard({ hero }) {
                                 src={hero.image}
                                 alt={hero.name}
                                 className="character-png"
-                                style={{ objectPosition: hero.objectPosition || 'center center', transform: `scale(${hero.scale || 1})`, transformOrigin: 'center center' }}
+                                style={{ objectFit: hero.objectFit || 'cover', objectPosition: hero.objectPosition || 'center center', transform: `scale(${hero.scale || 1})`, transformOrigin: 'center center' }}
                             />
                         ) : (
                             <div className="paw-prints" style={{ aspectRatio: '4/3' }}></div>
