@@ -24,7 +24,7 @@ const heroes = [
         accent: '#FACC15',
         image: '/assets/henry.jpg',
         objectPosition: 'center 20%',
-        scale: 1.25,
+        scale: 1.05,
         funFact: "Dogs have super noses — they can smell things humans can’t even notice. Henry can basically smell a biscuit… in another postcode."
     },
     {
