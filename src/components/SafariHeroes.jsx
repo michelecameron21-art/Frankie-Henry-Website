@@ -23,7 +23,8 @@ const heroes = [
         color: 'bg-yellow-100',
         accent: '#FACC15',
         image: '/assets/henry.jpg',
-        objectPosition: 'center 20%', // Nudge down to show ears
+        objectPosition: 'center 20%',
+        scale: 1.25,
         funFact: "Dogs have super noses — they can smell things humans can’t even notice. Henry can basically smell a biscuit… in another postcode."
     },
     {
@@ -35,7 +36,8 @@ const heroes = [
         color: 'bg-green-100',
         accent: '#4ADE80',
         image: '/assets/lwazi.jpg',
-        objectPosition: 'center 25%', // Nudge UP further
+        objectPosition: 'center 25%',
+        scale: 1.2,
         funFact: "Blue cranes do happy little “dances” — lots of stepping, bobbing, and wing-flaps. Lwazi’s wings aren’t just for flying… they’re for showing off too!"
     },
     {
@@ -47,7 +49,8 @@ const heroes = [
         color: 'bg-red-100',
         accent: '#F87171',
         image: '/assets/clawdius.jpg',
-        objectPosition: 'center 20%', // Nudge down
+        objectPosition: 'center 20%',
+        scale: 1.2,
         funFact: "A cat’s whiskers are like tiny feelers that help them “see” in the dark and squeeze through tight spaces. Perfect tools for a sneaky troublemaker."
     },
     {
@@ -59,7 +62,8 @@ const heroes = [
         color: 'bg-emerald-100',
         accent: '#10B981',
         image: '/assets/monitor.jpg',
-        objectPosition: 'center 80%', // Nudge subject down (viewport up)
+        objectPosition: 'center 80%',
+        scale: 1.2,
         funFact: "Monitor lizards are brilliant swimmers and can stay underwater for quite a while. And that flicking tongue? It helps them taste the air to find things nearby."
     },
     {
@@ -71,6 +75,7 @@ const heroes = [
         color: 'bg-slate-200',
         accent: '#475569',
         image: '/assets/eagle.jpg',
+        scale: 1.2,
         funFact: "Martial eagles have incredible eyesight — they can spot tiny movement from very far away. And their talons are super strong… strong enough for big grabs (like that branch!)."
     },
     {
@@ -93,6 +98,7 @@ const heroes = [
         color: 'bg-amber-50',
         accent: '#F59E0B',
         image: '/assets/jackal-cub.jpg',
+        scale: 0.85,
         funFact: "A baby jackal is called a pup. Pups learn fast — how to listen, hide, and run — and Tumi just learned the most important thing: friends can show up when you need them most."
     }
 ];
@@ -142,7 +148,7 @@ function HeroCard({ hero }) {
                                 src={hero.image}
                                 alt={hero.name}
                                 className="character-png"
-                                style={{ objectPosition: hero.objectPosition || 'center center' }}
+                                style={{ objectPosition: hero.objectPosition || 'center center', transform: `scale(${hero.scale || 1})`, transformOrigin: 'center center' }}
                             />
                         ) : (
                             <div className="paw-prints" style={{ aspectRatio: '4/3' }}></div>
