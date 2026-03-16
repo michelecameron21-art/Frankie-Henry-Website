@@ -49,7 +49,7 @@ const heroes = [
         color: 'bg-red-100',
         accent: '#F87171',
         image: '/assets/clawdius.jpg',
-        objectPosition: 'center 20%',
+        objectPosition: 'center 40%',
         scale: 1.2,
         funFact: "A cat’s whiskers are like tiny feelers that help them “see” in the dark and squeeze through tight spaces. Perfect tools for a sneaky troublemaker."
     },
@@ -75,6 +75,7 @@ const heroes = [
         color: 'bg-slate-200',
         accent: '#475569',
         image: '/assets/eagle.jpg',
+        objectPosition: '65% 30%',
         scale: 1.2,
         funFact: "Martial eagles have incredible eyesight — they can spot tiny movement from very far away. And their talons are super strong… strong enough for big grabs (like that branch!)."
     },
@@ -98,7 +99,6 @@ const heroes = [
         color: 'bg-amber-50',
         accent: '#F59E0B',
         image: '/assets/jackal-cub.jpg',
-        scale: 0.85,
         funFact: "A baby jackal is called a pup. Pups learn fast — how to listen, hide, and run — and Tumi just learned the most important thing: friends can show up when you need them most."
     }
 ];
