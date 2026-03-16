@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+*.pdf
+*.zip
+FH_Amazon_Strategy.txt
+FH_Fixes_Checklist.txt
+FH_Print_Formatting_Checklist.txt
+PAPERBACK_8.500x11.000_40_PREMIUM_WHITE_en_US/
+*.log
+.env
