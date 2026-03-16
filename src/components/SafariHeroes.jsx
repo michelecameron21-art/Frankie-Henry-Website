@@ -36,7 +36,7 @@ const heroes = [
         color: 'bg-green-100',
         accent: '#4ADE80',
         image: '/assets/lwazi.jpg',
-        objectPosition: 'center 25%',
+        objectPosition: '35% 40%',
         scale: 1.2,
         funFact: "Blue cranes do happy little “dances” — lots of stepping, bobbing, and wing-flaps. Lwazi’s wings aren’t just for flying… they’re for showing off too!"
     },
