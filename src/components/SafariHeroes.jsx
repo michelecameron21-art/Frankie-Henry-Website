@@ -75,7 +75,7 @@ const heroes = [
         color: 'bg-slate-200',
         accent: '#475569',
         image: '/assets/eagle.jpg',
-        objectPosition: '65% 30%',
+        objectPosition: '80% 30%',
         scale: 1.2,
         funFact: "Martial eagles have incredible eyesight — they can spot tiny movement from very far away. And their talons are super strong… strong enough for big grabs (like that branch!)."
     },
