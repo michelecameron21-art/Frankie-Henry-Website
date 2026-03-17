@@ -4,8 +4,8 @@ const extras = [
     {
         id: 1,
         title: 'Colour the Wild Place',
-        type: 'Colouring pages',
-        description: 'Bring Frankie, Henry and their Wild Place friends to life with your favourite colours.',
+        type: 'Colouring sheet',
+        description: 'Bring Frankie, Henry, and the Wild Place to life.',
         icon: <Palette size={32} className="text-yellow-600" />,
         badge: null,
         color: 'bg-yellow-100',
