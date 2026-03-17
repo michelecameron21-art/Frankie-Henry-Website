@@ -80,7 +80,7 @@ const heroes = [
     },
     {
         id: 'jackal-mum',
-        name: 'Jackal (Mom)',
+        name: 'Jackal Mom',
         tag: 'Fierce & Devoted',
         role: 'THE DEVOTED MOM',
         description: "Gentle, loving, and completely devoted to her cub. But cross her family and you'll discover very quickly that this mom will take on anyone - and she means anyone.",
