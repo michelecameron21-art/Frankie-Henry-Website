@@ -38,7 +38,7 @@ const extras = [
         color: 'bg-teal-100',
         typeColor: 'bg-teal-600',
         btnColor: 'bg-yellow-400',
-        downloads: []
+        downloads: [{ label: 'Download Song', file: '/assets/frankie-and-henry-song.mp3' }]
     }
 ];
 
