@@ -1,22 +1,11 @@
-import { Search, Palette, Bookmark, Download, Sparkles } from 'lucide-react';
+import { Search, Palette, Music, Download, Sparkles } from 'lucide-react';
 
 const extras = [
     {
         id: 1,
-        title: 'Spot the Friends',
-        type: 'Activity sheet',
-        description: 'Find Frankie, Henry, and all their Wild Place friends.',
-        icon: <Search size={32} className="text-blue-500" />,
-        badge: 'New',
-        color: 'bg-blue-100',
-        typeColor: 'bg-blue-600',
-        btnColor: 'bg-yellow-400'
-    },
-    {
-        id: 2,
-        title: 'Colour the Pups',
+        title: 'Colour the Wild Place',
         type: 'Colouring pages',
-        description: 'Bring Frankie & Henry to life with your favorite colors.',
+        description: 'Bring Frankie, Henry and their Wild Place friends to life with your favourite colours.',
         icon: <Palette size={32} className="text-yellow-600" />,
         badge: null,
         color: 'bg-yellow-100',
@@ -24,13 +13,24 @@ const extras = [
         btnColor: 'bg-yellow-400'
     },
     {
-        id: 3,
-        title: 'Little Paws Markers',
-        type: 'Bookmarks',
-        description: 'Printable bookmarks to keep your place in the adventure.',
-        icon: <Bookmark size={32} className="text-teal-600" />,
+        id: 2,
+        title: 'Spot the Difference',
+        type: 'Activity sheet',
+        description: 'Can you find what\'s changed? Spot the differences with Frankie and Henry.',
+        icon: <Search size={32} className="text-blue-500" />,
         badge: null,
-        color: 'bg-teal-100', // teal-100 isn't standard in my css vars but I'll use inline or class
+        color: 'bg-blue-100',
+        typeColor: 'bg-blue-600',
+        btnColor: 'bg-yellow-400'
+    },
+    {
+        id: 3,
+        title: 'Sing Along',
+        type: 'Sing along',
+        description: 'Join Frankie and Henry and sing along to their Wild Place adventures.',
+        icon: <Music size={32} className="text-teal-600" />,
+        badge: null,
+        color: 'bg-teal-100',
         typeColor: 'bg-teal-600',
         btnColor: 'bg-yellow-400'
     }
@@ -41,8 +41,7 @@ export default function Extras() {
         <section id="extras" className="section extras-section" style={{ paddingTop: '1rem' }}>
             <div className="container">
                 <div className="text-center mb-12">
-                    <p style={{ color: '#5A7A3A', fontWeight: 700, letterSpacing: '0.05em', textTransform: 'uppercase', fontSize: '0.875rem', marginBottom: '0.5rem' }}>Free Extras</p>
-                    <h2 className="heading-lg">Print, colour, play</h2>
+                    <h2 className="heading-lg">Colour, play, sing along</h2>
                 </div>
 
                 <div className="extras-grid">
@@ -58,7 +57,6 @@ export default function Extras() {
 function ExtraCard({ item }) {
     return (
         <div className={`card extra-card ${item.color.replace('bg-', 'bg-light-')}`}>
-            {/* Note: using inline styles for dynamic bg colors since we don't have full tailwind */}
             <div className="extra-card-content" style={{ backgroundColor: getBgColor(item.id) }}>
                 <div className="extra-header">
                     <div className="extra-icon-circle">
@@ -70,7 +68,6 @@ function ExtraCard({ item }) {
                         </span>
                     )}
                 </div>
-
 
                 <span className={`extra-type-badge ${getTypeColorClass(item.id)}`}>{item.type}</span>
 
@@ -85,17 +82,16 @@ function ExtraCard({ item }) {
     );
 }
 
-// Helper for inline styles/classes since we aren't using full Tailwind
 function getBgColor(id) {
-    if (id === 1) return '#E8F5D8'; // Light acacia
-    if (id === 2) return '#FFF0D0'; // Warm sandy yellow
-    if (id === 3) return '#D0EAC8'; // Deeper acacia
+    if (id === 1) return '#FFF0D0';
+    if (id === 2) return '#E8F5D8';
+    if (id === 3) return '#D0EAC8';
     return '#E8F5D8';
 }
 
 function getTypeColorClass(id) {
-    if (id === 1) return 'type-blue';
-    if (id === 2) return 'type-yellow';
+    if (id === 1) return 'type-yellow';
+    if (id === 2) return 'type-blue';
     if (id === 3) return 'type-teal';
     return '';
 }
