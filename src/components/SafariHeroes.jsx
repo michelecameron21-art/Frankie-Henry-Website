@@ -55,9 +55,9 @@ const heroes = [
     {
         id: 'monitor-lizard',
         name: 'Monitor Lizard',
-        tag: 'Stealthy & Strong',
+        tag: 'Grumpy & Territorial',
         role: 'THE RIVER BULLY',
-        description: 'A big, bossy swimmer who loves sunbathing and sneaking up on snacks. Frankie hopes it stays asleep… forever.',
+        description: 'Two passions in life: long naps on his favourite sandbank, and making absolutely sure everyone knows the river is his. Cross or enter at your own risk.',
         color: 'bg-emerald-100',
         accent: '#10B981',
         image: '/assets/monitor.jpg',
