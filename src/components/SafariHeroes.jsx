@@ -43,9 +43,9 @@ const heroes = [
     {
         id: 'clawdius',
         name: 'Clawdius',
-        tag: 'Mischievous & Cunning',
-        role: 'THE SNEAKY CAT',
-        description: 'Watch out for Clawdius! He loves mischief, chaos, and hiding in the tallest grass.',
+        tag: 'Cheeky & Sneaky',
+        role: 'THE NEIGHBOURHOOD MENACE',
+        description: 'Clawdius lives next door. He loves mischief, chaos, and making Frankie and Henry\'s lives as complicated as possible — and he\'s very, very good at all three.',
         color: 'bg-red-100',
         accent: '#F87171',
         image: '/assets/clawdius.jpg',
