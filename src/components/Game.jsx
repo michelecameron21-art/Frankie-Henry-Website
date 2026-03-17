@@ -482,6 +482,16 @@ export default function Game() {
                         {soundEnabled ? <Volume2 size={20} /> : <VolumeX size={20} />}
                     </button>
 
+                    {/* Exit */}
+                    {gameState === 'PLAYING' && (
+                        <button
+                            onClick={(e) => { e.stopPropagation(); setGameState('SELECT'); }}
+                            style={{ position: 'absolute', top: '1.5rem', right: '4.5rem', zIndex: 40, height: '2.5rem', padding: '0 0.75rem', background: 'rgba(255,255,255,0.5)', borderRadius: '9999px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', border: 'none', color: '#1E293B', fontSize: '0.75rem', fontWeight: 'bold', gap: '0.25rem' }}
+                        >
+                            <RotateCcw size={14} /> Quit
+                        </button>
+                    )}
+
                     {/* Particles */}
                     {particles.map(p => (
                         <div key={p.id} style={{
