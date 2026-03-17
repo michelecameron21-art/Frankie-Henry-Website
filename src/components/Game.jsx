@@ -592,8 +592,8 @@ export default function Game() {
                                     onClick={(e) => { e.stopPropagation(); setCharacter('henry'); startGame(1); }}
                                     style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', background: 'none', border: 'none', cursor: 'pointer', transition: 'transform 0.2s' }}
                                 >
-                                    <div style={{ width: '8rem', height: '8rem', background: '#3B82F6', borderRadius: '50%', border: '4px solid white', overflow: 'hidden', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '8px' }}>
-                                        <img src="/assets/henry-closeup.png" alt="Henry" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }} />
+                                    <div style={{ width: '8rem', height: '8rem', background: '#3B82F6', borderRadius: '50%', border: '4px solid white', overflow: 'hidden', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)' }}>
+                                        <img src="/assets/henry-closeup.png" alt="Henry" style={{ width: '100%', height: '100%', objectFit: 'cover', mixBlendMode: 'multiply' }} />
                                     </div>
                                     <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>Henry</span>
                                 </button>
