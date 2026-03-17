@@ -10,7 +10,8 @@ const extras = [
         badge: null,
         color: 'bg-yellow-100',
         typeColor: 'bg-yellow-600',
-        btnColor: 'bg-yellow-400'
+        btnColor: 'bg-yellow-400',
+        downloads: [{ label: 'Download PDF', file: '/assets/colouring-pages.pdf' }]
     },
     {
         id: 2,
@@ -21,7 +22,11 @@ const extras = [
         badge: null,
         color: 'bg-blue-100',
         typeColor: 'bg-blue-600',
-        btnColor: 'bg-yellow-400'
+        btnColor: 'bg-yellow-400',
+        downloads: [
+            { label: 'Download Activity Sheet', file: '/assets/spot-the-difference.pdf' },
+            { label: 'Download Answers', file: '/assets/spot-the-difference-answers.pdf' }
+        ]
     },
     {
         id: 3,
@@ -32,7 +37,8 @@ const extras = [
         badge: null,
         color: 'bg-teal-100',
         typeColor: 'bg-teal-600',
-        btnColor: 'bg-yellow-400'
+        btnColor: 'bg-yellow-400',
+        downloads: []
     }
 ];
 
@@ -74,9 +80,19 @@ function ExtraCard({ item }) {
                 <h3 className="extra-title">{item.title}</h3>
                 <p className="extra-desc">{item.description}</p>
 
-                <button className="btn btn-primary w-full mt-auto">
-                    Download PDF
-                </button>
+                {item.downloads && item.downloads.length > 0 ? (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: 'auto' }}>
+                        {item.downloads.map((d, i) => (
+                            <a key={i} href={d.file} download className="btn btn-primary w-full" style={{ textAlign: 'center', textDecoration: 'none' }}>
+                                {d.label}
+                            </a>
+                        ))}
+                    </div>
+                ) : (
+                    <button className="btn btn-primary w-full mt-auto" disabled style={{ opacity: 0.5, cursor: 'not-allowed' }}>
+                        Coming soon
+                    </button>
+                )}
             </div>
         </div>
     );
