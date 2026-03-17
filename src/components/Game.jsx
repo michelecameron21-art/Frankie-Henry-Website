@@ -404,11 +404,11 @@ export default function Game() {
             position: 'relative'
         }}>
             <div className="container" style={{ margin: '0 auto', maxWidth: '1200px', position: 'relative', zIndex: 1 }}>
-                <div style={{ textAlign: 'center', marginBottom: '0.75rem' }}>
+                <div style={{ textAlign: 'center', marginBottom: '0.5rem' }}>
                     <h2 className="heading-lg" style={{ marginBottom: '0.5rem', color: isNight ? '#FDE047' : '#fff' }}>
                         {isNight ? "The Midnight Dash!" : "Rescue the Jackal Cub!"}
                     </h2>
-                    <p className="subheading" style={{ color: isNight ? '#cbd5e1' : 'rgba(255,255,255,0.9)', maxWidth: 'none', whiteSpace: 'nowrap' }}>
+                    <p className="subheading" style={{ color: isNight ? '#cbd5e1' : 'rgba(255,255,255,0.9)', maxWidth: 'none', whiteSpace: 'nowrap', marginBottom: '0.5rem' }}>
                         {isNight ? "Race home under the stars! Watch out for Termite Mounds!" : "Help Frankie and Henry rescue the Jackal Cub. Jump over rocks and collect snacks!"}
                     </p>
 
