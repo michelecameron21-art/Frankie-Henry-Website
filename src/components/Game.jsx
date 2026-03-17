@@ -3,8 +3,8 @@ import { Play, RotateCcw, Volume2, VolumeX, ArrowRight } from 'lucide-react';
 
 // --- ASSETS & CONFIG ---
 const ASSETS = {
-    frankie: { name: 'Frankie', color: '#3B82F6', emoji: '🐶', transform: 'scaleX(1)' },
-    henry: { name: 'Henry', color: '#F97316', emoji: '🐕', transform: 'scaleX(-1)' }
+    frankie: { name: 'Frankie', color: '#3B82F6', emoji: '🐶', image: '/assets/frankie-closeup.png', transform: 'scaleX(1)' },
+    henry: { name: 'Henry', color: '#F97316', emoji: '🐕', image: null, transform: 'scaleX(-1)' }
 };
 
 const GRAVITY = 0.6;
@@ -512,10 +512,14 @@ export default function Game() {
                                 transition: 'transform 0.075s'
                             }}
                         >
-                            <div className={!isJumping ? 'animate-bounce-run' : ''} style={{ width: '3.5rem', height: '3.5rem', background: 'white', borderRadius: '0.75rem', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)', border: '2px solid #0F172A', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.875rem' }}>
-                                <span style={{ transform: ASSETS[character].transform, display: 'inline-block' }}>
-                                    {ASSETS[character].emoji}
-                                </span>
+                            <div className={!isJumping ? 'animate-bounce-run' : ''} style={{ width: '3.5rem', height: '3.5rem', background: 'white', borderRadius: '0.75rem', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)', border: '2px solid #0F172A', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.875rem', overflow: 'hidden' }}>
+                                {ASSETS[character].image ? (
+                                    <img src={ASSETS[character].image} alt={ASSETS[character].name} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: ASSETS[character].transform }} />
+                                ) : (
+                                    <span style={{ transform: ASSETS[character].transform, display: 'inline-block' }}>
+                                        {ASSETS[character].emoji}
+                                    </span>
+                                )}
                             </div>
                         </div>
                     )}
