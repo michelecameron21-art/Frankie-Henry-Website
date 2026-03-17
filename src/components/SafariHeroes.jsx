@@ -30,9 +30,9 @@ const heroes = [
     {
         id: 'lwazi',
         name: 'Lwazi',
-        tag: 'Wise & Observant',
-        role: 'THE WISE FLYER',
-        description: 'A beautiful blue crane who watches over the Wild Place from high above the trees.',
+        tag: 'Wise & Well-Connected',
+        role: 'THE WISE HELPER',
+        description: 'Nothing happens in the Wild Place without Lwazi knowing. Wise, quirky, and voted best legs in the Wild Place — he\'s the friend you want in your corner when things go wrong.',
         color: 'bg-green-100',
         accent: '#4ADE80',
         image: '/assets/lwazi.jpg',
