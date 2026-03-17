@@ -7,50 +7,50 @@ const heroes = [
         name: 'Frankie',
         tag: 'Fearless & Adventurous',
         role: 'THE FEARLESS ADVENTURER',
-        description: 'Frankie loves adventure above all else. He\'s always first to leap, first to explore, and first to help when it matters most.',
-        color: 'bg-blue-100', // Placeholder class
+        description: "Frankie loves adventure above all else. He's always first to leap, first to explore, and first to help when it matters most.",
+        color: 'bg-blue-100',
         accent: '#0EA5E9',
         image: '/assets/frankie.jpg',
-        objectPosition: 'center 25%', // Slight adjustments to show ears but not too much sky
-        funFact: "Frankie is a yorkshire terrier — yorkshire terriers were bred to chase rats into little tunnels. That’s why Frankie goes from “walkies” to “MISSION!” in two seconds."
+        objectPosition: 'center 25%',
+        funFact: "Frankie is a yorkshire terrier - yorkshire terriers were bred to chase rats into little tunnels. That's why Frankie goes from 'walkies' to 'MISSION!' in two seconds."
     },
     {
         id: 'henry',
         name: 'Henry',
         tag: 'Snack-Obsessed & Brave',
         role: 'THE BRAVE HEART',
-        description: 'Henry thinks about snacks. A lot. But when Frankie and the animals of the Wild Place need him most, he\'s always there.',
+        description: "Henry thinks about snacks. A lot. But when Frankie and the animals of the Wild Place need him most, he's always there.",
         color: 'bg-yellow-100',
         accent: '#FACC15',
         image: '/assets/henry.jpg',
         objectPosition: 'center 20%',
         scale: 1.05,
-        funFact: "Dogs have super noses — they can smell things humans can’t even notice. Henry can basically smell a snack… in another postcode."
+        funFact: "Dogs have super noses - they can smell things humans can't even notice. Henry can basically smell a snack... in another postcode."
     },
     {
         id: 'lwazi',
         name: 'Lwazi',
         tag: 'Wise & Well-Connected',
         role: 'THE WISE HELPER',
-        description: 'Nothing happens in the Wild Place without Lwazi knowing. Wise, quirky, and voted best legs in the Wild Place — he\'s the friend you want in your corner when things go wrong.',
+        description: "Nothing happens in the Wild Place without Lwazi knowing. Wise, quirky, and voted best legs in the Wild Place - he's the friend you want in your corner when things go wrong.",
         color: 'bg-green-100',
         accent: '#4ADE80',
         image: '/assets/lwazi.jpg',
         objectPosition: '35% 40%',
         scale: 1.2,
-        funFact: "Blue cranes do happy little “dances” — lots of stepping, bobbing, and wing-flaps. Lwazi’s wings aren’t just for flying… they’re for showing off too!"
+        funFact: "Blue cranes do happy little 'dances' - lots of stepping, bobbing, and wing-flaps. Lwazi's wings aren't just for flying... they're for showing off too!"
     },
     {
         id: 'clawdius',
         name: 'Clawdius',
         tag: 'Cheeky & Sneaky',
         role: 'THE NEIGHBOURHOOD MENACE',
-        description: 'Clawdius lives next door. He loves mischief, chaos, and making Frankie and Henry\'s lives as difficult as possible — and he\'s very, very good at all three.',
+        description: "Clawdius lives next door. He loves mischief, chaos, and making Frankie and Henry's lives as difficult as possible - and he's very, very good at all three.",
         color: 'bg-red-100',
         accent: '#F87171',
         image: '/assets/clawdius.jpg',
         objectPosition: 'center 30%',
-        funFact: "A cat’s whiskers are like tiny feelers that help them “see” in the dark and squeeze through tight spaces. Perfect tools for a sneaky troublemaker."
+        funFact: "A cat's whiskers are like tiny feelers that help them 'see' in the dark and squeeze through tight spaces. Perfect tools for a sneaky troublemaker."
     },
     {
         id: 'monitor-lizard',
@@ -70,36 +70,36 @@ const heroes = [
         name: 'Martial Eagle',
         tag: 'Majestic & Mighty',
         role: 'THE SKY KING',
-        description: 'The largest eagle in Africa doesn\'t need to introduce himself. Majestic, mighty, and capable of lifting things three times his own weight — and has a very particular eye for small, snack-obsessed dogs.',
+        description: "The largest eagle in Africa doesn't need to introduce himself. Majestic, mighty, and capable of lifting things three times his own weight - and has a very particular eye for small, snack-obsessed dogs.",
         color: 'bg-slate-200',
         accent: '#475569',
         image: '/assets/eagle.jpg',
         objectPosition: '72% 20%',
         scale: 1.2,
-        funFact: "Martial eagles have incredible eyesight — they can spot tiny movement from very far away. And their talons are super strong… strong enough for big grabs (like that branch!)."
+        funFact: "Martial eagles have incredible eyesight - they can spot tiny movement from very far away. And their talons are super strong... strong enough for big grabs (like that branch!)."
     },
     {
         id: 'jackal-mum',
-        name: ‘Jackal (Mom)’,
-        tag: ‘Fierce & Devoted’,
-        role: ‘THE DEVOTED MOM’,
-        description: ‘Gentle, loving, and completely devoted to her cub. But cross her family and you\’ll discover very quickly that this mom will take on anyone — and she means anyone.’,
+        name: 'Jackal (Mom)',
+        tag: 'Fierce & Devoted',
+        role: 'THE DEVOTED MOM',
+        description: "Gentle, loving, and completely devoted to her cub. But cross her family and you'll discover very quickly that this mom will take on anyone - and she means anyone.",
         color: 'bg-orange-100',
         accent: '#F97316',
         image: '/assets/jackal-mum.jpg',
-        funFact: "Jackal families are real teams — mums and dads both help look after their pups. A jackal mum is brave, clever, and always watching."
+        funFact: "Jackal families are real teams - mums and dads both help look after their pups. A jackal mum is brave, clever, and always watching."
     },
     {
         id: 'jackal-cub',
-        name: 'Jackal’s Cub',
-        tag: ‘Little & Lost’,
-        role: ‘THE LOST LITTLE CUB’,
-        description: ‘Small, curious, and a little too adventurous for her own good. One wrong turn, one desperate cry for help — and the whole adventure begins.’,
+        name: "Jackal's Cub",
+        tag: 'Little & Lost',
+        role: 'THE LOST LITTLE CUB',
+        description: 'Small, curious, and a little too adventurous for her own good. One wrong turn, one desperate cry for help - and the whole adventure begins.',
         color: 'bg-amber-50',
         accent: '#F59E0B',
         image: '/assets/jackal-cub.jpg',
         objectPosition: 'center 30%',
-        funFact: "A baby jackal is called a pup. Pups learn fast — how to listen, hide, and run — and Tumi just learned the most important thing: friends can show up when you need them most."
+        funFact: "A baby jackal is called a pup. Pups learn fast - how to listen, hide, and run - and Tumi just learned the most important thing: friends can show up when you need them most."
     }
 ];
 
@@ -109,7 +109,7 @@ export default function SafariHeroes() {
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="heading-lg">Meet the Characters</h2>
-                    <p className="subheading">Meet the team — and the trouble. Tap the magic wands to learn something interesting about each character</p>
+                    <p className="subheading">Meet the team - and the trouble. Tap the magic wands to learn something interesting about each character</p>
                 </div>
 
                 <div className="heroes-grid">
