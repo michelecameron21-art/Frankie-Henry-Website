@@ -404,7 +404,7 @@ export default function Game() {
             position: 'relative'
         }}>
             <div className="container" style={{ margin: '0 auto', maxWidth: '1200px', position: 'relative', zIndex: 1 }}>
-                <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                <div style={{ textAlign: 'center', marginBottom: '0.75rem' }}>
                     <h2 className="heading-lg" style={{ marginBottom: '0.5rem', color: isNight ? '#FDE047' : '#fff' }}>
                         {isNight ? "The Midnight Dash!" : "Rescue the Jackal Cub!"}
                     </h2>
