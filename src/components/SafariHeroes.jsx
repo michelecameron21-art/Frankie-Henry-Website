@@ -45,7 +45,7 @@ const heroes = [
         name: 'Clawdius',
         tag: 'Cheeky & Sneaky',
         role: 'THE NEIGHBOURHOOD MENACE',
-        description: 'Clawdius lives next door. He loves mischief, chaos, and making Frankie and Henry\'s lives as complicated as possible — and he\'s very, very good at all three.',
+        description: 'Clawdius lives next door. He loves mischief, chaos, and making Frankie and Henry\'s lives as difficult as possible — and he\'s very, very good at all three.',
         color: 'bg-red-100',
         accent: '#F87171',
         image: '/assets/clawdius.jpg',
