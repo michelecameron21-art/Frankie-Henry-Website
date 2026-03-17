@@ -32,7 +32,7 @@ const extras = [
         id: 3,
         title: 'Sing Along',
         type: 'Sing along',
-        description: 'Join Frankie and Henry and sing along to their Wild Place adventures.',
+        description: 'Sing along to the Frankie and Henry song! "Big adventures - watch us grow!"',
         icon: <Music size={32} className="text-teal-600" />,
         badge: null,
         color: 'bg-teal-100',
