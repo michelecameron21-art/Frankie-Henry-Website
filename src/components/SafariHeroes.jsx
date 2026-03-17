@@ -91,7 +91,7 @@ const heroes = [
     },
     {
         id: 'jackal-cub',
-        name: "Jackal's Cub",
+        name: 'Jackal Cub',
         tag: 'Little & Lost',
         role: 'THE LOST LITTLE CUB',
         description: 'Small, curious, and a little too adventurous for his own good. One wrong turn, one desperate cry for help - and the whole adventure begins.',
