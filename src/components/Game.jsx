@@ -396,7 +396,7 @@ export default function Game() {
 
     return (
         <section id="game" className="section" style={{
-            padding: '3rem 1rem',
+            padding: '1.5rem 1rem',
             background: isNight
                 ? 'linear-gradient(to bottom, #0f172a calc(100% - 100px), #C5DEB0 100%)'
                 : 'linear-gradient(to bottom, #F0A870 calc(100% - 100px), #C5DEB0 100%)',
@@ -412,7 +412,7 @@ export default function Game() {
                         {isNight ? "Race home under the stars! Watch out for Termite Mounds!" : "Help Frankie and Henry rescue the Jackal Cub. Jump over rocks and collect snacks!"}
                     </p>
 
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginTop: '1.5rem', flexWrap: 'wrap', fontSize: '0.9rem' }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginTop: '0.5rem', flexWrap: 'wrap', fontSize: '0.9rem' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: isNight ? '#e2e8f0' : 'rgba(255,255,255,0.9)' }}>
                             <span style={{ fontWeight: 'bold', background: isNight ? '#312e81' : 'rgba(255,255,255,0.25)', color: isNight ? '#fde047' : '#fff', padding: '0.25rem 0.75rem', borderRadius: '9999px', border: `1px solid ${isNight ? '#4f46e5' : 'rgba(255,255,255,0.5)'}` }}>Tap Space</span>
                             <span>to Jump</span>
