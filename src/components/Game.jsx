@@ -486,9 +486,9 @@ export default function Game() {
                     {gameState === 'PLAYING' && (
                         <button
                             onClick={(e) => { e.stopPropagation(); setGameState('SELECT'); }}
-                            style={{ position: 'absolute', top: '1.5rem', right: '4.5rem', zIndex: 40, height: '2.5rem', padding: '0 0.75rem', background: 'rgba(255,255,255,0.5)', borderRadius: '9999px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', border: 'none', color: '#1E293B', fontSize: '0.75rem', fontWeight: 'bold', gap: '0.25rem' }}
+                            style={{ position: 'absolute', bottom: '1rem', right: '1rem', zIndex: 50, height: '2.25rem', padding: '0 1rem', background: 'rgba(0,0,0,0.6)', borderRadius: '9999px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', border: '2px solid rgba(255,255,255,0.5)', color: 'white', fontSize: '0.8rem', fontWeight: 'bold', gap: '0.35rem' }}
                         >
-                            <RotateCcw size={14} /> Quit
+                            <RotateCcw size={13} /> Quit
                         </button>
                     )}
 
