@@ -5,9 +5,9 @@ const heroes = [
     {
         id: 'frankie',
         name: 'Frankie',
-        tag: 'Brave & Loyal',
-        role: 'THE BRAVE LEADER',
-        description: 'Always first to leap into action! Frankie loves to run fast and help everyone find their way.',
+        tag: 'Fearless & Adventurous',
+        role: 'THE FEARLESS ADVENTURER',
+        description: 'Frankie loves adventure above all else. He\'s always first to leap, first to explore, and first to help when it matters most.',
         color: 'bg-blue-100', // Placeholder class
         accent: '#0EA5E9',
         image: '/assets/frankie.jpg',
