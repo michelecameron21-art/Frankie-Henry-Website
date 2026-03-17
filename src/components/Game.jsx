@@ -406,10 +406,10 @@ export default function Game() {
             <div className="container" style={{ margin: '0 auto', maxWidth: '1200px', position: 'relative', zIndex: 1 }}>
                 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
                     <h2 className="heading-lg" style={{ marginBottom: '0.5rem', color: isNight ? '#FDE047' : '#fff' }}>
-                        {isNight ? "The Midnight Dash!" : "Frankie & Henry's Rescue Run!"}
+                        {isNight ? "The Midnight Dash!" : "Frankie & Henry Rescue the Jackal Cub!"}
                     </h2>
                     <p className="subheading" style={{ color: isNight ? '#cbd5e1' : 'rgba(255,255,255,0.9)' }}>
-                        {isNight ? "Race home under the stars! Watch out for Termite Mounds!" : "Help the team rescue Tumi! Jump over rocks and collect biscuits!"}
+                        {isNight ? "Race home under the stars! Watch out for Termite Mounds!" : "Help the team rescue the jackal cub! Jump over rocks and collect snacks!"}
                     </p>
 
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginTop: '1.5rem', flexWrap: 'wrap', fontSize: '0.9rem' }}>
@@ -562,7 +562,7 @@ export default function Game() {
                     {/* Character Select */}
                     {gameState === 'SELECT' && (
                         <div style={{ ...overlayStyle, background: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(4px)' }}>
-                            <h3 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#FBBF24', marginBottom: '2rem', textShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>Choose Your Hero!</h3>
+                            <h3 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#FBBF24', marginBottom: '2rem', textShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>Pick Your Adventurer!</h3>
                             <div style={{ display: 'flex', gap: '3rem' }}>
                                 <button
                                     onClick={(e) => { e.stopPropagation(); setCharacter('frankie'); startGame(1); }}
