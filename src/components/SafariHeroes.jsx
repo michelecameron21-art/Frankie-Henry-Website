@@ -92,9 +92,9 @@ const heroes = [
     {
         id: 'jackal-cub',
         name: 'Jackal’s Cub',
-        tag: 'Small & Stuck',
-        role: 'THE BRAVE LITTLE CUB',
-        description: 'A frightened little one who’s in the wrong place at the wrong time. Frankie and Henry have to act fast—because this rescue won’t be easy.',
+        tag: ‘Little & Lost’,
+        role: ‘THE LOST LITTLE CUB’,
+        description: ‘Small, curious, and a little too adventurous for her own good. One wrong turn, one desperate cry for help — and the whole adventure begins.’,
         color: 'bg-amber-50',
         accent: '#F59E0B',
         image: '/assets/jackal-cub.jpg',
