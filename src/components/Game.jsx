@@ -584,7 +584,7 @@ export default function Game() {
                                     className="hover:scale-110"
                                 >
                                     <div style={{ width: '8rem', height: '8rem', background: 'white', borderRadius: '50%', border: '8px solid #EF4444', overflow: 'hidden', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>
-                                        <img src="/assets/frankie-closeup.png" alt="Frankie" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(0.8)', transformOrigin: 'center center' }} />
+                                        <img src="/assets/frankie-closeup.png" alt="Frankie" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(0.9)', transformOrigin: 'center center' }} />
                                     </div>
                                     <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>Frankie</span>
                                 </button>
