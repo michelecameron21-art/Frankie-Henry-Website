@@ -19,7 +19,7 @@ const heroes = [
         name: 'Henry',
         tag: 'Snack-Obsessed & Brave',
         role: 'THE BRAVE HEART',
-        description: 'Henry thinks about snacks. A lot. But when Frankie and the animals of the Wild Place need him most, he\'s always there — proving that the biggest bravery comes in the smallest packages.',
+        description: 'Henry thinks about snacks. A lot. But when Frankie and the animals of the Wild Place need him most, he\'s always there.',
         color: 'bg-yellow-100',
         accent: '#FACC15',
         image: '/assets/henry.jpg',
