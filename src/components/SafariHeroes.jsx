@@ -68,9 +68,9 @@ const heroes = [
     {
         id: 'martial-eagle',
         name: 'Martial Eagle',
-        tag: 'Sharp-eyed & Fearless',
-        role: 'THE SKY HUNTER',
-        description: 'A powerful eagle who spots everything from way up high. When it shows up, everyone freezes—because it never misses.',
+        tag: 'Majestic & Mighty',
+        role: 'THE SKY KING',
+        description: 'The largest eagle in Africa doesn\'t need to introduce himself. Majestic, mighty, and capable of lifting things three times his own weight — and has a very particular eye for small, snack-obsessed dogs.',
         color: 'bg-slate-200',
         accent: '#475569',
         image: '/assets/eagle.jpg',
