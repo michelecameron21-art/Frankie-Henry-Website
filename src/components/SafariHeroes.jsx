@@ -17,9 +17,9 @@ const heroes = [
     {
         id: 'henry',
         name: 'Henry',
-        tag: 'Sweet & Snack-loving',
-        role: 'THE SNACK EXPERT',
-        description: 'Henry might worry a little bit, but he has the biggest heart (and loves the biggest biscuits!).',
+        tag: 'Snack-Obsessed & Brave',
+        role: 'THE BRAVE HEART',
+        description: 'Henry thinks about snacks. A lot. But when Frankie and the animals of the Wild Place need him most, he\'s always there — proving that the biggest bravery comes in the smallest packages.',
         color: 'bg-yellow-100',
         accent: '#FACC15',
         image: '/assets/henry.jpg',
