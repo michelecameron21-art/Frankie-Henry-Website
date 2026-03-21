@@ -1,4 +1,4 @@
-import { Youtube, Instagram } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 export default function Story() {
     return (
@@ -8,26 +8,11 @@ export default function Story() {
                 <div className="text-center mb-16">
                     <h2 className="heading-lg mb-8">Bring the adventure home</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                        {/* Amazon */}
+                    <div className="max-w-sm mx-auto">
                         <div className="card p-6 flex flex-col items-center text-center">
                             <h3 className="text-xl font-bold mb-2">Amazon</h3>
                             <p className="text-sm text-gray-500 mb-6">Order worldwide via Amazon (Paperback + Kindle).</p>
                             <button className="btn btn-primary w-full mt-auto">Buy on Amazon</button>
-                        </div>
-
-                        {/* Trailer */}
-                        <div className="card p-6 flex flex-col items-center text-center">
-                            <h3 className="text-xl font-bold mb-2">Watch the Trailer</h3>
-                            <p className="text-sm text-gray-500 mb-6">See scenes from the book come to life in a short animated trailer.</p>
-                            <a
-                                href="https://youtube.com/shorts/ENIGcnIv3zA?si=VKswWHqP9PnqllKR"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-outline w-full mt-auto flex items-center justify-center gap-2"
-                            >
-                                <Youtube size={18} /> Watch on YouTube
-                            </a>
                         </div>
                     </div>
                 </div>
