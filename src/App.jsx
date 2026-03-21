@@ -29,9 +29,9 @@ function App() {
                 {/* Gradient — darkens top for nav, fades bottom into gold section */}
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 25%, transparent 88%, #C07848 100%)' }} />
 
-                {/* Tagline scroll — floating right of Henry */}
+                {/* Small Paws — floating right of Henry */}
                 <img
-                    src="/assets/tagline-scroll.png"
+                    src="/assets/small-paws.png"
                     alt="Small paws. Brave hearts. Big adventures."
                     style={{
                         position: 'absolute',
