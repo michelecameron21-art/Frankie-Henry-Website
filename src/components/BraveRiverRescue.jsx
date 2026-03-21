@@ -40,8 +40,8 @@ export default function BraveRiverRescue() {
                             src="/assets/book-mockup.png"
                             alt="Frankie and Henry: The Brave River Rescue"
                             style={{
-                                height: '380px', width: 'auto',
-                                filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.3))',
+                                height: '500px', width: 'auto',
+                                filter: 'drop-shadow(0 24px 48px rgba(0,0,0,0.35))',
                                 transform: 'rotate(-2deg)',
                             }}
                         />
@@ -78,16 +78,22 @@ export default function BraveRiverRescue() {
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
-                                display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-                                background: '#FFD200', color: '#78350f',
-                                borderRadius: '9999px', padding: '0.8rem 2rem',
-                                fontWeight: '800', fontSize: '1.05rem',
-                                textDecoration: 'none', fontFamily: 'Fredoka, sans-serif',
-                                boxShadow: '0 4px 0 #b8960a',
-                                letterSpacing: '0.02em'
+                                display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
+                                background: 'linear-gradient(to bottom, #f7dfa5, #f0c14b)',
+                                color: '#111', border: '1px solid #a88734',
+                                borderRadius: '4px', padding: '0.7rem 1.75rem',
+                                fontWeight: '700', fontSize: '0.95rem',
+                                textDecoration: 'none',
+                                boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
+                                letterSpacing: '0.01em'
                             }}
                         >
-                            🛒 Buy on Amazon
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="#FF9900">
+                                <path d="M13.958 10.09c0 1.232.029 2.256-.591 3.351-.502.891-1.301 1.438-2.186 1.438-1.214 0-1.922-.924-1.922-2.292 0-2.692 2.415-3.182 4.7-3.182v.685zm3.186 7.705c-.209.189-.512.201-.745.076-1.045-.868-1.233-1.271-1.808-2.099-1.731 1.765-2.958 2.293-5.203 2.293-2.659 0-4.733-1.641-4.733-4.925 0-2.565 1.391-4.309 3.37-5.164 1.715-.754 4.11-.891 5.942-1.095v-.41c0-.753.06-1.642-.383-2.294-.385-.579-1.124-.82-1.775-.82-1.205 0-2.277.618-2.54 1.897-.054.285-.261.567-.549.582l-3.061-.333c-.259-.056-.548-.266-.472-.66C5.57 2.6 8.645 1.5 11.39 1.5c1.399 0 3.228.372 4.33 1.432 1.401 1.307 1.268 3.051 1.268 4.949v4.484c0 1.349.56 1.941 1.087 2.67.184.259.225.569-.01.757-.589.492-1.636 1.404-2.211 1.917l-.71-.924z"/>
+                                <path d="M20.556 18.615c-2.229 1.648-5.462 2.527-8.242 2.527-3.898 0-7.405-1.441-10.063-3.837-.208-.188-.022-.445.228-.299 2.865 1.667 6.408 2.667 10.068 2.667 2.468 0 5.183-.512 7.681-1.571.377-.16.693.247.328.513z"/>
+                                <path d="M21.505 17.535c-.284-.364-1.876-.172-2.592-.087-.218.026-.251-.164-.055-.301 1.269-.893 3.353-.635 3.596-.336.243.301-.063 2.39-1.256 3.386-.183.153-.358.072-.277-.131.268-.669.87-2.167.584-2.531z"/>
+                            </svg>
+                            Buy on Amazon
                         </a>
                     </div>
                 </div>
