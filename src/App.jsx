@@ -30,20 +30,27 @@ function App() {
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 25%, transparent 88%, #C07848 100%)' }} />
 
                 {/* Small Paws — floating right of Henry */}
-                <img
-                    src="/assets/small-paws.png"
-                    alt="Small paws. Brave hearts. Big adventures."
-                    style={{
-                        position: 'absolute',
-                        bottom: '12%',
-                        right: '4%',
-                        width: '28%',
-                        height: 'auto',
-                        zIndex: 20,
-                        filter: 'drop-shadow(0 12px 24px rgba(0,0,0,0.35))',
-                        transform: 'rotate(3deg)',
-                    }}
-                />
+                <div style={{
+                    position: 'absolute',
+                    bottom: '12%',
+                    right: '4%',
+                    width: '28%',
+                    zIndex: 20,
+                    transform: 'rotate(3deg)',
+                    background: 'rgba(0,0,0,0.28)',
+                    backdropFilter: 'blur(6px)',
+                    WebkitBackdropFilter: 'blur(6px)',
+                    borderRadius: '1.5rem',
+                    padding: '1rem 1.25rem',
+                    boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+                    border: '1px solid rgba(255,255,255,0.15)'
+                }}>
+                    <img
+                        src="/assets/small-paws.png"
+                        alt="Small paws. Brave hearts. Big adventures."
+                        style={{ width: '100%', height: 'auto', display: 'block' }}
+                    />
+                </div>
 
                 {/* Book mockup — floating left */}
                 <img
