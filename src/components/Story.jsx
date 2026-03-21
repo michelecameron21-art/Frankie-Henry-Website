@@ -13,7 +13,7 @@ export default function Story() {
                     {/* Real photo */}
                     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                         <div style={{
-                            width: '260px', height: '260px', borderRadius: '50%', overflow: 'hidden',
+                            width: '420px', height: '320px', borderRadius: '2rem', overflow: 'hidden',
                             margin: '0 auto 1.25rem', border: '6px solid #C07848',
                             boxShadow: '0 12px 32px rgba(192,120,72,0.35)'
                         }}>
