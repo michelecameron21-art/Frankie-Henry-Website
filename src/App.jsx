@@ -29,27 +29,59 @@ function App() {
                 {/* Gradient — darkens top for nav, fades bottom into gold section */}
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 25%, transparent 88%, #C07848 100%)' }} />
 
-                {/* Small Paws — floating right of Henry */}
+                {/* Tagline — matching the book cover title treatment exactly */}
                 <div style={{
                     position: 'absolute',
-                    bottom: '12%',
-                    right: '4%',
-                    width: '28%',
+                    bottom: '22%',
+                    right: '2%',
                     zIndex: 20,
-                    transform: 'rotate(3deg)',
-                    background: 'rgba(0,0,0,0.28)',
-                    backdropFilter: 'blur(6px)',
-                    WebkitBackdropFilter: 'blur(6px)',
-                    borderRadius: '1.5rem',
-                    padding: '1rem 1.25rem',
-                    boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
-                    border: '1px solid rgba(255,255,255,0.15)'
+                    transform: 'rotate(2deg)',
+                    textAlign: 'center',
+                    display: 'inline-block',
                 }}>
-                    <img
-                        src="/assets/small-paws.png"
-                        alt="Small paws. Brave hearts. Big adventures."
-                        style={{ width: '100%', height: 'auto', display: 'block' }}
-                    />
+                    {/* Layer 1 — dark outline + 3D extrusion shadow (sits underneath) */}
+                    <p style={{
+                        fontFamily: "'Alfa Slab One', serif",
+                        fontSize: 'clamp(1.5rem, 2.8vw, 2.4rem)',
+                        lineHeight: 1.3,
+                        letterSpacing: '0.02em',
+                        margin: 0,
+                        color: '#C87010',
+                        WebkitTextStroke: '7px #1E0A00',
+                        textShadow: `
+                            3px 3px 0 #8B4500,
+                            5px 5px 0 #6B3200,
+                            7px 7px 0 #4E2000,
+                            8px 8px 14px rgba(15,5,0,0.75)
+                        `,
+                        userSelect: 'none',
+                    }}>
+                        Small paws.<br />
+                        Brave hearts.<br />
+                        Big adventures.
+                    </p>
+
+                    {/* Layer 2 — gradient gold fill on top */}
+                    <p style={{
+                        position: 'absolute',
+                        top: 0,
+                        left: 0,
+                        right: 0,
+                        fontFamily: "'Alfa Slab One', serif",
+                        fontSize: 'clamp(1.5rem, 2.8vw, 2.4rem)',
+                        lineHeight: 1.3,
+                        letterSpacing: '0.02em',
+                        margin: 0,
+                        background: 'linear-gradient(to bottom, #F8D460 0%, #F0A820 40%, #D47810 75%, #B86008 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        backgroundClip: 'text',
+                        textAlign: 'center',
+                    }}>
+                        Small paws.<br />
+                        Brave hearts.<br />
+                        Big adventures.
+                    </p>
                 </div>
 
                 {/* Book mockup — floating left */}
