@@ -30,7 +30,7 @@ function App() {
 
                 {/* Tagline scroll — floating right of Henry */}
                 <img
-                    src="/assets/tagline-scroll.jpg"
+                    src="/assets/tagline-scroll.png"
                     alt="Small paws. Brave hearts. Big adventures."
                     style={{
                         position: 'absolute',
