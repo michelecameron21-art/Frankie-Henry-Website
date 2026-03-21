@@ -1,26 +1,29 @@
-import { Heart, BookOpen, ShoppingCart, Youtube, Instagram, Facebook } from 'lucide-react';
+import { Youtube, Instagram } from 'lucide-react';
 
 export default function Story() {
     return (
         <section id="story" className="section story-section">
             <div className="container">
-                {/* Stories that give back */}
+                {/* About Frankie & Henry */}
                 <div className="text-center mb-16">
-                    <h2 className="heading-lg mb-8">Stories that give back</h2>
+                    <h2 className="heading-lg mb-8">About Frankie & Henry</h2>
 
-                    <div className="card max-w-3xl mx-auto p-8 flex gap-6 items-start text-left">
-                        <div className="heart-icon-box flex-shrink-0">
-                            <Heart className="text-red-500 fill-current" size={32} />
-                        </div>
-                        <div>
-                            <h3 className="text-xl font-bold mb-2">Why it matters</h3>
-                            <p className="text-gray-600 mb-4 leading-relaxed">
-                                The Wild Place might be magical, but the animals who inspired it are very real. Your purchase helps support organisations working on conservation, rescue, and education. You're not just buying a book – you're joining a little army of animal helpers.
-                            </p>
-                            <p className="text-gray-600 font-medium">
-                                A portion of proceeds supports wildlife protection and habitat conservation.
-                            </p>
-                        </div>
+                    <div className="card max-w-3xl mx-auto p-8 text-left" style={{ lineHeight: '1.8' }}>
+                        <p style={{ fontSize: '1.1rem', marginBottom: '1.25rem', color: '#1e293b' }}>
+                            Frankie and Henry are two Yorkshire Terrier brothers who couldn't be more different. Frankie loves adventure and charges in headfirst. Henry thinks it through (between snacks). Together, they make the perfect team.
+                        </p>
+                        <p style={{ fontSize: '1.1rem', marginBottom: '1.25rem', color: '#1e293b' }}>
+                            Hidden in their garden is a secret tunnel — and on the other side lies the Wild Place. A vast, untamed African savannah where the creatures are wild, the friendships are unexpected, and every adventure is bigger than they are.
+                        </p>
+                        <p style={{ fontSize: '1.1rem', marginBottom: '1.25rem', color: '#1e293b' }}>
+                            In every story, Frankie and Henry are led to a new corner of the Wild Place by animals who need their help, and discover that courage and kindness matter far more than size.
+                        </p>
+                        <p style={{ fontSize: '1.1rem', marginBottom: '1.25rem', color: '#1e293b', fontStyle: 'italic' }}>
+                            Because the bravest hearts have always come in the smallest packages.
+                        </p>
+                        <p style={{ fontSize: '1rem', fontWeight: '700', color: '#78350f' }}>
+                            The perfect adventure series for kids ages 4–8.
+                        </p>
                     </div>
                 </div>
 
