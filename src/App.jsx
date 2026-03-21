@@ -26,6 +26,23 @@ function App() {
                 {/* Gradient — darkens top for nav, fades bottom into gold section */}
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 25%, transparent 88%, #C07848 100%)' }} />
 
+                {/* Book mockup — floating left */}
+                <img
+                    src="/assets/book-mockup.jpg"
+                    alt="Frankie and Henry book"
+                    style={{
+                        position: 'absolute',
+                        bottom: '8%',
+                        left: '5%',
+                        height: '55%',
+                        width: 'auto',
+                        zIndex: 20,
+                        filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.45))',
+                        transform: 'rotate(-4deg)',
+                        transformOrigin: 'bottom left',
+                    }}
+                />
+
                 {/* Nav floats over the image */}
                 <nav style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex: 50, padding: '1.25rem 2rem' }}>
                     <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
