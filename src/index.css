@@ -1473,9 +1473,9 @@ button {
    BLUEY-STYLE WORLD REDESIGN
    ========================================= */
 
-/* Characters World Section — sandy dust → fades into terracotta */
+/* Characters World Section — sandy dust → fades into lighter terracotta */
 .heroes-world-section {
-    background: linear-gradient(to bottom, #C07848 calc(100% - 100px), #A85830 100%);
+    background: linear-gradient(to bottom, #C07848 calc(100% - 100px), #D4906A 100%);
     position: relative;
 }
 
@@ -1523,18 +1523,16 @@ button {
 }
 
 
-/* Extras / Freebies Section — savanna olive green → fades into golden apricot */
+/* Extras / Freebies Section — game's golden yellow → savanna olive green → sky blue */
 .extras-section {
-    background: linear-gradient(to bottom, #8BAF58 calc(100% - 100px), #EDBA78 100%) !important;
+    background: linear-gradient(to bottom, #FCD34D 0%, #8BAF58 50%, #78BAD8 100%) !important;
 }
 
-/* Story Section — golden apricot → African sky blue → fades into dark footer */
+/* Story Section — sky blue continues → fades into dark footer */
 .story-section {
     background: linear-gradient(to bottom,
-        #EDBA78 0%,
-        #EDBA78 35%,
+        #78BAD8 0%,
         #78BAD8 60%,
-        #78BAD8 calc(100% - 100px),
         #1E293B 100%
     );
 }

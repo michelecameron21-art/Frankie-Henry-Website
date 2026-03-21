@@ -324,7 +324,7 @@ export default function Game() {
     const isNight = level === 2;
     const bgGradient = isNight
         ? 'linear-gradient(to bottom, #1e1b4b, #312e81, #4c1d95)' // Midnight
-        : 'linear-gradient(to bottom, #6B21A8, #F97316, #FCD34D)'; // Sunset
+        : 'linear-gradient(to bottom, #D4906A 0%, #7C3AED 30%, #F97316 70%, #FCD34D 100%)'; // Sunset from terracotta
 
     const Tree = ({ left, opacity }) => (
         <div style={{ position: 'absolute', bottom: '1rem', left, opacity: opacity, zIndex: 1, pointerEvents: 'none', filter: isNight ? 'brightness(0.6)' : 'none' }}>
