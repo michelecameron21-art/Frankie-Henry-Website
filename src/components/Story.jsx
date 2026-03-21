@@ -6,24 +6,111 @@ export default function Story() {
             <div className="container">
                 {/* About Frankie & Henry */}
                 <div className="text-center mb-16">
-                    <h2 className="heading-lg mb-8">About Frankie & Henry</h2>
+                    <h2 className="heading-lg mb-10" style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '3rem' }}>
+                        Meet the Brothers
+                    </h2>
 
-                    <div className="card max-w-3xl mx-auto p-8 text-left" style={{ lineHeight: '1.8' }}>
-                        <p style={{ fontSize: '1.1rem', marginBottom: '1.25rem', color: '#1e293b' }}>
-                            Frankie and Henry are two Yorkshire Terrier brothers who couldn't be more different. Frankie loves adventure and charges in headfirst. Henry thinks it through (between snacks). Together, they make the perfect team.
+                    {/* Character cards side by side */}
+                    <div style={{ display: 'flex', gap: '2rem', justifyContent: 'center', marginBottom: '3rem', flexWrap: 'wrap' }}>
+
+                        {/* Frankie */}
+                        <div style={{ flex: '1', minWidth: '220px', maxWidth: '280px', textAlign: 'center' }}>
+                            <div style={{
+                                width: '200px', height: '200px', borderRadius: '50%', overflow: 'hidden',
+                                margin: '0 auto 1rem', border: '5px solid #E11D48',
+                                boxShadow: '0 8px 24px rgba(225,29,72,0.3)'
+                            }}>
+                                <img src="/assets/frankie.jpg" alt="Frankie" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }} />
+                            </div>
+                            <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.8rem', color: '#E11D48', marginBottom: '0.5rem' }}>Frankie</h3>
+                            <span style={{
+                                display: 'inline-block', background: '#E11D48', color: 'white',
+                                borderRadius: '9999px', padding: '0.35rem 1rem', fontSize: '0.85rem',
+                                fontWeight: '700', letterSpacing: '0.03em'
+                            }}>⚡ Charges in headfirst</span>
+                        </div>
+
+                        {/* Real dog photo placeholder — swap src when photo is ready */}
+                        <div style={{ flex: '1', minWidth: '220px', maxWidth: '280px', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                            <div style={{
+                                width: '200px', height: '200px', borderRadius: '50%', overflow: 'hidden',
+                                margin: '0 auto 1rem', border: '5px dashed #C07848',
+                                boxShadow: '0 8px 24px rgba(192,120,72,0.2)',
+                                background: 'rgba(255,255,255,0.4)',
+                                display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'
+                            }}>
+                                <span style={{ fontSize: '2.5rem' }}>📸</span>
+                                <p style={{ fontSize: '0.8rem', color: '#78350f', fontWeight: '600', padding: '0 1rem', marginTop: '0.5rem' }}>The Real Boys</p>
+                                <p style={{ fontSize: '0.7rem', color: '#a16207', padding: '0 1rem' }}>Photo coming soon</p>
+                            </div>
+                            <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.8rem', color: '#C07848', marginBottom: '0.5rem' }}>The Real Frankie & Henry</h3>
+                            <span style={{
+                                display: 'inline-block', background: '#C07848', color: 'white',
+                                borderRadius: '9999px', padding: '0.35rem 1rem', fontSize: '0.85rem',
+                                fontWeight: '700', letterSpacing: '0.03em'
+                            }}>🐾 The inspiration behind it all</span>
+                        </div>
+
+                        {/* Henry */}
+                        <div style={{ flex: '1', minWidth: '220px', maxWidth: '280px', textAlign: 'center' }}>
+                            <div style={{
+                                width: '200px', height: '200px', borderRadius: '50%', overflow: 'hidden',
+                                margin: '0 auto 1rem', border: '5px solid #0EA5E9',
+                                boxShadow: '0 8px 24px rgba(14,165,233,0.3)'
+                            }}>
+                                <img src="/assets/henry.jpg" alt="Henry" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%' }} />
+                            </div>
+                            <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.8rem', color: '#0EA5E9', marginBottom: '0.5rem' }}>Henry</h3>
+                            <span style={{
+                                display: 'inline-block', background: '#0EA5E9', color: 'white',
+                                borderRadius: '9999px', padding: '0.35rem 1rem', fontSize: '0.85rem',
+                                fontWeight: '700', letterSpacing: '0.03em'
+                            }}>🍖 Thinks between snacks</span>
+                        </div>
+                    </div>
+
+                    {/* Blurb text */}
+                    <div style={{ maxWidth: '760px', margin: '0 auto 3rem', textAlign: 'center' }}>
+                        <p style={{ fontSize: '1.2rem', color: '#1e293b', lineHeight: '1.9', marginBottom: '1.25rem' }}>
+                            Two Yorkshire Terrier brothers who couldn't be more different — together, they make the <strong>perfect team.</strong>
                         </p>
-                        <p style={{ fontSize: '1.1rem', marginBottom: '1.25rem', color: '#1e293b' }}>
-                            Hidden in their garden is a secret tunnel — and on the other side lies the Wild Place. A vast, untamed African savannah where the creatures are wild, the friendships are unexpected, and every adventure is bigger than they are.
+                        <p style={{ fontSize: '1.2rem', color: '#1e293b', lineHeight: '1.9', marginBottom: '1.25rem' }}>
+                            Hidden in their garden is a secret tunnel — and on the other side lies the{' '}
+                            <span style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.3rem', color: '#C07848', fontWeight: '700' }}>Wild Place</span>.
+                            {' '}A vast, untamed African savannah where the creatures are wild, the friendships are unexpected, and every adventure is bigger than they are.
                         </p>
-                        <p style={{ fontSize: '1.1rem', marginBottom: '1.25rem', color: '#1e293b' }}>
-                            In every story, Frankie and Henry are led to a new corner of the Wild Place by animals who need their help, and discover that courage and kindness matter far more than size.
+                        <p style={{ fontSize: '1.2rem', color: '#1e293b', lineHeight: '1.9' }}>
+                            In every story, Frankie and Henry are led to a new corner of the Wild Place by animals who need their help, and discover that <strong>courage and kindness matter far more than size.</strong>
                         </p>
-                        <p style={{ fontSize: '1.1rem', marginBottom: '1.25rem', color: '#1e293b', fontStyle: 'italic' }}>
+                    </div>
+
+                    {/* Pull quote */}
+                    <div style={{
+                        maxWidth: '700px', margin: '0 auto 2.5rem',
+                        padding: '2.5rem 3rem',
+                        background: 'rgba(255,255,255,0.6)',
+                        borderRadius: '2rem',
+                        border: '2px solid rgba(255,255,255,0.8)',
+                        boxShadow: '0 8px 32px rgba(0,0,0,0.08)'
+                    }}>
+                        <div style={{ fontSize: '5rem', lineHeight: '0.5', color: '#C07848', fontFamily: 'Georgia, serif', marginBottom: '1rem' }}>"</div>
+                        <p style={{
+                            fontFamily: 'Fredoka, sans-serif', fontSize: '1.7rem', fontWeight: '600',
+                            color: '#1e293b', lineHeight: '1.4', fontStyle: 'italic', marginBottom: '1rem'
+                        }}>
                             Because the bravest hearts have always come in the smallest packages.
                         </p>
-                        <p style={{ fontSize: '1rem', fontWeight: '700', color: '#78350f' }}>
-                            The perfect adventure series for kids ages 4–8.
-                        </p>
+                        <div style={{ fontSize: '5rem', lineHeight: '0.3', color: '#C07848', fontFamily: 'Georgia, serif', textAlign: 'right' }}>"</div>
+                    </div>
+
+                    {/* Age badge */}
+                    <div style={{
+                        display: 'inline-block', background: '#E11D48', color: 'white',
+                        borderRadius: '9999px', padding: '0.6rem 2rem',
+                        fontSize: '1.1rem', fontWeight: '800', fontFamily: 'Fredoka, sans-serif',
+                        letterSpacing: '0.05em', boxShadow: '0 4px 0 #9f0a25'
+                    }}>
+                        🌍 The perfect adventure series for kids ages 4–8
                     </div>
                 </div>
 
