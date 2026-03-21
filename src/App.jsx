@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 import SafariHeroes from './components/SafariHeroes'
 import MeetTheBrothers from './components/MeetTheBrothers'
+import BraveRiverRescue from './components/BraveRiverRescue'
 import Extras from './components/Extras'
 
 import Game from './components/Game'
@@ -76,6 +77,7 @@ function App() {
             <main className="relative z-10">
                 <SafariHeroes />
                 <MeetTheBrothers />
+                <BraveRiverRescue />
                 <Game />
                 <Extras />
                 <Story />
