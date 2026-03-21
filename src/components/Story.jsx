@@ -39,7 +39,6 @@ export default function Story() {
                         <div style={{
                             flex: '1', minWidth: '280px',
                             padding: '2rem 2.5rem 2.5rem',
-                            borderRight: '1px solid rgba(0,0,0,0.07)',
                             textAlign: 'center'
                         }}>
                             <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>🎬</div>
@@ -82,6 +81,13 @@ export default function Story() {
                                 </a>
                             </div>
                         </div>
+
+                        {/* Divider */}
+                        <div style={{
+                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                            padding: '0 0.5rem', color: '#C07848', fontSize: '1.75rem',
+                            opacity: 0.4, alignSelf: 'center'
+                        }}>🐾</div>
 
                         {/* Right — Newsletter */}
                         <div style={{
