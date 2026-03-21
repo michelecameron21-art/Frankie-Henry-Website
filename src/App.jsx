@@ -24,7 +24,7 @@ function App() {
                 />
 
                 {/* Gradient — darkens top for nav, fades bottom into gold section */}
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 25%, transparent 93%, #FEEAA0 100%)' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 25%, transparent 88%, #C07848 100%)' }} />
 
                 {/* Nav floats over the image */}
                 <nav style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex: 50, padding: '1.25rem 2rem' }}>
