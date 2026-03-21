@@ -8,6 +8,7 @@ import Extras from './components/Extras'
 import Game from './components/Game'
 import Story from './components/Story'
 import Footer from './components/Footer'
+import CookieBanner from './components/CookieBanner'
 
 
 function App() {
@@ -100,6 +101,7 @@ function App() {
             </main>
 
             <Footer />
+            <CookieBanner />
         </div>
     )
 }
