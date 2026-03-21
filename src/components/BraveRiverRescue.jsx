@@ -1,13 +1,17 @@
 export default function BraveRiverRescue() {
 
     const galleryImages = [
-        { src: '/assets/frankie.jpg', alt: 'Frankie in the Wild Place' },
-        { src: '/assets/henry.jpg', alt: 'Henry in the Wild Place' },
-        { src: '/assets/eagle.jpg', alt: 'The Eagle' },
-        { src: '/assets/jackal-cub.jpg', alt: 'The Jackal Cub' },
-        { src: '/assets/jackal-mum.jpg', alt: 'The Jackal Mother' },
-        { src: '/assets/monitor.jpg', alt: 'The Monitor Lizard' },
+        { src: '/assets/scene-hole.jpg', alt: 'The secret tunnel', objectPosition: 'center 20%' },
+        { src: '/assets/scene-cub.jpg', alt: 'The jackal cub jumping' },
+        { src: '/assets/scene-clawdius.jpg', alt: 'Clawdius on the branch', objectPosition: 'center 30%' },
+        { src: '/assets/scene-lizard-spot.jpg', alt: 'Frankie spots the lizard' },
+        { src: '/assets/scene-lizard-awake.jpg', alt: 'The lizard wakes up' },
+        { src: '/assets/scene-rumble.jpg', alt: 'The rumble' },
+        { src: '/assets/scene-spot-cub.jpg', alt: 'Spotting the cub' },
+        { src: '/assets/scene-lwazi.jpg', alt: 'Lwazi and the boys' },
     ];
+
+    const rotations = ['-2deg', '1.5deg', '-1deg', '2deg', '1deg', '-1.5deg', '2.5deg', '-0.5deg'];
 
     const perfectFor = [
         { emoji: '🌙', text: 'Bedtime stories and read-alouds' },
@@ -121,22 +125,44 @@ export default function BraveRiverRescue() {
 
                 {/* Gallery */}
                 <div style={{ marginBottom: '3.5rem' }}>
-                    <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.6rem', color: '#1e293b', textAlign: 'center', marginBottom: '1.75rem' }}>
-                        Meet the cast
+                    <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.6rem', color: '#1e293b', textAlign: 'center', marginBottom: '0.5rem' }}>
+                        Inside the Wild Place
                     </h3>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1rem', maxWidth: '1000px', margin: '0 auto' }}>
+                    <p style={{ textAlign: 'center', color: '#78350f', fontWeight: '600', fontSize: '0.95rem', marginBottom: '2rem' }}>
+                        Scenes from the book
+                    </p>
+                    <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(4, 1fr)',
+                        gap: '1.25rem',
+                        maxWidth: '1050px',
+                        margin: '0 auto',
+                    }}>
                         {galleryImages.map((img, i) => (
-                            <div key={i} style={{
-                                borderRadius: '1.25rem', overflow: 'hidden',
-                                aspectRatio: '4/3',
-                                boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
-                                border: '3px solid rgba(255,255,255,0.7)',
-                                transition: 'transform 0.3s ease',
-                            }}
-                                onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-6px)'}
-                                onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
+                            <div
+                                key={i}
+                                style={{
+                                    borderRadius: '1rem',
+                                    overflow: 'hidden',
+                                    aspectRatio: '4/3',
+                                    boxShadow: '0 8px 28px rgba(0,0,0,0.22)',
+                                    border: '4px solid white',
+                                    transform: `rotate(${rotations[i]})`,
+                                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                                    cursor: 'pointer',
+                                }}
+                                onMouseEnter={e => {
+                                    e.currentTarget.style.transform = 'rotate(0deg) scale(1.06)';
+                                    e.currentTarget.style.boxShadow = '0 16px 40px rgba(0,0,0,0.35)';
+                                    e.currentTarget.style.zIndex = '10';
+                                }}
+                                onMouseLeave={e => {
+                                    e.currentTarget.style.transform = `rotate(${rotations[i]})`;
+                                    e.currentTarget.style.boxShadow = '0 8px 28px rgba(0,0,0,0.22)';
+                                    e.currentTarget.style.zIndex = '1';
+                                }}
                             >
-                                <img src={img.src} alt={img.alt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={img.src} alt={img.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: img.objectPosition || 'center center', display: 'block' }} />
                             </div>
                         ))}
                     </div>
