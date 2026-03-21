@@ -28,6 +28,22 @@ function App() {
                 {/* Gradient — darkens top for nav, fades bottom into gold section */}
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 25%, transparent 88%, #C07848 100%)' }} />
 
+                {/* Tagline scroll — floating right of Henry */}
+                <img
+                    src="/assets/tagline-scroll.jpg"
+                    alt="Small paws. Brave hearts. Big adventures."
+                    style={{
+                        position: 'absolute',
+                        bottom: '12%',
+                        right: '4%',
+                        width: '28%',
+                        height: 'auto',
+                        zIndex: 20,
+                        filter: 'drop-shadow(0 12px 24px rgba(0,0,0,0.35))',
+                        transform: 'rotate(3deg)',
+                    }}
+                />
+
                 {/* Book mockup — floating left */}
                 <img
                     src="/assets/book-mockup.png"
