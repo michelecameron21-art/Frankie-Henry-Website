@@ -28,7 +28,7 @@ function App() {
 
                 {/* Book mockup — floating left */}
                 <img
-                    src="/assets/book-mockup.jpg"
+                    src="/assets/book-mockup.png"
                     alt="Frankie and Henry book"
                     style={{
                         position: 'absolute',
