@@ -4,19 +4,6 @@ export default function Story() {
     return (
         <section id="story" className="section story-section">
             <div className="container">
-                {/* Bring the adventure home */}
-                <div className="text-center mb-16">
-                    <h2 className="heading-lg mb-8">Bring the adventure home</h2>
-
-                    <div className="max-w-sm mx-auto">
-                        <div className="card p-6 flex flex-col items-center text-center">
-                            <h3 className="text-xl font-bold mb-2">Amazon</h3>
-                            <p className="text-sm text-gray-500 mb-6">Order worldwide via Amazon (Paperback + Kindle).</p>
-                            <button className="btn btn-primary w-full mt-auto">Buy on Amazon</button>
-                        </div>
-                    </div>
-                </div>
-
                 {/* Stay Close to the Wild Place — combined social + newsletter */}
                 <div id="newsletter" style={{
                     maxWidth: '900px', margin: '0 auto',
