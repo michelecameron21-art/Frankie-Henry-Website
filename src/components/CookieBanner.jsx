@@ -33,7 +33,7 @@ export default function CookieBanner() {
             {/* Text */}
             <div style={{ flex: '1', minWidth: '260px' }}>
                 <p style={{ color: 'white', fontSize: '0.95rem', lineHeight: '1.6', margin: 0 }}>
-                    🐾 We use cookies to keep the Wild Place running smoothly and to understand how visitors use our site. Read our{' '}
+                    We use cookies to keep the Wild Place running smoothly and to understand how visitors use our site. Read our{' '}
                     <a href="/privacy-policy.html" style={{ color: '#C07848', fontWeight: '700' }}>
                         Privacy Policy
                     </a>{' '}

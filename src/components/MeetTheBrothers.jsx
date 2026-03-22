@@ -20,7 +20,7 @@ export default function MeetTheBrothers() {
                             display: 'inline-block', background: 'rgba(255,255,255,0.25)', color: 'white',
                             borderRadius: '9999px', padding: '0.4rem 1.25rem', fontSize: '0.95rem',
                             fontWeight: '700', letterSpacing: '0.03em', border: '2px solid rgba(255,255,255,0.5)'
-                        }}>🐾 The inspiration behind it all</span>
+                        }}>The inspiration behind it all</span>
                     </div>
 
                     {/* Blurb text */}
@@ -47,7 +47,7 @@ export default function MeetTheBrothers() {
                             fontSize: '1.1rem', fontWeight: '800', fontFamily: 'Fredoka, sans-serif',
                             letterSpacing: '0.05em', boxShadow: '0 4px 0 #9f0a25'
                         }}>
-                            🌍 The perfect adventure series for kids ages 4–8
+                            The perfect adventure series for kids ages 4–8
                         </div>
                     </div>
                 </div>

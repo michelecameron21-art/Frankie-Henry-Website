@@ -14,11 +14,11 @@ export default function BraveRiverRescue() {
     const rotations = ['-2deg', '1.5deg', '-1deg', '2deg', '1deg', '-1.5deg', '2.5deg', '-0.5deg'];
 
     const perfectFor = [
-        { emoji: '🌙', text: 'Bedtime stories and read-alouds' },
-        { emoji: '🐕', text: 'Dog lovers and Yorkshire Terrier fans' },
-        { emoji: '🤝', text: 'Teaching courage, friendship, and helping others' },
-        { emoji: '🦁', text: 'Fans of safari and wildlife adventures' },
-        { emoji: '🎁', text: 'Gift for children ages 4–8' },
+        { text: 'Bedtime stories and read-alouds' },
+        { text: 'Dog lovers and Yorkshire Terrier fans' },
+        { text: 'Teaching courage, friendship, and helping others' },
+        { text: 'Fans of safari and wildlife adventures' },
+        { text: 'Gift for children ages 4–8' },
     ];
 
     return (
@@ -117,7 +117,7 @@ export default function BraveRiverRescue() {
                                 fontSize: '0.95rem', fontWeight: '600', color: '#1e293b',
                                 boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
                             }}>
-                                {item.emoji} {item.text}
+                                {item.text}
                             </span>
                         ))}
                     </div>
@@ -175,8 +175,7 @@ export default function BraveRiverRescue() {
                     padding: '1.75rem 2.5rem', border: '2px solid rgba(255,255,255,0.7)',
                     boxShadow: '0 4px 20px rgba(0,0,0,0.07)'
                 }}>
-                    <span style={{ fontSize: '1.5rem' }}>🌍</span>
-                    <p style={{ fontSize: '1.05rem', color: '#1e293b', lineHeight: '1.7', marginTop: '0.5rem', fontStyle: 'italic' }}>
+                    <p style={{ fontSize: '1.05rem', color: '#1e293b', lineHeight: '1.7', marginTop: 0, fontStyle: 'italic' }}>
                         <strong>A series to grow with:</strong> Frankie and Henry's wild adventures are only just beginning. Watch out for their next escapade...
                     </p>
                 </div>

@@ -218,15 +218,15 @@ function App() {
                                 rel="noopener noreferrer"
                                 style={{
                                     marginLeft: '1rem',
-                                    background: '#E11D48',
-                                    color: 'white',
+                                    background: '#FFD200',
+                                    color: '#78350F',
                                     fontFamily: "'Fredoka', sans-serif",
                                     fontWeight: 700,
                                     fontSize: '1rem',
                                     padding: '0.5rem 1.4rem',
                                     borderRadius: '9999px',
                                     textDecoration: 'none',
-                                    boxShadow: '0 4px 0 #9f0a25',
+                                    boxShadow: '0 4px 0 #B8960A',
                                     display: 'inline-block',
                                     transition: 'transform 0.15s',
                                 }}
@@ -285,10 +285,10 @@ function App() {
                                 onClick={() => setIsMenuOpen(false)}
                                 style={{
                                     marginTop: '1rem', display: 'block', textAlign: 'center',
-                                    background: '#E11D48', color: 'white',
+                                    background: '#FFD200', color: '#78350F',
                                     fontFamily: "'Fredoka', sans-serif", fontWeight: 700, fontSize: '1.1rem',
                                     padding: '0.75rem 2rem', borderRadius: '9999px', textDecoration: 'none',
-                                    boxShadow: '0 4px 0 #9f0a25',
+                                    boxShadow: '0 4px 0 #B8960A',
                                 }}
                             >
                                 Buy Now on Amazon

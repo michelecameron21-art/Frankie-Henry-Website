@@ -1,4 +1,4 @@
-import { Instagram } from 'lucide-react';
+import { Instagram, Film, Mail } from 'lucide-react';
 import { useEffect } from 'react';
 
 export default function Story() {
@@ -43,7 +43,7 @@ export default function Story() {
                             padding: '2rem 2.5rem 2.5rem',
                             textAlign: 'center'
                         }}>
-                            <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>🎬</div>
+                            <div style={{ marginBottom: '0.75rem', color: '#C07848' }}><Film size={36} strokeWidth={1.5} /></div>
                             <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Behind the Scenes</h3>
                             <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.7', marginBottom: '1.75rem' }}>
                                 Follow us on Instagram and TikTok for behind-the-scenes videos, clips of the real Frankie & Henry, and sneak peeks at what's coming next.
@@ -89,7 +89,7 @@ export default function Story() {
                             display: 'flex', alignItems: 'center', justifyContent: 'center',
                             padding: '0 0.5rem', color: '#C07848', fontSize: '1.75rem',
                             opacity: 0.4, alignSelf: 'center'
-                        }}>🐾</div>
+                        }}><span style={{ fontSize: '1.5rem', color: '#C07848', opacity: 0.35 }}>—</span></div>
 
                         {/* Right — Newsletter */}
                         <div style={{
@@ -97,7 +97,7 @@ export default function Story() {
                             padding: '2rem 2.5rem 2.5rem',
                             textAlign: 'center'
                         }}>
-                            <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>🐾</div>
+                            <div style={{ marginBottom: '0.75rem', color: '#C07848' }}><Mail size={36} strokeWidth={1.5} /></div>
                             <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Stay Close to Frankie &amp; Henry!</h3>
                             <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.7', marginBottom: '1.25rem' }}>Win prizes, grab freebies, and get the latest news from Frankie &amp; Henry and their friends in the Wild Place.</p>
                             <div id="mlb2-38818852" className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-38818852">
