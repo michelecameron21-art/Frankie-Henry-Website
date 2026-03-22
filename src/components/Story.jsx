@@ -140,21 +140,6 @@ export default function Story() {
                 </div>
             </div>
 
-            {/* Grass blade transition into yellow footer */}
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: '110px', marginBottom: '-3px' }}>
-                {/* Yellow ground fill behind everything */}
-                <rect x="0" y="60" width="1200" height="60" fill="#FFD200" />
-                {/* Back layer — darker grass */}
-                <path
-                    d="M0,70 C40,45 70,75 100,58 C130,42 155,72 190,55 C220,40 245,68 280,52 C310,38 340,65 375,50 C405,36 430,63 465,48 C495,34 525,62 560,46 C590,32 620,60 655,44 C685,30 715,58 750,42 C780,28 810,56 845,40 C875,26 905,54 940,38 C970,24 1000,52 1035,36 C1065,22 1095,50 1130,35 C1155,24 1180,45 1200,38 L1200,120 L0,120 Z"
-                    fill="#5A8F3C"
-                />
-                {/* Front layer — brighter grass */}
-                <path
-                    d="M0,80 C30,55 55,82 85,65 C112,50 135,78 165,62 C192,48 215,74 248,58 C275,44 300,70 332,54 C358,40 382,66 415,50 C442,36 468,64 500,48 C528,34 554,62 586,46 C612,32 638,60 670,44 C698,30 724,58 756,42 C784,28 810,56 842,40 C870,26 896,54 928,38 C956,24 982,52 1014,36 C1042,22 1068,50 1100,35 C1124,24 1160,48 1200,40 L1200,120 L0,120 Z"
-                    fill="#78B84A"
-                />
-            </svg>
         </section>
     );
 }

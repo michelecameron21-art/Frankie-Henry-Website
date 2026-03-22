@@ -845,7 +845,7 @@ button {
 }
 
 .footer-link {
-    color: #78350F;
+    color: #FFD200;
     text-decoration: none;
     transition: 0.2s;
     opacity: 0.75;
@@ -1540,14 +1540,14 @@ button {
     background: linear-gradient(to bottom, #C07848 0%, #D4906A 50%, #B86040 100%) !important;
 }
 
-/* Story Section — stays warm, footer handles its own dark background */
+/* Story Section — warm terracotta fading into dark green footer */
 .story-section {
     background: linear-gradient(to bottom,
         #B86040 0%,
-        #C07848 50%,
-        #D4906A 100%
+        #C07848 40%,
+        #4A6B35 80%,
+        #2D4A20 100%
     );
-    padding-bottom: 0;
 }
 
 /* Social panel inside Story */
