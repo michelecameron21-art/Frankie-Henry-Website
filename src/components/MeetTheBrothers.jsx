@@ -3,8 +3,8 @@ export default function MeetTheBrothers() {
         <section id="meet-brothers" className="section" style={{ background: 'linear-gradient(to bottom, #D4906A 0%, #C07848 100%)' }}>
             <div className="container">
                 <div className="text-center">
-                    <h2 className="heading-lg mb-10" style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '3rem' }}>
-                        Meet the Brothers
+                    <h2 className="heading-lg" style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '3rem', color: '#FDE047', marginBottom: '3rem' }}>
+                        Meet the Real Frankie and Henry
                     </h2>
 
                     {/* Real photo */}
