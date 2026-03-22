@@ -30,7 +30,7 @@ export default function Story() {
                 }}>
                     {/* Header */}
                     <div style={{ textAlign: 'center', padding: '2.5rem 2rem 1.5rem' }}>
-                        <h2 className="heading-lg" style={{ marginBottom: '0.5rem' }}>Stay close to the Wild Place</h2>
+                        <h2 className="heading-lg" style={{ marginBottom: '0.5rem', fontSize: '2rem' }}>Stay close to the Wild Place</h2>
                         <p style={{ color: '#475569', fontSize: '1.05rem' }}>Never miss a wild moment — follow along or join the pack.</p>
                     </div>
 

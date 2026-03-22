@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
+import { useState, useRef, useEffect } from 'react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import SafariHeroes from './components/SafariHeroes'
 import MeetTheBrothers from './components/MeetTheBrothers'
 import BraveRiverRescue from './components/BraveRiverRescue'
@@ -11,8 +11,107 @@ import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
 
 
+const NAV_ITEMS = [
+    {
+        label: 'The Book',
+        links: [
+            { label: 'Meet the Brothers', href: '#meet-brothers' },
+            { label: 'Book Gallery', href: '#gallery' },
+            { label: 'Buy on Amazon', href: 'https://www.amazon.co.uk/dp/B0DYTWD2ZB', external: true },
+        ],
+    },
+    {
+        label: 'Characters',
+        links: [
+            { label: 'Frankie & Henry', href: '#characters' },
+            { label: 'Lwazi the Crane', href: '#characters' },
+            { label: 'Clawdius the Cat', href: '#characters' },
+            { label: 'The Wild Place Cast', href: '#characters' },
+        ],
+    },
+    {
+        label: 'Freebies',
+        links: [
+            { label: 'Rescue Run Game', href: '#game' },
+            { label: 'Colouring Pages', href: '#extras' },
+            { label: 'Spot the Difference', href: '#extras' },
+            { label: 'Sing Along', href: '#extras' },
+            { label: 'Join the Newsletter', href: '#story' },
+        ],
+    },
+];
+
+function DropdownMenu({ item, closeAll }) {
+    const [open, setOpen] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        function handleClick(e) {
+            if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+        }
+        document.addEventListener('mousedown', handleClick);
+        return () => document.removeEventListener('mousedown', handleClick);
+    }, []);
+
+    return (
+        <div ref={ref} style={{ position: 'relative' }}>
+            <button
+                onClick={() => setOpen(o => !o)}
+                style={{
+                    background: 'none', border: 'none', cursor: 'pointer',
+                    color: 'white', fontWeight: 700, fontSize: '1rem',
+                    fontFamily: "'Fredoka', sans-serif", letterSpacing: '0.02em',
+                    textShadow: '0 2px 6px rgba(0,0,0,0.55)',
+                    display: 'flex', alignItems: 'center', gap: '0.3rem',
+                    padding: '0.4rem 0.2rem', whiteSpace: 'nowrap',
+                }}
+            >
+                {item.label}
+                <ChevronDown size={16} style={{ transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+            </button>
+            {open && (
+                <div style={{
+                    position: 'absolute', top: 'calc(100% + 10px)', right: 0,
+                    background: 'rgba(255,251,240,0.97)',
+                    backdropFilter: 'blur(12px)',
+                    borderRadius: '1rem',
+                    boxShadow: '0 12px 40px rgba(0,0,0,0.18), 0 0 0 1px rgba(192,120,72,0.12)',
+                    minWidth: '210px',
+                    overflow: 'hidden',
+                    zIndex: 100,
+                }}>
+                    {item.links.map(link => (
+                        <a
+                            key={link.label}
+                            href={link.href}
+                            target={link.external ? '_blank' : undefined}
+                            rel={link.external ? 'noopener noreferrer' : undefined}
+                            onClick={() => setOpen(false)}
+                            style={{
+                                display: 'block',
+                                padding: '0.75rem 1.25rem',
+                                color: '#7C3D0A',
+                                fontFamily: "'Nunito', sans-serif",
+                                fontWeight: 700, fontSize: '0.95rem',
+                                textDecoration: 'none',
+                                borderBottom: '1px solid rgba(192,120,72,0.1)',
+                                transition: 'background 0.15s',
+                            }}
+                            onMouseEnter={e => e.currentTarget.style.background = 'rgba(192,120,72,0.1)'}
+                            onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
+                        >
+                            {link.label}
+                        </a>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+}
+
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [mobileOpenItem, setMobileOpenItem] = useState(null);
 
     return (
         <div className="app">
@@ -107,24 +206,93 @@ function App() {
                         <div>
                             <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '500px', width: 'auto', marginTop: '-130px' }} />
                         </div>
-                        <div className="hidden md:flex" style={{ gap: '2rem' }}>
-                            {['#story', '#characters', '#game', '#extras'].map((href, i) => (
-                                <a key={href} href={href} style={{ color: 'white', fontWeight: 700, fontSize: '1.05rem', textDecoration: 'none', textShadow: '0 2px 6px rgba(0,0,0,0.6)' }}>
-                                    {['Story', 'Characters', 'Rescue Run', 'Freebies'][i]}
-                                </a>
+
+                        {/* Desktop nav */}
+                        <div className="hidden md:flex" style={{ alignItems: 'center', gap: '0.25rem' }}>
+                            {NAV_ITEMS.map(item => (
+                                <DropdownMenu key={item.label} item={item} />
                             ))}
+                            <a
+                                href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    marginLeft: '1rem',
+                                    background: '#E11D48',
+                                    color: 'white',
+                                    fontFamily: "'Fredoka', sans-serif",
+                                    fontWeight: 700,
+                                    fontSize: '1rem',
+                                    padding: '0.5rem 1.4rem',
+                                    borderRadius: '9999px',
+                                    textDecoration: 'none',
+                                    boxShadow: '0 4px 0 #9f0a25',
+                                    display: 'inline-block',
+                                    transition: 'transform 0.15s',
+                                }}
+                                onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+                                onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
+                            >
+                                Buy Now
+                            </a>
                         </div>
+
+                        {/* Mobile hamburger */}
                         <button className="md:hidden" style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
                         </button>
                     </div>
+
+                    {/* Mobile menu */}
                     {isMenuOpen && (
-                        <div style={{ background: 'rgba(0,0,0,0.85)', borderRadius: '0 0 1rem 1rem', padding: '1.5rem 2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                            {['#story', '#characters', '#game', '#extras'].map((href, i) => (
-                                <a key={href} href={href} onClick={() => setIsMenuOpen(false)} style={{ color: 'white', fontWeight: 700, fontSize: '1.1rem', textDecoration: 'none' }}>
-                                    {['Story', 'Characters', 'Rescue Run', 'Freebies'][i]}
-                                </a>
+                        <div style={{ background: 'rgba(30,10,0,0.92)', backdropFilter: 'blur(12px)', borderRadius: '0 0 1.25rem 1.25rem', padding: '1rem 1.5rem 1.5rem', display: 'flex', flexDirection: 'column', gap: '0' }}>
+                            {NAV_ITEMS.map((item, idx) => (
+                                <div key={item.label}>
+                                    <button
+                                        onClick={() => setMobileOpenItem(mobileOpenItem === idx ? null : idx)}
+                                        style={{
+                                            width: '100%', background: 'none', border: 'none', borderBottom: '1px solid rgba(255,255,255,0.08)',
+                                            color: 'white', fontFamily: "'Fredoka', sans-serif", fontWeight: 700,
+                                            fontSize: '1.1rem', padding: '0.9rem 0', cursor: 'pointer',
+                                            display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                                        }}
+                                    >
+                                        {item.label}
+                                        <ChevronDown size={18} style={{ transition: 'transform 0.2s', transform: mobileOpenItem === idx ? 'rotate(180deg)' : 'rotate(0deg)', opacity: 0.7 }} />
+                                    </button>
+                                    {mobileOpenItem === idx && (
+                                        <div style={{ paddingLeft: '1rem', paddingBottom: '0.5rem' }}>
+                                            {item.links.map(link => (
+                                                <a
+                                                    key={link.label}
+                                                    href={link.href}
+                                                    target={link.external ? '_blank' : undefined}
+                                                    rel={link.external ? 'noopener noreferrer' : undefined}
+                                                    onClick={() => { setIsMenuOpen(false); setMobileOpenItem(null); }}
+                                                    style={{ display: 'block', padding: '0.6rem 0', color: 'rgba(255,220,140,0.9)', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'none' }}
+                                                >
+                                                    {link.label}
+                                                </a>
+                                            ))}
+                                        </div>
+                                    )}
+                                </div>
                             ))}
+                            <a
+                                href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setIsMenuOpen(false)}
+                                style={{
+                                    marginTop: '1rem', display: 'block', textAlign: 'center',
+                                    background: '#E11D48', color: 'white',
+                                    fontFamily: "'Fredoka', sans-serif", fontWeight: 700, fontSize: '1.1rem',
+                                    padding: '0.75rem 2rem', borderRadius: '9999px', textDecoration: 'none',
+                                    boxShadow: '0 4px 0 #9f0a25',
+                                }}
+                            >
+                                Buy Now on Amazon
+                            </a>
                         </div>
                     )}
                 </nav>

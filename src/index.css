@@ -253,17 +253,19 @@ button {
 
 /* Typography Helpers */
 .heading-lg {
-    font-size: 3rem;
-    font-weight: 800;
+    font-family: var(--font-heading);
+    font-size: 2.75rem;
+    font-weight: 700;
     color: var(--color-text);
-    line-height: 1.1;
+    line-height: 1.15;
 }
 
 .subheading {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: var(--color-text-light);
-    max-width: 600px;
-    margin: 0 auto 3rem;
+    max-width: 620px;
+    margin: 0.5rem auto 2.5rem;
+    line-height: 1.6;
 }
 
 /* Safari Heroes Styles */
@@ -436,7 +438,8 @@ button {
 }
 
 .extra-title {
-    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
@@ -1475,7 +1478,7 @@ button {
 
 /* Characters World Section — sandy dust → fades into lighter terracotta */
 .heroes-world-section {
-    background: linear-gradient(to bottom, #C07848 calc(100% - 100px), #D4906A 100%);
+    background: linear-gradient(to bottom, #C07848 0%, #F0D090 18%, #FFF8E8 45%, #FFF0D0 70%, #E8C070 85%, #D4906A 100%);
     position: relative;
 }
 
@@ -1522,10 +1525,18 @@ button {
     background: rgba(255, 252, 240, 0.95);
 }
 
+/* Heading + subheading on amber backgrounds — warm dark brown instead of black/grey */
+.heroes-world-section .heading-lg {
+    color: #3D1A00;
+}
+.heroes-world-section .subheading {
+    color: rgba(80, 35, 5, 0.75);
+}
 
-/* Extras / Freebies Section — game's golden yellow → savanna olive green → sky blue */
+
+/* Extras / Freebies Section — flows from game's sage green into sky blue */
 .extras-section {
-    background: linear-gradient(to bottom, #FCD34D 0%, #8BAF58 50%, #78BAD8 100%) !important;
+    background: linear-gradient(to bottom, #C5DEB0 0%, #95BF78 35%, #78BAD8 100%) !important;
 }
 
 /* Story Section — sky blue continues → fades into dark footer */
