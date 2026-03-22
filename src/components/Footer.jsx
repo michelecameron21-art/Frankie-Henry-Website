@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="bg-slate-800 text-white py-8">
+        <footer style={{ background: '#FFD200', color: '#78350F' }} className="py-8">
             <div className="container flex flex-col md:flex-row justify-between items-center gap-4">
                 <div className="text-sm opacity-70">
                     <p className="font-bold">Liabri Studios</p>

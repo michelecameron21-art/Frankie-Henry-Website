@@ -845,13 +845,14 @@ button {
 }
 
 .footer-link {
-    color: #94A3B8;
+    color: #78350F;
     text-decoration: none;
     transition: 0.2s;
+    opacity: 0.75;
 }
 
 .footer-link:hover {
-    color: white;
+    opacity: 1;
 }
 
 .rounded {
