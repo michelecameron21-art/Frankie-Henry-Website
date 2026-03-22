@@ -22,7 +22,7 @@ export default function BraveRiverRescue() {
     ];
 
     return (
-        <section id="gallery" style={{ background: 'linear-gradient(to bottom, #C07848 0%, #F0D090 35%, #E8C070 65%, #D4906A 100%)', padding: '5rem 0' }}>
+        <section id="gallery" style={{ background: 'linear-gradient(to bottom, #C07848 0%, #F0D090 35%, #E8C070 65%, #D4906A 100%)', padding: '3rem 0 5rem' }}>
             <div className="container">
 
                 {/* Section heading */}
@@ -30,7 +30,7 @@ export default function BraveRiverRescue() {
                     <p style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.1rem', color: '#78350f', fontWeight: '700', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
                         Book 1 in the series
                     </p>
-                    <h2 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '2.8rem', color: '#1e293b', marginBottom: '0' }}>
+                    <h2 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '2.8rem', color: '#78350f', marginBottom: '0' }}>
                         The Brave River Rescue
                     </h2>
                 </div>
