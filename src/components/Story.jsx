@@ -98,13 +98,13 @@ export default function Story() {
                             textAlign: 'center'
                         }}>
                             <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>🐾</div>
+                            <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Stay Close to Frankie &amp; Henry!</h3>
+                            <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.7', marginBottom: '1.25rem' }}>Win prizes, grab freebies, and get the latest news from Frankie &amp; Henry and their friends in the Wild Place.</p>
                             <div id="mlb2-38818852" className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-38818852">
                                 <div className="ml-form-align-center">
                                     <div className="ml-form-embedWrapper embedForm">
                                         <div className="ml-form-embedBody ml-form-embedBodyDefault row-form">
                                             <div className="ml-form-embedContent">
-                                                <h4>Stay Close to Frankie &amp; Henry!</h4>
-                                                <p>Win prizes, grab freebies, and get the latest news from Frankie &amp; Henry and their friends in the Wild Place.</p>
                                             </div>
                                             <form className="ml-block-form" action="https://assets.mailerlite.com/jsonp/2212478/forms/182653587718931572/subscribe" data-code="" method="post" target="_blank">
                                                 <div className="ml-form-formContent">
