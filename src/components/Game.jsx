@@ -398,8 +398,8 @@ export default function Game() {
         <section id="game" className="section" style={{
             padding: '1rem 1rem 1.5rem',
             background: isNight
-                ? 'linear-gradient(to bottom, #0f172a calc(100% - 100px), #C5DEB0 100%)'
-                : 'linear-gradient(to bottom, #D4906A calc(100% - 100px), #C5DEB0 100%)',
+                ? 'linear-gradient(to bottom, #0f172a calc(100% - 100px), #2D1A0E 100%)'
+                : 'linear-gradient(to bottom, #D4906A calc(100% - 100px), #C07848 100%)',
             transition: 'background 1s',
             position: 'relative'
         }}>

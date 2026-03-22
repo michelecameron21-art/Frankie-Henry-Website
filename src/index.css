@@ -1534,16 +1534,16 @@ button {
 }
 
 
-/* Extras / Freebies Section — flows from game's sage green into sky blue */
+/* Extras / Freebies Section — continues warm terracotta palette */
 .extras-section {
-    background: linear-gradient(to bottom, #C5DEB0 0%, #95BF78 35%, #78BAD8 100%) !important;
+    background: linear-gradient(to bottom, #C07848 0%, #D4906A 50%, #B86040 100%) !important;
 }
 
-/* Story Section — sky blue continues → fades into dark footer */
+/* Story Section — warm terracotta fades into dark footer */
 .story-section {
     background: linear-gradient(to bottom,
-        #78BAD8 0%,
-        #78BAD8 60%,
+        #B86040 0%,
+        #8B4820 60%,
         #1E293B 100%
     );
 }
