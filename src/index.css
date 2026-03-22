@@ -1539,12 +1539,12 @@ button {
     background: linear-gradient(to bottom, #C07848 0%, #D4906A 50%, #B86040 100%) !important;
 }
 
-/* Story Section — warm terracotta fades into dark footer */
+/* Story Section — stays warm, footer handles its own dark background */
 .story-section {
     background: linear-gradient(to bottom,
         #B86040 0%,
-        #8B4820 60%,
-        #1E293B 100%
+        #C07848 50%,
+        #D4906A 100%
     );
 }
 
