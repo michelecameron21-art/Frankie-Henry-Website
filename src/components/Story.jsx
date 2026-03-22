@@ -44,7 +44,7 @@ export default function Story() {
                             textAlign: 'center'
                         }}>
                             <div style={{ marginBottom: '0.75rem', color: '#C07848' }}><Film size={36} strokeWidth={1.5} /></div>
-                            <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Behind the Scenes</h3>
+                            <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Behind the scenes</h3>
                             <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.7', marginBottom: '1.75rem' }}>
                                 Follow us on Instagram and TikTok for behind-the-scenes videos, clips of the real Frankie & Henry, and sneak peeks at what's coming next.
                             </p>
