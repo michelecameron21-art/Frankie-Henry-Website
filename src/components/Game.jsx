@@ -399,7 +399,7 @@ export default function Game() {
             padding: '1.5rem 1rem',
             background: isNight
                 ? 'linear-gradient(to bottom, #0f172a calc(100% - 100px), #C5DEB0 100%)'
-                : 'linear-gradient(to bottom, #F0A870 calc(100% - 100px), #C5DEB0 100%)',
+                : 'linear-gradient(to bottom, #D4906A calc(100% - 100px), #C5DEB0 100%)',
             transition: 'background 1s',
             position: 'relative'
         }}>
