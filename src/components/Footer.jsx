@@ -9,8 +9,8 @@ export default function Footer() {
 
                 <div className="flex gap-4">
                     <a href="/privacy-policy.html" className="footer-link">Privacy Policy</a>
-                    <a href="#" className="footer-link">Terms of Service</a>
-                    <a href="#" className="footer-link">Contact Us</a>
+                    <a href="/terms-of-service.html" className="footer-link">Terms of Service</a>
+                    <a href="/contact.html" className="footer-link">Contact Us</a>
                 </div>
             </div>
         </footer>
