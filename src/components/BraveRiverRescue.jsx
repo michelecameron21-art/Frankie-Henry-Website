@@ -1,3 +1,5 @@
+import { Moon, Heart, Users, Compass, Gift } from 'lucide-react';
+
 export default function BraveRiverRescue() {
 
     const galleryImages = [
@@ -14,11 +16,11 @@ export default function BraveRiverRescue() {
     const rotations = ['-2deg', '1.5deg', '-1deg', '2deg', '1deg', '-1.5deg', '2.5deg', '-0.5deg'];
 
     const perfectFor = [
-        { text: 'Bedtime stories and read-alouds' },
-        { text: 'Dog lovers and Yorkshire Terrier fans' },
-        { text: 'Teaching courage, friendship, and helping others' },
-        { text: 'Fans of safari and wildlife adventures' },
-        { text: 'Gift for children ages 4–8' },
+        { icon: <Moon size={28} strokeWidth={1.5} />, text: 'Bedtime stories & read-alouds' },
+        { icon: <Heart size={28} strokeWidth={1.5} />, text: 'Dog lovers & Yorkie fans' },
+        { icon: <Users size={28} strokeWidth={1.5} />, text: 'Teaching courage & friendship' },
+        { icon: <Compass size={28} strokeWidth={1.5} />, text: 'Safari & wildlife adventures' },
+        { icon: <Gift size={28} strokeWidth={1.5} />, text: 'The perfect gift, ages 4–8' },
     ];
 
     return (
@@ -98,34 +100,40 @@ export default function BraveRiverRescue() {
                 </div>
 
                 {/* Perfect for */}
-                <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                    <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.6rem', color: '#1e293b', marginBottom: '1.5rem' }}>
+                <div style={{ textAlign: 'center', marginBottom: '4.5rem' }}>
+                    <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.8rem', color: '#78350f', marginBottom: '2rem' }}>
                         Perfect for...
                     </h3>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', justifyContent: 'center', maxWidth: '750px', margin: '0 auto' }}>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', maxWidth: '860px', margin: '0 auto' }}>
                         {perfectFor.map((item, i) => (
-                            <span key={i} style={{
-                                display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
-                                background: 'rgba(255,255,255,0.65)', backdropFilter: 'blur(4px)',
-                                border: '2px solid rgba(255,255,255,0.8)',
-                                borderRadius: '9999px', padding: '0.5rem 1.25rem',
-                                fontSize: '0.95rem', fontWeight: '600', color: '#1e293b',
-                                boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
+                            <div key={i} style={{
+                                display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.6rem',
+                                background: 'rgba(255,255,255,0.7)', backdropFilter: 'blur(6px)',
+                                border: '2px solid rgba(255,255,255,0.9)',
+                                borderRadius: '1.25rem', padding: '1.25rem 1.5rem',
+                                width: '150px',
+                                boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
+                                color: '#78350f',
                             }}>
-                                {item.text}
-                            </span>
+                                {item.icon}
+                                <span style={{ fontSize: '0.875rem', fontWeight: '700', color: '#1e293b', lineHeight: '1.3', textAlign: 'center' }}>
+                                    {item.text}
+                                </span>
+                            </div>
                         ))}
                     </div>
                 </div>
 
                 {/* Gallery */}
                 <div style={{ marginBottom: '3.5rem' }}>
-                    <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.6rem', color: '#1e293b', textAlign: 'center', marginBottom: '0.5rem' }}>
-                        Inside the Wild Place
-                    </h3>
-                    <p style={{ textAlign: 'center', color: '#78350f', fontWeight: '600', fontSize: '0.95rem', marginBottom: '2rem' }}>
-                        Scenes from the book
-                    </p>
+                    <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+                        <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '2.4rem', color: '#78350f', marginBottom: '0.6rem' }}>
+                            Inside the Wild Place
+                        </h3>
+                        <p style={{ color: '#5c2d0a', fontSize: '1.05rem', fontWeight: '600', maxWidth: '520px', margin: '0 auto', lineHeight: '1.6' }}>
+                            These are the real scenes from the pages of the book — step inside the adventure
+                        </p>
+                    </div>
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: 'repeat(4, 1fr)',
