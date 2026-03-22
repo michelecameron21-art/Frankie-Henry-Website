@@ -1,6 +1,13 @@
 import { Instagram } from 'lucide-react';
+import { useEffect } from 'react';
 
 export default function Story() {
+    useEffect(() => {
+        if (window.ml) {
+            window.ml('show', 'EqnRnp', true);
+        }
+    }, []);
+
     return (
         <section id="story" className="section story-section">
             <div className="container">
