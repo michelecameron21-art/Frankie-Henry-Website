@@ -29,9 +29,9 @@ export default function Story() {
                     overflow: 'hidden'
                 }}>
                     {/* Header */}
-                    <div style={{ textAlign: 'center', padding: '2.5rem 2rem 1.5rem' }}>
-                        <h2 className="heading-lg" style={{ marginBottom: '0.5rem', fontSize: '2rem' }}>Stay close to the Wild Place</h2>
-                        <p style={{ color: '#475569', fontSize: '1.05rem' }}>Never miss a wild moment — follow along or join the pack.</p>
+                    <div style={{ textAlign: 'center', padding: '1.25rem 2rem 0.75rem' }}>
+                        <h2 className="heading-lg" style={{ marginBottom: '0.25rem', fontSize: '2rem' }}>Never miss an update</h2>
+                        <p style={{ color: '#475569', fontSize: '1.05rem' }}>Follow along or join the pack.</p>
                     </div>
 
                     {/* Two panels */}
