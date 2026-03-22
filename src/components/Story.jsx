@@ -3,9 +3,17 @@ import { useEffect } from 'react';
 
 export default function Story() {
     useEffect(() => {
-        if (window.ml) {
-            window.ml('show', 'EqnRnp', true);
+        if (!document.getElementById('ml-webforms-script')) {
+            const script = document.createElement('script');
+            script.id = 'ml-webforms-script';
+            script.src = 'https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b';
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
         }
+        window.ml_webform_success_38818852 = function() {
+            document.querySelector('.ml-subscribe-form-38818852 .row-success').style.display = 'block';
+            document.querySelector('.ml-subscribe-form-38818852 .row-form').style.display = 'none';
+        };
     }, []);
 
     return (
@@ -90,11 +98,42 @@ export default function Story() {
                             textAlign: 'center'
                         }}>
                             <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>🐾</div>
-                            <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Stay Close to Frankie & Henry!</h3>
-                            <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.7', marginBottom: '1.25rem' }}>
-                                Win prizes, grab freebies, and get the latest news from Frankie & Henry's adventures.
-                            </p>
-                            <div className="ml-embedded" data-form="EqnRnp"></div>
+                            <div id="mlb2-38818852" className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-38818852">
+                                <div className="ml-form-align-center">
+                                    <div className="ml-form-embedWrapper embedForm">
+                                        <div className="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                                            <div className="ml-form-embedContent">
+                                                <h4>Stay Close to Frankie &amp; Henry!</h4>
+                                                <p>Win prizes, grab freebies, and get the latest news from Frankie &amp; Henry and their friends in the Wild Place.</p>
+                                            </div>
+                                            <form className="ml-block-form" action="https://assets.mailerlite.com/jsonp/2212478/forms/182653587718931572/subscribe" data-code="" method="post" target="_blank">
+                                                <div className="ml-form-formContent">
+                                                    <div className="ml-form-fieldRow ml-last-item">
+                                                        <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                                                            <input aria-label="email" aria-required="true" type="email" className="form-control" name="fields[email]" placeholder="Email" autoComplete="email" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" name="ml-submit" value="1" />
+                                                <div className="ml-form-embedSubmit">
+                                                    <button type="submit" className="primary">Join the Pack</button>
+                                                    <button disabled style={{ display: 'none' }} type="button" className="loading">
+                                                        <div className="ml-form-embedSubmitLoad"></div>
+                                                        <span className="sr-only">Loading...</span>
+                                                    </button>
+                                                </div>
+                                                <input type="hidden" name="anticsrf" value="true" />
+                                            </form>
+                                        </div>
+                                        <div className="ml-form-successBody row-success" style={{ display: 'none' }}>
+                                            <div className="ml-form-successContent">
+                                                <h4>Thank you!</h4>
+                                                <p>You have successfully joined our subscriber list.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <p style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.75rem' }}>We respect your privacy. Unsubscribe at any time.</p>
                         </div>
                     </div>
