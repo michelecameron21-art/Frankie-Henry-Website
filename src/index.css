@@ -1547,6 +1547,7 @@ button {
         #C07848 50%,
         #D4906A 100%
     );
+    padding-bottom: 0;
 }
 
 /* Social panel inside Story */
