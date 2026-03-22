@@ -24,7 +24,7 @@ export default function BraveRiverRescue() {
     ];
 
     return (
-        <section id="gallery" style={{ background: 'linear-gradient(to bottom, #C07848 0%, #F0D090 35%, #E8C070 65%, #D4906A 100%)', padding: '1.5rem 0 2rem' }}>
+        <section id="gallery" style={{ background: 'linear-gradient(to bottom, #C07848 0%, #F0D090 35%, #E8C070 65%, #D4906A 100%)', padding: '1.5rem 0 0.5rem' }}>
             <div className="container">
 
                 {/* Section heading */}

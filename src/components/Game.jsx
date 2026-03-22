@@ -396,7 +396,7 @@ export default function Game() {
 
     return (
         <section id="game" className="section" style={{
-            padding: '2.5rem 1rem 1.5rem',
+            padding: '1rem 1rem 1.5rem',
             background: isNight
                 ? 'linear-gradient(to bottom, #0f172a calc(100% - 100px), #C5DEB0 100%)'
                 : 'linear-gradient(to bottom, #D4906A calc(100% - 100px), #C5DEB0 100%)',
