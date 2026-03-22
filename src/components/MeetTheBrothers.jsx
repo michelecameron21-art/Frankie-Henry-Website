@@ -42,10 +42,10 @@ export default function MeetTheBrothers() {
 
                         {/* Age badge */}
                         <div style={{
-                            display: 'inline-block', background: '#E11D48', color: 'white',
+                            display: 'inline-block', background: '#FFD200', color: '#78350F',
                             borderRadius: '9999px', padding: '0.6rem 2rem',
                             fontSize: '1.1rem', fontWeight: '800', fontFamily: 'Fredoka, sans-serif',
-                            letterSpacing: '0.05em', boxShadow: '0 4px 0 #9f0a25'
+                            letterSpacing: '0.05em', boxShadow: '0 4px 0 #B8960A'
                         }}>
                             The perfect adventure series for kids ages 4–8
                         </div>
