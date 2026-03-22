@@ -171,17 +171,6 @@ export default function BraveRiverRescue() {
                     </div>
                 </div>
 
-                {/* Series teaser */}
-                <div style={{
-                    textAlign: 'center', maxWidth: '600px', margin: '0 auto',
-                    background: 'rgba(255,255,255,0.5)', borderRadius: '1.5rem',
-                    padding: '1.75rem 2.5rem', border: '2px solid rgba(255,255,255,0.7)',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.07)'
-                }}>
-                    <p style={{ fontSize: '1.05rem', color: '#1e293b', lineHeight: '1.7', marginTop: 0, fontStyle: 'italic' }}>
-                        <strong>A series to grow with:</strong> Frankie and Henry's wild adventures are only just beginning. Watch out for their next escapade...
-                    </p>
-                </div>
 
             </div>
         </section>

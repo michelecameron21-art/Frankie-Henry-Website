@@ -50,7 +50,7 @@ export default function Extras() {
         <section id="extras" className="section extras-section" style={{ paddingTop: '1rem' }}>
             <div className="container">
                 <div className="text-center mb-12">
-                    <h2 className="heading-lg">Colour, play, sing along</h2>
+                    <h2 className="heading-lg" style={{ color: 'white' }}>Colour, play, sing along</h2>
                 </div>
 
                 <div className="extras-grid">
