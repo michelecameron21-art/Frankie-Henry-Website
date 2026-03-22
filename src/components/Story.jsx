@@ -83,22 +83,11 @@ export default function Story() {
                             textAlign: 'center'
                         }}>
                             <div style={{ fontSize: '2.5rem', marginBottom: '0.75rem' }}>🐾</div>
-                            <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Join the Pack</h3>
-                            <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.7', marginBottom: '1.75rem' }}>
-                                Be the first to hear about new books, exclusive printables, and Wild Place news. No spam — just paws, stories, and a little bit of magic.
+                            <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Stay Close to Frankie & Henry!</h3>
+                            <p style={{ color: '#475569', fontSize: '0.95rem', lineHeight: '1.7', marginBottom: '1.25rem' }}>
+                                Win prizes, grab freebies, and get the latest news from Frankie & Henry's adventures.
                             </p>
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', maxWidth: '320px', margin: '0 auto' }}>
-                                <input
-                                    type="email"
-                                    placeholder="Your email address"
-                                    style={{
-                                        padding: '0.75rem 1.25rem', borderRadius: '9999px',
-                                        border: '2px solid #e2e8f0', outline: 'none',
-                                        fontSize: '0.95rem', width: '100%'
-                                    }}
-                                />
-                                <button className="btn btn-primary w-full">Join the pack</button>
-                            </div>
+                            <div className="ml-embedded" data-form="EqnRnp"></div>
                             <p style={{ fontSize: '0.75rem', color: '#94a3b8', marginTop: '0.75rem' }}>We respect your privacy. Unsubscribe at any time.</p>
                         </div>
                     </div>
