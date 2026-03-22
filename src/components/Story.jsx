@@ -139,6 +139,14 @@ export default function Story() {
                     </div>
                 </div>
             </div>
+
+            {/* Wavy grass transition into yellow footer */}
+            <svg viewBox="0 0 1200 80" preserveAspectRatio="none" style={{ display: 'block', width: '100%', height: '70px', marginBottom: '-2px' }}>
+                <path
+                    d="M0,55 C80,20 140,65 200,45 C260,25 310,70 380,50 C440,32 490,68 560,42 C625,18 680,62 750,40 C815,18 870,60 940,38 C1005,16 1060,58 1130,42 C1160,34 1185,48 1200,44 L1200,80 L0,80 Z"
+                    fill="#FFD200"
+                />
+            </svg>
         </section>
     );
 }

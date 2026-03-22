@@ -1,8 +1,8 @@
 export default function Footer() {
     return (
-        <footer style={{ background: '#FFD200', color: '#78350F' }} className="py-8">
+        <footer style={{ background: '#FFD200', color: '#78350F', position: 'relative' }} className="py-8">
             <div className="container flex flex-col md:flex-row justify-between items-center gap-4">
-                <div className="text-sm opacity-70">
+                <div className="text-sm" style={{ opacity: 0.7 }}>
                     <p className="font-bold">Liabri Studios</p>
                     <p>&copy; 2026 Liabri Studios. All rights reserved.</p>
                 </div>
