@@ -1,6 +1,6 @@
 export default function MeetTheBrothers() {
     return (
-        <section id="meet-brothers" className="section" style={{ background: 'linear-gradient(to bottom, #D4906A 0%, #C07848 100%)' }}>
+        <section id="meet-brothers" className="section" style={{ background: 'linear-gradient(to bottom, #D4906A 0%, #C07848 100%)', paddingBottom: '2rem' }}>
             <div className="container">
                 <div className="text-center">
                     <h2 className="heading-lg" style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '3rem', color: '#FDE047', marginBottom: '3rem' }}>
