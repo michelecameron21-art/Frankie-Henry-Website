@@ -1549,6 +1549,54 @@ button {
     border: 2px solid rgba(255, 255, 255, 0.7) !important;
 }
 
+/* MailerLite form overrides — match site brand */
+#mlb2-38818852.ml-form-embedContainer .ml-form-embedWrapper {
+    background-color: transparent !important;
+    border-radius: 1rem !important;
+}
+#mlb2-38818852.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4 {
+    display: none !important;
+}
+#mlb2-38818852.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p {
+    display: none !important;
+}
+#mlb2-38818852.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+    border-radius: 9999px !important;
+    border: 2px solid #e2e8f0 !important;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 1rem !important;
+    padding: 0.75rem 1.25rem !important;
+    text-align: center !important;
+}
+#mlb2-38818852.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.primary {
+    background-color: #E11D48 !important;
+    border-radius: 9999px !important;
+    font-family: 'Fredoka', sans-serif !important;
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    padding: 0.75rem 2rem !important;
+    box-shadow: 0 4px 0 #9f0a25 !important;
+    letter-spacing: 0.03em !important;
+}
+#mlb2-38818852.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.primary:hover {
+    background-color: #be123c !important;
+}
+#mlb2-38818852.ml-form-embedContainer {
+    width: 100% !important;
+}
+#mlb2-38818852.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
+    max-width: 100% !important;
+}
+#mlb2-38818852.ml-form-embedContainer .ml-form-successContent h4 {
+    font-family: 'Fredoka', sans-serif !important;
+    color: #1e293b !important;
+    display: block !important;
+}
+#mlb2-38818852.ml-form-embedContainer .ml-form-successContent p {
+    display: block !important;
+    font-family: 'Nunito', sans-serif !important;
+}
+
 /* Soften all general .card boxes so they work on any section colour */
 .card {
     border: 2px solid rgba(255, 255, 255, 0.6) !important;
