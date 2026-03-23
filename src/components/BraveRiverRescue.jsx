@@ -84,16 +84,16 @@ export default function BraveRiverRescue() {
                             Small paws. Brave hearts. Big adventures.
                         </p>
 
-                        <p style={{ fontSize: '1.05rem', color: '#1e293b', lineHeight: '1.85', marginBottom: '1rem' }}>
+                        <p style={{ fontSize: '1.2rem', color: '#1e293b', lineHeight: '1.9', marginBottom: '1rem' }}>
                             When Frankie and Henry, two Yorkshire Terrier brothers, discover a secret tunnel, they burst out into the Wild Place. But there's little time to explore.
                         </p>
-                        <p style={{ fontSize: '1.05rem', color: '#1e293b', lineHeight: '1.85', marginBottom: '1rem' }}>
+                        <p style={{ fontSize: '1.2rem', color: '#1e293b', lineHeight: '1.9', marginBottom: '1rem' }}>
                             A jackal cub is stranded, a giant lizard has woken up, and Henry's tummy is already rumbling.
                         </p>
-                        <p style={{ fontSize: '1.05rem', color: '#1e293b', lineHeight: '1.85', marginBottom: '1rem', fontWeight: '700' }}>
+                        <p style={{ fontSize: '1.2rem', color: '#1e293b', lineHeight: '1.9', marginBottom: '1rem', fontWeight: '700' }}>
                             Can two Yorkies, and new friends, pull off the wildest rescue of their lives?
                         </p>
-                        <p style={{ fontSize: '1.05rem', color: '#1e293b', lineHeight: '1.85', marginBottom: '1.75rem' }}>
+                        <p style={{ fontSize: '1.2rem', color: '#1e293b', lineHeight: '1.9', marginBottom: '1.75rem' }}>
                             A thrilling picture book adventure for children ages 4–8, full of courage, laughter, and the power of teamwork. Set against the breathtaking landscapes of an African savannah — the story that proves size has nothing to do with bravery.
                         </p>
 
