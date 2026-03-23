@@ -437,6 +437,10 @@ button {
     background-color: #0D9488;
 }
 
+.type-rose {
+    background-color: #E11D48;
+}
+
 .extra-title {
     font-family: var(--font-heading);
     font-size: 1.4rem;
@@ -1581,18 +1585,19 @@ button {
     text-align: center !important;
 }
 #mlb2-38818852.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.primary {
-    background-color: #E11D48 !important;
+    background-color: #FFD200 !important;
+    color: #78350F !important;
     border-radius: 9999px !important;
     font-family: 'Fredoka', sans-serif !important;
     font-size: 1.1rem !important;
     font-weight: 700 !important;
     padding: 0.75rem 2rem !important;
-    box-shadow: 0 4px 0 #9f0a25 !important;
+    box-shadow: 0 4px 0 #B8960A !important;
     letter-spacing: 0.03em !important;
     width: 100% !important;
 }
 #mlb2-38818852.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.primary:hover {
-    background-color: #be123c !important;
+    background-color: #E6BD00 !important;
 }
 #mlb2-38818852.ml-form-embedContainer {
     width: 100% !important;

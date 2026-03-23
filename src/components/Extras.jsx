@@ -11,7 +11,7 @@ const extras = [
         color: 'bg-yellow-100',
         typeColor: 'bg-yellow-600',
         btnColor: 'bg-yellow-400',
-        downloads: [{ label: 'Download PDF', file: '/assets/colouring-pages.pdf' }]
+        downloads: [{ label: 'Free to Download', file: '/assets/colouring-pages.pdf' }]
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const extras = [
         typeColor: 'bg-blue-600',
         btnColor: 'bg-yellow-400',
         downloads: [
-            { label: 'Download Activity Sheet', file: '/assets/spot-the-difference.pdf' },
+            { label: 'Free to Download', file: '/assets/spot-the-difference.pdf' },
             { label: 'Download Answers', file: '/assets/spot-the-difference-answers.pdf' }
         ]
     },
@@ -33,13 +33,13 @@ const extras = [
         title: 'Sing Along',
         type: 'Sing along',
         description: 'Sing along to the Frankie and Henry song. "Big adventures - watch us grow!"',
-        icon: <Music size={32} className="text-teal-600" />,
+        icon: <Music size={32} className="text-rose-600" />,
         badge: null,
-        color: 'bg-teal-100',
-        typeColor: 'bg-teal-600',
+        color: 'bg-rose-100',
+        typeColor: 'bg-rose-600',
         btnColor: 'bg-yellow-400',
         downloads: [
-            { label: 'Download Song', file: '/assets/frankie-and-henry-song.mp3' },
+            { label: 'Free to Download', file: '/assets/frankie-and-henry-song.mp3' },
             { label: 'Download Lyrics', file: '/assets/sing-along.pdf' }
         ]
     }
@@ -86,7 +86,14 @@ function ExtraCard({ item }) {
                 {item.downloads && item.downloads.length > 0 ? (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginTop: 'auto' }}>
                         {item.downloads.map((d, i) => (
-                            <a key={i} href={d.file} download className="btn btn-primary w-full" style={{ textAlign: 'center', textDecoration: 'none' }}>
+                            <a key={i} href={d.file} download className="btn w-full" style={{
+                                textAlign: 'center', textDecoration: 'none',
+                                background: '#FFD200', color: '#78350F',
+                                fontFamily: 'Fredoka, sans-serif',
+                                fontWeight: '700', fontSize: '1rem',
+                                borderRadius: '9999px',
+                                boxShadow: '0 4px 0 #B8960A',
+                            }}>
                                 {d.label}
                             </a>
                         ))}
@@ -104,13 +111,13 @@ function ExtraCard({ item }) {
 function getBgColor(id) {
     if (id === 1) return '#FFF0D0';
     if (id === 2) return '#E8F5D8';
-    if (id === 3) return '#D0EAC8';
+    if (id === 3) return '#FFE4E6';
     return '#E8F5D8';
 }
 
 function getTypeColorClass(id) {
     if (id === 1) return 'type-yellow';
     if (id === 2) return 'type-blue';
-    if (id === 3) return 'type-teal';
+    if (id === 3) return 'type-rose';
     return '';
 }
