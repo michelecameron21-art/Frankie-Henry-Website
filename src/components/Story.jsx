@@ -41,14 +41,15 @@ export default function Story() {
                         <div style={{
                             flex: '1', minWidth: '280px',
                             padding: '2rem 2.5rem 2.5rem',
-                            textAlign: 'center'
+                            textAlign: 'center',
+                            display: 'flex', flexDirection: 'column', alignItems: 'center',
                         }}>
                             <div style={{ marginBottom: '0.75rem', color: '#C07848' }}><Film size={36} strokeWidth={1.5} /></div>
                             <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Behind the scenes</h3>
                             <p style={{ color: '#475569', fontSize: '1.2rem', lineHeight: '1.9', marginBottom: '1.75rem' }}>
                                 Follow us on Instagram and TikTok for behind-the-scenes videos, clips of the real Frankie & Henry, and sneak peeks at what's coming next.
                             </p>
-                            <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                            <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: 'auto' }}>
                                 <a
                                     href="https://www.instagram.com/frankieandhenrybooks?igsh=dDFtM3duc3BydnFt"
                                     target="_blank"
@@ -95,7 +96,8 @@ export default function Story() {
                         <div style={{
                             flex: '1', minWidth: '280px',
                             padding: '2rem 2.5rem 2.5rem',
-                            textAlign: 'center'
+                            textAlign: 'center',
+                            display: 'flex', flexDirection: 'column', alignItems: 'center',
                         }}>
                             <div style={{ marginBottom: '0.75rem', color: '#C07848' }}><Mail size={36} strokeWidth={1.5} /></div>
                             <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Stay Close to Frankie &amp; Henry!</h3>

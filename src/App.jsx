@@ -13,30 +13,29 @@ import CookieBanner from './components/CookieBanner'
 
 const NAV_ITEMS = [
     {
-        label: 'The Book',
+        label: 'About',
         links: [
-            { label: 'Meet the Brothers', href: '#meet-brothers' },
-            { label: 'Book Gallery', href: '#gallery' },
+            { label: 'Meet the Characters', href: '#characters' },
+            { label: 'Meet the Real Frankie & Henry', href: '#meet-brothers' },
+            { label: 'The Brave River Rescue', href: '#gallery' },
             { label: 'Buy on Amazon', href: 'https://www.amazon.co.uk/dp/B0DYTWD2ZB', external: true },
         ],
     },
     {
-        label: 'Characters',
-        links: [
-            { label: 'Frankie & Henry', href: '#characters' },
-            { label: 'Lwazi the Crane', href: '#characters' },
-            { label: 'Clawdius the Cat', href: '#characters' },
-            { label: 'The Wild Place Cast', href: '#characters' },
-        ],
-    },
-    {
-        label: 'Freebies',
+        label: 'Play',
         links: [
             { label: 'Rescue Run Game', href: '#game' },
             { label: 'Colouring Pages', href: '#extras' },
             { label: 'Spot the Difference', href: '#extras' },
             { label: 'Sing Along', href: '#extras' },
-            { label: 'Join the Newsletter', href: '#story' },
+        ],
+    },
+    {
+        label: 'Follow',
+        links: [
+            { label: 'Newsletter', href: '#newsletter' },
+            { label: 'Instagram', href: 'https://www.instagram.com/frankieandhenrybooks', external: true },
+            { label: 'TikTok', href: 'https://www.tiktok.com/@frankieandhenrybooks', external: true },
         ],
     },
 ];
@@ -59,26 +58,31 @@ function DropdownMenu({ item, closeAll }) {
                 onClick={() => setOpen(o => !o)}
                 style={{
                     background: 'none', border: 'none', cursor: 'pointer',
-                    color: 'white', fontWeight: 700, fontSize: '1rem',
-                    fontFamily: "'Fredoka', sans-serif", letterSpacing: '0.02em',
-                    textShadow: '0 2px 6px rgba(0,0,0,0.55)',
+                    fontWeight: 700, fontSize: 'clamp(1rem, 1.4vw, 1.3rem)',
+                    fontFamily: "'Alfa Slab One', serif", letterSpacing: '0.02em',
+                    textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
                     display: 'flex', alignItems: 'center', gap: '0.3rem',
-                    padding: '0.4rem 0.2rem', whiteSpace: 'nowrap',
+                    padding: '0.4rem 0.5rem', whiteSpace: 'nowrap',
                 }}
             >
-                {item.label}
-                <ChevronDown size={16} style={{ transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'rotate(0deg)' }} />
+                <span style={{
+                    color: '#F0A820',
+                    WebkitTextFillColor: '#F0A820',
+                }}>{item.label}</span>
+                <ChevronDown size={16} style={{ transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'rotate(0deg)', color: '#F0A820' }} />
             </button>
             {open && (
                 <div style={{
-                    position: 'absolute', top: 'calc(100% + 10px)', right: 0,
-                    background: 'rgba(255,251,240,0.97)',
+                    position: 'absolute', top: 'calc(100% + 8px)', left: '50%',
+                    transform: 'translateX(-50%)',
+                    background: 'rgba(180, 120, 0, 0.85)',
                     backdropFilter: 'blur(12px)',
                     borderRadius: '1rem',
-                    boxShadow: '0 12px 40px rgba(0,0,0,0.18), 0 0 0 1px rgba(192,120,72,0.12)',
-                    minWidth: '210px',
+                    boxShadow: '0 12px 36px rgba(0,0,0,0.3)',
+                    minWidth: '230px',
                     overflow: 'hidden',
                     zIndex: 100,
+                    border: '1px solid rgba(255,220,0,0.3)',
                 }}>
                     {item.links.map(link => (
                         <a
@@ -90,14 +94,14 @@ function DropdownMenu({ item, closeAll }) {
                             style={{
                                 display: 'block',
                                 padding: '0.75rem 1.25rem',
-                                color: '#7C3D0A',
-                                fontFamily: "'Nunito', sans-serif",
-                                fontWeight: 700, fontSize: '0.95rem',
+                                color: 'rgba(255,255,255,0.9)',
+                                fontFamily: "'Fredoka', sans-serif",
+                                fontWeight: 600, fontSize: '0.95rem',
                                 textDecoration: 'none',
-                                borderBottom: '1px solid rgba(192,120,72,0.1)',
+                                borderBottom: '1px solid rgba(255,255,255,0.15)',
                                 transition: 'background 0.15s',
                             }}
-                            onMouseEnter={e => e.currentTarget.style.background = 'rgba(192,120,72,0.1)'}
+                            onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'}
                             onMouseLeave={e => e.currentTarget.style.background = 'transparent'}
                         >
                             {link.label}
@@ -183,62 +187,70 @@ function App() {
                     </p>
                 </div>
 
-                {/* Book mockup — floating left */}
-                <img
-                    src="/assets/book-mockup.png"
-                    alt="Frankie and Henry book"
-                    style={{
-                        position: 'absolute',
-                        bottom: '8%',
-                        left: '5%',
-                        height: '55%',
-                        width: 'auto',
-                        zIndex: 20,
-                        filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.45))',
-                        transform: 'rotate(-4deg)',
-                        transformOrigin: 'bottom left',
-                    }}
-                />
+                {/* Book mockup + Buy Now — floating left */}
+                <div style={{
+                    position: 'absolute',
+                    bottom: '4%',
+                    left: '5%',
+                    zIndex: 20,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                }}>
+                    <img
+                        src="/assets/book-mockup.png"
+                        alt="Frankie and Henry book"
+                        style={{
+                            height: '50vh',
+                            maxHeight: '450px',
+                            width: 'auto',
+                            filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.45))',
+                            transform: 'rotate(-4deg)',
+                        }}
+                    />
+                    <a
+                        href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            marginTop: '0.75rem',
+                            background: '#FFD200',
+                            color: '#78350F',
+                            fontFamily: "'Fredoka', sans-serif",
+                            fontWeight: 700,
+                            fontSize: '1.4rem',
+                            padding: '0.75rem 3rem',
+                            borderRadius: '9999px',
+                            textDecoration: 'none',
+                            boxShadow: '0 6px 0 #B8960A',
+                            display: 'inline-block',
+                            transition: 'transform 0.15s',
+                        }}
+                        onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+                        onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
+                    >
+                        Buy Now
+                    </a>
+                </div>
 
-                {/* Nav floats over the image */}
-                <nav style={{ position: 'absolute', top: 0, left: 0, right: 0, zIndex: 50, padding: '1.25rem 2rem' }}>
-                    <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                        <div>
-                            <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '500px', width: 'auto', marginTop: '-130px' }} />
-                        </div>
+                {/* Logo — top left */}
+                <div style={{ position: 'absolute', top: 0, left: '2rem', zIndex: 50 }}>
+                    <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '500px', width: 'auto', marginTop: '-130px' }} />
+                </div>
+
+                {/* Nav — positioned between bird and boys */}
+                <nav style={{ position: 'absolute', top: '22%', left: 0, right: 0, zIndex: 50, padding: '0 2rem' }}>
+                    <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
 
                         {/* Desktop nav */}
-                        <div className="hidden md:flex" style={{ alignItems: 'center', gap: '0.25rem' }}>
+                        <div className="hidden md:flex" style={{ alignItems: 'center', gap: '0.5rem' }}>
                             {NAV_ITEMS.map(item => (
                                 <DropdownMenu key={item.label} item={item} />
                             ))}
-                            <a
-                                href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{
-                                    marginLeft: '1rem',
-                                    background: '#FFD200',
-                                    color: '#78350F',
-                                    fontFamily: "'Fredoka', sans-serif",
-                                    fontWeight: 700,
-                                    fontSize: '1rem',
-                                    padding: '0.5rem 1.4rem',
-                                    borderRadius: '9999px',
-                                    textDecoration: 'none',
-                                    boxShadow: '0 4px 0 #B8960A',
-                                    display: 'inline-block',
-                                    transition: 'transform 0.15s',
-                                }}
-                                onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
-                                onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
-                            >
-                                Buy Now
-                            </a>
                         </div>
 
                         {/* Mobile hamburger */}
-                        <button className="md:hidden" style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer' }} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                        <button className="md:hidden" style={{ background: 'none', border: 'none', color: '#F0A820', cursor: 'pointer', filter: 'drop-shadow(1px 1px 3px rgba(0,0,0,0.5))' }} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
                         </button>
                     </div>
