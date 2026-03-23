@@ -5,7 +5,7 @@ export default function BraveRiverRescue() {
     const galleryImages = [
         { src: '/assets/scene-hole.jpg', alt: 'The secret tunnel', objectPosition: 'center 20%' },
         { src: '/assets/scene-cub.jpg', alt: 'The jackal cub jumping' },
-        { src: '/assets/scene-clawdius.jpg', alt: 'Clawdius on the branch', objectPosition: 'center 30%' },
+        { src: '/assets/scene-mom.jpg', alt: 'Jackal Mom by the river' },
         { src: '/assets/scene-lizard-spot.jpg', alt: 'Frankie spots the lizard' },
         { src: '/assets/scene-lizard-awake.jpg', alt: 'The lizard wakes up' },
         { src: '/assets/scene-rumble.jpg', alt: 'The rumble' },
@@ -137,9 +137,9 @@ export default function BraveRiverRescue() {
                     </div>
                     <div style={{
                         display: 'grid',
-                        gridTemplateColumns: 'repeat(4, 1fr)',
-                        gap: '1.25rem',
-                        maxWidth: '1050px',
+                        gridTemplateColumns: 'repeat(2, 1fr)',
+                        gap: '1.5rem',
+                        maxWidth: '1100px',
                         margin: '0 auto',
                     }}>
                         {galleryImages.map((img, i) => (
@@ -148,7 +148,7 @@ export default function BraveRiverRescue() {
                                 style={{
                                     borderRadius: '1rem',
                                     overflow: 'hidden',
-                                    aspectRatio: '4/3',
+                                    aspectRatio: '16/10',
                                     boxShadow: '0 8px 28px rgba(0,0,0,0.22)',
                                     border: '4px solid white',
                                     transform: `rotate(${rotations[i]})`,
