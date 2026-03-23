@@ -10,7 +10,7 @@ export default function MeetTheBrothers() {
                     {/* Real photo */}
                     <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                         <div style={{
-                            width: '420px', height: '320px', borderRadius: '2rem', overflow: 'hidden',
+                            width: '620px', height: '460px', borderRadius: '2rem', overflow: 'hidden',
                             margin: '0 auto 1.25rem', border: '6px solid rgba(255,255,255,0.6)',
                             boxShadow: '0 12px 32px rgba(0,0,0,0.25)'
                         }}>
