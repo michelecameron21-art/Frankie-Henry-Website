@@ -30,7 +30,7 @@ export default function Story() {
                 }}>
                     {/* Header */}
                     <div style={{ textAlign: 'center', padding: '1.25rem 2rem 0.75rem' }}>
-                        <h2 className="heading-lg" style={{ marginBottom: '0.25rem', fontSize: '2rem', color: '#1e293b' }}>Never miss an update!</h2>
+                        <h2 className="heading-lg" style={{ marginBottom: '0.25rem', fontSize: '2rem', color: '#1e293b' }}>Never Miss an Update!</h2>
                         <p style={{ color: '#475569', fontSize: '1.05rem' }}>Follow along or join the pack.</p>
                     </div>
 
