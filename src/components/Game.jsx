@@ -575,7 +575,7 @@ export default function Game() {
 
                     {/* Character Select */}
                     {gameState === 'SELECT' && (
-                        <div style={{ ...overlayStyle, background: 'rgba(15, 23, 42, 0.8)', backdropFilter: 'blur(4px)' }}>
+                        <div style={{ ...overlayStyle, background: 'rgba(13, 148, 136, 0.92)', backdropFilter: 'blur(4px)' }}>
                             <h3 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#FBBF24', marginBottom: '2rem', textShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>Pick Your Hero!</h3>
                             <div style={{ display: 'flex', gap: '3rem' }}>
                                 <button
