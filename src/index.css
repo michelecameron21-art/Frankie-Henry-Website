@@ -1602,7 +1602,7 @@ button {
 #mlb2-38818852.ml-form-embedContainer {
     width: 100% !important;
 }
-#mlb2-38818852 .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form.ml-block-form {
+#mlb2-38818852.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form.ml-block-form {
     max-width: 280px !important;
     margin: 0 auto !important;
 }
