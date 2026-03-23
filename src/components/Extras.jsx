@@ -24,8 +24,8 @@ const extras = [
         typeColor: 'bg-blue-600',
         btnColor: 'bg-yellow-400',
         downloads: [
-            { label: 'Free to Download', file: '/assets/spot-the-difference.pdf' },
-            { label: 'Download Answers', file: '/assets/spot-the-difference-answers.pdf' }
+            { label: 'Free to Download', file: '/assets/spot-the-difference.jpg' },
+            { label: 'Download Answers', file: '/assets/spot-the-difference-answers.jpg' }
         ]
     },
     {
