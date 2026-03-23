@@ -336,15 +336,15 @@ button {
 .hero-name {
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--color-tag-blue);
-    /* Default to blue, or use accent */
+    font-family: 'Fredoka', sans-serif;
+    color: #78350F;
     margin-bottom: 0.25rem;
 }
 
 .hero-tag {
     display: inline-block;
-    background: var(--color-blue-light);
-    color: var(--color-tag-blue);
+    background: rgba(120, 53, 15, 0.1);
+    color: #78350F;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.875rem;
@@ -845,10 +845,10 @@ button {
 }
 
 .footer-link {
-    color: #FFD200;
+    color: #78350F;
     text-decoration: none;
     transition: 0.2s;
-    opacity: 0.75;
+    opacity: 0.7;
 }
 
 .footer-link:hover {
@@ -1540,13 +1540,12 @@ button {
     background: linear-gradient(to bottom, #C07848 0%, #D4906A 50%, #B86040 100%) !important;
 }
 
-/* Story Section — warm terracotta fading into dark green footer */
+/* Story Section — warm terracotta all the way through */
 .story-section {
     background: linear-gradient(to bottom,
         #B86040 0%,
-        #C07848 40%,
-        #4A6B35 80%,
-        #2D4A20 100%
+        #C07848 50%,
+        #D4906A 100%
     );
 }
 
