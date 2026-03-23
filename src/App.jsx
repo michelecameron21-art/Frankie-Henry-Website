@@ -125,7 +125,7 @@ function App() {
                 {/* Hero image — edge to edge */}
                 <img
                     src="/assets/hero-bros.jpg"
-                    alt="Frankie and Henry"
+                    alt="Frankie and Henry, two Yorkshire Terriers, on a magical safari adventure in Africa"
                     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center' }}
                 />
 
@@ -133,7 +133,7 @@ function App() {
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 25%, transparent 88%, #C07848 100%)' }} />
 
                 {/* Tagline — matching the book cover title treatment exactly */}
-                <div style={{
+                <h1 style={{
                     position: 'absolute',
                     bottom: '22%',
                     right: '2%',
@@ -141,14 +141,15 @@ function App() {
                     transform: 'rotate(2deg)',
                     textAlign: 'center',
                     display: 'inline-block',
+                    margin: 0,
                 }}>
                     {/* Layer 1 — dark outline + 3D extrusion shadow (sits underneath) */}
-                    <p style={{
+                    <span style={{
+                        display: 'block',
                         fontFamily: "'Alfa Slab One', serif",
                         fontSize: 'clamp(1.5rem, 2.8vw, 2.4rem)',
                         lineHeight: 1.3,
                         letterSpacing: '0.02em',
-                        margin: 0,
                         color: '#C87010',
                         WebkitTextStroke: '7px #1E0A00',
                         textShadow: `
@@ -162,19 +163,19 @@ function App() {
                         Small paws.<br />
                         Brave hearts.<br />
                         Big adventures.
-                    </p>
+                    </span>
 
                     {/* Layer 2 — gradient gold fill on top */}
-                    <p style={{
+                    <span aria-hidden="true" style={{
                         position: 'absolute',
                         top: 0,
                         left: 0,
                         right: 0,
+                        display: 'block',
                         fontFamily: "'Alfa Slab One', serif",
                         fontSize: 'clamp(1.5rem, 2.8vw, 2.4rem)',
                         lineHeight: 1.3,
                         letterSpacing: '0.02em',
-                        margin: 0,
                         background: 'linear-gradient(to bottom, #F8D460 0%, #F0A820 40%, #D47810 75%, #B86008 100%)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent',
@@ -184,8 +185,8 @@ function App() {
                         Small paws.<br />
                         Brave hearts.<br />
                         Big adventures.
-                    </p>
-                </div>
+                    </span>
+                </h1>
 
                 {/* Book mockup + Buy Now — floating left */}
                 <div style={{
@@ -199,7 +200,7 @@ function App() {
                 }}>
                     <img
                         src="/assets/book-mockup.png"
-                        alt="Frankie and Henry book"
+                        alt="Frankie and Henry: The Brave River Rescue — children's picture book"
                         style={{
                             height: '50vh',
                             maxHeight: '450px',
