@@ -14,7 +14,8 @@ const BASE_SPEED_L2 = 8; // Faster start for Level 2
 const SPEED_INC = 0.5;
 const WIN_SCORE_L1 = 10;
 const WIN_SCORE_L2 = 15;
-const GAME_WIDTH = 900;
+const GAME_WIDTH_DESKTOP = 900;
+const PLAYER_LEFT_DESKTOP = 80;
 
 // --- AUDIO CONTROLLER ---
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -87,6 +88,27 @@ export default function Game() {
     const lastSpawnTimeRef = useRef(0);
     const lastDustTimeRef = useRef(0);
     const biscuitStreakRef = useRef(0);
+    const containerRef = useRef(null);
+    const [containerWidth, setContainerWidth] = useState(GAME_WIDTH_DESKTOP);
+
+    // Measure container width for responsive game scaling
+    useEffect(() => {
+        const measure = () => {
+            if (containerRef.current) {
+                setContainerWidth(containerRef.current.offsetWidth);
+            }
+        };
+        measure();
+        window.addEventListener('resize', measure);
+        return () => window.removeEventListener('resize', measure);
+    }, []);
+
+    // Dynamic values based on container size
+    const scale = containerWidth / GAME_WIDTH_DESKTOP;
+    const GAME_WIDTH = containerWidth;
+    const PLAYER_LEFT = Math.max(40, PLAYER_LEFT_DESKTOP * scale);
+    const PLAYER_SIZE = Math.max(40, 56 * scale);
+    const isMobile = containerWidth < 600;
 
     // Music
     const musicRef = useRef(null);
@@ -154,7 +176,7 @@ export default function Game() {
 
     const spawnDust = () => {
         const id = Math.random();
-        particlesRef.current.push({ id, x: 100, y: 0, life: 1.0 });
+        particlesRef.current.push({ id, x: PLAYER_LEFT + 20, y: 0, life: 1.0 });
     };
 
     const spawnPopup = (text, x, y) => {
@@ -167,7 +189,7 @@ export default function Game() {
 
         // 1. Difficulty Scaling
         const base = level === 1 ? BASE_SPEED_L1 : BASE_SPEED_L2;
-        const currentSpeed = base + (Math.floor(scoreRef.current / 3) * SPEED_INC);
+        const currentSpeed = (base + (Math.floor(scoreRef.current / 3) * SPEED_INC)) * scale;
         setGameSpeed(currentSpeed);
 
         // 2. Physics
@@ -213,13 +235,14 @@ export default function Game() {
                 biscuitStreakRef.current = 0; // Reset streak on obstacle
             }
 
+            const objScale = Math.max(0.6, scale);
             const newObj = {
                 id: Math.random(),
                 type,
-                x: GAME_WIDTH + 100,
-                y: spawnY,
-                w: type === 'mound' ? 60 : 48,
-                h: type === 'mound' ? 100 : 48, // Mound is tall!
+                x: GAME_WIDTH + 50,
+                y: spawnY * objScale,
+                w: (type === 'mound' ? 60 : 48) * objScale,
+                h: (type === 'mound' ? 100 : 48) * objScale,
                 rotation: type === 'rock' ? Math.random() * 360 : 0
             };
             gameObjectsRef.current.push(newObj);
@@ -228,8 +251,8 @@ export default function Game() {
 
         // 4. Update Entities
         const playerHitbox = {
-            left: 80, right: 80 + 56,
-            top: playerRef.current.y - 56, bottom: playerRef.current.y
+            left: PLAYER_LEFT, right: PLAYER_LEFT + PLAYER_SIZE,
+            top: playerRef.current.y - PLAYER_SIZE, bottom: playerRef.current.y
         };
 
         const activeObjects = [];
@@ -408,24 +431,24 @@ export default function Game() {
                     <h2 className="heading-lg" style={{ marginBottom: '0.5rem', color: isNight ? '#FDE047' : '#fff' }}>
                         {isNight ? "The Midnight Dash!" : "Rescue the Jackal Cub!"}
                     </h2>
-                    <p className="subheading" style={{ color: isNight ? '#cbd5e1' : 'rgba(255,255,255,0.9)', maxWidth: 'none', whiteSpace: 'nowrap', marginBottom: '0.5rem' }}>
+                    <p className="subheading" style={{ color: isNight ? '#cbd5e1' : 'rgba(255,255,255,0.9)', maxWidth: 'none', whiteSpace: isMobile ? 'normal' : 'nowrap', marginBottom: '0.5rem', fontSize: isMobile ? '0.9rem' : undefined }}>
                         {isNight ? "Race home under the stars! Watch out for Termite Mounds!" : "Help Frankie and Henry rescue the Jackal Cub. Jump over rocks and collect snacks!"}
                     </p>
 
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', marginTop: '0.5rem', flexWrap: 'wrap', fontSize: '0.9rem' }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', gap: isMobile ? '1rem' : '2rem', marginTop: '0.5rem', flexWrap: 'wrap', fontSize: isMobile ? '0.8rem' : '0.9rem' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: isNight ? '#e2e8f0' : 'rgba(255,255,255,0.9)' }}>
-                            <span style={{ fontWeight: 'bold', background: isNight ? '#312e81' : 'rgba(255,255,255,0.25)', color: isNight ? '#fde047' : '#fff', padding: '0.25rem 0.75rem', borderRadius: '9999px', border: `1px solid ${isNight ? '#4f46e5' : 'rgba(255,255,255,0.5)'}` }}>Tap Space</span>
+                            <span style={{ fontWeight: 'bold', background: isNight ? '#312e81' : 'rgba(255,255,255,0.25)', color: isNight ? '#fde047' : '#fff', padding: '0.25rem 0.75rem', borderRadius: '9999px', border: `1px solid ${isNight ? '#4f46e5' : 'rgba(255,255,255,0.5)'}` }}>{isMobile ? 'Tap' : 'Tap Space'}</span>
                             <span>to Jump</span>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: isNight ? '#e2e8f0' : 'rgba(255,255,255,0.9)' }}>
-                            <span style={{ fontWeight: 'bold', background: isNight ? '#4338ca' : 'rgba(255,255,255,0.25)', color: isNight ? '#fff' : '#fff', padding: '0.25rem 0.75rem', borderRadius: '9999px', border: `1px solid ${isNight ? '#6366f1' : 'rgba(255,255,255,0.5)'}` }}>Tap Twice</span>
+                            <span style={{ fontWeight: 'bold', background: isNight ? '#4338ca' : 'rgba(255,255,255,0.25)', color: isNight ? '#fff' : '#fff', padding: '0.25rem 0.75rem', borderRadius: '9999px', border: `1px solid ${isNight ? '#6366f1' : 'rgba(255,255,255,0.5)'}` }}>{isMobile ? 'Tap Twice' : 'Tap Twice'}</span>
                             <span>to Double Jump!</span>
                         </div>
                     </div>
                 </div>
 
                 {/* GAME CONTAINER */}
-                <div style={containerStyle} onClick={jump}>
+                <div ref={containerRef} style={containerStyle} onClick={jump}>
 
                     {/* --- BACKGROUND --- */}
                     {isNight ? (
@@ -495,10 +518,10 @@ export default function Game() {
                     {/* Particles */}
                     {particles.map(p => (
                         <div key={p.id} style={{
-                            position: 'absolute', left: '5rem', bottom: '60px',
+                            position: 'absolute', left: `${PLAYER_LEFT}px`, bottom: '60px',
                             width: '12px', height: '12px', borderRadius: '50%',
                             background: '#FDE68A', opacity: p.life,
-                            transform: `translate(${-(100 - p.x)}px, 0) scale(${p.life})`,
+                            transform: `translate(${-(PLAYER_LEFT + 20 - p.x)}px, 0) scale(${p.life})`,
                             zIndex: 25
                         }}></div>
                     ))}
@@ -507,12 +530,12 @@ export default function Game() {
                     {gameState !== 'SELECT' && (
                         <div
                             style={{
-                                position: 'absolute', left: '5rem', bottom: '60px', zIndex: 30,
+                                position: 'absolute', left: `${PLAYER_LEFT}px`, bottom: '60px', zIndex: 30,
                                 transform: `translateY(${frankieY}px) rotate(${isJumping ? -15 : 0}deg)`,
                                 transition: 'transform 0.075s'
                             }}
                         >
-                            <div className={!isJumping ? 'animate-bounce-run' : ''} style={{ width: '3.5rem', height: '3.5rem', background: 'white', borderRadius: '0.75rem', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)', border: '2px solid #0F172A', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.875rem', overflow: 'hidden' }}>
+                            <div className={!isJumping ? 'animate-bounce-run' : ''} style={{ width: `${PLAYER_SIZE}px`, height: `${PLAYER_SIZE}px`, background: 'white', borderRadius: '0.75rem', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)', border: '2px solid #0F172A', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.875rem', overflow: 'hidden' }}>
                                 {ASSETS[character].image ? (
                                     <img src={ASSETS[character].image} alt={ASSETS[character].name} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: ASSETS[character].transform }} />
                                 ) : (
@@ -554,7 +577,7 @@ export default function Game() {
                     {/* Popups */}
                     {popups.map(p => (
                         <div key={p.id} style={{
-                            position: 'absolute', left: '5rem', bottom: `calc(60px + ${60 + (100 - p.x)}px)`, zIndex: 45,
+                            position: 'absolute', left: `${PLAYER_LEFT}px`, bottom: `calc(60px + ${60 + (PLAYER_LEFT + 20 - p.x)}px)`, zIndex: 45,
                             fontSize: '1.5rem', fontWeight: 'bold', color: '#F59E0B', opacity: p.life,
                             transform: `translateY(${-100 + (p.life * 100)}px)`
                         }}>
@@ -576,26 +599,26 @@ export default function Game() {
                     {/* Character Select */}
                     {gameState === 'SELECT' && (
                         <div style={{ ...overlayStyle, background: 'rgba(13, 148, 136, 0.92)', backdropFilter: 'blur(4px)' }}>
-                            <h3 style={{ fontSize: '2.25rem', fontWeight: 900, color: '#FBBF24', marginBottom: '2rem', textShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>Pick Your Hero!</h3>
-                            <div style={{ display: 'flex', gap: '3rem' }}>
+                            <h3 style={{ fontSize: isMobile ? '1.5rem' : '2.25rem', fontWeight: 900, color: '#FBBF24', marginBottom: isMobile ? '1rem' : '2rem', textShadow: '0 4px 6px rgba(0,0,0,0.3)' }}>Pick Your Hero!</h3>
+                            <div style={{ display: 'flex', gap: isMobile ? '1.5rem' : '3rem' }}>
                                 <button
                                     onClick={(e) => { e.stopPropagation(); setCharacter('frankie'); startGame(1); }}
-                                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', background: 'none', border: 'none', cursor: 'pointer', transition: 'transform 0.2s' }}
+                                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: isMobile ? '0.5rem' : '1rem', background: 'none', border: 'none', cursor: 'pointer', transition: 'transform 0.2s' }}
                                     className="hover:scale-110"
                                 >
-                                    <div style={{ width: '8rem', height: '8rem', background: 'white', borderRadius: '50%', border: '8px solid #EF4444', overflow: 'hidden', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>
+                                    <div style={{ width: isMobile ? '5rem' : '8rem', height: isMobile ? '5rem' : '8rem', background: 'white', borderRadius: '50%', border: `${isMobile ? '5' : '8'}px solid #EF4444`, overflow: 'hidden', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>
                                         <img src="/assets/frankie-closeup.png" alt="Frankie" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(0.9)', transformOrigin: 'center center' }} />
                                     </div>
-                                    <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>Frankie</span>
+                                    <span style={{ fontSize: isMobile ? '1.1rem' : '1.5rem', fontWeight: 'bold', color: 'white' }}>Frankie</span>
                                 </button>
                                 <button
                                     onClick={(e) => { e.stopPropagation(); setCharacter('henry'); startGame(1); }}
-                                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem', background: 'none', border: 'none', cursor: 'pointer', transition: 'transform 0.2s' }}
+                                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: isMobile ? '0.5rem' : '1rem', background: 'none', border: 'none', cursor: 'pointer', transition: 'transform 0.2s' }}
                                 >
-                                    <div style={{ width: '8rem', height: '8rem', background: 'white', borderRadius: '50%', border: '8px solid #3B82F6', overflow: 'hidden', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>
+                                    <div style={{ width: isMobile ? '5rem' : '8rem', height: isMobile ? '5rem' : '8rem', background: 'white', borderRadius: '50%', border: `${isMobile ? '5' : '8'}px solid #3B82F6`, overflow: 'hidden', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>
                                         <img src="/assets/henry-closeup.png" alt="Henry" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                     </div>
-                                    <span style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'white' }}>Henry</span>
+                                    <span style={{ fontSize: isMobile ? '1.1rem' : '1.5rem', fontWeight: 'bold', color: 'white' }}>Henry</span>
                                 </button>
                             </div>
                         </div>
@@ -604,12 +627,12 @@ export default function Game() {
                     {/* Level 1 Win */}
                     {gameState === 'WON_L1' && (
                         <div style={{ ...overlayStyle, background: 'rgba(34, 197, 94, 0.95)' }}>
-                            <div style={{ fontSize: '5rem', marginBottom: '1rem' }} className="animate-bounce">🎉🐶🎉</div>
-                            <h3 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '0.5rem' }}>Level 1 Complete!</h3>
-                            <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>You rescued Tumi! Now race him home!</p>
+                            <div style={{ fontSize: isMobile ? '3rem' : '5rem', marginBottom: '1rem' }} className="animate-bounce">🎉🐶🎉</div>
+                            <h3 style={{ fontSize: isMobile ? '1.5rem' : '2.5rem', fontWeight: 900, marginBottom: '0.5rem' }}>Level 1 Complete!</h3>
+                            <p style={{ fontSize: isMobile ? '1rem' : '1.25rem', marginBottom: isMobile ? '1rem' : '2rem' }}>You rescued Tumi! Now race him home!</p>
                             <button
                                 onClick={(e) => { e.stopPropagation(); startGame(2); }}
-                                style={{ background: 'white', color: '#16A34A', fontSize: '1.5rem', fontWeight: 'bold', padding: '1rem 3rem', borderRadius: '9999px', border: 'none', cursor: 'pointer', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+                                style={{ background: 'white', color: '#16A34A', fontSize: isMobile ? '1.1rem' : '1.5rem', fontWeight: 'bold', padding: isMobile ? '0.75rem 2rem' : '1rem 3rem', borderRadius: '9999px', border: 'none', cursor: 'pointer', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
                             >
                                 Next Level <ArrowRight />
                             </button>
@@ -629,12 +652,12 @@ export default function Game() {
                                     }}></div>
                                 ))}
                             </div>
-                            <div style={{ fontSize: '5rem', marginBottom: '1rem' }} className="animate-bounce">👑🏆👑</div>
-                            <h3 style={{ fontSize: '2.5rem', fontWeight: 900, marginBottom: '0.5rem' }}>The Ultimate Safari Hero!</h3>
-                            <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>You beat the Midnight Dash!</p>
+                            <div style={{ fontSize: isMobile ? '3rem' : '5rem', marginBottom: '1rem' }} className="animate-bounce">👑🏆👑</div>
+                            <h3 style={{ fontSize: isMobile ? '1.5rem' : '2.5rem', fontWeight: 900, marginBottom: '0.5rem' }}>The Ultimate Safari Hero!</h3>
+                            <p style={{ fontSize: isMobile ? '1rem' : '1.25rem', marginBottom: isMobile ? '1rem' : '2rem' }}>You beat the Midnight Dash!</p>
                             <button
                                 onClick={(e) => { e.stopPropagation(); setGameState('SELECT'); }}
-                                style={{ background: 'white', color: '#4338ca', fontSize: '1.25rem', fontWeight: 'bold', padding: '1rem 3rem', borderRadius: '9999px', border: 'none', cursor: 'pointer', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}
+                                style={{ background: 'white', color: '#4338ca', fontSize: isMobile ? '1rem' : '1.25rem', fontWeight: 'bold', padding: isMobile ? '0.75rem 2rem' : '1rem 3rem', borderRadius: '9999px', border: 'none', cursor: 'pointer', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)' }}
                             >
                                 Play Again
                             </button>
@@ -644,8 +667,8 @@ export default function Game() {
                     {/* Game Over */}
                     {gameState === 'GAME_OVER' && (
                         <div style={{ ...overlayStyle, background: 'rgba(220, 38, 38, 0.9)' }}>
-                            <div style={{ fontSize: '6rem', marginBottom: '1rem' }}>💥</div>
-                            <h3 style={{ fontSize: '3rem', fontWeight: 900, marginBottom: '0.5rem' }}>OUCH!</h3>
+                            <div style={{ fontSize: isMobile ? '4rem' : '6rem', marginBottom: '1rem' }}>💥</div>
+                            <h3 style={{ fontSize: isMobile ? '2rem' : '3rem', fontWeight: 900, marginBottom: '0.5rem' }}>OUCH!</h3>
                             {level === 2 && <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>Back to the start!</p>}
                             <button
                                 onClick={(e) => { e.stopPropagation(); startGame(1); }}
