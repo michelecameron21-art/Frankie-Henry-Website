@@ -133,7 +133,7 @@ function App() {
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 25%, transparent 88%, #C07848 100%)' }} />
 
                 {/* Tagline — matching the book cover title treatment exactly */}
-                <h1 style={{
+                <h1 className="hero-tagline" style={{
                     position: 'absolute',
                     bottom: '22%',
                     right: '2%',
@@ -189,7 +189,7 @@ function App() {
                 </h1>
 
                 {/* Book mockup + Buy Now — floating left */}
-                <div style={{
+                <div className="hero-book" style={{
                     position: 'absolute',
                     bottom: '4%',
                     left: '5%',
@@ -201,6 +201,7 @@ function App() {
                     <img
                         src="/assets/book-mockup.png"
                         alt="Frankie and Henry: The Brave River Rescue — children's picture book"
+                        className="hero-book-img"
                         style={{
                             height: '50vh',
                             maxHeight: '450px',
@@ -213,6 +214,7 @@ function App() {
                         href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="hero-buy-btn"
                         style={{
                             marginTop: '0.75rem',
                             background: '#FFD200',
@@ -235,7 +237,7 @@ function App() {
                 </div>
 
                 {/* Logo — top left */}
-                <div style={{ position: 'absolute', top: 0, left: '2rem', zIndex: 50 }}>
+                <div className="hero-logo" style={{ position: 'absolute', top: 0, left: '2rem', zIndex: 50 }}>
                     <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '500px', width: 'auto', marginTop: '-130px' }} />
                 </div>
 

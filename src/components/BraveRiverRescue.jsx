@@ -38,15 +38,15 @@ export default function BraveRiverRescue() {
                 </div>
 
                 {/* Book mockup + blurb */}
-                <div style={{ display: 'flex', gap: '3.5rem', alignItems: 'flex-start', flexWrap: 'wrap', marginBottom: '2rem', maxWidth: '1000px', margin: '0 auto 2rem' }}>
+                <div style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '2rem', maxWidth: '1000px', margin: '0 auto 2rem' }}>
 
                     {/* Book mockup */}
-                    <div style={{ flex: '0 0 auto', textAlign: 'center' }}>
+                    <div style={{ flex: '0 1 auto', textAlign: 'center' }}>
                         <img
                             src="/assets/book-mockup.png"
                             alt="Frankie and Henry: The Brave River Rescue"
                             style={{
-                                height: '500px', width: 'auto',
+                                height: 'auto', width: '100%', maxWidth: '320px', maxHeight: '500px',
                                 filter: 'drop-shadow(0 24px 48px rgba(0,0,0,0.35))',
                                 transform: 'rotate(-2deg)',
                             }}
@@ -135,7 +135,7 @@ export default function BraveRiverRescue() {
                             These are the real scenes from the pages of the book — step inside the adventure
                         </p>
                     </div>
-                    <div style={{
+                    <div className="gallery-grid" style={{
                         display: 'grid',
                         gridTemplateColumns: 'repeat(2, 1fr)',
                         gap: '1.5rem',

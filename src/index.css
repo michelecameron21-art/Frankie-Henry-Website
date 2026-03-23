@@ -1467,6 +1467,97 @@ button {
 }
 
 /* =========================================
+   MOBILE RESPONSIVE FIXES
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Hero logo — shrink on mobile */
+    .hero-logo img {
+        height: 280px !important;
+        margin-top: -70px !important;
+    }
+    .hero-logo {
+        left: 0.75rem !important;
+    }
+
+    /* Hero tagline — reposition for mobile */
+    .hero-tagline {
+        bottom: 8% !important;
+        right: 5% !important;
+        left: auto !important;
+    }
+    .hero-tagline span {
+        font-size: clamp(1.1rem, 5vw, 1.6rem) !important;
+    }
+
+    /* Hero book mockup — smaller and repositioned */
+    .hero-book {
+        bottom: 30% !important;
+        left: 2% !important;
+    }
+    .hero-book-img {
+        height: 28vh !important;
+        max-height: 220px !important;
+    }
+    .hero-buy-btn {
+        font-size: 1rem !important;
+        padding: 0.5rem 1.5rem !important;
+    }
+
+    /* BraveRiverRescue — book + blurb stack vertically */
+    .gallery-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    /* Meet the Brothers heading — smaller */
+    #meet-brothers .heading-lg {
+        font-size: 2rem !important;
+    }
+
+    /* BraveRiverRescue section heading */
+    #gallery h2 {
+        font-size: 2rem !important;
+    }
+
+    /* Story / Newsletter section heading */
+    .story-section h2 {
+        font-size: 1.8rem !important;
+    }
+
+    /* Nav — move down on mobile so it doesn't overlap logo */
+    nav {
+        top: auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Very small screens — further adjustments */
+    .hero-logo img {
+        height: 200px !important;
+        margin-top: -50px !important;
+    }
+
+    .hero-book {
+        bottom: 28% !important;
+    }
+    .hero-book-img {
+        height: 22vh !important;
+        max-height: 170px !important;
+    }
+    .hero-buy-btn {
+        font-size: 0.85rem !important;
+        padding: 0.4rem 1.2rem !important;
+    }
+
+    .hero-tagline span {
+        font-size: clamp(0.95rem, 4.5vw, 1.3rem) !important;
+    }
+}
+
+/* =========================================
    SAFARI COLOUR PALETTE
    ========================================= */
 :root {
