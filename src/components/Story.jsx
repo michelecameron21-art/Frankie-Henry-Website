@@ -19,7 +19,13 @@ export default function Story() {
     return (
         <section id="story" className="section story-section">
             <div className="container">
-                {/* Stay Close to the Wild Place — combined social + newsletter */}
+                {/* Section heading — outside the box */}
+                <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                    <h2 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '2.4rem', color: 'white', marginBottom: '0.5rem' }}>Never Miss an Update!</h2>
+                    <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.05rem', fontWeight: '600' }}>Follow along or join the pack.</p>
+                </div>
+
+                {/* Content box */}
                 <div id="newsletter" style={{
                     maxWidth: '900px', margin: '0 auto',
                     background: 'rgba(255,255,255,0.6)',
@@ -28,12 +34,6 @@ export default function Story() {
                     boxShadow: '0 8px 32px rgba(0,0,0,0.08)',
                     overflow: 'hidden'
                 }}>
-                    {/* Header */}
-                    <div style={{ textAlign: 'center', padding: '1.25rem 2rem 0.75rem' }}>
-                        <h2 className="heading-lg" style={{ marginBottom: '0.25rem', fontSize: '2rem', color: '#1e293b' }}>Never Miss an Update!</h2>
-                        <p style={{ color: '#475569', fontSize: '1.05rem' }}>Follow along or join the pack.</p>
-                    </div>
-
                     {/* Two panels */}
                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0' }}>
 
