@@ -126,123 +126,44 @@ function App() {
                 <img
                     src="/assets/hero-bros.jpg"
                     alt="Frankie and Henry, two Yorkshire Terriers, on a magical safari adventure in Africa"
-                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center center' }}
+                    className="hero-image"
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
                 />
 
                 {/* Gradient — darkens top for nav, fades bottom into gold section */}
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 25%, transparent 88%, #C07848 100%)' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 20%, transparent 92%, #C07848 100%)' }} />
 
-                {/* Tagline — matching the book cover title treatment exactly */}
+                {/* Tagline — clean and simple */}
                 <h1 className="hero-tagline" style={{
                     position: 'absolute',
-                    bottom: '22%',
-                    right: '2%',
+                    bottom: '12%',
+                    left: 0,
+                    right: 0,
                     zIndex: 20,
-                    transform: 'rotate(2deg)',
                     textAlign: 'center',
-                    display: 'inline-block',
                     margin: 0,
                 }}>
-                    {/* Layer 1 — dark outline + 3D extrusion shadow (sits underneath) */}
                     <span style={{
-                        display: 'block',
+                        display: 'inline-block',
                         fontFamily: "'Alfa Slab One', serif",
-                        fontSize: 'clamp(1.5rem, 2.8vw, 2.4rem)',
+                        fontSize: 'clamp(1.3rem, 3.2vw, 2.6rem)',
                         lineHeight: 1.3,
-                        letterSpacing: '0.02em',
-                        color: '#C87010',
-                        WebkitTextStroke: '7px #1E0A00',
-                        textShadow: `
-                            3px 3px 0 #8B4500,
-                            5px 5px 0 #6B3200,
-                            7px 7px 0 #4E2000,
-                            8px 8px 14px rgba(15,5,0,0.75)
-                        `,
-                        userSelect: 'none',
+                        letterSpacing: '0.03em',
+                        color: '#FFD200',
+                        textShadow: '2px 2px 8px rgba(0,0,0,0.7)',
                     }}>
-                        Small paws.<br />
-                        Brave hearts.<br />
-                        Big adventures.
-                    </span>
-
-                    {/* Layer 2 — gradient gold fill on top */}
-                    <span aria-hidden="true" style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        display: 'block',
-                        fontFamily: "'Alfa Slab One', serif",
-                        fontSize: 'clamp(1.5rem, 2.8vw, 2.4rem)',
-                        lineHeight: 1.3,
-                        letterSpacing: '0.02em',
-                        background: 'linear-gradient(to bottom, #F8D460 0%, #F0A820 40%, #D47810 75%, #B86008 100%)',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent',
-                        backgroundClip: 'text',
-                        textAlign: 'center',
-                    }}>
-                        Small paws.<br />
-                        Brave hearts.<br />
+                        Small paws. Brave hearts.<br />
                         Big adventures.
                     </span>
                 </h1>
 
-                {/* Book mockup + Buy Now — floating left */}
-                <div className="hero-book" style={{
-                    position: 'absolute',
-                    bottom: '4%',
-                    left: '5%',
-                    zIndex: 20,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                }}>
-                    <img
-                        src="/assets/book-mockup.png"
-                        alt="Frankie and Henry: The Brave River Rescue — children's picture book"
-                        className="hero-book-img"
-                        style={{
-                            height: '50vh',
-                            maxHeight: '450px',
-                            width: 'auto',
-                            filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.45))',
-                            transform: 'rotate(-4deg)',
-                        }}
-                    />
-                    <a
-                        href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hero-buy-btn"
-                        style={{
-                            marginTop: '0.75rem',
-                            background: '#FFD200',
-                            color: '#78350F',
-                            fontFamily: "'Fredoka', sans-serif",
-                            fontWeight: 700,
-                            fontSize: '1.4rem',
-                            padding: '0.75rem 3rem',
-                            borderRadius: '9999px',
-                            textDecoration: 'none',
-                            boxShadow: '0 6px 0 #B8960A',
-                            display: 'inline-block',
-                            transition: 'transform 0.15s',
-                        }}
-                        onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
-                        onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
-                    >
-                        Buy Now
-                    </a>
-                </div>
-
                 {/* Logo — top left */}
-                <div className="hero-logo" style={{ position: 'absolute', top: 0, left: '2rem', zIndex: 50 }}>
-                    <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '500px', width: 'auto', marginTop: '-130px' }} />
+                <div className="hero-logo" style={{ position: 'absolute', top: '0.75rem', left: '1.5rem', zIndex: 50 }}>
+                    <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: 'clamp(140px, 22vw, 260px)', width: 'auto' }} />
                 </div>
 
-                {/* Nav — positioned between bird and boys */}
-                <nav style={{ position: 'absolute', top: '22%', left: 0, right: 0, zIndex: 50, padding: '0 2rem' }}>
+                {/* Nav */}
+                <nav style={{ position: 'absolute', top: '1.5rem', left: 0, right: 0, zIndex: 50, padding: '0 2rem' }}>
                     <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
 
                         {/* Desktop nav */}
