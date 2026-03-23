@@ -38,7 +38,7 @@ export default function BraveRiverRescue() {
                 </div>
 
                 {/* Book mockup + blurb */}
-                <div style={{ display: 'flex', gap: '3.5rem', alignItems: 'flex-start', flexWrap: 'wrap', marginBottom: '4rem', maxWidth: '1000px', margin: '0 auto 4rem' }}>
+                <div style={{ display: 'flex', gap: '3.5rem', alignItems: 'flex-start', flexWrap: 'wrap', marginBottom: '2rem', maxWidth: '1000px', margin: '0 auto 2rem' }}>
 
                     {/* Book mockup */}
                     <div style={{ flex: '0 0 auto', textAlign: 'center' }}>
@@ -51,6 +51,25 @@ export default function BraveRiverRescue() {
                                 transform: 'rotate(-2deg)',
                             }}
                         />
+                        <div style={{ marginTop: '-2rem' }}>
+                            <a
+                                href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{
+                                    display: 'inline-block',
+                                    background: '#FFD200', color: '#78350F',
+                                    fontFamily: 'Fredoka, sans-serif',
+                                    fontWeight: '700', fontSize: '1.1rem',
+                                    padding: '0.65rem 2rem',
+                                    borderRadius: '9999px',
+                                    textDecoration: 'none',
+                                    boxShadow: '0 4px 0 #B8960A',
+                                }}
+                            >
+                                Buy Now
+                            </a>
+                        </div>
                     </div>
 
                     {/* Blurb */}
@@ -78,24 +97,6 @@ export default function BraveRiverRescue() {
                             A thrilling picture book adventure for children ages 4–8, full of courage, laughter, and the power of teamwork. Set against the breathtaking landscapes of an African savannah — the story that proves size has nothing to do with bravery.
                         </p>
 
-                        {/* Buy button */}
-                        <a
-                            href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{
-                                display: 'inline-block',
-                                background: '#FFD200', color: '#78350F',
-                                fontFamily: 'Fredoka, sans-serif',
-                                fontWeight: '700', fontSize: '1.1rem',
-                                padding: '0.65rem 2rem',
-                                borderRadius: '9999px',
-                                textDecoration: 'none',
-                                boxShadow: '0 4px 0 #B8960A',
-                            }}
-                        >
-                            Buy Now
-                        </a>
                     </div>
                 </div>
 
