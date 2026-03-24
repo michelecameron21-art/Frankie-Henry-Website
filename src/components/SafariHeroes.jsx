@@ -105,7 +105,7 @@ const heroes = [
 
 export default function SafariHeroes() {
     return (
-        <section id="characters" className="section heroes-world-section" style={{ paddingBottom: '3rem' }}>
+        <section id="characters" className="section heroes-world-section" style={{ paddingBottom: '4rem' }}>
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="heading-lg">Meet the Characters</h2>

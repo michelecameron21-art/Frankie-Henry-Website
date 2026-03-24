@@ -193,13 +193,14 @@ function App() {
                     <h1 style={{
                         margin: 0,
                         marginBottom: '2rem',
+                        marginRight: '-1rem',
                         textAlign: 'right',
                         transform: 'rotate(2deg)',
                     }}>
                         <span style={{
                             display: 'inline-block',
                             fontFamily: "'Alfa Slab One', serif",
-                            fontSize: 'clamp(1.3rem, 2.5vw, 2.1rem)',
+                            fontSize: 'clamp(1.4rem, 2.8vw, 2.4rem)',
                             lineHeight: 1.25,
                             letterSpacing: '0.03em',
                             color: '#FFD200',
@@ -237,8 +238,8 @@ function App() {
                 </h1>
 
                 {/* Logo — top left */}
-                <div className="hero-logo" style={{ position: 'absolute', top: '-1rem', left: '6rem', zIndex: 50 }}>
-                    <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: 'clamp(200px, 35vw, 480px)', width: 'auto' }} />
+                <div className="hero-logo" style={{ position: 'absolute', top: '-3rem', left: '6rem', zIndex: 50 }}>
+                    <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: 'clamp(240px, 40vw, 550px)', width: 'auto' }} />
                 </div>
 
                 {/* Nav */}

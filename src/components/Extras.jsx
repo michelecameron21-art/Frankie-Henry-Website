@@ -47,7 +47,7 @@ const extras = [
 
 export default function Extras() {
     return (
-        <section id="extras" className="section extras-section" style={{ paddingTop: '1rem' }}>
+        <section id="extras" className="section extras-section" style={{ paddingTop: '4rem' }}>
             <div className="container">
                 <div className="text-center mb-12">
                     <h2 className="heading-lg" style={{ color: 'white' }}>Colour, Play, Sing Along</h2>
