@@ -35,7 +35,7 @@ export default function Story() {
                     overflow: 'hidden'
                 }}>
                     {/* Two panels */}
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0' }}>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0', justifyContent: 'center' }}>
 
                         {/* Left — Social */}
                         <div style={{

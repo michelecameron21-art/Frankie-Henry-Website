@@ -24,7 +24,7 @@ const heroes = [
         accent: '#FACC15',
         image: '/assets/henry.jpg',
         objectPosition: 'center 20%',
-        scale: 1.05,
+        scale: 0.95,
         funFact: "Dogs have super noses - they can smell things humans can't even notice. Henry can basically smell a snack... in another postcode."
     },
     {
@@ -37,7 +37,7 @@ const heroes = [
         accent: '#4ADE80',
         image: '/assets/lwazi.jpg',
         objectPosition: '35% 40%',
-        scale: 1.2,
+        scale: 1.0,
         funFact: "Blue cranes do happy little 'dances' - lots of stepping, bobbing, and wing-flaps. Lwazi's wings aren't just for flying... they're for showing off too!"
     },
     {
@@ -87,6 +87,7 @@ const heroes = [
         color: 'bg-orange-100',
         accent: '#F97316',
         image: '/assets/jackal-mum.jpg',
+        scale: 0.9,
         funFact: "Jackal families are real teams - mums and dads both help look after their pups. A jackal mum is brave, clever, and always watching."
     },
     {
@@ -99,6 +100,7 @@ const heroes = [
         accent: '#F59E0B',
         image: '/assets/jackal-cub.jpg',
         objectPosition: 'center 30%',
+        scale: 0.9,
         funFact: "A baby jackal is called a pup. Pups learn fast - how to listen, hide, and run - and Tumi just learned the most important thing: friends can show up when you need them most."
     }
 ];

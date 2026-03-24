@@ -1500,9 +1500,9 @@ button {
 
 @media (max-width: 768px) {
 
-    /* Hero image — show more of the scene on mobile */
+    /* Hero image — shift right to show Frankie on mobile */
     .hero-image {
-        object-position: center 20% !important;
+        object-position: 60% 20% !important;
     }
 
     /* Hero tagline — position clearly over the image on mobile */
@@ -1510,19 +1510,39 @@ button {
         bottom: 25% !important;
     }
 
-    /* Hero logo — bigger on mobile */
+    /* Hero logo — bigger and higher on mobile */
     .hero-logo {
         left: 0.75rem !important;
-        top: 0.5rem !important;
+        top: -1.5rem !important;
     }
     .hero-logo img {
-        height: 220px !important;
+        height: 280px !important;
+    }
+
+    /* Nav — move hamburger higher on mobile */
+    nav {
+        top: 8% !important;
     }
 
     /* Behind the scenes — stack and centre buttons on mobile */
     .social-buttons {
         flex-direction: column !important;
         align-items: center !important;
+    }
+
+    /* Rescue the Jackal Cub — move up on mobile */
+    #game.section {
+        padding-top: 1.5rem !important;
+    }
+
+    /* Extras — move up on mobile */
+    #extras.section {
+        padding-top: 1.5rem !important;
+    }
+
+    /* Story / Never Miss an Update — move up on mobile */
+    .story-section {
+        padding-top: 1.5rem !important;
     }
 
     /* Gallery — single column on mobile */
