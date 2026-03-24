@@ -49,7 +49,7 @@ export default function Story() {
                             <p style={{ color: '#475569', fontSize: '1.2rem', lineHeight: '1.9', marginBottom: '1.75rem' }}>
                                 Follow us on Instagram and TikTok for behind-the-scenes videos, clips of the real Frankie & Henry, and sneak peeks at what's coming next.
                             </p>
-                            <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: 'auto' }}>
+                            <div className="social-buttons" style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: 'auto', alignItems: 'center' }}>
                                 <a
                                     href="https://www.instagram.com/frankieandhenrybooks?igsh=dDFtM3duc3BydnFt"
                                     target="_blank"

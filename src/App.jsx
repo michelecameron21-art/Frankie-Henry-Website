@@ -134,14 +134,84 @@ function App() {
                     src="/assets/hero-bros-mobile.jpg"
                     alt="Frankie and Henry, two Yorkshire Terriers, on a magical safari adventure in Africa"
                     className="hero-image hero-image-mobile"
-                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }}
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '55% 40%' }}
                 />
 
                 {/* Gradient — darkens top for nav, fades bottom into gold section */}
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 20%, transparent 92%, #C07848 100%)' }} />
+                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 20%, transparent 88%, #C07848 100%)' }} />
 
-                {/* Tagline — clean and simple */}
-                <h1 className="hero-tagline" style={{
+                {/* Desktop: Book left + Tagline right */}
+                <div className="hero-book-tagline" style={{
+                    position: 'absolute',
+                    bottom: '8%',
+                    left: '5%',
+                    right: '2%',
+                    zIndex: 20,
+                    display: 'flex',
+                    alignItems: 'flex-end',
+                    justifyContent: 'space-between',
+                }}>
+                    {/* Book mockup + Buy Now */}
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img
+                            src="/assets/book-mockup.png"
+                            alt="Frankie and Henry: The Brave River Rescue — children's picture book"
+                            style={{
+                                height: '50vh',
+                                maxHeight: '450px',
+                                width: 'auto',
+                                filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.45))',
+                                transform: 'rotate(-4deg)',
+                            }}
+                        />
+                        <a
+                            href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                                marginTop: '0.75rem',
+                                background: '#FFD200',
+                                color: '#78350F',
+                                fontFamily: "'Fredoka', sans-serif",
+                                fontWeight: 700,
+                                fontSize: '1.4rem',
+                                padding: '0.75rem 3rem',
+                                borderRadius: '9999px',
+                                textDecoration: 'none',
+                                boxShadow: '0 6px 0 #B8960A',
+                                display: 'inline-block',
+                                transition: 'transform 0.15s',
+                            }}
+                            onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+                            onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
+                        >
+                            Buy Now
+                        </a>
+                    </div>
+
+                    {/* Tagline */}
+                    <h1 style={{
+                        margin: 0,
+                        marginBottom: '2rem',
+                        textAlign: 'right',
+                    }}>
+                        <span style={{
+                            display: 'inline-block',
+                            fontFamily: "'Alfa Slab One', serif",
+                            fontSize: 'clamp(1.3rem, 3.2vw, 2.6rem)',
+                            lineHeight: 1.3,
+                            letterSpacing: '0.03em',
+                            color: '#FFD200',
+                            textShadow: '2px 2px 8px rgba(0,0,0,0.7)',
+                        }}>
+                            Small paws. Brave hearts.<br />
+                            Big adventures.
+                        </span>
+                    </h1>
+                </div>
+
+                {/* Mobile: Tagline only (centred) */}
+                <h1 className="hero-tagline-mobile" style={{
                     position: 'absolute',
                     bottom: '12%',
                     left: 0,
@@ -153,7 +223,7 @@ function App() {
                     <span style={{
                         display: 'inline-block',
                         fontFamily: "'Alfa Slab One', serif",
-                        fontSize: 'clamp(1.3rem, 3.2vw, 2.6rem)',
+                        fontSize: 'clamp(1.3rem, 5vw, 1.8rem)',
                         lineHeight: 1.3,
                         letterSpacing: '0.03em',
                         color: '#FFD200',

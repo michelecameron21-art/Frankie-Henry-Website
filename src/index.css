@@ -1470,8 +1470,11 @@ button {
    HERO IMAGE — DESKTOP/MOBILE SWAP
    ========================================= */
 
-/* Default: show desktop, hide mobile */
+/* Default: show desktop elements, hide mobile ones */
 .hero-image-mobile {
+    display: none !important;
+}
+.hero-tagline-mobile {
     display: none !important;
 }
 
@@ -1480,6 +1483,13 @@ button {
         display: none !important;
     }
     .hero-image-mobile {
+        display: block !important;
+    }
+    /* Hide desktop book+tagline, show mobile tagline */
+    .hero-book-tagline {
+        display: none !important;
+    }
+    .hero-tagline-mobile {
         display: block !important;
     }
 }
@@ -1496,7 +1506,7 @@ button {
     }
 
     /* Hero tagline — position clearly over the image on mobile */
-    .hero-tagline {
+    .hero-tagline-mobile {
         bottom: 25% !important;
     }
 
@@ -1506,7 +1516,13 @@ button {
         top: 0.5rem !important;
     }
     .hero-logo img {
-        height: 180px !important;
+        height: 220px !important;
+    }
+
+    /* Behind the scenes — stack and centre buttons on mobile */
+    .social-buttons {
+        flex-direction: column !important;
+        align-items: center !important;
     }
 
     /* Gallery — single column on mobile */
