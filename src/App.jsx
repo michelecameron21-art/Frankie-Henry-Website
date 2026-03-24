@@ -122,12 +122,19 @@ function App() {
             {/* Full-bleed Hero — image only for now */}
             <header style={{ height: '100vh', minHeight: '650px', position: 'relative', overflow: 'hidden', width: '100%' }}>
 
-                {/* Hero image — edge to edge */}
+                {/* Hero image — desktop (wide) */}
                 <img
                     src="/assets/hero-bros.jpg"
                     alt="Frankie and Henry, two Yorkshire Terriers, on a magical safari adventure in Africa"
-                    className="hero-image"
+                    className="hero-image hero-image-desktop"
                     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
+                />
+                {/* Hero image — mobile (portrait, more space around dogs) */}
+                <img
+                    src="/assets/hero-bros-mobile.jpg"
+                    alt="Frankie and Henry, two Yorkshire Terriers, on a magical safari adventure in Africa"
+                    className="hero-image hero-image-mobile"
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }}
                 />
 
                 {/* Gradient — darkens top for nav, fades bottom into gold section */}
@@ -159,7 +166,7 @@ function App() {
 
                 {/* Logo — top left */}
                 <div className="hero-logo" style={{ position: 'absolute', top: '0.75rem', left: '1.5rem', zIndex: 50 }}>
-                    <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: 'clamp(140px, 22vw, 260px)', width: 'auto' }} />
+                    <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: 'clamp(160px, 25vw, 280px)', width: 'auto' }} />
                 </div>
 
                 {/* Nav */}

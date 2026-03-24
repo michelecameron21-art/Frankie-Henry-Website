@@ -1467,6 +1467,24 @@ button {
 }
 
 /* =========================================
+   HERO IMAGE — DESKTOP/MOBILE SWAP
+   ========================================= */
+
+/* Default: show desktop, hide mobile */
+.hero-image-mobile {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .hero-image-desktop {
+        display: none !important;
+    }
+    .hero-image-mobile {
+        display: block !important;
+    }
+}
+
+/* =========================================
    MOBILE RESPONSIVE FIXES
    ========================================= */
 
@@ -1482,10 +1500,13 @@ button {
         bottom: 25% !important;
     }
 
-    /* Hero logo — responsive on mobile */
+    /* Hero logo — bigger on mobile */
     .hero-logo {
         left: 0.75rem !important;
         top: 0.5rem !important;
+    }
+    .hero-logo img {
+        height: 180px !important;
     }
 
     /* Gallery — single column on mobile */
