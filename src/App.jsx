@@ -199,7 +199,7 @@ function App() {
                         <span style={{
                             display: 'inline-block',
                             fontFamily: "'Alfa Slab One', serif",
-                            fontSize: 'clamp(1.2rem, 2vw, 1.8rem)',
+                            fontSize: 'clamp(1.3rem, 2.5vw, 2.1rem)',
                             lineHeight: 1.25,
                             letterSpacing: '0.03em',
                             color: '#FFD200',
@@ -237,7 +237,7 @@ function App() {
                 </h1>
 
                 {/* Logo — top left */}
-                <div className="hero-logo" style={{ position: 'absolute', top: '0.75rem', left: '1.5rem', zIndex: 50 }}>
+                <div className="hero-logo" style={{ position: 'absolute', top: '-1rem', left: '6rem', zIndex: 50 }}>
                     <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: 'clamp(200px, 35vw, 480px)', width: 'auto' }} />
                 </div>
 
