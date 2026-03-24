@@ -419,7 +419,7 @@ export default function Game() {
 
     return (
         <section id="game" className="section" style={{
-            padding: '4rem 1rem',
+            padding: '2.5rem 1rem 4rem',
             background: isNight
                 ? 'linear-gradient(to bottom, #0f172a calc(100% - 100px), #2D1A0E 100%)'
                 : 'linear-gradient(to bottom, #D4906A calc(100% - 100px), #C07848 100%)',
@@ -447,6 +447,7 @@ export default function Game() {
                     </div>
                 </div>
 
+                <div style={{ height: '1.5rem' }} />
                 {/* GAME CONTAINER */}
                 <div ref={containerRef} style={containerStyle} onClick={jump}>
 

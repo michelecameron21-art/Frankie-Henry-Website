@@ -17,7 +17,7 @@ export default function Story() {
     }, []);
 
     return (
-        <section id="story" className="section story-section">
+        <section id="story" className="section story-section" style={{ paddingTop: '2.5rem' }}>
             <div className="container">
                 {/* Section heading — outside the box */}
                 <div style={{ textAlign: 'center', marginBottom: '2rem' }}>

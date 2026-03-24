@@ -16,15 +16,15 @@ export default function BraveRiverRescue() {
     const rotations = ['-2deg', '1.5deg', '-1deg', '2deg', '1deg', '-1.5deg', '2.5deg', '-0.5deg'];
 
     const perfectFor = [
-        { icon: <Moon size={28} strokeWidth={1.5} />, text: 'Bedtime stories & read-alouds' },
-        { icon: <Heart size={28} strokeWidth={1.5} />, text: 'Dog lovers & Yorkie fans' },
-        { icon: <Users size={28} strokeWidth={1.5} />, text: 'Teaching courage & friendship' },
-        { icon: <Compass size={28} strokeWidth={1.5} />, text: 'Safari & wildlife adventures' },
-        { icon: <Gift size={28} strokeWidth={1.5} />, text: 'The perfect gift, ages 4–8' },
+        { icon: <Moon size={28} strokeWidth={1.5} fill="#FFD200" color="#B8960A" />, text: 'Bedtime stories & read-alouds' },
+        { icon: <Heart size={28} strokeWidth={1.5} fill="#FFD200" color="#B8960A" />, text: 'Dog lovers & Yorkie fans' },
+        { icon: <Users size={28} strokeWidth={1.5} fill="#FFD200" color="#B8960A" />, text: 'Teaching courage & friendship' },
+        { icon: <Compass size={28} strokeWidth={1.5} fill="#FFD200" color="#B8960A" />, text: 'Safari & wildlife adventures' },
+        { icon: <Gift size={28} strokeWidth={1.5} fill="#FFD200" color="#B8960A" />, text: 'The perfect gift, ages 4–8' },
     ];
 
     return (
-        <section id="gallery" style={{ background: 'linear-gradient(to bottom, #C07848 0%, #F0D090 35%, #E8C070 65%, #D4906A 100%)', padding: '4rem 0' }}>
+        <section id="gallery" style={{ background: 'linear-gradient(to bottom, #C07848 0%, #F0D090 35%, #E8C070 65%, #D4906A 100%)', padding: '2rem 0 4rem' }}>
             <div className="container">
 
                 {/* Section heading */}
@@ -75,15 +75,6 @@ export default function BraveRiverRescue() {
                     {/* Blurb */}
                     <div style={{ flex: '1', minWidth: '280px' }}>
 
-                        {/* Tagline */}
-                        <p style={{
-                            fontFamily: 'Fredoka, sans-serif', fontSize: '1.4rem',
-                            color: '#78350f', fontWeight: '700', fontStyle: 'italic',
-                            marginBottom: '1.5rem', lineHeight: '1.4'
-                        }}>
-                            Small paws. Brave hearts. Big adventures.
-                        </p>
-
                         <p style={{ fontSize: '1.2rem', color: '#1e293b', lineHeight: '1.9', marginBottom: '1rem' }}>
                             When Frankie and Henry, two Yorkshire Terrier brothers, discover a secret tunnel, they burst out into the Wild Place. But there's little time to explore.
                         </p>
@@ -101,7 +92,7 @@ export default function BraveRiverRescue() {
                 </div>
 
                 {/* Perfect for */}
-                <div style={{ textAlign: 'center', marginBottom: '4.5rem' }}>
+                <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
                     <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.8rem', color: '#78350f', marginBottom: '2rem' }}>
                         Perfect for...
                     </h3>
