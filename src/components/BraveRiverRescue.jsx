@@ -16,11 +16,11 @@ export default function BraveRiverRescue() {
     const rotations = ['-2deg', '1.5deg', '-1deg', '2deg', '1deg', '-1.5deg', '2.5deg', '-0.5deg'];
 
     const perfectFor = [
-        { icon: <Moon size={28} strokeWidth={1.5} fill="#FFD200" color="#B8960A" />, text: 'Bedtime stories & read-alouds' },
-        { icon: <Heart size={28} strokeWidth={1.5} fill="#FFD200" color="#B8960A" />, text: 'Dog lovers & Yorkie fans' },
-        { icon: <Users size={28} strokeWidth={1.5} fill="#FFD200" color="#B8960A" />, text: 'Teaching courage & friendship' },
-        { icon: <Compass size={28} strokeWidth={1.5} fill="#FFD200" color="#B8960A" />, text: 'Safari & wildlife adventures' },
-        { icon: <Gift size={28} strokeWidth={1.5} fill="#FFD200" color="#B8960A" />, text: 'The perfect gift, ages 4–8' },
+        { icon: <Moon size={24} strokeWidth={2} color="#78350f" />, text: 'Bedtime stories & read-alouds' },
+        { icon: <Heart size={24} strokeWidth={2} color="#78350f" />, text: 'Dog lovers & Yorkie fans' },
+        { icon: <Users size={24} strokeWidth={2} color="#78350f" />, text: 'Teaching courage & friendship' },
+        { icon: <Compass size={24} strokeWidth={2} color="#78350f" />, text: 'Safari & wildlife adventures' },
+        { icon: <Gift size={24} strokeWidth={2} color="#78350f" />, text: 'The perfect gift, ages 4–8' },
     ];
 
     return (
@@ -107,7 +107,14 @@ export default function BraveRiverRescue() {
                                 boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
                                 color: '#78350f',
                             }}>
-                                {item.icon}
+                                <div style={{
+                                    width: '52px', height: '52px', borderRadius: '50%',
+                                    background: '#FDE047',
+                                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                    boxShadow: '0 3px 0 #D4B830',
+                                }}>
+                                    {item.icon}
+                                </div>
                                 <span style={{ fontSize: '0.875rem', fontWeight: '700', color: '#1e293b', lineHeight: '1.3', textAlign: 'center' }}>
                                     {item.text}
                                 </span>
