@@ -12,6 +12,7 @@ const heroes = [
         accent: '#0EA5E9',
         image: '/assets/frankie.jpg',
         objectPosition: 'center 25%',
+        scale: 1.15,
         funFact: "Frankie is a yorkshire terrier - yorkshire terriers were bred to chase rats into little tunnels. That's why Frankie goes from 'walkies' to 'MISSION!' in two seconds."
     },
     {
