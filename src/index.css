@@ -1502,7 +1502,7 @@ button {
 
     /* Hero image — shift right to show Frankie fully on mobile */
     .hero-image {
-        object-position: 75% 30% !important;
+        object-position: 35% 30% !important;
     }
 
     /* Hero tagline — position clearly over the image on mobile */
@@ -1513,7 +1513,7 @@ button {
     /* Hero logo — bigger but clear of Lwazi's wing on mobile */
     .hero-logo {
         left: -1rem !important;
-        top: -2.5rem !important;
+        top: -3.5rem !important;
     }
     .hero-logo img {
         height: 310px !important;
