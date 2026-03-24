@@ -1555,12 +1555,12 @@ button {
 
     /* Brave River Rescue — tighter top on mobile */
     #gallery {
-        padding-top: 1rem !important;
+        padding-top: 0.5rem !important;
     }
 
     /* Rescue the Jackal Cub — move up on mobile */
     #game.section {
-        padding-top: 0.5rem !important;
+        padding-top: 0 !important;
     }
 
     /* Extras — move up on mobile */
@@ -1591,7 +1591,7 @@ button {
 
     /* Story / Newsletter section heading — match other section headings */
     .story-section h2 {
-        font-size: 2.2rem !important;
+        font-size: 2.75rem !important;
     }
 }
 
