@@ -1502,7 +1502,7 @@ button {
 
     /* Hero image — shift right to show Frankie on mobile */
     .hero-image {
-        object-position: 60% 20% !important;
+        object-position: 65% 20% !important;
     }
 
     /* Hero tagline — position clearly over the image on mobile */
@@ -1510,9 +1510,9 @@ button {
         bottom: 25% !important;
     }
 
-    /* Hero logo — bigger and higher on mobile */
+    /* Hero logo — bigger, higher, and further left on mobile */
     .hero-logo {
-        left: 0.75rem !important;
+        left: -0.5rem !important;
         top: -1.5rem !important;
     }
     .hero-logo img {
@@ -1524,15 +1524,31 @@ button {
         top: 8% !important;
     }
 
-    /* Behind the scenes — stack and centre buttons on mobile */
+    /* Behind the scenes — full width and centred on mobile */
+    #newsletter > div > div {
+        width: 100% !important;
+        text-align: center !important;
+        align-items: center !important;
+    }
+
     .social-buttons {
         flex-direction: column !important;
         align-items: center !important;
     }
 
+    /* Brave River Rescue heading — tighter gap to book on mobile */
+    #gallery > .container > div:first-child {
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Meet the Brothers — move up on mobile */
+    #meet-brothers.section {
+        padding-top: 2rem !important;
+    }
+
     /* Rescue the Jackal Cub — move up on mobile */
     #game.section {
-        padding-top: 1.5rem !important;
+        padding-top: 1rem !important;
     }
 
     /* Extras — move up on mobile */
@@ -1561,9 +1577,9 @@ button {
         font-size: 2rem !important;
     }
 
-    /* Story / Newsletter section heading */
+    /* Story / Newsletter section heading — match other section headings */
     .story-section h2 {
-        font-size: 1.8rem !important;
+        font-size: 2.2rem !important;
     }
 }
 
