@@ -1529,6 +1529,8 @@ button {
         width: 100% !important;
         text-align: center !important;
         align-items: center !important;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
     }
 
     .social-buttons {
@@ -1546,9 +1548,14 @@ button {
         padding-top: 2rem !important;
     }
 
+    /* Brave River Rescue — tighter top on mobile */
+    #gallery {
+        padding-top: 1rem !important;
+    }
+
     /* Rescue the Jackal Cub — move up on mobile */
     #game.section {
-        padding-top: 1rem !important;
+        padding-top: 0.5rem !important;
     }
 
     /* Extras — move up on mobile */
