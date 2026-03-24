@@ -66,10 +66,10 @@ function DropdownMenu({ item, closeAll }) {
                 }}
             >
                 <span style={{
-                    color: '#F0A820',
-                    WebkitTextFillColor: '#F0A820',
+                    color: '#FFD200',
+                    WebkitTextFillColor: '#FFD200',
                 }}>{item.label}</span>
-                <ChevronDown size={16} style={{ transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'rotate(0deg)', color: '#F0A820' }} />
+                <ChevronDown size={16} style={{ transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'rotate(0deg)', color: '#FFD200' }} />
             </button>
             {open && (
                 <div style={{
@@ -189,22 +189,24 @@ function App() {
                         </a>
                     </div>
 
-                    {/* Tagline */}
+                    {/* Tagline — angled to the right */}
                     <h1 style={{
                         margin: 0,
                         marginBottom: '2rem',
                         textAlign: 'right',
+                        transform: 'rotate(2deg)',
                     }}>
                         <span style={{
                             display: 'inline-block',
                             fontFamily: "'Alfa Slab One', serif",
-                            fontSize: 'clamp(1.3rem, 3.2vw, 2.6rem)',
-                            lineHeight: 1.3,
+                            fontSize: 'clamp(1.8rem, 4vw, 3.4rem)',
+                            lineHeight: 1.25,
                             letterSpacing: '0.03em',
                             color: '#FFD200',
                             textShadow: '2px 2px 8px rgba(0,0,0,0.7)',
                         }}>
-                            Small paws. Brave hearts.<br />
+                            Small paws.<br />
+                            Brave hearts.<br />
                             Big adventures.
                         </span>
                     </h1>
@@ -240,7 +242,7 @@ function App() {
                 </div>
 
                 {/* Nav */}
-                <nav style={{ position: 'absolute', top: '1.5rem', left: 0, right: 0, zIndex: 50, padding: '0 2rem' }}>
+                <nav style={{ position: 'absolute', top: '22%', left: 0, right: 0, zIndex: 50, padding: '0 2rem' }}>
                     <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}>
 
                         {/* Desktop nav */}
@@ -251,7 +253,7 @@ function App() {
                         </div>
 
                         {/* Mobile hamburger */}
-                        <button className="md:hidden" style={{ background: 'none', border: 'none', color: '#F0A820', cursor: 'pointer', filter: 'drop-shadow(1px 1px 3px rgba(0,0,0,0.5))' }} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                        <button className="md:hidden" style={{ background: 'none', border: 'none', color: '#FFD200', cursor: 'pointer', filter: 'drop-shadow(1px 1px 3px rgba(0,0,0,0.5))' }} onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
                         </button>
                     </div>
