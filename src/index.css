@@ -1500,9 +1500,9 @@ button {
 
 @media (max-width: 768px) {
 
-    /* Hero image — shift right to show Frankie on mobile */
+    /* Hero image — centre on mobile (new image has both dogs centred) */
     .hero-image {
-        object-position: 65% 20% !important;
+        object-position: center 30% !important;
     }
 
     /* Hero tagline — position clearly over the image on mobile */
