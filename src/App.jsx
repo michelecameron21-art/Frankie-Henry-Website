@@ -18,7 +18,7 @@ const NAV_ITEMS = [
             { label: 'Meet the Characters', href: '#characters' },
             { label: 'Meet the Real Frankie & Henry', href: '#meet-brothers' },
             { label: 'The Brave River Rescue', href: '#gallery' },
-            { label: 'Buy on Amazon', href: 'https://www.amazon.co.uk/dp/B0DYTWD2ZB', external: true },
+            { label: 'Buy on Amazon', href: 'https://www.amazon.com/dp/B0GTVVPPH6', external: true },
         ],
     },
     {
@@ -165,7 +165,7 @@ function App() {
                             }}
                         />
                         <a
-                            href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
+                            href="https://www.amazon.com/dp/B0GTVVPPH6"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
@@ -187,6 +187,16 @@ function App() {
                         >
                             Buy Now
                         </a>
+                        <p style={{
+                            marginTop: '0.5rem',
+                            fontFamily: "'Fredoka', sans-serif",
+                            fontSize: '0.85rem',
+                            color: 'rgba(255,220,140,0.9)',
+                            fontWeight: 600,
+                            letterSpacing: '0.03em',
+                        }}>
+                            Available in Kindle &amp; Paperback
+                        </p>
                     </div>
 
                     {/* Tagline — angled to the right */}
@@ -295,7 +305,7 @@ function App() {
                                 </div>
                             ))}
                             <a
-                                href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
+                                href="https://www.amazon.com/dp/B0GTVVPPH6"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setIsMenuOpen(false)}
@@ -309,6 +319,17 @@ function App() {
                             >
                                 Buy Now on Amazon
                             </a>
+                            <p style={{
+                                marginTop: '0.4rem',
+                                textAlign: 'center',
+                                fontFamily: "'Fredoka', sans-serif",
+                                fontSize: '0.8rem',
+                                color: 'rgba(255,220,140,0.9)',
+                                fontWeight: 600,
+                                letterSpacing: '0.03em',
+                            }}>
+                                Available in Kindle &amp; Paperback
+                            </p>
                         </div>
                     )}
                 </nav>

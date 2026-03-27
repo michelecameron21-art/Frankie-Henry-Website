@@ -53,7 +53,7 @@ export default function BraveRiverRescue() {
                         />
                         <div style={{ marginTop: '-2rem' }}>
                             <a
-                                href="https://www.amazon.co.uk/dp/B0DYTWD2ZB"
+                                href="https://www.amazon.com/dp/B0GTVVPPH6"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 style={{
@@ -69,6 +69,16 @@ export default function BraveRiverRescue() {
                             >
                                 Buy Now
                             </a>
+                            <p style={{
+                                marginTop: '0.5rem',
+                                fontFamily: 'Fredoka, sans-serif',
+                                fontSize: '0.8rem',
+                                color: '#78350f',
+                                fontWeight: '600',
+                                letterSpacing: '0.03em',
+                            }}>
+                                Available in Kindle &amp; Paperback
+                            </p>
                         </div>
                     </div>
 
