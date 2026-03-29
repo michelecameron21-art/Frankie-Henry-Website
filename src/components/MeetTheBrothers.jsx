@@ -14,7 +14,7 @@ export default function MeetTheBrothers() {
                             margin: '0 auto 1.25rem', border: '6px solid rgba(255,255,255,0.6)',
                             boxShadow: '0 12px 32px rgba(0,0,0,0.25)'
                         }}>
-                            <img src="/assets/real-frankie-henry.jpg" alt="The real Frankie and Henry" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
+                            <img src="/assets/real-frankie-henry.jpg" alt="The real Frankie and Henry — two Yorkshire Terrier brothers who inspired the book series" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
                         </div>
                         <span style={{
                             display: 'inline-block', background: 'rgba(255,255,255,0.25)', color: 'white',

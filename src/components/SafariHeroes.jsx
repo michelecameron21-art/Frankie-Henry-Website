@@ -5,6 +5,7 @@ const heroes = [
     {
         id: 'frankie',
         name: 'Frankie',
+        altText: 'Frankie the Yorkshire Terrier — brave adventure dog from the Frankie and Henry children\'s book',
         tag: 'Fearless & Adventurous',
         role: 'THE FEARLESS ADVENTURER',
         description: "Frankie loves adventure above all else. He's always first to leap, first to explore, and first to help when it matters most.",
@@ -18,6 +19,7 @@ const heroes = [
     {
         id: 'henry',
         name: 'Henry',
+        altText: 'Henry the Yorkshire Terrier — Frankie\'s snack-loving brave brother',
         tag: 'Snack-Obsessed & Brave',
         role: 'THE BRAVE HEART',
         description: "Henry thinks about snacks. A lot. But when Frankie and the animals of the Wild Place need him most, he's always there.",
@@ -31,6 +33,7 @@ const heroes = [
     {
         id: 'lwazi',
         name: 'Lwazi',
+        altText: 'Lwazi the Blue Crane — wise safari guide from the Wild Place',
         tag: 'Wise & Well-Connected',
         role: 'THE WISE HELPER',
         description: "Nothing happens in the Wild Place without Lwazi knowing. Wise, quirky, and voted best legs in the Wild Place - he's the friend you want in your corner when things go wrong.",
@@ -44,6 +47,7 @@ const heroes = [
     {
         id: 'clawdius',
         name: 'Clawdius',
+        altText: 'Clawdius the Cat — sneaky neighbourhood troublemaker',
         tag: 'Cheeky & Sneaky',
         role: 'THE NEIGHBOURHOOD MENACE',
         description: "Clawdius lives next door. He loves mischief, chaos, and making Frankie and Henry's lives as difficult as possible - and he's very, very good at all three.",
@@ -56,6 +60,7 @@ const heroes = [
     {
         id: 'monitor-lizard',
         name: 'Monitor Lizard',
+        altText: 'Monitor Lizard — grumpy river guardian of the African Wild Place',
         tag: 'Grumpy & Territorial',
         role: 'THE RIVER BULLY',
         description: 'Two passions in life: long naps on his favourite sandbank, and making absolutely sure everyone knows the river is his. Cross or enter at your own risk.',
@@ -69,6 +74,7 @@ const heroes = [
     {
         id: 'martial-eagle',
         name: 'Martial Eagle',
+        altText: 'Martial Eagle — Africa\'s largest eagle and sky king of the Wild Place',
         tag: 'Majestic & Mighty',
         role: 'THE SKY KING',
         description: "The largest eagle in Africa doesn't need to introduce himself. Majestic, mighty, and capable of lifting things three times his own weight - and has a very particular eye for small, snack-obsessed dogs.",
@@ -82,6 +88,7 @@ const heroes = [
     {
         id: 'jackal-mum',
         name: 'Jackal Mom',
+        altText: 'Jackal Mom — fierce and devoted mother protecting her cub',
         tag: 'Fierce & Devoted',
         role: 'THE DEVOTED MOM',
         description: "Gentle, loving, and completely devoted to her cub. But cross her family and you'll discover very quickly that this mom will take on anyone - and she means anyone.",
@@ -94,6 +101,7 @@ const heroes = [
     {
         id: 'jackal-cub',
         name: 'Jackal Cub',
+        altText: 'Jackal Cub — the lost little pup who needs rescuing in the Brave River Rescue',
         tag: 'Little & Lost',
         role: 'THE LOST LITTLE CUB',
         description: 'Small, curious, and a little too adventurous for his own good. One wrong turn, one desperate cry for help - and the whole adventure begins.',
@@ -149,7 +157,8 @@ function HeroCard({ hero }) {
                         {hero.image ? (
                             <img
                                 src={hero.image}
-                                alt={hero.name}
+                                alt={hero.altText || hero.name}
+                                loading="lazy"
                                 className="character-png"
                                 style={{ objectFit: hero.objectFit || 'cover', objectPosition: hero.objectPosition || 'center center', transform: `scale(${hero.scale || 1})`, transformOrigin: 'center center' }}
                             />

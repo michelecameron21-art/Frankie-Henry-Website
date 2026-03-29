@@ -223,8 +223,8 @@ function App() {
                     </h1>
                 </div>
 
-                {/* Mobile: Tagline only (centred) */}
-                <h1 className="hero-tagline-mobile" style={{
+                {/* Mobile: Tagline only (centred) — aria-hidden to avoid duplicate H1 */}
+                <div className="hero-tagline-mobile" aria-hidden="true" style={{
                     position: 'absolute',
                     bottom: '12%',
                     left: 0,
@@ -245,7 +245,7 @@ function App() {
                         Small paws. Brave hearts.<br />
                         Big adventures.
                     </span>
-                </h1>
+                </div>
 
                 {/* Logo — top left */}
                 <div className="hero-logo" style={{ position: 'absolute', top: '-3rem', left: '6rem', zIndex: 50 }}>

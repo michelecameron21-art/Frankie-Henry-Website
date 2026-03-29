@@ -538,7 +538,7 @@ export default function Game() {
                         >
                             <div className={!isJumping ? 'animate-bounce-run' : ''} style={{ width: `${PLAYER_SIZE}px`, height: `${PLAYER_SIZE}px`, background: 'white', borderRadius: '0.75rem', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)', border: '2px solid #0F172A', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.875rem', overflow: 'hidden' }}>
                                 {ASSETS[character].image ? (
-                                    <img src={ASSETS[character].image} alt={ASSETS[character].name} style={{ width: '100%', height: '100%', objectFit: 'cover', transform: ASSETS[character].transform }} />
+                                    <img src={ASSETS[character].image} alt={ASSETS[character].name} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: ASSETS[character].transform }} />
                                 ) : (
                                     <span style={{ transform: ASSETS[character].transform, display: 'inline-block' }}>
                                         {ASSETS[character].emoji}
@@ -608,7 +608,7 @@ export default function Game() {
                                     className="hover:scale-110"
                                 >
                                     <div style={{ width: isMobile ? '5rem' : '8rem', height: isMobile ? '5rem' : '8rem', background: 'white', borderRadius: '50%', border: `${isMobile ? '5' : '8'}px solid #EF4444`, overflow: 'hidden', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>
-                                        <img src="/assets/frankie-closeup.png" alt="Frankie" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(0.9)', transformOrigin: 'center center' }} />
+                                        <img src="/assets/frankie-closeup.png" alt="Frankie" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(0.9)', transformOrigin: 'center center' }} />
                                     </div>
                                     <span style={{ fontSize: isMobile ? '1.1rem' : '1.5rem', fontWeight: 'bold', color: 'white' }}>Frankie</span>
                                 </button>
@@ -617,7 +617,7 @@ export default function Game() {
                                     style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: isMobile ? '0.5rem' : '1rem', background: 'none', border: 'none', cursor: 'pointer', transition: 'transform 0.2s' }}
                                 >
                                     <div style={{ width: isMobile ? '5rem' : '8rem', height: isMobile ? '5rem' : '8rem', background: 'white', borderRadius: '50%', border: `${isMobile ? '5' : '8'}px solid #3B82F6`, overflow: 'hidden', boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)' }}>
-                                        <img src="/assets/henry-closeup.png" alt="Henry" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                        <img src="/assets/henry-closeup.png" alt="Henry" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                                     </div>
                                     <span style={{ fontSize: isMobile ? '1.1rem' : '1.5rem', fontWeight: 'bold', color: 'white' }}>Henry</span>
                                 </button>

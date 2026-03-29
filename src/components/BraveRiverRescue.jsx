@@ -45,6 +45,7 @@ export default function BraveRiverRescue() {
                         <img
                             src="/assets/book-mockup.png"
                             alt="Frankie and Henry: The Brave River Rescue"
+                            loading="lazy"
                             style={{
                                 height: 'auto', width: '100%', maxWidth: '320px', maxHeight: '500px',
                                 filter: 'drop-shadow(0 24px 48px rgba(0,0,0,0.35))',
@@ -174,7 +175,7 @@ export default function BraveRiverRescue() {
                                     e.currentTarget.style.zIndex = '1';
                                 }}
                             >
-                                <img src={img.src} alt={img.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: img.objectPosition || 'center center', display: 'block' }} />
+                                <img src={img.src} alt={img.alt} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: img.objectPosition || 'center center', display: 'block' }} />
                             </div>
                         ))}
                     </div>
