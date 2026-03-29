@@ -1748,6 +1748,146 @@ button {
     font-family: 'Nunito', sans-serif !important;
 }
 
+/* =========================================
+   Blog Styles
+   ========================================= */
+
+/* Blog listing grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual blog card */
+.blog-card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: var(--radius-lg);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), inset 1px 1px 4px rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12), inset 1px 1px 4px rgba(255, 255, 255, 0.9);
+}
+
+.blog-card-body {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card-body p {
+    flex: 1;
+}
+
+/* Blog post article */
+.blog-post {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--radius-lg);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), inset 1px 1px 4px rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blog-post-body {
+    padding: 2rem 2.5rem 2.5rem;
+}
+
+/* Blog post content typography */
+.blog-post-content {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #3D2B1F;
+}
+
+.blog-post-content p {
+    margin-bottom: 1.25rem;
+}
+
+.blog-post-content h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #78350F;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.blog-post-content h3 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #78350F;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post-content ul,
+.blog-post-content ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+}
+
+.blog-post-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+.blog-post-content a {
+    color: #A85830;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(168, 88, 48, 0.3);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
+}
+
+.blog-post-content a:hover {
+    text-decoration-color: #A85830;
+}
+
+.blog-post-content strong {
+    font-weight: 700;
+    color: #5C4033;
+}
+
+.blog-post-content em {
+    font-style: italic;
+}
+
+/* Blog header (compact nav for blog pages) */
+.blog-header a:hover {
+    opacity: 0.85;
+}
+
+/* Responsive adjustments for blog */
+@media (max-width: 767px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .blog-post-body {
+        padding: 1.5rem;
+    }
+
+    .blog-post img {
+        height: 220px !important;
+    }
+}
+
 /* Soften all general .card boxes so they work on any section colour */
 .card {
     border: 2px solid rgba(255, 255, 255, 0.6) !important;

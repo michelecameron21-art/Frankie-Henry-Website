@@ -9,6 +9,8 @@ import Game from './components/Game'
 import Story from './components/Story'
 import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
+import Blog from './components/Blog'
+import BlogPost from './components/BlogPost'
 
 
 const NAV_ITEMS = [
@@ -28,6 +30,12 @@ const NAV_ITEMS = [
             { label: 'Colouring Pages', href: '#extras' },
             { label: 'Spot the Difference', href: '#extras' },
             { label: 'Sing Along', href: '#extras' },
+        ],
+    },
+    {
+        label: 'Stories',
+        links: [
+            { label: 'Blog', href: '#blog' },
         ],
     },
     {
@@ -113,13 +121,41 @@ function DropdownMenu({ item, closeAll }) {
     );
 }
 
+function useHashRoute() {
+    const [hash, setHash] = useState(window.location.hash);
+
+    useEffect(() => {
+        const onHashChange = () => setHash(window.location.hash);
+        window.addEventListener('hashchange', onHashChange);
+        return () => window.removeEventListener('hashchange', onHashChange);
+    }, []);
+
+    // Parse the hash into a route
+    if (hash === '#blog' || hash === '#blog/') {
+        return { page: 'blog' };
+    }
+    if (hash.startsWith('#blog/')) {
+        return { page: 'blogPost', slug: hash.replace('#blog/', '') };
+    }
+    return { page: 'home' };
+}
+
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [mobileOpenItem, setMobileOpenItem] = useState(null);
+    const route = useHashRoute();
+
+    // Scroll to top when navigating to blog pages
+    useEffect(() => {
+        if (route.page === 'blog' || route.page === 'blogPost') {
+            window.scrollTo(0, 0);
+        }
+    }, [route.page, route.slug]);
 
     return (
         <div className="app">
             {/* Full-bleed Hero — image only for now */}
+            {route.page === 'home' ? (
             <header style={{ height: '100vh', minHeight: '650px', position: 'relative', overflow: 'hidden', width: '100%' }}>
 
                 {/* Hero image — desktop (wide) */}
@@ -334,15 +370,71 @@ function App() {
                     )}
                 </nav>
             </header>
+            ) : (
+            <header className="blog-header" style={{
+                background: 'linear-gradient(135deg, #A85830 0%, #C07848 100%)',
+                padding: '1.25rem 2rem',
+                position: 'relative',
+                zIndex: 50,
+            }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <a href="#" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                        <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '60px', width: 'auto' }} />
+                    </a>
+                    <nav style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+                        <a href="#" style={{
+                            fontFamily: "'Fredoka', sans-serif",
+                            fontWeight: 600,
+                            fontSize: '1rem',
+                            color: 'rgba(255,255,255,0.9)',
+                            textDecoration: 'none',
+                        }}>Home</a>
+                        <a href="#blog" style={{
+                            fontFamily: "'Fredoka', sans-serif",
+                            fontWeight: 600,
+                            fontSize: '1rem',
+                            color: '#FFD200',
+                            textDecoration: 'none',
+                        }}>Blog</a>
+                        <a
+                            href="https://www.amazon.com/dp/B0GTVVPPH6"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                                fontFamily: "'Fredoka', sans-serif",
+                                fontWeight: 700,
+                                fontSize: '0.9rem',
+                                background: '#FFD200',
+                                color: '#78350F',
+                                padding: '0.5rem 1.25rem',
+                                borderRadius: '9999px',
+                                textDecoration: 'none',
+                                boxShadow: '0 3px 0 #B8960A',
+                            }}
+                        >Buy the Book</a>
+                    </nav>
+                </div>
+            </header>
+            )}
 
-            <main className="relative z-10">
-                <SafariHeroes />
-                <MeetTheBrothers />
-                <BraveRiverRescue />
-                <Game />
-                <Extras />
-                <Story />
-            </main>
+            {route.page === 'blog' ? (
+                <main className="relative z-10">
+                    <Blog />
+                </main>
+            ) : route.page === 'blogPost' ? (
+                <main className="relative z-10">
+                    <BlogPost slug={route.slug} />
+                </main>
+            ) : (
+                <main className="relative z-10">
+                    <SafariHeroes />
+                    <MeetTheBrothers />
+                    <BraveRiverRescue />
+                    <Game />
+                    <Extras />
+                    <Story />
+                </main>
+            )}
 
             <Footer />
             <CookieBanner />
