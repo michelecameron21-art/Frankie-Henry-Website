@@ -379,7 +379,7 @@ function App() {
             }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                     <a href="#" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-                        <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '60px', width: 'auto' }} />
+                        <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '120px', width: 'auto' }} />
                     </a>
                     <nav style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
                         <a href="#" style={{
