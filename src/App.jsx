@@ -9,6 +9,7 @@ import Game from './components/Game'
 import Story from './components/Story'
 import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
+import Dashboard from './components/Dashboard'
 import Blog from './components/Blog'
 import BlogPost from './components/BlogPost'
 
@@ -137,6 +138,15 @@ function useHashRoute() {
     if (hash.startsWith('#blog/')) {
         return { page: 'blogPost', slug: hash.replace('#blog/', '') };
     }
+    if (hash === '#michele-hq' || hash === '#michele-hq/') {
+        return { page: 'dashboard', sub: 'home' };
+    }
+    if (hash === '#michele-hq/seo') {
+        return { page: 'dashboard', sub: 'seo' };
+    }
+    if (hash === '#michele-hq/outreach') {
+        return { page: 'dashboard', sub: 'outreach' };
+    }
     return { page: 'home' };
 }
 
@@ -147,7 +157,7 @@ function App() {
 
     // Scroll to top when navigating to blog pages
     useEffect(() => {
-        if (route.page === 'blog' || route.page === 'blogPost') {
+        if (route.page === 'blog' || route.page === 'blogPost' || route.page === 'dashboard') {
             window.scrollTo(0, 0);
         }
     }, [route.page, route.slug]);
@@ -370,7 +380,7 @@ function App() {
                     )}
                 </nav>
             </header>
-            ) : (
+            ) : route.page === 'dashboard' ? null : (
             <header className="blog-header" style={{
                 background: 'linear-gradient(135deg, #A85830 0%, #C07848 100%)',
                 padding: '1.25rem 2rem',
@@ -417,7 +427,9 @@ function App() {
             </header>
             )}
 
-            {route.page === 'blog' ? (
+            {route.page === 'dashboard' ? (
+                <Dashboard page={route.sub} />
+            ) : route.page === 'blog' ? (
                 <main className="relative z-10">
                     <Blog />
                 </main>
@@ -436,8 +448,8 @@ function App() {
                 </main>
             )}
 
-            <Footer />
-            <CookieBanner />
+            {route.page !== 'dashboard' && <Footer />}
+            {route.page !== 'dashboard' && <CookieBanner />}
         </div>
     )
 }
