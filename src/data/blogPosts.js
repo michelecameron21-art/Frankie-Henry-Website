@@ -40,7 +40,7 @@ const blogPosts = [
         content: `
             <p>They're small. They're stubborn. They think they're ten times their actual size. And that's exactly what makes Yorkshire Terriers the perfect heroes for a children's adventure book.</p>
 
-            <p>When I sat down to write <strong>Frankie & Henry and the Brave River Rescue</strong>, I didn't have to look far for inspiration. My two Yorkies, Frankie and Henry, were right there — one trying to climb somewhere he shouldn't be, the other fast asleep with one eye on the biscuit tin.</p>
+            <p>When I sat down to write <strong>Frankie & Henry and the Brave River Rescue</strong>, I didn't have to look far for inspiration. I just had to close my eyes and remember the walks — the ones I used to take with my two Yorkies, Frankie and Henry. One always racing ahead, pulling at the lead, desperate to see what was around the next corner. The other trotting along behind, stopping to sniff everything, keeping one eye out for anything that might be edible.</p>
 
             <h2>Small Dogs, Big Personalities</h2>
 
@@ -68,9 +68,11 @@ const blogPosts = [
 
             <h2>The Real Dogs Behind the Story</h2>
 
-            <p>The best part about writing Frankie and Henry is that I don't have to make anything up about their personalities. The real Frankie genuinely is the adventurous one — always exploring, always leading, always getting into situations that make me hold my breath. And the real Henry genuinely is obsessed with food, genuinely does prefer sleeping to literally anything else, and genuinely does have the biggest, bravest heart when it counts.</p>
+            <p>Henry passed away a few years ago, and writing this book was my way of keeping the adventures alive. Every scene in <em>The Brave River Rescue</em> started with a memory — the walks we used to take together, the way Frankie would charge ahead while Henry plodded along behind him, the little moments that made me laugh and made my heart full.</p>
 
-            <p>Every scene in <em>The Brave River Rescue</em> started with me watching my two dogs and thinking, "What would they do if they were in the Wild Place?" The answer was always more entertaining, more surprising, and more heartwarming than anything I could have invented.</p>
+            <p>I didn't have to make anything up about their personalities. Frankie genuinely was the adventurous one — always exploring, always leading, always getting into situations that made me hold my breath. And Henry genuinely was obsessed with food, genuinely did prefer sleeping to literally anything else, and genuinely did have the biggest, bravest heart when it counted.</p>
+
+            <p>This book is for Henry. It's a way of saying: you were small, you were sleepy, you loved your snacks — but you were the bravest little dog I ever knew. And now children everywhere get to know that too.</p>
 
             <h2>Yorkshire Terriers: Born for Adventure Stories</h2>
 
@@ -80,7 +82,7 @@ const blogPosts = [
 
             <p>If you haven't met Frankie and Henry yet, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of The Brave River Rescue</a> and see for yourself why two little Yorkshire Terriers might just be the bravest heroes in children's books.</p>
 
-            <p>And if you've already got a Yorkie at home? You already know exactly what I'm talking about.</p>
+            <p>And if you've got a Yorkie at home, or you've ever loved one? You already know exactly what I'm talking about.</p>
 
             <p><em>— Michele x</em></p>
         `,
