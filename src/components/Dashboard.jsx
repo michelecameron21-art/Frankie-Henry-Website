@@ -125,13 +125,26 @@ function OutreachDashboard() {
 
             {o.todaysPlan.length > 0 && (
                 <>
-                    <h2 style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1.4rem', color: '#FFD200', marginBottom: '1rem' }}>Today's Email Drafts</h2>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '2rem' }}>
+                    <h2 style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1.4rem', color: '#FFD200', marginBottom: '1rem' }}>Emails to Send</h2>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', marginBottom: '2rem' }}>
                         {o.todaysPlan.map((item, i) => (
-                            <div key={i} style={{ background: 'rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1rem', border: '1px solid rgba(255,255,255,0.1)' }}>
-                                <div style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1rem', color: '#FFD200', marginBottom: '0.25rem' }}>{item.name}</div>
-                                <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: '0.25rem' }}>{item.type}</div>
-                                <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.9rem', color: 'rgba(255,255,255,0.8)' }}>{item.description}</div>
+                            <div key={i} style={{ background: 'rgba(255,255,255,0.08)', borderRadius: '16px', padding: '1.5rem', border: '1px solid rgba(255,255,255,0.15)' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.75rem' }}>
+                                    <div style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1.1rem', color: '#FFD200' }}>Email {i + 1}: {item.name}</div>
+                                    <span style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.75rem', color: '#1e293b', background: '#FFD200', padding: '0.2rem 0.6rem', borderRadius: '6px', fontWeight: 700 }}>{item.type}</span>
+                                </div>
+                                <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.5rem' }}>{item.description}</div>
+                                <div style={{ background: 'rgba(0,0,0,0.3)', borderRadius: '12px', padding: '1.25rem', marginTop: '0.75rem' }}>
+                                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.85rem', color: '#FFD200', marginBottom: '0.25rem' }}>
+                                        <strong>To:</strong> <span style={{ color: 'rgba(255,255,255,0.9)', userSelect: 'all' }}>{item.email}</span>
+                                    </div>
+                                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.85rem', color: '#FFD200', marginBottom: '0.75rem' }}>
+                                        <strong>Subject:</strong> <span style={{ color: 'rgba(255,255,255,0.9)' }}>{item.subject || item.name}</span>
+                                    </div>
+                                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.9rem', color: 'rgba(255,255,255,0.85)', lineHeight: '1.7', whiteSpace: 'pre-line', userSelect: 'all' }}>
+                                        {item.message}
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>
@@ -149,9 +162,15 @@ function OutreachDashboard() {
                                     <span style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)' }}>{item.time}</span>
                                 </div>
                                 <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.9rem', color: 'rgba(255,255,255,0.8)', marginBottom: '0.5rem' }}>{item.action}</div>
+                                {item.url && (
+                                    <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: '#FFD200', display: 'inline-block', marginBottom: '0.5rem' }}>{item.url}</a>
+                                )}
                                 {item.message && (
-                                    <div style={{ background: 'rgba(0,0,0,0.2)', borderRadius: '8px', padding: '0.75rem', fontFamily: "'Nunito', sans-serif", fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', fontStyle: 'italic' }}>
-                                        "{item.message}"
+                                    <div style={{ marginTop: '0.25rem' }}>
+                                        <div style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', marginBottom: '0.25rem' }}>Copy-paste this:</div>
+                                        <div style={{ background: 'rgba(0,0,0,0.3)', borderRadius: '8px', padding: '0.75rem', fontFamily: "'Nunito', sans-serif", fontSize: '0.85rem', color: 'rgba(255,255,255,0.85)', lineHeight: '1.6', whiteSpace: 'pre-line', userSelect: 'all' }}>
+                                            {item.message}
+                                        </div>
                                     </div>
                                 )}
                             </div>
