@@ -89,6 +89,72 @@ const blogPosts = [
         image: '/assets/frankie.jpg',
         imageAlt: 'Frankie the Yorkshire Terrier — brave adventure dog from the Frankie and Henry children\'s book',
     },
+    {
+        id: '5-amazing-african-animals-your-kids-will-love',
+        title: '5 Amazing African Animals Your Kids Will Love',
+        metaDescription: 'Discover 5 incredible African animals that star in the children\'s picture book Frankie & Henry. From blue cranes to martial eagles, these Wild Place creatures will fascinate young readers.',
+        date: '2026-04-02',
+        author: 'Michele Cameron',
+        targetKeyword: 'African adventure children\'s book',
+        excerpt: 'The African wilderness is home to some of the most extraordinary animals on Earth. Here are five incredible creatures your children will meet in the Wild Place — and the surprising real facts behind each one.',
+        content: `
+            <p>The African wilderness is home to some of the most extraordinary animals on Earth. When I was writing <strong>Frankie & Henry and the Brave River Rescue</strong>, I wanted children to meet animals they might never have heard of before — not just the lions and elephants, but the quieter, stranger, more surprising creatures that make Africa's wild places so magical.</p>
+
+            <p>Here are five incredible animals your children will meet in the Wild Place — and the real facts that inspired their characters in the book.</p>
+
+            <h2>1. The Blue Crane (Lwazi)</h2>
+
+            <p>In the book, Lwazi the Blue Crane is the wise guide of the Wild Place — the one who knows everything that's happening and everyone who lives there. He's quirky, he's elegant, and he's been voted "best legs in the Wild Place" (his words, not ours).</p>
+
+            <p><strong>The real facts:</strong> Blue Cranes are South Africa's national bird, and they're absolutely stunning. Standing over a metre tall with pale blue-grey feathers and long, trailing wing plumes, they look like they belong in a fairy tale. They're also fiercely loyal — Blue Cranes mate for life and are known for their beautiful dancing displays, leaping and bowing to each other in pairs.</p>
+
+            <p><strong>Fun fact for kids:</strong> Blue Cranes don't actually have long tail feathers — those beautiful trailing plumes that sweep the ground are actually their wing feathers.</p>
+
+            <h2>2. The Water Monitor Lizard</h2>
+
+            <p>The Monitor Lizard in the book is the grumpy guardian of the river — territorial, intimidating, and absolutely convinced that everything within splashing distance belongs to him. He's the obstacle Frankie and Henry must get past, and he's not making it easy.</p>
+
+            <p><strong>The real facts:</strong> Water Monitor Lizards are the largest lizards in Africa, growing up to two metres long. They're excellent swimmers and can hold their breath underwater for extended periods. Despite their fearsome appearance, they're actually quite shy — but if you stumble onto their favourite basking spot, they'll let you know about it.</p>
+
+            <p><strong>Fun fact for kids:</strong> Monitor Lizards have forked tongues, just like snakes, which they use to "taste" the air and track down food. They can detect a meal from hundreds of metres away.</p>
+
+            <h2>3. The Martial Eagle</h2>
+
+            <p>The Martial Eagle in the Wild Place is the sky king — majestic, powerful, and circling overhead with an eye that misses nothing. In the book, he adds a very real sense of danger from above, especially for a small, snack-obsessed Yorkshire Terrier named Henry.</p>
+
+            <p><strong>The real facts:</strong> The Martial Eagle is the largest eagle in Africa, with a wingspan of over two metres. They're incredibly powerful — capable of knocking a grown man off his feet — and they have eyesight so sharp they can spot prey from over five kilometres away. They're the apex predators of the African sky.</p>
+
+            <p><strong>Fun fact for kids:</strong> Martial Eagles can carry prey weighing up to a third of their own body weight. They've been known to take down small antelopes, which is extraordinary for a bird.</p>
+
+            <h2>4. The Black-Backed Jackal</h2>
+
+            <p>Jackal Mum is one of the most important characters in the book — fierce, devoted, and absolutely unstoppable when it comes to protecting her cub. When her little one gets lost by the river, her desperate cries are what set the whole rescue in motion.</p>
+
+            <p><strong>The real facts:</strong> Black-backed Jackals are one of Africa's most resourceful animals. They live in family groups and are incredibly devoted parents — both mum and dad raise the pups together, and older siblings often help look after the new babies. They're clever, adaptable, and fiercely protective of their families.</p>
+
+            <p><strong>Fun fact for kids:</strong> Jackal parents take turns babysitting. While one goes out hunting, the other stays with the pups. They're one of the most dedicated animal families in the African bush.</p>
+
+            <h2>5. The Yorkshire Terrier (Yes, Really)</h2>
+
+            <p>All right, Yorkshire Terriers aren't technically African animals. But Frankie and Henry are very much in the Wild Place, and they bring something none of the other animals have: the heart of a terrier.</p>
+
+            <p><strong>The real facts:</strong> Yorkies were originally bred in 19th-century Yorkshire to catch rats in coal mines and cotton mills. They're tiny — most weigh under 3 kilograms — but they were bred for courage and tenacity. A Yorkie in a mine shaft had to be brave, quick, and completely unbothered by things much bigger than itself.</p>
+
+            <p><strong>Fun fact for kids:</strong> During the Second World War, a Yorkshire Terrier called Smoky became a war hero. She ran communication cables through narrow underground pipes, survived over 150 air raids, and was awarded eight battle stars. Proof that small really can be mighty.</p>
+
+            <h2>Explore the Wild Place</h2>
+
+            <p>These five animals — plus a neighbourhood cat called Clawdius who you definitely shouldn't trust — are all waiting in the Wild Place. If your children love animals, adventure, and stories about courage and friendship, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of Frankie & Henry and the Brave River Rescue</a> and let them discover the Wild Place for themselves.</p>
+
+            <p>You can also <a href="#characters">meet all the characters</a> right here on our website, play the <a href="#game">Rescue Run game</a>, and download free <a href="#extras">colouring pages and activities</a>.</p>
+
+            <p>Happy exploring!</p>
+
+            <p><em>— Michele x</em></p>
+        `,
+        image: '/assets/eagle.jpg',
+        imageAlt: 'Martial Eagle — Africa\'s largest eagle and sky king of the Wild Place',
+    },
 ];
 
 export default blogPosts;
