@@ -200,6 +200,30 @@ function OutreachDashboard() {
                     </p>
                 </div>
             )}
+
+            {o.awards && o.awards.length > 0 && (
+                <>
+                    <h2 style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1.4rem', color: '#FFD200', marginTop: '2.5rem', marginBottom: '1rem' }}>Book Awards to Enter</h2>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
+                        {o.awards.map((award, i) => (
+                            <div key={i} style={{ background: 'rgba(255,255,255,0.08)', borderRadius: '12px', padding: '1.25rem', border: '1px solid rgba(255,255,255,0.1)' }}>
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                                    <span style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1.1rem', color: '#FFD200' }}>{award.name}</span>
+                                    <span style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.75rem', color: '#1e293b', background: award.fee === 'FREE' ? '#22c55e' : '#FFD200', padding: '0.2rem 0.6rem', borderRadius: '6px', fontWeight: 700 }}>{award.fee}</span>
+                                </div>
+                                {award.deadline && (
+                                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.85rem', color: '#f59e0b', marginBottom: '0.25rem' }}>Deadline: {award.deadline}</div>
+                                )}
+                                <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.85rem', color: 'rgba(255,255,255,0.7)', marginBottom: '0.5rem' }}>{award.categories}</div>
+                                <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.85rem', color: 'rgba(255,255,255,0.6)', marginBottom: '0.5rem' }}>{award.prize}</div>
+                                {award.url && (
+                                    <a href={award.url} target="_blank" rel="noopener noreferrer" style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: '#FFD200', textDecoration: 'none' }}>{award.url}</a>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </>
+            )}
         </div>
     );
 }
