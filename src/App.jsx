@@ -383,13 +383,14 @@ function App() {
             ) : route.page === 'dashboard' ? null : (
             <header className="blog-header" style={{
                 background: 'linear-gradient(135deg, #A85830 0%, #C07848 100%)',
-                padding: '1.25rem 2rem',
+                padding: '0.5rem 2rem',
                 position: 'relative',
                 zIndex: 50,
+                overflow: 'visible',
             }}>
-                <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '60px' }}>
                     <a href="#" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-                        <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '200px', width: 'auto' }} />
+                        <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '160px', width: 'auto', marginTop: '20px' }} />
                     </a>
                     <nav style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
                         <a href="#" style={{
