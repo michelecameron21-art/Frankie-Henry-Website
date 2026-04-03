@@ -134,6 +134,52 @@ export default function BraveRiverRescue() {
                     </div>
                 </div>
 
+                {/* Reviews */}
+                <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
+                    <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.8rem', color: '#78350f', marginBottom: '0.5rem' }}>
+                        What Readers Are Saying
+                    </h3>
+                    <div style={{ color: '#f59e0b', fontSize: '1.5rem', marginBottom: '2rem', letterSpacing: '4px' }}>⭐⭐⭐⭐⭐</div>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.25rem', maxWidth: '1000px', margin: '0 auto' }}>
+                        {[
+                            { text: "This looks just like a Disney or DreamWorks movie. It truly is a AAA quality picture book for children. This adventure is surprising, delightful and full of life.", stars: 5 },
+                            { text: "An excellent children's book that teaches great lessons about courage and helping others. Frankie and Henry are adorable protagonists. My niece was glued to the pages!", stars: 5 },
+                            { text: "The vibrantly coloured pictures and the expressions on Frankie and Henry's faces are brilliant. Such a lovely book, demonstrating how teamwork really pays off. They are already asking for the next adventure!", stars: 5 },
+                            { text: "A thrilling adventure with a great message. The setting is unique and well-described. We're looking forward to seeing where these two go next!", stars: 5 },
+                        ].map((review, i) => (
+                            <div key={i} style={{
+                                background: 'rgba(255,255,255,0.75)',
+                                backdropFilter: 'blur(6px)',
+                                border: '2px solid rgba(255,255,255,0.9)',
+                                borderRadius: '1.25rem',
+                                padding: '1.5rem',
+                                boxShadow: '0 4px 16px rgba(0,0,0,0.08)',
+                                textAlign: 'left',
+                            }}>
+                                <div style={{ color: '#f59e0b', fontSize: '1rem', marginBottom: '0.75rem', letterSpacing: '2px' }}>{'⭐'.repeat(review.stars)}</div>
+                                <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.95rem', color: '#1e293b', lineHeight: '1.7', fontStyle: 'italic', margin: 0 }}>"{review.text}"</p>
+                                <p style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '0.8rem', color: '#78350f', marginTop: '0.75rem', marginBottom: 0, fontWeight: '600' }}>— Amazon Reviewer ⭐</p>
+                            </div>
+                        ))}
+                    </div>
+                    <a
+                        href="https://www.amazon.com/dp/B0GTVVPPH6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            display: 'inline-block',
+                            marginTop: '1.5rem',
+                            fontFamily: 'Fredoka, sans-serif',
+                            fontSize: '0.95rem',
+                            color: '#78350f',
+                            textDecoration: 'underline',
+                            fontWeight: '600',
+                        }}
+                    >
+                        Read more reviews on Amazon →
+                    </a>
+                </div>
+
                 {/* Gallery */}
                 <div style={{ marginBottom: '3.5rem' }}>
                     <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>

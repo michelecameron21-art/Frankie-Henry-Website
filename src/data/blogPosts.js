@@ -155,6 +155,86 @@ const blogPosts = [
         image: '/assets/eagle.jpg',
         imageAlt: 'Martial Eagle — Africa\'s largest eagle and sky king of the Wild Place',
     },
+    {
+        id: 'teaching-kids-about-courage-through-picture-books',
+        title: 'Teaching Kids About Courage Through Picture Books',
+        metaDescription: 'How picture books help children understand and develop courage. Practical tips for parents and teachers using stories about bravery, fear, and friendship.',
+        date: '2026-04-03',
+        author: 'Michele Cameron',
+        targetKeyword: 'children\'s book about courage',
+        excerpt: 'Courage isn\'t the absence of fear. It\'s being scared and doing the thing anyway. And there\'s no better way to teach that to a child than through a picture book.',
+        content: `
+            <p>Courage isn't the absence of fear. It's being scared and doing the thing anyway. And there's no better way to teach that to a child than through a picture book.</p>
+
+            <p>When children hear a story about a character who is frightened but acts bravely, something clicks. They don't just understand courage as a concept — they <em>feel</em> it. They live it alongside the character. And that emotional experience stays with them long after the book is closed.</p>
+
+            <h2>Why Picture Books Are Perfect for Teaching Courage</h2>
+
+            <p>Children aged 4–8 are navigating fear every day. Fear of the dark. Fear of starting school. Fear of being different. Fear of getting things wrong. These are enormous feelings in a small body, and children don't always have the words to express them.</p>
+
+            <p>Picture books give them those words.</p>
+
+            <p>When a child sees a character facing something scary — a dark forest, a big wave, a new classroom — and watches that character take a deep breath and carry on, they're rehearsing bravery in their own mind. Psychologists call this "narrative transportation." The child isn't just reading about courage. They're practising it.</p>
+
+            <h2>The Two Kinds of Courage Children Need to See</h2>
+
+            <p>Most stories show one kind of courage: the bold, loud, charge-into-danger kind. The hero who isn't afraid. The warrior who never hesitates.</p>
+
+            <p>But that's not the kind of courage most children need.</p>
+
+            <p>They need to see <strong>quiet courage</strong> — the kind where you're scared, you're unsure, you'd honestly rather not, but you do it anyway because someone needs you.</p>
+
+            <p>This is exactly why I wrote two brothers into <strong>Frankie & Henry and the Brave River Rescue</strong> rather than one.</p>
+
+            <p><strong>Frankie</strong> shows bold courage. He's fearless, he charges ahead, he doesn't think twice. Children who are naturally brave see themselves in Frankie and feel validated.</p>
+
+            <p><strong>Henry</strong> shows quiet courage. He's scared. He's hungry. He'd genuinely prefer a nap. But when a lost jackal cub needs help, Henry shows up — shaking, uncertain, but there. Children who are quieter, more cautious, more anxious see themselves in Henry. And they learn the most important lesson of all: <em>you don't have to be fearless to be brave.</em></p>
+
+            <h2>How to Use Picture Books to Talk About Courage</h2>
+
+            <p>Reading the story is just the beginning. The real magic happens in the conversation afterwards. Here are some questions that work beautifully:</p>
+
+            <ul>
+                <li><strong>"How do you think Henry felt?"</strong> — This builds empathy and emotional vocabulary.</li>
+                <li><strong>"Have you ever felt scared like that?"</strong> — This normalises fear as a universal experience.</li>
+                <li><strong>"What would you have done?"</strong> — This lets the child practise decision-making in a safe space.</li>
+                <li><strong>"Was Henry brave even though he was scared?"</strong> — This redefines courage as action despite fear, not absence of fear.</li>
+            </ul>
+
+            <p>These aren't quiz questions. They're invitations to think and feel. Let the child lead the conversation. You might be surprised where they take it.</p>
+
+            <h2>Courage Looks Different for Every Child</h2>
+
+            <p>For one child, courage is putting their hand up in class. For another, it's trying a new food. For another, it's walking into a birthday party where they don't know anyone.</p>
+
+            <p>The beauty of picture books is that they show courage in many forms, and children naturally find the version that resonates with their own life. They don't need to rescue a jackal cub from a river — but they might need to stand up for a friend in the playground, or try something they've failed at before, or say "I need help" when everything feels too hard.</p>
+
+            <p>Stories give them permission to be brave in their own way.</p>
+
+            <h2>Books That Teach Courage Beautifully</h2>
+
+            <p>If you're looking for picture books that handle courage with warmth and honesty, here are some worth exploring:</p>
+
+            <ul>
+                <li><strong>Frankie & Henry and the Brave River Rescue</strong> — Two Yorkshire Terriers face a river crossing, a grumpy lizard, and an eagle to rescue a lost cub. Shows both bold and quiet courage.</li>
+                <li><strong>The Koala Who Could</strong> by Rachel Bright — A koala learns that sometimes you have to let go of what feels safe.</li>
+                <li><strong>After the Fall</strong> by Dan Santat — Humpty Dumpty deals with fear after his famous fall. Gorgeous and emotional.</li>
+                <li><strong>The Lion Inside</strong> by Rachel Bright — A tiny mouse discovers that even small creatures have a lion's roar inside them.</li>
+            </ul>
+
+            <h2>The Bedtime Advantage</h2>
+
+            <p>There's a reason picture books about courage work so well at bedtime. When a child is tucked up, warm, and safe, they can explore scary feelings without actually being in danger. The book creates a container for big emotions. The parent's voice provides the safety net.</p>
+
+            <p>By the time the story ends and the brave characters have made it through, the child falls asleep having rehearsed courage one more time. And tomorrow, when they face their own small brave moment, something inside them remembers: <em>I can do this. Henry was scared too, and he still did it.</em></p>
+
+            <p>If you'd like to read Frankie and Henry's story with your little ones, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of The Brave River Rescue</a>. It's available in Kindle and paperback — perfect for bedtime bravery.</p>
+
+            <p><em>— Michele x</em></p>
+        `,
+        image: '/assets/hero-bros.jpg',
+        imageAlt: 'Frankie and Henry, two Yorkshire Terriers, on a brave safari adventure in Africa',
+    },
 ];
 
 export default blogPosts;
