@@ -158,7 +158,7 @@ export default function BraveRiverRescue() {
                             }}>
                                 <div style={{ color: '#f59e0b', fontSize: '1rem', marginBottom: '0.75rem', letterSpacing: '2px' }}>{'⭐'.repeat(review.stars)}</div>
                                 <p style={{ fontFamily: 'Nunito, sans-serif', fontSize: '0.95rem', color: '#1e293b', lineHeight: '1.7', fontStyle: 'italic', margin: 0 }}>"{review.text}"</p>
-                                <p style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '0.8rem', color: '#78350f', marginTop: '0.75rem', marginBottom: 0, fontWeight: '600' }}>— Amazon Reviewer ⭐</p>
+                                <p style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '0.8rem', color: '#78350f', marginTop: '0.75rem', marginBottom: 0, fontWeight: '600' }}>— Amazon Reviewer 🐾</p>
                             </div>
                         ))}
                     </div>
