@@ -188,7 +188,7 @@ const blogPosts = [
 
             <p><strong>Frankie</strong> shows bold courage. He's fearless, he charges ahead, he doesn't think twice. Children who are naturally brave see themselves in Frankie and feel validated.</p>
 
-            <p><strong>Henry</strong> shows quiet courage. He's scared. He's hungry. He'd genuinely prefer a nap. But when a lost jackal cub needs help, Henry shows up — shaking, uncertain, but there. Children who are quieter, more cautious, more anxious see themselves in Henry. And they learn the most important lesson of all: <em>you don't have to be fearless to be brave.</em></p>
+            <p><strong>Henry</strong> shows quiet courage. He's scared. He's hungry. He'd genuinely prefer a nap. But when a lost jackal cub needs help, Henry shows up — uncertain, hungry, but there. Children who are quieter, more cautious, more anxious see themselves in Henry. And they learn the most important lesson of all: <em>you don't have to be fearless to be brave.</em></p>
 
             <h2>How to Use Picture Books to Talk About Courage</h2>
 
@@ -232,8 +232,8 @@ const blogPosts = [
 
             <p><em>— Michele x</em></p>
         `,
-        image: '/assets/hero-bros.jpg',
-        imageAlt: 'Frankie and Henry, two Yorkshire Terriers, on a brave safari adventure in Africa',
+        image: '/assets/running-into-river.jpg',
+        imageAlt: 'Frankie and Henry running into the river on their brave rescue mission',
     },
 ];
 
