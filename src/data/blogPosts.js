@@ -301,9 +301,8 @@ const blogPosts = [
 
             <p><em>— Michele x</em></p>
         `,
-        image: '/assets/lizard-snoozing.jpg',
-        imageAlt: 'Monitor Lizard snoozing by the African river — wildlife from the Wild Place',
-        imagePosition: 'center 85%',
+        image: '/assets/wild-place-running.jpg',
+        imageAlt: 'Frankie and Henry running through the African savannah — safari adventure for children',
     },
 ];
 
