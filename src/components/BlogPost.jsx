@@ -78,7 +78,7 @@ function BlogPost({ slug }) {
                             width: '100%',
                             height: '350px',
                             objectFit: 'cover',
-                            objectPosition: 'center 30%',
+                            objectPosition: post.imagePosition || 'center 30%',
                             borderRadius: 'var(--radius-lg) var(--radius-lg) 0 0',
                         }}
                     />
