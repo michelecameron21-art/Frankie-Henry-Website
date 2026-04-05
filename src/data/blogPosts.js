@@ -303,7 +303,7 @@ const blogPosts = [
         `,
         image: '/assets/lizard-snoozing.jpg',
         imageAlt: 'Monitor Lizard snoozing by the African river — wildlife from the Wild Place',
-        imagePosition: 'center 60%',
+        imagePosition: 'center 85%',
     },
 ];
 
