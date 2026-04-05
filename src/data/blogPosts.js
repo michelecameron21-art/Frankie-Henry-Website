@@ -235,6 +235,75 @@ const blogPosts = [
         image: '/assets/running-into-river.jpg',
         imageAlt: 'Frankie and Henry running into the river on their brave rescue mission',
     },
+    {
+        id: 'best-african-safari-books-for-children',
+        title: 'The Best African Safari Books for Children Ages 4-8',
+        metaDescription: 'Looking for African safari books for kids? Discover the best children\'s picture books set in Africa, featuring wildlife adventures, African animals, and stories that bring the safari to life.',
+        date: '2026-04-05',
+        author: 'Michele Cameron',
+        targetKeyword: 'African safari children\'s book',
+        excerpt: 'There\'s something magical about Africa for children. The vast open landscapes, the incredible animals, the sense that anything could happen. Here are the best African safari picture books to spark that wonder in your little ones.',
+        content: \`
+            <p>There's something magical about Africa for children. The vast open landscapes, the incredible animals, the sense that anything could happen around the next acacia tree. It's why African safari stories make some of the most captivating children's picture books — and why kids ask to read them again and again.</p>
+
+            <p>Whether you're preparing your child for a real safari holiday, homeschooling about African wildlife, or simply looking for a bedtime adventure that transports them somewhere extraordinary, these African safari books for children deliver.</p>
+
+            <h2>What Makes a Great African Safari Picture Book?</h2>
+
+            <p>The best African safari children's books don't just show animals — they make children <em>feel</em> like they're there. The heat of the savannah. The sound of the river. The thrill of spotting something moving in the tall grass. A great safari book turns a child's bedroom into a wilderness.</p>
+
+            <p>Look for books that:</p>
+            <ul>
+                <li>Feature <strong>authentic African landscapes</strong> — not generic "jungle" settings</li>
+                <li>Include <strong>real African animals</strong> beyond just lions and elephants</li>
+                <li>Tell <strong>stories with heart</strong> — adventure, friendship, courage</li>
+                <li>Have <strong>stunning illustrations</strong> that children want to stare at</li>
+                <li>Teach something <strong>without being preachy</strong></li>
+            </ul>
+
+            <h2>Our Picks: African Safari Books for Children</h2>
+
+            <h3>Frankie & Henry and the Brave River Rescue</h3>
+            <p>Two Yorkshire Terrier brothers discover a secret tunnel into the African Wild Place — a breathtaking savannah teeming with blue cranes, monitor lizards, martial eagles, and black-backed jackals. When a lost jackal cub is stranded by the river, Frankie and Henry must find the courage to help. Set against stunning African landscapes with Pixar-quality illustrations, this is an African safari adventure about courage, friendship, and proving that brave hearts come in small packages. <strong>Ages 4–8.</strong></p>
+            <p><a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Available on Amazon in Kindle and Paperback →</a></p>
+
+            <h3>Safari, So Good! (Cat in the Hat's Learning Library)</h3>
+            <p>The Cat in the Hat takes readers on a safari through the African savannah, introducing real animals and habitats in the classic Dr Seuss rhyming style. Brilliant for children who love facts wrapped in fun. A staple of the African safari children's book category.</p>
+
+            <h3>The Water Princess by Susan Verde</h3>
+            <p>Inspired by the true story of Georgie Badiel, this picture book follows a young girl in Africa who dreams of bringing clean water to her village. Beautifully illustrated and deeply moving — it shows a different side of Africa that children need to see.</p>
+
+            <h3>Wangari's Trees of Peace: A True Story from Africa</h3>
+            <p>The story of Wangari Maathai, who planted trees across Kenya and won the Nobel Peace Prize. A stunning picture book about one person's power to change the world. Perfect for children interested in African wildlife and the environment.</p>
+
+            <h3>Hello, Kenya!</h3>
+            <p>Part of the Sophie & Stephie Travel Sisters series, this picture book takes children on a safari adventure through Kenya. Bright, fun, and educational — great for children aged 4–8 who dream of exploring Africa.</p>
+
+            <h2>Why African Safari Stories Matter for Children</h2>
+
+            <p>African safari books do something special for young readers. They expand a child's world beyond their own garden. They introduce animals and landscapes that feel both thrilling and real. And they teach children about ecosystems, conservation, and the interconnectedness of life — all wrapped in adventure.</p>
+
+            <p>For children who love animals, there's nothing quite like discovering that a martial eagle can spot prey from five kilometres away, or that blue cranes dance to find their partners, or that black-backed jackal parents take turns babysitting their pups.</p>
+
+            <p>These aren't facts from a textbook. They're moments of wonder. And wonder is where a love of reading — and a love of the natural world — begins.</p>
+
+            <h2>Taking the Safari Home</h2>
+
+            <p>If your child is captivated by African safari stories, keep the adventure going:</p>
+            <ul>
+                <li><strong>Colouring pages</strong> — we've got free downloadable safari colouring pages at <a href="#extras">our extras page</a></li>
+                <li><strong>The Rescue Run game</strong> — help Frankie navigate the river in our free <a href="#game">browser game</a></li>
+                <li><strong>Meet the characters</strong> — explore all the Wild Place animals on <a href="#characters">our characters page</a></li>
+                <li><strong>Read the book</strong> — <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab Frankie & Henry on Amazon</a> and bring the safari to bedtime</li>
+            </ul>
+
+            <p>Happy exploring!</p>
+
+            <p><em>— Michele x</em></p>
+        \`,
+        image: '/assets/eagle.jpg',
+        imageAlt: 'African safari wildlife — Martial Eagle soaring over the African savannah',
+    },
 ];
 
 export default blogPosts;
