@@ -243,7 +243,7 @@ const blogPosts = [
         author: 'Michele Cameron',
         targetKeyword: 'African safari children\'s book',
         excerpt: 'There\'s something magical about Africa for children. The vast open landscapes, the incredible animals, the sense that anything could happen. Here are the best African safari picture books to spark that wonder in your little ones.',
-        content: \`
+        content: `
             <p>There's something magical about Africa for children. The vast open landscapes, the incredible animals, the sense that anything could happen around the next acacia tree. It's why African safari stories make some of the most captivating children's picture books — and why kids ask to read them again and again.</p>
 
             <p>Whether you're preparing your child for a real safari holiday, homeschooling about African wildlife, or simply looking for a bedtime adventure that transports them somewhere extraordinary, these African safari books for children deliver.</p>
@@ -300,7 +300,7 @@ const blogPosts = [
             <p>Happy exploring!</p>
 
             <p><em>— Michele x</em></p>
-        \`,
+        `,
         image: '/assets/eagle.jpg',
         imageAlt: 'African safari wildlife — Martial Eagle soaring over the African savannah',
     },
