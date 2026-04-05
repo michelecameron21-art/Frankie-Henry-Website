@@ -301,8 +301,8 @@ const blogPosts = [
 
             <p><em>— Michele x</em></p>
         `,
-        image: '/assets/eagle.jpg',
-        imageAlt: 'African safari wildlife — Martial Eagle soaring over the African savannah',
+        image: '/assets/lizard-snoozing.jpg',
+        imageAlt: 'Monitor Lizard snoozing by the African river — wildlife from the Wild Place',
     },
 ];
 
