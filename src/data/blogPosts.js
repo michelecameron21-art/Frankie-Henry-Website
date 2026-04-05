@@ -232,9 +232,8 @@ const blogPosts = [
 
             <p><em>— Michele x</em></p>
         `,
-        image: '/assets/running-into-river.jpg',
-        imageAlt: 'Frankie and Henry running into the river on their brave rescue mission',
-        imagePosition: 'center 90%',
+        image: '/assets/all-characters-river.jpg',
+        imageAlt: 'Frankie, Henry, Lwazi and the jackals together by the river — courage and friendship in the Wild Place',
     },
     {
         id: 'best-african-safari-books-for-children',
