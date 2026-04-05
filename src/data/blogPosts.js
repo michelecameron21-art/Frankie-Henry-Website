@@ -234,6 +234,7 @@ const blogPosts = [
         `,
         image: '/assets/running-into-river.jpg',
         imageAlt: 'Frankie and Henry running into the river on their brave rescue mission',
+        imagePosition: 'center 75%',
     },
     {
         id: 'best-african-safari-books-for-children',
