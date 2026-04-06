@@ -371,8 +371,8 @@ const blogPosts = [
 
             <p><em>— Michele x</em></p>
         `,
-        image: '/assets/all-characters-river.jpg',
-        imageAlt: 'Frankie and Henry with Lwazi and the jackals — the real dogs who inspired the book',
+        image: '/assets/real-frankie-henry.jpg',
+        imageAlt: 'The real Frankie and Henry — two Yorkshire Terrier brothers at golden hour',
     },
 ];
 
