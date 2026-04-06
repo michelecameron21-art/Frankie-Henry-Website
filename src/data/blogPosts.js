@@ -304,6 +304,76 @@ const blogPosts = [
         image: '/assets/wild-place-running.jpg',
         imageAlt: 'Frankie and Henry running through the African savannah — safari adventure for children',
     },
+    {
+        id: 'the-real-frankie-and-henry-behind-the-book',
+        title: 'The Real Frankie & Henry — Meet the Dogs Behind the Book',
+        metaDescription: 'Meet the real Frankie and Henry — two Yorkshire Terriers whose walks and personalities inspired the children\'s picture book Frankie & Henry and the Brave River Rescue.',
+        date: '2026-04-06',
+        author: 'Michele Cameron',
+        targetKeyword: 'Frankie and Henry book',
+        excerpt: 'Every great children\'s book has a secret. Ours is this: Frankie and Henry are real. Two tiny Yorkshire Terriers whose walks and personalities inspired every page.',
+        content: `
+            <p>Every great children's book has a secret. Ours is this: Frankie and Henry are real.</p>
+
+            <p>They're two Yorkshire Terriers. Brothers. Tiny, scruffy, and completely convinced they're much bigger than they actually are. Every adventure in <strong>Frankie & Henry and the Brave River Rescue</strong> started as a walk. Every personality trait in the book is stolen straight from the real dogs who inspired it.</p>
+
+            <h2>Frankie — The Fearless One</h2>
+
+            <p>Frankie was born first. By about two minutes. And he never let anyone forget it.</p>
+
+            <p>From the moment he could walk, Frankie was the explorer. First through the door. First to chase the squirrel. First to stand up to dogs five times his size. If there was a puddle to splash through, a hedge to dive into, or a stranger to greet, Frankie was already halfway there before anyone could say "wait."</p>
+
+            <p>On our walks, Frankie would always be at the front of the lead, pulling, nose to the ground, tail up, completely unbothered by anything. He didn't care about the weather. He didn't care about being tired. He cared about <em>what was around the next corner.</em></p>
+
+            <p>When I was writing the book, Frankie practically wrote himself. Every line where Frankie leaps first, charges ahead, or takes the lead — that's the real Frankie. No exaggeration.</p>
+
+            <h2>Henry — The Heart</h2>
+
+            <p>Henry was the opposite. And I mean the complete opposite.</p>
+
+            <p>Henry was the one who stopped to sniff every single blade of grass. The one who would lie down in the middle of a walk if he decided he'd had enough. The one whose eyes would light up at the mere <em>possibility</em> of a snack.</p>
+
+            <p>He was cautious. He was thoughtful. He was, frankly, a bit of a worrier. If Frankie charged ahead into somewhere unfamiliar, Henry would stand at the edge, look around, weigh up his options, and then — eventually — follow.</p>
+
+            <p>But here's the thing about Henry. When it really mattered, he was there. When Frankie needed him, Henry showed up every single time. He might have complained. He might have given me a long-suffering look first. But he never left his brother behind.</p>
+
+            <p>That's why Henry is the quiet hero of the book. Because brave doesn't always look like fearless. Sometimes brave looks like loving someone enough to do the scary thing anyway.</p>
+
+            <h2>The Walks That Became the Wild Place</h2>
+
+            <p>The Wild Place in the book — the African wilderness Frankie and Henry discover through a secret tunnel — started as memories of our real walks.</p>
+
+            <p>The tall grass. The rivers. The sudden rustles in the undergrowth that made Henry jump and Frankie charge. The moments when I'd look at these two tiny dogs in a world that was enormous compared to them, and wonder what it must look like through their eyes.</p>
+
+            <p>That's where the book came from. Not from imagination — from <em>remembering.</em></p>
+
+            <p>When Frankie and Henry meet the blue crane in the book, I can see Frankie stopping dead in his tracks at a heron on our walks, watching it with total fascination. When Henry is scared of the monitor lizard, I can feel Henry's little body pressed against my leg when he saw something he didn't like.</p>
+
+            <p>The Wild Place isn't fiction. It's every walk we ever took, turned into a story.</p>
+
+            <h2>Why This Book Exists</h2>
+
+            <p>Henry passed away a few years ago. And writing this book was my way of keeping him — keeping both of them, really — alive in the way they deserved.</p>
+
+            <p>Not as sad memories. As heroes. As the brave little dogs who made every walk an adventure, who taught me about courage and patience and loyalty, and who deserved a story that would outlive them.</p>
+
+            <p>Every child who reads <em>Frankie & Henry and the Brave River Rescue</em> is meeting the real Frankie and Henry. The fearless one. The sleepy one. The pair who loved each other and loved the world.</p>
+
+            <p>And every time a child asks for the story at bedtime, Henry gets one more adventure. Frankie gets one more chance to lead the way. And the real walks we took together turn into something magical for a new little reader.</p>
+
+            <h2>The Book That Keeps Them Running</h2>
+
+            <p>If you've got a child who loves animals, adventure, or two tiny dogs with enormous hearts, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of Frankie & Henry and the Brave River Rescue</a>. Kindle or paperback — both take you to the Wild Place.</p>
+
+            <p>And if you've got a Yorkie of your own, or you've ever loved a small dog with a huge personality, I hope the story feels familiar. That's the point.</p>
+
+            <p>Small paws. Brave hearts. Big adventures. That was Frankie and Henry from the very beginning.</p>
+
+            <p><em>— Michele x</em></p>
+        `,
+        image: '/assets/all-characters-river.jpg',
+        imageAlt: 'Frankie and Henry with Lwazi and the jackals — the real dogs who inspired the book',
+    },
 ];
 
 export default blogPosts;
