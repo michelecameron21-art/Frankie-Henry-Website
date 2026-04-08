@@ -468,8 +468,8 @@ const blogPosts = [
 
             <p><em>— Michele x</em></p>
         `,
-        image: '/assets/wild-place-running.jpg',
-        imageAlt: 'Free safari colouring pages featuring Frankie and Henry in the African Wild Place',
+        image: '/assets/colouring-page-preview.png',
+        imageAlt: 'Free printable colouring page featuring Frankie and Henry running through the African Wild Place with a meerkat and tortoise',
     },
 ];
 
