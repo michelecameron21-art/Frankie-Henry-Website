@@ -374,6 +374,103 @@ const blogPosts = [
         image: '/assets/real-frankie-henry.jpg',
         imageAlt: 'The real Frankie and Henry — two Yorkshire Terrier brothers at golden hour',
     },
+    {
+        id: 'free-safari-colouring-pages-for-kids',
+        title: 'Free Safari Colouring Pages for Kids',
+        metaDescription: 'Download free safari colouring pages for children featuring Frankie and Henry. Printable activity sheets for kids who love African animals and adventure stories.',
+        date: '2026-04-08',
+        author: 'Michele Cameron',
+        targetKeyword: 'safari colouring pages for kids',
+        excerpt: 'Looking for free safari colouring pages your little ones will actually love? Meet Frankie and Henry — two brave Yorkshire Terriers whose African adventure is now ready for crayons, colouring pencils, and imagination.',
+        content: `
+            <p>Looking for free safari colouring pages your little ones will actually love? You're in the right place.</p>
+
+            <p>We've got beautiful printable colouring pages featuring Frankie and Henry — two tiny Yorkshire Terrier brothers on an African safari adventure — ready to download and print for free. They're perfect for rainy afternoons, quiet time, classroom activities, or road trip survival kits.</p>
+
+            <h2>Why Colouring Pages Are Brilliant for Children</h2>
+
+            <p>Colouring isn't just a way to keep small hands busy (though it's brilliant for that too). It's one of the best activities for children's development. Here's what the simple act of filling in a picture actually does for your child:</p>
+
+            <ul>
+                <li><strong>Fine motor skills</strong> — holding a pencil and colouring within lines builds the hand strength children need for writing.</li>
+                <li><strong>Focus and patience</strong> — colouring requires sustained attention, which transfers directly into other learning.</li>
+                <li><strong>Creativity and self-expression</strong> — a blue sky or a purple sky? That's your child's choice, and that matters.</li>
+                <li><strong>Calm and relaxation</strong> — colouring is genuinely meditative for children. It slows racing minds and regulates big feelings.</li>
+                <li><strong>Colour recognition and vocabulary</strong> — "chestnut", "amber", "emerald" — colouring introduces rich language in a hands-on way.</li>
+            </ul>
+
+            <p>Pair all of that with characters your child already knows and loves, and you've got an activity that actually sticks.</p>
+
+            <h2>The Frankie &amp; Henry Safari Colouring Pages</h2>
+
+            <p>Our free safari colouring pages feature scenes from <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie &amp; Henry and the Brave River Rescue</a> — the picture book about two Yorkshire Terriers who discover a secret tunnel into an African wilderness and must rescue a lost jackal cub.</p>
+
+            <p>The pages include:</p>
+
+            <ul>
+                <li><strong>Frankie and Henry in the Wild Place</strong> — the boys exploring the African savannah</li>
+                <li><strong>Lwazi the blue crane</strong> — the wise guide of the Wild Place</li>
+                <li><strong>The grumpy monitor lizard</strong> — guarding the river with a very bad attitude</li>
+                <li><strong>The martial eagle</strong> — Africa's mightiest bird of prey</li>
+                <li><strong>The jackal family</strong> — including the lost cub who needs rescuing</li>
+            </ul>
+
+            <p>Each page is designed with clear, child-friendly outlines that work beautifully for ages 4–8 — not too simple, not too detailed.</p>
+
+            <h2>How to Download and Print</h2>
+
+            <p>It's completely free and takes about 30 seconds:</p>
+
+            <ol>
+                <li>Visit our <a href="#extras">Extras page</a> on the Frankie &amp; Henry website</li>
+                <li>Click the "Colouring Pages" download</li>
+                <li>Save the PDF to your computer</li>
+                <li>Print on standard A4 or letter paper</li>
+                <li>Grab your crayons and get colouring!</li>
+            </ol>
+
+            <p>No sign-up, no email required, no strings attached. Just free colouring pages for children who love animals, adventure, and tiny dogs with enormous hearts.</p>
+
+            <h2>Fun Ways to Use the Colouring Pages</h2>
+
+            <p>These colouring pages are brilliant on their own, but if you want to turn them into something more, here are a few ideas:</p>
+
+            <h3>Storytime and colour</h3>
+            <p>Read a page of the book, then give your child the matching colouring page to fill in. It brings the story to life in a completely different way and helps younger readers connect the words to the images.</p>
+
+            <h3>Classroom safari unit</h3>
+            <p>Teachers and homeschool parents — these pages work beautifully as part of an African wildlife, geography, or safari-themed unit. Use them alongside facts about real African animals, a read-aloud of the book, and a simple "design your own Wild Place" drawing exercise.</p>
+
+            <h3>Party pack</h3>
+            <p>Hosting a safari-themed birthday party? Print out a stack and set up a colouring station. Kids get a quiet moment, parents get a break, and everyone takes home something they made.</p>
+
+            <h3>Road trip survival</h3>
+            <p>Print a handful before a long car journey, pack some crayons in a tin, and you've got 30 minutes of peace in exchange for about 30 seconds of preparation. A fair trade in any parent's book.</p>
+
+            <h2>More Free Activities from the Wild Place</h2>
+
+            <p>The colouring pages are just the beginning. On our <a href="#extras">Extras page</a> you'll also find:</p>
+
+            <ul>
+                <li><strong>Spot the Difference</strong> — a printable puzzle featuring Frankie and Henry</li>
+                <li><strong>The Frankie &amp; Henry Sing Along</strong> — a theme song to sing in the car</li>
+                <li><strong>The Rescue Run game</strong> — a free browser game where you help Frankie navigate the river</li>
+                <li><strong>Character profiles</strong> — meet the whole Wild Place cast</li>
+            </ul>
+
+            <p>Everything is free and designed to extend the magic of the book beyond the page.</p>
+
+            <h2>And When You're Ready for the Story…</h2>
+
+            <p>Once your little one has coloured in Frankie and Henry, they'll want to know what happens to them. <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Grab a copy of The Brave River Rescue on Amazon</a> — it's available in Kindle and paperback — and watch the adventure come to life.</p>
+
+            <p>Happy colouring!</p>
+
+            <p><em>— Michele x</em></p>
+        `,
+        image: '/assets/wild-place-running.jpg',
+        imageAlt: 'Free safari colouring pages featuring Frankie and Henry in the African Wild Place',
+    },
 ];
 
 export default blogPosts;
