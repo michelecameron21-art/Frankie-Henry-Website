@@ -147,6 +147,9 @@ function useHashRoute() {
     if (hash === '#michele-hq/outreach') {
         return { page: 'dashboard', sub: 'outreach' };
     }
+    if (hash === '#michele-hq/content') {
+        return { page: 'dashboard', sub: 'content' };
+    }
     return { page: 'home' };
 }
 

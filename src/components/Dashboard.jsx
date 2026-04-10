@@ -1,4 +1,5 @@
 import { seoDashboard, outreachDashboard } from '../data/dashboardData';
+import { contentPlan } from '../data/contentPlan';
 
 const statusColour = (status) => {
     if (status === 'DONE') return '#22c55e';
@@ -228,6 +229,111 @@ function OutreachDashboard() {
     );
 }
 
+function ContentDashboard() {
+    const cp = contentPlan;
+    const formatColour = (f) => {
+        if (f.includes('Film')) return '#ef4444';
+        if (f.includes('HeyGen')) return '#8b5cf6';
+        if (f.includes('Carousel') || f.includes('Static')) return '#3b82f6';
+        return '#94a3b8';
+    };
+    const statusColourContent = (s) => {
+        if (s === 'READY — images already made') return '#22c55e';
+        if (s === 'DRAFT saved on Instagram') return '#f59e0b';
+        return '#94a3b8';
+    };
+
+    return (
+        <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem 1.5rem' }}>
+            <a href="#michele-hq" style={{ color: 'rgba(255,220,140,0.9)', textDecoration: 'none', fontFamily: "'Fredoka', sans-serif", fontSize: '0.9rem' }}>&larr; Back to HQ</a>
+
+            <h1 style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '2.2rem', color: '#FFD200', margin: '1.5rem 0 0.5rem' }}>
+                Content Plan
+            </h1>
+            <p style={{ color: 'rgba(255,255,255,0.8)', fontFamily: "'Nunito', sans-serif", fontSize: '1rem', marginBottom: '0.5rem' }}>
+                Week of {cp.weekOf} · Updated {cp.lastUpdated}
+            </p>
+
+            {/* Last week's insights */}
+            <div style={{ background: 'rgba(255,255,255,0.08)', borderRadius: '16px', padding: '1.25rem', marginBottom: '2rem', border: '1px solid rgba(255,255,255,0.1)' }}>
+                <div style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1rem', color: '#FFD200', marginBottom: '0.75rem' }}>Last Week's Insights</div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem' }}>
+                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)' }}>Best post:</div>
+                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: 'rgba(255,255,255,0.85)' }}>{cp.insights.bestPost}</div>
+                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: '#22c55e' }}>Do more:</div>
+                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: 'rgba(255,255,255,0.85)' }}>{cp.insights.doMore}</div>
+                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: '#ef4444' }}>Do less:</div>
+                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: 'rgba(255,255,255,0.85)' }}>{cp.insights.doLess}</div>
+                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: '#f59e0b' }}>Try this week:</div>
+                    <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: 'rgba(255,255,255,0.85)' }}>{cp.insights.tryThis}</div>
+                </div>
+            </div>
+
+            {/* This week's posts */}
+            <h2 style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1.4rem', color: '#FFD200', marginBottom: '1rem' }}>This Week's Posts</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2.5rem' }}>
+                {cp.days.map((day, i) => (
+                    <div key={i} style={{
+                        background: day.priority === 'HIGH' ? 'rgba(245,158,11,0.1)' : 'rgba(255,255,255,0.08)',
+                        borderRadius: '12px',
+                        padding: '1.25rem',
+                        border: day.priority === 'HIGH' ? '2px solid rgba(245,158,11,0.3)' : '1px solid rgba(255,255,255,0.1)',
+                    }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                            <span style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1rem', color: '#FFD200' }}>{day.day}</span>
+                            <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                                <span style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: '6px', background: formatColour(day.format), color: 'white', fontWeight: 700 }}>{day.format.split(' — ')[1] || day.format}</span>
+                                <span style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.7rem', padding: '0.15rem 0.5rem', borderRadius: '6px', background: statusColourContent(day.status), color: 'white', fontWeight: 700 }}>{day.status}</span>
+                            </div>
+                        </div>
+                        <div style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '0.95rem', color: 'white', marginBottom: '0.25rem' }}>{day.title}</div>
+                        <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', marginBottom: '0.5rem' }}>{day.pillar} · {day.duration}</div>
+                        <div style={{ background: 'rgba(0,0,0,0.3)', borderRadius: '8px', padding: '0.75rem', marginBottom: '0.5rem' }}>
+                            <div style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', marginBottom: '0.25rem' }}>Caption:</div>
+                            <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: 'rgba(255,255,255,0.8)', lineHeight: '1.5', whiteSpace: 'pre-line', userSelect: 'all' }}>{day.caption}</div>
+                        </div>
+                        {day.script && (
+                            <div style={{ background: 'rgba(0,0,0,0.2)', borderRadius: '8px', padding: '0.75rem', marginBottom: '0.5rem' }}>
+                                <div style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', marginBottom: '0.25rem' }}>Script / Instructions:</div>
+                                <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: 'rgba(255,255,255,0.7)', lineHeight: '1.5', whiteSpace: 'pre-line' }}>{day.script}</div>
+                            </div>
+                        )}
+                        {day.notes && (
+                            <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', fontStyle: 'italic' }}>{day.notes}</div>
+                        )}
+                    </div>
+                ))}
+            </div>
+
+            {/* Content bank */}
+            <h2 style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1.4rem', color: '#FFD200', marginBottom: '1rem' }}>Content Bank</h2>
+            <p style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', marginBottom: '1rem' }}>Pre-written posts you can grab anytime when you need a quick post.</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '2rem' }}>
+                {cp.bank.map((item, i) => (
+                    <div key={i} style={{ background: 'rgba(255,255,255,0.06)', borderRadius: '8px', padding: '0.75rem', border: '1px solid rgba(255,255,255,0.08)' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.25rem' }}>
+                            <span style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '0.9rem', color: '#FFD200' }}>{item.title}</span>
+                            <span style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)' }}>{item.type}</span>
+                        </div>
+                        <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.8rem', color: 'rgba(255,255,255,0.7)', lineHeight: '1.5', userSelect: 'all' }}>{item.caption}</div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Hashtag sets */}
+            <h2 style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1.4rem', color: '#FFD200', marginBottom: '1rem' }}>Hashtag Sets</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                {Object.entries(cp.hashtagSets).map(([name, tags]) => (
+                    <div key={name} style={{ background: 'rgba(255,255,255,0.06)', borderRadius: '8px', padding: '0.75rem' }}>
+                        <div style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '0.85rem', color: '#FFD200', marginBottom: '0.25rem', textTransform: 'capitalize' }}>{name.replace(/([A-Z])/g, ' $1')}</div>
+                        <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.75rem', color: 'rgba(255,255,255,0.6)', userSelect: 'all' }}>{tags}</div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
 export default function Dashboard({ page }) {
     return (
         <div style={{ minHeight: '100vh', background: 'linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%)' }}>
@@ -241,6 +347,8 @@ export default function Dashboard({ page }) {
                 <SEODashboard />
             ) : page === 'outreach' ? (
                 <OutreachDashboard />
+            ) : page === 'content' ? (
+                <ContentDashboard />
             ) : (
                 /* HQ landing page */
                 <div style={{ maxWidth: '600px', margin: '0 auto', padding: '3rem 1.5rem', textAlign: 'center' }}>
@@ -282,6 +390,22 @@ export default function Dashboard({ page }) {
                         >
                             <div style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1.4rem', color: '#FFD200', marginBottom: '0.25rem' }}>PR &amp; Outreach</div>
                             <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)' }}>Email drafts, influencers, communities, daily to-dos</div>
+                        </a>
+
+                        <a href="#michele-hq/content" style={{
+                            display: 'block',
+                            background: 'rgba(255,255,255,0.1)',
+                            border: '2px solid rgba(245,158,11,0.4)',
+                            borderRadius: '16px',
+                            padding: '1.5rem',
+                            textDecoration: 'none',
+                            transition: 'transform 0.2s, border-color 0.2s',
+                        }}
+                        onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.borderColor = 'rgba(245,158,11,0.7)'; }}
+                        onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = 'rgba(245,158,11,0.4)'; }}
+                        >
+                            <div style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1.4rem', color: '#f59e0b', marginBottom: '0.25rem' }}>Content Plan</div>
+                            <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)' }}>This week's posts, scripts, captions, and content bank</div>
                         </a>
                     </div>
                 </div>
