@@ -11,6 +11,9 @@ function formatDate(dateStr) {
 
 function BlogPost({ slug }) {
     const post = blogPosts.find(p => p.id === slug);
+    const relatedPosts = post
+        ? blogPosts.filter(p => p.id !== post.id).slice(0, 3)
+        : [];
 
     if (!post) {
         return (
@@ -178,6 +181,85 @@ function BlogPost({ slug }) {
                                 Buy the Book
                             </a>
                         </div>
+
+                        {/* Related Posts — internal linking for SEO */}
+                        {relatedPosts.length > 0 && (
+                            <div style={{ marginTop: '3rem' }}>
+                                <h2 style={{
+                                    fontFamily: "'Fredoka', sans-serif",
+                                    fontSize: '1.6rem',
+                                    fontWeight: 700,
+                                    color: '#78350F',
+                                    marginBottom: '1.5rem',
+                                    textAlign: 'center',
+                                }}>
+                                    More from the Wild Place
+                                </h2>
+                                <div style={{
+                                    display: 'grid',
+                                    gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+                                    gap: '1.25rem',
+                                }}>
+                                    {relatedPosts.map(rp => (
+                                        <a
+                                            key={rp.id}
+                                            href={`#blog/${rp.id}`}
+                                            style={{
+                                                display: 'block',
+                                                background: 'rgba(255, 255, 255, 0.6)',
+                                                borderRadius: 'var(--radius-lg)',
+                                                overflow: 'hidden',
+                                                border: '2px solid rgba(192, 120, 72, 0.25)',
+                                                textDecoration: 'none',
+                                                color: 'inherit',
+                                                transition: 'transform 0.2s, box-shadow 0.2s',
+                                            }}
+                                            onMouseEnter={e => {
+                                                e.currentTarget.style.transform = 'translateY(-3px)';
+                                                e.currentTarget.style.boxShadow = '0 8px 16px rgba(120, 53, 15, 0.15)';
+                                            }}
+                                            onMouseLeave={e => {
+                                                e.currentTarget.style.transform = 'translateY(0)';
+                                                e.currentTarget.style.boxShadow = 'none';
+                                            }}
+                                        >
+                                            <img
+                                                src={rp.image}
+                                                alt={rp.imageAlt}
+                                                loading="lazy"
+                                                style={{
+                                                    width: '100%',
+                                                    height: '140px',
+                                                    objectFit: 'cover',
+                                                    objectPosition: rp.imagePosition || 'center 30%',
+                                                }}
+                                            />
+                                            <div style={{ padding: '1rem 1.25rem 1.25rem' }}>
+                                                <h3 style={{
+                                                    fontFamily: "'Fredoka', sans-serif",
+                                                    fontSize: '1.05rem',
+                                                    fontWeight: 700,
+                                                    color: '#78350F',
+                                                    lineHeight: 1.3,
+                                                    marginBottom: '0.5rem',
+                                                }}>
+                                                    {rp.title}
+                                                </h3>
+                                                <p style={{
+                                                    fontFamily: "'Nunito', sans-serif",
+                                                    fontSize: '0.9rem',
+                                                    color: '#5C4033',
+                                                    lineHeight: 1.5,
+                                                    margin: 0,
+                                                }}>
+                                                    {rp.excerpt.length > 110 ? rp.excerpt.slice(0, 110).trim() + '…' : rp.excerpt}
+                                                </p>
+                                            </div>
+                                        </a>
+                                    ))}
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </article>
             </div>

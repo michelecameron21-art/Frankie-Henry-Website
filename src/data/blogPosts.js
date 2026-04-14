@@ -471,6 +471,98 @@ const blogPosts = [
         image: '/assets/colouring-page-preview.png',
         imageAlt: 'Free printable colouring page featuring Frankie and Henry running through the African Wild Place with a meerkat and tortoise',
     },
+    {
+        id: 'best-read-aloud-picture-books-for-bedtime',
+        title: 'The Best Read-Aloud Picture Books for Bedtime (and Why They Matter)',
+        metaDescription: 'Looking for the best read-aloud picture books for bedtime? Here\'s what makes a story work out loud — and why read-aloud time is one of the most powerful things you can do with your child.',
+        date: '2026-04-14',
+        author: 'Michele Cameron',
+        targetKeyword: 'read aloud picture books',
+        excerpt: 'Not every picture book reads well out loud. Here\'s what to look for when choosing bedtime stories — and the small, quiet reasons read-aloud time matters more than we think.',
+        content: `
+            <p>There's something special that happens in the ten minutes before sleep.</p>
+
+            <p>The house goes quiet. The lights go low. A small warm body curls up beside you, and a book opens. And for those ten minutes, the world shrinks down to a pool of lamplight, a story, and the sound of your voice.</p>
+
+            <p>Reading aloud is one of the most powerful things you can do with your child. It builds vocabulary, sparks imagination, strengthens emotional bonds — and, most importantly, it makes bedtime feel safe. But not every picture book is built to be read out loud. Here's what makes the difference.</p>
+
+            <h2>What Makes a Great Read-Aloud Picture Book?</h2>
+
+            <p>When you're reading silently, your eye does the work. When you're reading out loud, your <em>voice</em> does. The best read-aloud books are written with that in mind. Here's what to look for.</p>
+
+            <h3>1. Rhythm you can feel in your mouth</h3>
+
+            <p>Sentences that flow. Words that bounce. A natural pause at the end of each page. If a sentence makes you stumble when you read it, it'll make your child stumble too. Great picture books read like music — they have a beat, even when there's no rhyme.</p>
+
+            <h3>2. A voice that invites performance</h3>
+
+            <p>The best read-alouds give you permission to <em>be</em> the characters. Deep voice for the big animal. Tiny voice for the scared one. A silly voice for the cheeky one. If the book sounds flat when you read it straight, it's not working. If it makes you want to whisper, shout, or slow right down — it's a winner.</p>
+
+            <h3>3. Pictures that carry weight</h3>
+
+            <p>A good read-aloud gives your child something to look at while you're doing the talking. The illustrations shouldn't just echo the words — they should add something. A little detail, a hidden joke, an expression that makes a child giggle. The best picture books reward the eye as much as the ear.</p>
+
+            <h3>4. Short enough to finish, rich enough to remember</h3>
+
+            <p>Ten minutes is the sweet spot. Long enough to really settle into a story. Short enough to not be a battle on a school night. The very best bedtime books feel complete at that length — a full emotional arc, from a gentle opening to a peaceful ending.</p>
+
+            <h3>5. A calm landing</h3>
+
+            <p>This one matters more than people realise. A good bedtime book <em>slows down</em> at the end. It doesn't finish on a cliffhanger or a loud note. It lands the child softly — a quiet scene, a warm line, a feeling of everything being okay. That's what helps them drift off instead of bouncing off the walls.</p>
+
+            <h2>Why Read-Aloud Time Matters More Than We Think</h2>
+
+            <p>Every expert in child development will tell you the same thing: reading aloud to your child is one of the highest-return things you can do. But the research misses something the parents all know.</p>
+
+            <p>It's not really about the vocabulary. It's about <em>the closeness</em>.</p>
+
+            <p>Reading aloud is one of the few moments in a busy day when you stop. No phones, no washing up, no to-do list. Just you, them, and a story. Your child learns that they have your full attention. That their imagination matters. That stories are a safe place.</p>
+
+            <p>Years from now, they probably won't remember which books you read. But they'll remember the feeling of it — the lamp, the warmth, your voice. That's the thing that lasts.</p>
+
+            <h2>What to Look For in a Bedtime Book</h2>
+
+            <p>When you're standing in a bookshop (or scrolling Amazon at 10pm), here's a quick checklist:</p>
+
+            <ul>
+                <li><strong>Does the first page make me want to keep reading?</strong> If it grabs you, it'll grab them.</li>
+                <li><strong>Are there characters I can do voices for?</strong> The more personality, the better the performance.</li>
+                <li><strong>Do the pictures make me smile?</strong> You'll be looking at them 50+ times.</li>
+                <li><strong>Does it end gently?</strong> Avoid anything too loud or too sad as the last note before sleep.</li>
+                <li><strong>Is it about something that matters?</strong> Bravery, kindness, friendship — the big gentle themes.</li>
+            </ul>
+
+            <h2>Why Frankie &amp; Henry Works as a Read-Aloud</h2>
+
+            <p>When I wrote <strong>Frankie &amp; Henry and the Brave River Rescue</strong>, I read every single line out loud as I wrote it. If it didn't flow, it got rewritten. If there wasn't a voice I wanted to do for the character, I scrapped them and started again.</p>
+
+            <p>Frankie charges. Henry hesitates. Clawdius drawls. Lwazi is kind. Every one of them sounds different out loud — and reading the book aloud should feel like putting on a tiny one-person puppet show.</p>
+
+            <p>The book also lands softly at the end. Without giving too much away: the boys are safe, the cub is home, and the last page is one you can close quietly while your child's eyes are already getting heavy.</p>
+
+            <p>That wasn't an accident. That's the whole point.</p>
+
+            <h2>More Reading-Time Inspiration</h2>
+
+            <p>If you found this useful, you might also enjoy:</p>
+
+            <ul>
+                <li><a href="#blog/why-yorkshire-terriers-make-best-adventure-heroes">Why Yorkshire Terriers Make the Best Adventure Heroes</a> — on what makes animal characters work for little readers</li>
+                <li><a href="#blog/teaching-kids-about-courage-through-picture-books">Teaching Kids About Courage Through Picture Books</a> — on the books that help children face their fears</li>
+                <li><a href="#blog/free-safari-colouring-pages-for-kids">Free Safari Colouring Pages for Kids</a> — a gentle way to extend storytime into the next day</li>
+            </ul>
+
+            <h2>Try It Tonight</h2>
+
+            <p>If you're looking for a new bedtime book to add to the rotation, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie &amp; Henry is available in Kindle and paperback on Amazon</a>. Read it aloud. Do the voices. Watch your little one's face when the dogs run into the river.</p>
+
+            <p>And then close the book gently, turn off the lamp, and enjoy the quiet.</p>
+
+            <p><em>— Michele x</em></p>
+        `,
+        image: '/assets/hero-bros.jpg',
+        imageAlt: 'Frankie and Henry, two Yorkshire Terriers, perfect characters for a bedtime read-aloud picture book',
+    },
 ];
 
 export default blogPosts;
