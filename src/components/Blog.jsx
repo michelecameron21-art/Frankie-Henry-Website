@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import blogPosts from '../data/blogPosts';
 
 function formatDate(dateStr) {
@@ -10,6 +11,17 @@ function formatDate(dateStr) {
 }
 
 function Blog() {
+    useEffect(() => {
+        document.title = 'Stories from the Wild Place — Frankie & Henry Adventures Blog';
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) metaDesc.setAttribute('content', 'Blog posts about Frankie and Henry, Yorkshire Terrier adventures, African safari stories, courage, read-aloud picture books, and free activities for children ages 4–8.');
+        return () => {
+            document.title = "Frankie & Henry — African Safari Adventure Children's Picture Book for Ages 4–8";
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', "An African safari adventure picture book for children ages 4–8. Join Yorkshire Terriers Frankie & Henry as they explore Africa's Wild Place, rescue a lost jackal cub, and discover that brave hearts come in small packages.");
+        };
+    }, []);
+
     return (
         <section className="blog-section" style={{ background: '#C07848', minHeight: '100vh' }}>
             {/* SEO meta description is handled via document.head in the effect below */}

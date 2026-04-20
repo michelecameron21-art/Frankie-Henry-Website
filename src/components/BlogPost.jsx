@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import blogPosts from '../data/blogPosts';
 
 function formatDate(dateStr) {
@@ -14,6 +15,19 @@ function BlogPost({ slug }) {
     const relatedPosts = post
         ? blogPosts.filter(p => p.id !== post.id).slice(0, 3)
         : [];
+
+    useEffect(() => {
+        if (post) {
+            document.title = `${post.title} — Frankie & Henry Adventures`;
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', post.metaDescription);
+        }
+        return () => {
+            document.title = "Frankie & Henry — African Safari Adventure Children's Picture Book for Ages 4–8";
+            const metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', "An African safari adventure picture book for children ages 4–8. Join Yorkshire Terriers Frankie & Henry as they explore Africa's Wild Place, rescue a lost jackal cub, and discover that brave hearts come in small packages.");
+        };
+    }, [post]);
 
     if (!post) {
         return (
