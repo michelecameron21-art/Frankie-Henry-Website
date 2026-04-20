@@ -663,6 +663,90 @@ const blogPosts = [
         imageAlt: 'Frankie and Henry, two Yorkshire Terriers, showing children that bravery means acting even when you are scared',
         imagePosition: 'center 40%',
     },
+    {
+        id: 'river-adventures-in-childrens-books',
+        title: 'Why Rivers Make the Best Adventures in Children\'s Books',
+        metaDescription: 'From rushing rapids to quiet riverbanks, rivers have always been at the heart of the best children\'s adventure stories. Here\'s why — and what rivers teach children about life.',
+        date: '2026-04-20',
+        author: 'Michele Cameron',
+        targetKeyword: 'river adventure children\'s book',
+        excerpt: 'Rivers move. Rivers change. Rivers carry you somewhere you\'ve never been. That\'s why they\'ve been at the heart of children\'s adventure stories for over a hundred years.',
+        content: `
+            <p>There's a reason so many of the greatest children's adventure stories happen on or near a river.</p>
+
+            <p>Huck Finn floated down the Mississippi. Ratty and Mole messed about on the Thames. Moana followed the ocean current. And two small Yorkshire Terriers named Frankie and Henry found their bravest moment at the edge of an African river, with a lost cub and a raging current standing between fear and courage.</p>
+
+            <p>Rivers run through children's literature the way they run through landscapes — connecting everything, carrying the story forward, always moving.</p>
+
+            <h2>What Rivers Represent in Stories</h2>
+
+            <p>A river is never just a river in a children's book. It's a boundary. A test. A journey. A point of no return.</p>
+
+            <p>When a character reaches a river in a story, the child reading knows instinctively: <em>something is about to change</em>. The character has to make a choice — cross or turn back. Wade in or walk away. That moment of decision is where every adventure really begins.</p>
+
+            <p>Rivers also move in one direction. You can't un-cross them. Once you're in, you're carried forward whether you're ready or not. For children, that's a powerful metaphor — even if they don't have the word "metaphor" yet. They feel it. The story is going somewhere, and so are they.</p>
+
+            <h2>Rivers Teach Children About Risk</h2>
+
+            <p>Water is one of the first things children learn to respect. It's beautiful and dangerous at the same time. You can play in it, drink it, swim in it — but it can also pull you under.</p>
+
+            <p>That duality makes rivers perfect for adventure stories. They're not evil like a villain. They're not safe like a garden. They're something in between — something that demands respect and rewards courage. When a character enters a river in a picture book, the child learns that brave choices sometimes mean getting wet, getting cold, getting uncomfortable. And that the reward is on the other side.</p>
+
+            <h2>The Brave River Rescue</h2>
+
+            <p>In <strong>Frankie &amp; Henry and the Brave River Rescue</strong>, the river is the climax of the entire story. Everything has been building to this moment: Frankie and Henry have crossed the Wild Place, faced a martial eagle, encountered a monitor lizard, and found a lost jackal cub who can't get home.</p>
+
+            <p>The river stands between the cub and safety. It's wide. It's fast. And Frankie and Henry are very, very small.</p>
+
+            <p>What happens next is the heart of the book — and I won't spoil it here. But I will say this: the river doesn't become safe. It doesn't shrink. The dogs don't suddenly grow bigger or stronger. They go in anyway, exactly as small and scared as they are. And that's the point.</p>
+
+            <p>Children don't need to see characters who can handle anything. They need to see characters who can't — and who try anyway.</p>
+
+            <h2>Real Rivers, Real Africa</h2>
+
+            <p>The river in the book is inspired by real African waterways — the kind that cut through savanna bushveld, lined with reeds and watched over by blue cranes. In South Africa, rivers like the Sabie, the Olifants, and the Crocodile River are lifelines for wildlife. Animals gather at their banks to drink, hunt, nest, and raise their young.</p>
+
+            <p>For children reading the book, the river isn't just a plot device — it's a window into a real ecosystem. They learn that rivers are where life concentrates. Where predators and prey share space. Where the most dramatic moments in nature actually happen.</p>
+
+            <p>If your child is curious about African rivers after reading the book, here are some real ones to explore together:</p>
+
+            <ul>
+                <li><strong>The Sabie River</strong> — flows through the Kruger National Park, home to hippos, crocodiles, and hundreds of bird species</li>
+                <li><strong>The Okavango Delta</strong> — a river that never reaches the sea, instead flooding into Botswana's desert to create one of the world's richest wildlife habitats</li>
+                <li><strong>The Zambezi River</strong> — feeds Victoria Falls, one of the seven natural wonders of the world</li>
+            </ul>
+
+            <h2>River Activities to Try After Reading</h2>
+
+            <p>If the book sparks a love of rivers, here are some ways to keep the adventure going:</p>
+
+            <ul>
+                <li><strong>Visit a local river or stream.</strong> Look for birds, insects, and plants along the bank. Talk about which direction the water is flowing and where it might end up.</li>
+                <li><strong>Build a stick raft.</strong> Collect twigs and tie them together with string. Float it on a puddle, a stream, or the bathtub. See if it survives the rapids (the tap).</li>
+                <li><strong>Draw the river scene.</strong> After reading the book, ask your child to draw Frankie and Henry at the river. What does the cub look like? How big is the water? What animals are watching?</li>
+                <li><strong>Play the Rescue Run game.</strong> On our website, children can help Frankie navigate the river in a free browser game — <a href="#game">play it here</a>.</li>
+            </ul>
+
+            <h2>More Adventures from the Wild Place</h2>
+
+            <p>If your child loved the river adventure, they'll enjoy these too:</p>
+
+            <ul>
+                <li><a href="#blog/5-amazing-african-animals-your-kids-will-love">5 Amazing African Animals Your Kids Will Love</a> — meet the real animals from the book</li>
+                <li><a href="#blog/helping-children-overcome-fear-through-stories">How Stories Help Children Overcome Fear</a> — on why Henry's quiet bravery matters</li>
+                <li><a href="#blog/free-safari-colouring-pages-for-kids">Free Safari Colouring Pages for Kids</a> — print, colour, and bring the Wild Place to life</li>
+            </ul>
+
+            <h2>Join the Adventure</h2>
+
+            <p>Ready to see what happens at the river? <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Grab a copy of Frankie &amp; Henry and the Brave River Rescue on Amazon</a> — available in Kindle and paperback. Read it together, do the voices, and find out if two small dogs can do something very, very brave.</p>
+
+            <p><em>— Michele x</em></p>
+        `,
+        image: '/assets/hero-bros.jpg',
+        imageAlt: 'Frankie and Henry, two Yorkshire Terriers, on a brave river adventure in Africa',
+        imagePosition: 'center 35%',
+    },
 ];
 
 export default blogPosts;
