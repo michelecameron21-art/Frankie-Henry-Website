@@ -563,6 +563,106 @@ const blogPosts = [
         image: '/assets/hero-bros.jpg',
         imageAlt: 'Frankie and Henry, two Yorkshire Terriers, perfect characters for a bedtime read-aloud picture book',
     },
+    {
+        id: 'helping-children-overcome-fear-through-stories',
+        title: 'How Stories Help Children Overcome Fear (and Why That Matters)',
+        metaDescription: 'How can stories help children overcome fear? Picture books give kids a safe space to face scary feelings, build resilience, and learn that being brave doesn\'t mean being fearless.',
+        date: '2026-04-20',
+        author: 'Michele Cameron',
+        targetKeyword: 'helping children overcome fear',
+        excerpt: 'Every child is afraid of something. Stories give them a safe way to face those feelings — and discover that bravery isn\'t about not being scared. It\'s about what you do next.',
+        content: `
+            <p>Every child is afraid of something.</p>
+
+            <p>The dark. The deep end. The first day at school. A spider in the bath. The sound the wind makes at night. Being alone. Being left behind.</p>
+
+            <p>These fears are real. They're not silly, even when they seem small from the outside. And the way a child learns to handle fear — to sit with it, to move through it, to come out the other side — shapes the kind of person they become.</p>
+
+            <p>One of the most powerful ways we help children face fear is through stories.</p>
+
+            <h2>Why Stories Work Where Talking Doesn't</h2>
+
+            <p>If you tell a scared child "there's nothing to be afraid of," you mean well. But what they hear is: <em>my feelings are wrong</em>. If you tell them "just be brave," what they hear is: <em>I'm failing</em>.</p>
+
+            <p>Stories do something different. They put fear at a safe distance.</p>
+
+            <p>When a child watches a character feel scared — really scared — and then sees that character do the brave thing anyway, something clicks. They don't need to be told that they can handle hard things. They <em>see</em> it happening. And because it's a character in a book, not them, there's no pressure. They can feel the fear alongside the character without being overwhelmed by their own.</p>
+
+            <p>It's rehearsal. Emotional rehearsal. And it works.</p>
+
+            <h2>What "Brave" Actually Means to a Child</h2>
+
+            <p>Most adults think bravery means being fearless. Children know better.</p>
+
+            <p>Children know that bravery means your legs are shaking but you walk into the classroom anyway. It means you're scared of the water but you jump in because your friend is already in there. It means you don't <em>want</em> to stand up to the bigger kid, but you do it because someone smaller needs you.</p>
+
+            <p>The best children's books understand this. They don't show characters who aren't afraid. They show characters who are terrified — and who act anyway. That distinction is everything.</p>
+
+            <h2>How Henry Taught Me About Real Bravery</h2>
+
+            <p>When I was writing <strong>Frankie &amp; Henry and the Brave River Rescue</strong>, I knew from the start that Henry was the heart of the story. Not Frankie — Frankie's the bold one, the one who charges in without thinking. That's a kind of bravery, but it's the easy kind. The kind that doesn't cost you anything because you were never scared in the first place.</p>
+
+            <p>Henry is different. Henry is scared. He's genuinely, properly frightened — of the water, of the martial eagle, of everything in the Wild Place that's bigger and louder and more dangerous than him. He'd rather be at home. He'd rather be eating snacks. He'd rather be anywhere else.</p>
+
+            <p>But when a little jackal cub is crying for help by the river, Henry goes. Not because he's brave in the showy, chest-puffing way. Because someone small needs him. And that's enough.</p>
+
+            <p>That's the kind of bravery I wanted children to see. The quiet kind. The kind that shakes. The kind that costs you something — and you do it anyway.</p>
+
+            <h2>What to Look for in Books About Fear</h2>
+
+            <p>Not all books handle fear well. Some dismiss it ("Don't be silly, there's nothing there!"). Some make it a punchline. Some resolve it too quickly, as if fear is a switch you flip off.</p>
+
+            <p>The good ones do this:</p>
+
+            <ul>
+                <li><strong>They name the feeling.</strong> The character says "I'm scared" — and it's treated as a real, valid thing.</li>
+                <li><strong>They sit with it.</strong> The fear doesn't vanish in a sentence. The character has to carry it for a while.</li>
+                <li><strong>They show action alongside fear.</strong> The character doesn't stop being scared. They act <em>while</em> being scared.</li>
+                <li><strong>They don't punish fear.</strong> Nobody says "you shouldn't have been afraid." The fear is accepted as part of the journey.</li>
+                <li><strong>They land gently.</strong> The ending isn't "fear defeated forever." It's "I was scared, I did it anyway, and I'm okay."</li>
+            </ul>
+
+            <h2>Talking About Fear After the Story</h2>
+
+            <p>The real magic happens after you close the book. Here are a few simple prompts that open up a conversation without putting pressure on:</p>
+
+            <ul>
+                <li><strong>"What do you think Henry was most scared of?"</strong> — lets them project their own fears onto the character</li>
+                <li><strong>"Have you ever felt like that?"</strong> — opens the door without pushing</li>
+                <li><strong>"What would you have done?"</strong> — gives them agency and lets them imagine being brave</li>
+                <li><strong>"Was Henry brave even though he was scared?"</strong> — the answer is always yes, and it redefines bravery for them</li>
+            </ul>
+
+            <p>These conversations don't need to be long. Sometimes a child will give you one word and move on. That's fine. The seed is planted. They'll come back to it when they need it.</p>
+
+            <h2>Fear Is Not the Enemy</h2>
+
+            <p>We spend a lot of time trying to protect children from fear. But fear isn't the enemy. Fear is a signal. It tells you something matters. The goal isn't to raise fearless children — it's to raise children who know what to do with their fear.</p>
+
+            <p>Stories are one of the best tools we have for that. A scared character in a picture book is a mirror. A brave ending is a promise: <em>you can do this too</em>.</p>
+
+            <h2>More from the Wild Place</h2>
+
+            <p>If this resonated with you, you might also enjoy:</p>
+
+            <ul>
+                <li><a href="#blog/teaching-kids-about-courage-through-picture-books">Teaching Kids About Courage Through Picture Books</a> — on the books and moments that build brave hearts</li>
+                <li><a href="#blog/the-real-frankie-and-henry-behind-the-book">The Real Frankie &amp; Henry — Meet the Dogs Behind the Book</a> — the true story of the dogs who inspired it all</li>
+                <li><a href="#blog/best-read-aloud-picture-books-for-bedtime">The Best Read-Aloud Picture Books for Bedtime</a> — on choosing stories that read beautifully out loud</li>
+            </ul>
+
+            <h2>Let Them Meet Henry</h2>
+
+            <p>If your child is working through something scary — or if you just want a bedtime story that shows them what quiet bravery looks like — <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie &amp; Henry and the Brave River Rescue is available on Amazon</a> in Kindle and paperback.</p>
+
+            <p>Henry was scared too. And he did it anyway.</p>
+
+            <p><em>— Michele x</em></p>
+        `,
+        image: '/assets/hero-bros.jpg',
+        imageAlt: 'Frankie and Henry, two Yorkshire Terriers, showing children that bravery means acting even when you are scared',
+        imagePosition: 'center 40%',
+    },
 ];
 
 export default blogPosts;
