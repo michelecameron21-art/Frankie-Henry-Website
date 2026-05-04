@@ -747,6 +747,112 @@ const blogPosts = [
         imageAlt: 'Frankie and Henry, two Yorkshire Terriers, on a brave river adventure in Africa',
         imagePosition: 'center 35%',
     },
+    {
+        id: 'best-childrens-books-about-brothers-and-siblings',
+        title: 'The Best Children\'s Books About Brothers and Siblings',
+        metaDescription: 'Discover heartfelt children\'s books about brothers, sisters, and sibling bonds. From Frankie & Henry to classic favourites — perfect picture books for ages 4–8 about loving the one beside you.',
+        date: '2026-05-04',
+        author: 'Michele Cameron',
+        targetKeyword: 'children\'s books about brothers',
+        excerpt: 'Some of the best children\'s books are the ones about the people who drive us mad and save us at the same time — our brothers and sisters. Here are the picture books that get sibling love just right.',
+        content: `
+            <p>If you've ever watched two siblings argue about who pressed the lift button and then, ten minutes later, share a packet of crisps without saying a word — you already know what makes a great brother-and-sister story.</p>
+
+            <p>Sibling love is messy. It's loud. It's full of tiny betrayals and enormous loyalty. And it makes for some of the best children's books ever written.</p>
+
+            <p><strong>Frankie & Henry and the Brave River Rescue</strong> is, at its heart, a story about two brothers. They squabble. They wind each other up. One charges ahead while the other plods behind muttering about snacks. But when it counts — when it really counts — they show up for each other. That's the sibling story I wanted to tell, and it's the kind of story I think children need more of.</p>
+
+            <p>So I've put together a list of the best picture books about brothers, sisters, and the bond between them. Read these together. Talk about the bits that feel familiar. Watch your child light up when they recognise themselves on the page.</p>
+
+            <h2>Why Sibling Stories Matter for Children Ages 4–8</h2>
+
+            <p>Children ages 4–8 are right in the thick of figuring out their place in the family. They're learning what it means to share, to forgive, to be loyal, to stand up for someone smaller, to look up to someone bigger. Sibling stories give them a mirror — and sometimes a window into a family dynamic they don't have but might be curious about.</p>
+
+            <p>The best sibling books don't pretend brothers and sisters always get along. They're honest about the friction, and that honesty is what makes the love land. When the older sibling apologises, when the younger one shares the last biscuit, when one of them reaches for the other in the dark — children feel that.</p>
+
+            <h2>1. Frankie & Henry and the Brave River Rescue</h2>
+
+            <p>I'll start with my own — but only because the whole book exists because of a sibling bond between two real Yorkshire Terriers.</p>
+
+            <p>Frankie is the brave one. He charges into the African wilderness without thinking. Henry is the cautious one — small, hungry, would prefer a nap to literally any adventure ever invented. But when a baby crane is caught in the river and Frankie needs help, Henry doesn't hesitate. Because that's his brother. And brothers show up.</p>
+
+            <p>It's a story about how two completely different personalities make the perfect team — and how being brave doesn't mean being fearless. Sometimes it means being the brother who follows the brave one anyway, even though you're terrified.</p>
+
+            <p><a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Available in Kindle and paperback on Amazon</a>. Ages 4–8.</p>
+
+            <h2>2. The Pain and the Great One — Judy Blume</h2>
+
+            <p>An absolute classic. Two siblings tell the story from their own perspective — and it turns out neither of them thinks they're the favourite. It's funny, sharp, and brilliantly fair to both children. Read this one and you'll hear your own kids quoting it within days.</p>
+
+            <h2>3. Big Brother, Little Brother — Penny Dale</h2>
+
+            <p>A gentle, beautifully illustrated story about the everyday rhythms of two brothers playing together. Quieter than some of the others on this list, but it captures the small, ordinary moments that sibling love is actually made of.</p>
+
+            <h2>4. Knuffle Bunny — Mo Willems</h2>
+
+            <p>Not strictly a sibling book, but the dynamic between Trixie and her parents (and later her best friend Sonja) captures the same energy — fierce love, big feelings, comic frustration. The trilogy is perfect for ages 3–7 and gets read on loop in our house.</p>
+
+            <h2>5. Owl Babies — Martin Waddell</h2>
+
+            <p>Three baby owls — Sarah, Percy, and Bill — wait in the dark for their mother to come home. The way the older two comfort little Bill is sibling tenderness in its purest form. A bedtime favourite for very good reason.</p>
+
+            <h2>6. Peter's Chair — Ezra Jack Keats</h2>
+
+            <p>A new baby in the family means everything is changing — and Peter isn't sure he likes it. A gorgeous picture book about how older siblings adjust, written and illustrated with such warmth that even the difficult feelings feel safe.</p>
+
+            <h2>7. The Quarreling Book — Charlotte Zolotow</h2>
+
+            <p>An older one but a gem. A small misunderstanding ripples through a family until everyone is cross — and then a single act of kindness reverses it all. A brilliant teaching book about how moods spread, especially between siblings.</p>
+
+            <h2>8. Julian Is a Mermaid — Jessica Love</h2>
+
+            <p>Not strictly a sibling book either, but the love between Julian and his abuela is family love at its most tender. If you're looking for picture books about family bonds beyond the brother/sister dynamic, this one will undo you (in the best way).</p>
+
+            <h2>What Makes a Great Sibling Picture Book?</h2>
+
+            <p>Looking across the list, the same things keep showing up:</p>
+
+            <ul>
+                <li><strong>Honesty about the friction.</strong> Siblings argue. The best books don't pretend otherwise.</li>
+                <li><strong>A moment of choosing.</strong> Somewhere in the story, one sibling chooses the other. That's the heart of it.</li>
+                <li><strong>Humour.</strong> Sibling life is funny. The books that make children laugh out loud are the ones they'll ask for again and again.</li>
+                <li><strong>Different personalities.</strong> The brave one and the careful one. The dreamer and the planner. The fearless one and the snack-loving one. Contrast makes the bond visible.</li>
+                <li><strong>A small act, not a grand gesture.</strong> The best sibling moments are quiet. A shared blanket. A held hand. A "come on, I've got you."</li>
+            </ul>
+
+            <h2>How to Use These Books With Your Children</h2>
+
+            <p>Reading sibling stories together opens up beautiful conversations. Some prompts to try:</p>
+
+            <ul>
+                <li>"Which one is more like you, Frankie or Henry?"</li>
+                <li>"Has your brother/sister ever helped you when you were scared?"</li>
+                <li>"What do you love about being the older/younger one?"</li>
+                <li>"Can you remember a time when you were brave for someone else?"</li>
+            </ul>
+
+            <p>You don't need to turn it into a lesson. Just read, snuggle, and let the story do its quiet work.</p>
+
+            <h2>More From the Wild Place</h2>
+
+            <p>If your child loves stories about loyalty, courage, and the people who matter most, they'll enjoy these too:</p>
+
+            <ul>
+                <li><a href="#blog/why-yorkshire-terriers-make-best-adventure-heroes">Why Yorkshire Terriers Make the Best Adventure Heroes</a> — on the Frankie/Henry dynamic</li>
+                <li><a href="#blog/teaching-kids-about-courage-through-picture-books">Teaching Kids About Courage Through Picture Books</a> — why brave-heart stories matter</li>
+                <li><a href="#blog/helping-children-overcome-fear-through-stories">How Stories Help Children Overcome Fear</a> — on Henry's quiet bravery</li>
+            </ul>
+
+            <h2>Meet the Brothers</h2>
+
+            <p>Want to meet Frankie and Henry properly? <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Grab a copy of Frankie & Henry and the Brave River Rescue on Amazon</a> — available in Kindle and paperback. Two brothers. One enormous adventure. A story about the kind of love that doesn't need to say very much at all.</p>
+
+            <p><em>— Michele x</em></p>
+        `,
+        image: '/assets/hero-bros.jpg',
+        imageAlt: 'Frankie and Henry, two Yorkshire Terrier brothers, on a magical safari adventure in Africa',
+        imagePosition: 'center 35%',
+    },
 ];
 
 export default blogPosts;
