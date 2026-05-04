@@ -7,6 +7,7 @@ import Extras from './components/Extras'
 
 import Game from './components/Game'
 import Story from './components/Story'
+import Reviews from './components/Reviews'
 import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
 import Dashboard from './components/Dashboard'
@@ -446,6 +447,7 @@ function App() {
                     <SafariHeroes />
                     <MeetTheBrothers />
                     <BraveRiverRescue />
+                    <Reviews />
                     <Game />
                     <Extras />
                     <Story />
