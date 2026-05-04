@@ -560,8 +560,8 @@ const blogPosts = [
 
             <p><em>— Michele x</em></p>
         `,
-        image: '/assets/hero-bros.jpg',
-        imageAlt: 'Frankie and Henry, two Yorkshire Terriers, perfect characters for a bedtime read-aloud picture book',
+        image: '/assets/lizard-snoozing.jpg',
+        imageAlt: 'A sleepy monitor lizard at bedtime — a calming scene from Frankie and Henry\'s safari adventure',
     },
     {
         id: 'helping-children-overcome-fear-through-stories',
@@ -659,8 +659,8 @@ const blogPosts = [
 
             <p><em>— Michele x</em></p>
         `,
-        image: '/assets/hero-bros.jpg',
-        imageAlt: 'Frankie and Henry, two Yorkshire Terriers, showing children that bravery means acting even when you are scared',
+        image: '/assets/scene-rumble.jpg',
+        imageAlt: 'A dramatic stormy scene from Frankie and Henry — showing the kind of fear children learn to face through stories',
         imagePosition: 'center 40%',
     },
     {
@@ -743,8 +743,8 @@ const blogPosts = [
 
             <p><em>— Michele x</em></p>
         `,
-        image: '/assets/hero-bros.jpg',
-        imageAlt: 'Frankie and Henry, two Yorkshire Terriers, on a brave river adventure in Africa',
+        image: '/assets/running-into-river.jpg',
+        imageAlt: 'Frankie and Henry running into the river — the brave rescue moment from the picture book',
         imagePosition: 'center 35%',
     },
     {
@@ -849,8 +849,8 @@ const blogPosts = [
 
             <p><em>— Michele x</em></p>
         `,
-        image: '/assets/hero-bros.jpg',
-        imageAlt: 'Frankie and Henry, two Yorkshire Terrier brothers, on a magical safari adventure in Africa',
+        image: '/assets/book-mockup.jpg',
+        imageAlt: 'Frankie and Henry book cover — two Yorkshire Terrier brothers on the front of the picture book',
         imagePosition: 'center 35%',
     },
 ];
