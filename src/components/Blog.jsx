@@ -75,16 +75,16 @@ function Blog() {
                             className="blog-card"
                             style={{ textDecoration: 'none', color: 'inherit' }}
                         >
-                            <div className="blog-card-image">
+                            <div className="blog-card-image" style={{ width: '100%', aspectRatio: '16 / 10', overflow: 'hidden', borderRadius: 'var(--radius-lg) var(--radius-lg) 0 0' }}>
                                 <img
                                     src={post.image}
                                     alt={post.imageAlt}
                                     style={{
                                         width: '100%',
-                                        height: '220px',
+                                        height: '100%',
                                         objectFit: 'cover',
-                                        objectPosition: 'center 30%',
-                                        borderRadius: 'var(--radius-lg) var(--radius-lg) 0 0',
+                                        objectPosition: post.imagePosition || 'center center',
+                                        display: 'block',
                                     }}
                                 />
                             </div>
