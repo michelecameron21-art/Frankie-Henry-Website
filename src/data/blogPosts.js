@@ -853,6 +853,205 @@ const blogPosts = [
         imageAlt: 'Frankie and Henry book cover — two Yorkshire Terrier brothers on the front of the picture book',
         imagePosition: 'center 35%',
     },
+    {
+        id: 'summer-reading-list-for-kids-ages-4-8',
+        title: 'Summer Reading List for Kids Ages 4–8: 7 Picture Books for Adventure-Loving Children',
+        metaDescription: 'A curated summer reading list for kids ages 4–8. Seven brilliant picture books for adventure-loving children — perfect for long summer days, garden picnics, and lazy holiday afternoons.',
+        date: '2026-05-14',
+        author: 'Michele Cameron',
+        targetKeyword: 'summer reading list for kids ages 4-8',
+        excerpt: 'The school holidays are coming. The garden is waiting. And there\'s no better way to fill those long, golden afternoons than with a good picture book. Here are seven of the best for kids ages 4–8 — all chosen for summer.',
+        content: `
+            <p>The school holidays are nearly here. The garden is waiting. The picnic blanket is somewhere in the cupboard, probably under the camping chairs. And the long, golden afternoons are about to stretch out in front of us like nothing else does — slow, sunny, and gloriously unstructured.</p>
+
+            <p>I love summer reading. There's something different about it. No homework lurking, no school-night bedtime panic, no rushing to finish a chapter before the lights go off. Just a child, a book, and the kind of long quiet hour that lets a story really land.</p>
+
+            <p>So if you're hunting for picture books to fill the holidays — books that travel well in a beach bag, read beautifully in the dappled shade of a back garden, and leave a little something behind in your child's imagination — here's my hand-picked summer reading list for kids ages 4–8.</p>
+
+            <h2>1. Frankie & Henry and the Brave River Rescue — Michele Cameron</h2>
+
+            <p>I have to start here, because this is the book my whole little publishing house was built around. <strong>Frankie & Henry and the Brave River Rescue</strong> is the story of two small Yorkshire Terrier brothers — fearless Frankie and snack-loving Henry — who stumble into a magical place called the Wild Place and find themselves racing to rescue a lost jackal cub.</p>
+
+            <p>It's a story about courage, friendship, and the kind of bravery that comes from loving someone enough to face your fears. Children love the African setting, the talking animals, and the fact that the two heroes are tiny dogs who absolutely refuse to act tiny. Parents love the message — that being brave doesn't mean being fearless. Sometimes the bravest thing is showing up scared and doing it anyway.</p>
+
+            <p>Perfect for: adventure-loving 4–8 year olds, families with dogs, kids who like animals and silly humour mixed in with their bravery lessons.</p>
+
+            <p><em>If you want to read more about why Yorkies make the best adventure heroes, you might enjoy <a href="#blog/why-yorkshire-terriers-make-best-adventure-heroes">this post on the Frankie/Henry dynamic</a>.</em></p>
+
+            <h2>2. We're Going on a Bear Hunt — Michael Rosen</h2>
+
+            <p>If there's one book that was made to be read aloud on a picnic blanket, it's this one. The rhythm carries you. The "swishy swashy" through the long grass, the "splash splosh" through the river, the "stumble trip" through the forest — children chant along whether you want them to or not.</p>
+
+            <p>It's an outdoor book through and through. Read it under a tree, then go on your own bear hunt around the garden. Bonus points if your hunt ends with a frantic dash back to the picnic blanket.</p>
+
+            <p>Perfect for: 3–6 year olds, big siblings reading to little siblings, anyone with a garden, anyone going camping.</p>
+
+            <h2>3. The Gruffalo — Julia Donaldson</h2>
+
+            <p>A modern classic for a reason. Julia Donaldson's rhyming tale of a clever little mouse who outwits everyone in the woods — including a Gruffalo who he absolutely shouldn't have been able to outwit — has the kind of language that lives in your head for weeks afterwards.</p>
+
+            <p>The woodland setting makes it feel summery and adventurous, and the message — that a small, clever creature can hold her own against much bigger ones — sits beautifully alongside Frankie & Henry's "small but brave" theme.</p>
+
+            <p>Perfect for: 3–7 year olds, kids who love rhyme, kids who want to feel powerful in a big world.</p>
+
+            <h2>4. Stick Man — Julia Donaldson</h2>
+
+            <p>Another Donaldson — yes, she's earned the two slots. <strong>Stick Man</strong> is the story of a stick who gets carried away from his Stick Family and travels through a year of seasons trying to find his way home. The summer chapters are particularly gorgeous: river-jumping, kite-flying, beach-finding.</p>
+
+            <p>It's a story about family, belonging, and the long way home. And for any child who's ever felt small in a big world, the moment Stick Man finds his Stick Family again is one of the most quietly emotional payoffs in picture-book history.</p>
+
+            <p>Perfect for: 4–7 year olds, children who love nature, families with strong sibling/parent bonds.</p>
+
+            <h2>5. The Day the Crayons Quit — Drew Daywalt</h2>
+
+            <p>Pure summer holiday silliness, this one. The crayons in Duncan's box have had enough — and they've each written him a strongly worded letter explaining why. Red is exhausted from doing all the Christmas pictures. Beige is sick of being treated as second-rate to Brown. Pink wants more action.</p>
+
+            <p>It's funny, it's clever, and it sneaks in lessons about empathy and seeing things from someone else's point of view. Plus, it'll absolutely send your child running for their own crayon box. Hand them paper and step back — that's a solid forty-five minutes of holiday entertainment right there.</p>
+
+            <p>Perfect for: 4–8 year olds, kids who love drawing, families looking for "and now go and make something" book moments.</p>
+
+            <h2>6. Where the Wild Things Are — Maurice Sendak</h2>
+
+            <p>A book that holds up half a century later because it understands children completely. Max is sent to his room without supper, and his bedroom transforms into a wild forest, then an ocean, then an island full of wild things who make him their king. It's a story about feelings — big, stormy, hard-to-name feelings — and the comfort of coming home to someone who loves you anyway.</p>
+
+            <p>The wildness, the imagination, the sense of an adventure happening in a child's head — it makes this a perfect summer book. Read it once, and then watch your child invent twenty Wild Place adventures of their own in the garden over the next fortnight.</p>
+
+            <p>Perfect for: 4–8 year olds, big feelings, imagination, bedtime.</p>
+
+            <h2>7. The Tiger Who Came to Tea — Judith Kerr</h2>
+
+            <p>A picture-book lunch guest like no other. A polite (and very hungry) tiger turns up on Sophie's doorstep one afternoon, eats everything in the house — including all the food in the cupboard, all the food in the fridge, and all the water in the tap — and then politely leaves.</p>
+
+            <p>It's gentle, it's funny, it's beautifully illustrated, and it's the kind of book my own children would have asked for again and again at this age. Pair it with a real cream tea picnic in the garden and you've got an afternoon nobody is going to forget.</p>
+
+            <p>Perfect for: 3–6 year olds, tea-and-cake fans, families with younger readers.</p>
+
+            <h2>How to Make Summer Reading Stick</h2>
+
+            <p>A few small things that turn "read a book" into "build a memory":</p>
+
+            <ul>
+                <li><strong>Read outside.</strong> Picnic blanket, hammock, sandcastle, paddling pool — anywhere that isn't the usual sofa. The story lands differently when the setting changes.</li>
+                <li><strong>Make a tiny ritual.</strong> A book at the end of the picnic. A book before bed in summer pyjamas. A book in the tent on the camping trip. Small repeated moments build a child's reading life.</li>
+                <li><strong>Re-read the favourites.</strong> Summer is the perfect time for the third, fourth, fifth read of a beloved book. Repetition isn't boring to a young child — it's mastery. They're getting deeper into a world they already love.</li>
+                <li><strong>Let them choose.</strong> If they want <em>The Day the Crayons Quit</em> seven nights in a row, that's the right book for them this week.</li>
+            </ul>
+
+            <p>And if you want to read more about <em>why</em> picture books are such powerful tools at this age — for courage, for empathy, for big feelings — you might like <a href="#blog/teaching-kids-about-courage-through-picture-books">my post on teaching kids about courage through picture books</a>, or <a href="#blog/best-read-aloud-picture-books-for-bedtime">my pick of the best read-aloud picture books for bedtime</a>.</p>
+
+            <h2>One More for the Beach Bag</h2>
+
+            <p>If you do nothing else this summer, get a copy of <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer"><strong>Frankie & Henry and the Brave River Rescue</strong></a> into the beach bag. It's a true summer adventure — sun, river, wildlife, two little brothers who are about to discover what they're made of — and it reads aloud beautifully on a picnic blanket.</p>
+
+            <p>Happy summer reading. May your garden be sunny, your picnic blanket be free of ants, and your child's favourite line from a story turn up in conversation at the dinner table for the rest of the year.</p>
+
+            <p><em>— Michele x</em></p>
+        `,
+        image: '/assets/wild-place-running.jpg',
+        imageAlt: 'Frankie and Henry running through the Wild Place in summer sunshine — a summer reading list adventure book for kids',
+    },
+    {
+        id: 'childrens-books-for-kids-who-love-dogs',
+        title: 'Children\'s Books for Kids Who Love Dogs: 8 Picture Books With Dog Heroes',
+        metaDescription: 'The best children\'s books for dog lovers — 8 picture books with dog heroes that kids ages 4–8 will adore. From Yorkshire Terrier adventurers to loyal sheepdogs and snack-loving spaniels.',
+        date: '2026-05-20',
+        author: 'Michele Cameron',
+        targetKeyword: 'children\'s books for dog lovers',
+        excerpt: 'If you\'ve got a child who loves dogs — really, properly, head-over-heels loves them — these are the children\'s books to put on their shelf. Eight picture books with dog heroes, all chosen for kids ages 4–8.',
+        content: `
+            <p>If you've got a child who loves dogs — really, properly, head-over-heels loves them — you'll know the look. The one where they crouch down on the pavement to greet every dog they pass. The one where they ask, again, whether <em>this</em> might be the year we get a puppy. The one they get when they spot a dog on the cover of a book in the library and absolutely have to have it.</p>
+
+            <p>Dog-loving children make some of the best little readers in the world. They're already invested. They already know that a dog is more than a dog — that a dog is a friend, a sibling, a co-conspirator, a brave little hero in a small furry coat. All a story has to do is give them a dog to follow, and they're in.</p>
+
+            <p>So if you're looking for picture books to feed that obsession — books to gift, books for the bedside stack, books for the rainy afternoon when you've been asked for "a doggy one" — here are eight of the very best children's books for dog lovers, all chosen for ages 4–8.</p>
+
+            <h2>1. Frankie & Henry and the Brave River Rescue — Michele Cameron</h2>
+
+            <p>I'll start with my own — and not just because it's my book. I'll start with it because if your child loves dogs, this story was written for them.</p>
+
+            <p><strong>Frankie & Henry and the Brave River Rescue</strong> follows two real-life Yorkshire Terrier brothers — fearless Frankie and snack-loving Henry — who tumble into a magical place called the Wild Place and find themselves racing against time to save a lost jackal cub. It's an adventure story, but it's also a love story between two brothers who happen to be very small, very scruffy, and very stubborn dogs.</p>
+
+            <p>What dog-loving kids respond to: the personalities feel real. Frankie charges in headfirst. Henry would prefer a nap and a biscuit. They argue, they squabble, they look out for each other when it counts. Anyone who has ever lived with two dogs will recognise the dynamic instantly — and so will any child who has watched their family dog and understood, on some level, that there's a whole personality going on in there.</p>
+
+            <p><em>If you want a bit more on why Yorkies make brilliant adventure heroes, you might enjoy <a href="#blog/why-yorkshire-terriers-make-best-adventure-heroes">this post on the Frankie/Henry dynamic</a>.</em></p>
+
+            <h2>2. Hairy Maclary from Donaldson's Dairy — Lynley Dodd</h2>
+
+            <p>A picture-book classic and an absolute gift for children just learning to read aloud. Lynley Dodd's rhyming romp follows Hairy Maclary — a scruffy little terrier of mysterious breed — and his gang of dog friends as they swagger through town, until they meet Scarface Claw, "the toughest tom in town."</p>
+
+            <p>The rhythm is gorgeous. The names of the dogs (Hercules Morse, as big as a horse; Bottomley Potts, covered in spots) lodge themselves in your head and refuse to leave. And every dog has a distinct, recognisable personality — which is, frankly, exactly how the dog-loving child sees the dogs in their own real life.</p>
+
+            <p>Perfect for: 3–6 year olds, kids learning to chant along, families with a soft spot for terriers.</p>
+
+            <h2>3. Dogger — Shirley Hughes</h2>
+
+            <p>Technically a book about a toy dog, but it earns its place here because it captures, perhaps better than any other picture book, what a dog means to a child. Dave loses his beloved toy dog Dogger at the school fair. The whole family searches. The whole family worries. And then Dave's sister Bella does something extraordinarily kind to bring Dogger home.</p>
+
+            <p>Children who love their real dog the way Dave loves his toy dog will absolutely melt into this book. It's about loss, kindness, siblings, and the kind of love a child has for the small thing they cannot live without. A quiet masterpiece.</p>
+
+            <p>Perfect for: 4–7 year olds, gentle bedtime reading, families with siblings.</p>
+
+            <h2>4. Martha Speaks — Susan Meddaugh</h2>
+
+            <p>One day Martha the dog eats a bowl of alphabet soup and the letters travel up to her brain instead of down to her tummy. The result? Martha can talk. And she will not stop talking.</p>
+
+            <p>It's funny, it's clever, and it indulges every dog-loving child's secret fantasy — that their own dog has thoughts, opinions, complaints, and theories about life and is just waiting for the right bowl of soup to come along. The illustrations are full of dog personality. Martha herself is one of the great picture-book canines.</p>
+
+            <p>Perfect for: 5–8 year olds, kids who already invent voices for their pets, families who love a giggly bedtime read.</p>
+
+            <h2>5. Harry the Dirty Dog — Gene Zion</h2>
+
+            <p>Harry is a white dog with black spots who hates baths. So one afternoon he buries his scrubbing brush in the garden and runs away — through the coal chute, the railway tracks, the puddles — until he's a black dog with white spots, and his own family doesn't recognise him.</p>
+
+            <p>It's an old book (1956) and it has aged beautifully. The story moves like a film. The illustrations have that scratchy, expressive line that makes you feel like Harry could trot off the page at any moment. And the homecoming at the end is one of those picture-book endings that gives a five-year-old a deep, satisfying feeling that all is right with the world.</p>
+
+            <p>Perfect for: 3–7 year olds, kids who love a good adventure-and-home-again arc, dog-mad children of any age.</p>
+
+            <h2>6. Officer Buckle and Gloria — Peggy Rathmann</h2>
+
+            <p>A Caldecott Medal winner and an absolute joy. Officer Buckle gives safety talks at schools but nobody listens — until his police dog Gloria starts coming along, and unbeknownst to him, performing the most spectacular pantomime behind his back. Suddenly his safety talks are the hottest ticket in town.</p>
+
+            <p>Dog-loving children adore Gloria. She's expressive, she's mischievous, she clearly knows exactly what she's doing — and the moment when Officer Buckle finally realises what's been going on is genuinely lovely. It's a book about friendship, partnership, and the funny ways the people (and dogs) in our lives complete us.</p>
+
+            <p>Perfect for: 5–8 year olds, classroom read-alouds, kids who love a visual punchline.</p>
+
+            <h2>7. Charlie and Lola: I Will Not Ever Never Eat a Tomato — Lauren Child</h2>
+
+            <p>Not strictly a dog book — but if you've got a fussy eater in the house and a child who loves dogs, this one finds its way onto the shelf. The reason it makes this list is that the Charlie and Lola universe is full of the small, daily, warmly-observed family stuff that dog-loving kids tend to live and breathe. The Lauren Child collage style. The chatty, sibling-y dialogue. The sense of a tiny world that feels completely real.</p>
+
+            <p>For a more dog-forward Lauren Child pick, look up <em>That Pesky Rat</em> — but I include Charlie and Lola here because once a child falls in love with this world, they'll happily devour ten more, including ones with animals threaded throughout.</p>
+
+            <p>Perfect for: 4–7 year olds, fussy eaters, kids who love sibling stories.</p>
+
+            <h2>8. Walter the Farting Dog — William Kotzwinkle &amp; Glenn Murray</h2>
+
+            <p>Look. I'm including this one because if you have ever read aloud to a 6-year-old who loves dogs, you'll know that the surest way to a child's heart is a dog who solves a crime by farting at a burglar. There. I said it.</p>
+
+            <p><strong>Walter the Farting Dog</strong> is exactly the kind of book that makes a reluctant reader suddenly very enthusiastic. It's silly, it's a little bit naughty, and underneath the giggles it's a sweet story about a misunderstood dog who turns out to be the hero of the family. Children who love dogs will love Walter — flaws, smells, and all.</p>
+
+            <p>Perfect for: 5–8 year olds, reluctant readers, families who don't take themselves too seriously.</p>
+
+            <h2>Why Dog Stories Land Differently</h2>
+
+            <p>There's a reason dog-loving children make such hungry little readers. A dog in a story is a companion the child already understands. The fierce loyalty. The bravery without ego. The way a small dog will square up to something ten times its size simply because someone they love needs them. Children read those qualities and they don't see them as fictional — they see them as a description of the dog asleep at their feet.</p>
+
+            <p>That's why picture books with dog heroes are such powerful tools at this age. They teach kindness, bravery, loyalty, and empathy — but they teach them through a lens the child already trusts. By the time Frankie charges into the Wild Place to save a jackal cub, or Harry runs home filthy and exhausted, or Gloria performs her last secret pantomime, the child isn't being lectured. They're being shown.</p>
+
+            <p>If you'd like to read a little more on why these stories work so well at ages 4–8, you might enjoy <a href="#blog/teaching-kids-about-courage-through-picture-books">my post on teaching kids about courage through picture books</a> — or, for the bigger picture-book question, <a href="#blog/best-read-aloud-picture-books-for-bedtime">my pick of the best read-aloud picture books for bedtime</a>.</p>
+
+            <h2>One Last Dog Book for the Stack</h2>
+
+            <p>If you do nothing else with this list, slip a copy of <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer"><strong>Frankie & Henry and the Brave River Rescue</strong></a> into your child's pile. Two scruffy little Yorkshire Terrier brothers. One enormous African adventure. A story written for every child who has ever looked at a small dog and known, somehow, that there was a whole brave heart in there.</p>
+
+            <p>Available in Kindle and paperback on Amazon. And if you want a peek at the real dogs behind the story, <a href="#blog/the-real-frankie-and-henry-behind-the-book">meet the real Frankie and Henry here</a> — they're every bit as scruffy, stubborn, and loveable as their book counterparts.</p>
+
+            <p>Happy reading. And give your dog a scratch behind the ears from me.</p>
+
+            <p><em>— Michele x</em></p>
+        `,
+        image: '/assets/henry.jpg',
+        imageAlt: 'Henry the Yorkshire Terrier — one of the dog heroes from the Frankie and Henry children\'s book series, perfect for kids who love dogs',
+    },
 ];
 
 export default blogPosts;

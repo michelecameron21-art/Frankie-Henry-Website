@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://frankiehenryadventures.com/</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 <url>
     <loc>https://frankiehenryadventures.com/#blog</loc>
-    <lastmod>2026-05-04</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -75,6 +75,18 @@
   <url>
     <loc>https://frankiehenryadventures.com/#blog/best-childrens-books-about-brothers-and-siblings</loc>
     <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://frankiehenryadventures.com/#blog/summer-reading-list-for-kids-ages-4-8</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://frankiehenryadventures.com/#blog/childrens-books-for-kids-who-love-dogs</loc>
+    <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

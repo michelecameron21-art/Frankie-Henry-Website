@@ -11,7 +11,7 @@ Source-of-truth list of upcoming blog posts. The weekly agent should pick the ne
 ## Tier 1 — High intent, drives book sales (do these first)
 
 - [ ] **Best Yorkshire Terrier Gifts for Dog Lovers** — kw: *yorkshire terrier gifts*
-- [ ] **Children's Books for Kids Who Love Dogs** — kw: *children's books for dog lovers*
+- [x] **Children's Books for Kids Who Love Dogs** — kw: *children's books for dog lovers* *(published 2026-05-20)*
 - [ ] **Picture Books for 5-Year-Olds Who Love Adventure** — kw: *picture books for 5 year olds*
 - [ ] **Best Bedtime Books for 4-Year-Olds** — kw: *bedtime books for 4 year olds*
 - [ ] **Picture Books About Dogs for Toddlers** — kw: *dog books for toddlers*
@@ -39,7 +39,7 @@ Source-of-truth list of upcoming blog posts. The weekly agent should pick the ne
 ## Tier 4 — Seasonal & timely (slot in during the right week)
 
 - [ ] **Father's Day Books for Dog-Loving Dads** — schedule: early June 2026
-- [ ] **Summer Reading List for Kids Ages 4–8** — schedule: late May/early June 2026
+- [x] **Summer Reading List for Kids Ages 4–8** — schedule: late May/early June 2026 *(published 2026-05-14)*
 - [ ] **Back to School Picture Books About Bravery** — schedule: August 2026
 - [ ] **Halloween Picture Books That Aren't Scary** — schedule: October 2026
 - [ ] **Best Stocking Filler Books for Children** — schedule: November 2026
@@ -97,3 +97,5 @@ Pick the image that best matches the post's emotional tone. If a great fit doesn
 9. How Stories Help Children Overcome Fear — *helping children overcome fear*
 10. Why Rivers Make the Best Adventures in Children's Books — *river adventure children's book*
 11. The Best Children's Books About Brothers and Siblings — *children's books about brothers* (2026-05-04)
+12. Summer Reading List for Kids Ages 4–8 — *summer reading list for kids ages 4-8* (2026-05-14)
+13. Children's Books for Kids Who Love Dogs — *children's books for dog lovers* (2026-05-20)
