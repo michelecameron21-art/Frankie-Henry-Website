@@ -7,7 +7,7 @@ import blogPosts from './src/data/blogPosts.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dist = path.join(__dirname, 'dist');
-const SITE = 'https://frankiehenryadventures.com';
+const SITE = 'https://www.frankiehenryadventures.com';
 const template = fs.readFileSync(path.join(dist, 'index.html'), 'utf8');
 
 const attr = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
