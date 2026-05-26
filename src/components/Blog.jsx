@@ -29,7 +29,7 @@ function Blog() {
 
                 {/* Back to Home link */}
                 <a
-                    href="#"
+                    href="/"
                     style={{
                         display: 'inline-block',
                         marginBottom: '2rem',
@@ -71,7 +71,7 @@ function Blog() {
                     {blogPosts.map(post => (
                         <a
                             key={post.id}
-                            href={`#blog/${post.id}`}
+                            href={`/blog/${post.id}`}
                             className="blog-card"
                             style={{ textDecoration: 'none', color: 'inherit' }}
                         >

@@ -49,7 +49,7 @@ function BlogPost({ slug }) {
                         Sorry, we couldn't find that story. It might have wandered off into the Wild Place!
                     </p>
                     <a
-                        href="#blog"
+                        href="/blog"
                         style={{
                             fontFamily: "'Fredoka', sans-serif",
                             fontWeight: 600,
@@ -70,7 +70,7 @@ function BlogPost({ slug }) {
 
                 {/* Back to Blog link */}
                 <a
-                    href="#blog"
+                    href="/blog"
                     style={{
                         display: 'inline-block',
                         marginBottom: '2rem',
@@ -217,7 +217,7 @@ function BlogPost({ slug }) {
                                     {relatedPosts.map(rp => (
                                         <a
                                             key={rp.id}
-                                            href={`#blog/${rp.id}`}
+                                            href={`/blog/${rp.id}`}
                                             style={{
                                                 display: 'block',
                                                 background: 'rgba(255, 255, 255, 0.6)',

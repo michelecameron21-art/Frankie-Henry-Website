@@ -547,9 +547,9 @@ const blogPosts = [
             <p>If you found this useful, you might also enjoy:</p>
 
             <ul>
-                <li><a href="#blog/why-yorkshire-terriers-make-best-adventure-heroes">Why Yorkshire Terriers Make the Best Adventure Heroes</a> — on what makes animal characters work for little readers</li>
-                <li><a href="#blog/teaching-kids-about-courage-through-picture-books">Teaching Kids About Courage Through Picture Books</a> — on the books that help children face their fears</li>
-                <li><a href="#blog/free-safari-colouring-pages-for-kids">Free Safari Colouring Pages for Kids</a> — a gentle way to extend storytime into the next day</li>
+                <li><a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">Why Yorkshire Terriers Make the Best Adventure Heroes</a> — on what makes animal characters work for little readers</li>
+                <li><a href="/blog/teaching-kids-about-courage-through-picture-books">Teaching Kids About Courage Through Picture Books</a> — on the books that help children face their fears</li>
+                <li><a href="/blog/free-safari-colouring-pages-for-kids">Free Safari Colouring Pages for Kids</a> — a gentle way to extend storytime into the next day</li>
             </ul>
 
             <h2>Try It Tonight</h2>
@@ -646,9 +646,9 @@ const blogPosts = [
             <p>If this resonated with you, you might also enjoy:</p>
 
             <ul>
-                <li><a href="#blog/teaching-kids-about-courage-through-picture-books">Teaching Kids About Courage Through Picture Books</a> — on the books and moments that build brave hearts</li>
-                <li><a href="#blog/the-real-frankie-and-henry-behind-the-book">The Real Frankie &amp; Henry — Meet the Dogs Behind the Book</a> — the true story of the dogs who inspired it all</li>
-                <li><a href="#blog/best-read-aloud-picture-books-for-bedtime">The Best Read-Aloud Picture Books for Bedtime</a> — on choosing stories that read beautifully out loud</li>
+                <li><a href="/blog/teaching-kids-about-courage-through-picture-books">Teaching Kids About Courage Through Picture Books</a> — on the books and moments that build brave hearts</li>
+                <li><a href="/blog/the-real-frankie-and-henry-behind-the-book">The Real Frankie &amp; Henry — Meet the Dogs Behind the Book</a> — the true story of the dogs who inspired it all</li>
+                <li><a href="/blog/best-read-aloud-picture-books-for-bedtime">The Best Read-Aloud Picture Books for Bedtime</a> — on choosing stories that read beautifully out loud</li>
             </ul>
 
             <h2>Let Them Meet Henry</h2>
@@ -732,9 +732,9 @@ const blogPosts = [
             <p>If your child loved the river adventure, they'll enjoy these too:</p>
 
             <ul>
-                <li><a href="#blog/5-amazing-african-animals-your-kids-will-love">5 Amazing African Animals Your Kids Will Love</a> — meet the real animals from the book</li>
-                <li><a href="#blog/helping-children-overcome-fear-through-stories">How Stories Help Children Overcome Fear</a> — on why Henry's quiet bravery matters</li>
-                <li><a href="#blog/free-safari-colouring-pages-for-kids">Free Safari Colouring Pages for Kids</a> — print, colour, and bring the Wild Place to life</li>
+                <li><a href="/blog/5-amazing-african-animals-your-kids-will-love">5 Amazing African Animals Your Kids Will Love</a> — meet the real animals from the book</li>
+                <li><a href="/blog/helping-children-overcome-fear-through-stories">How Stories Help Children Overcome Fear</a> — on why Henry's quiet bravery matters</li>
+                <li><a href="/blog/free-safari-colouring-pages-for-kids">Free Safari Colouring Pages for Kids</a> — print, colour, and bring the Wild Place to life</li>
             </ul>
 
             <h2>Join the Adventure</h2>
@@ -838,9 +838,9 @@ const blogPosts = [
             <p>If your child loves stories about loyalty, courage, and the people who matter most, they'll enjoy these too:</p>
 
             <ul>
-                <li><a href="#blog/why-yorkshire-terriers-make-best-adventure-heroes">Why Yorkshire Terriers Make the Best Adventure Heroes</a> — on the Frankie/Henry dynamic</li>
-                <li><a href="#blog/teaching-kids-about-courage-through-picture-books">Teaching Kids About Courage Through Picture Books</a> — why brave-heart stories matter</li>
-                <li><a href="#blog/helping-children-overcome-fear-through-stories">How Stories Help Children Overcome Fear</a> — on Henry's quiet bravery</li>
+                <li><a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">Why Yorkshire Terriers Make the Best Adventure Heroes</a> — on the Frankie/Henry dynamic</li>
+                <li><a href="/blog/teaching-kids-about-courage-through-picture-books">Teaching Kids About Courage Through Picture Books</a> — why brave-heart stories matter</li>
+                <li><a href="/blog/helping-children-overcome-fear-through-stories">How Stories Help Children Overcome Fear</a> — on Henry's quiet bravery</li>
             </ul>
 
             <h2>Meet the Brothers</h2>
@@ -876,7 +876,7 @@ const blogPosts = [
 
             <p>Perfect for: adventure-loving 4–8 year olds, families with dogs, kids who like animals and silly humour mixed in with their bravery lessons.</p>
 
-            <p><em>If you want to read more about why Yorkies make the best adventure heroes, you might enjoy <a href="#blog/why-yorkshire-terriers-make-best-adventure-heroes">this post on the Frankie/Henry dynamic</a>.</em></p>
+            <p><em>If you want to read more about why Yorkies make the best adventure heroes, you might enjoy <a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">this post on the Frankie/Henry dynamic</a>.</em></p>
 
             <h2>2. We're Going on a Bear Hunt — Michael Rosen</h2>
 
@@ -937,7 +937,7 @@ const blogPosts = [
                 <li><strong>Let them choose.</strong> If they want <em>The Day the Crayons Quit</em> seven nights in a row, that's the right book for them this week.</li>
             </ul>
 
-            <p>And if you want to read more about <em>why</em> picture books are such powerful tools at this age — for courage, for empathy, for big feelings — you might like <a href="#blog/teaching-kids-about-courage-through-picture-books">my post on teaching kids about courage through picture books</a>, or <a href="#blog/best-read-aloud-picture-books-for-bedtime">my pick of the best read-aloud picture books for bedtime</a>.</p>
+            <p>And if you want to read more about <em>why</em> picture books are such powerful tools at this age — for courage, for empathy, for big feelings — you might like <a href="/blog/teaching-kids-about-courage-through-picture-books">my post on teaching kids about courage through picture books</a>, or <a href="/blog/best-read-aloud-picture-books-for-bedtime">my pick of the best read-aloud picture books for bedtime</a>.</p>
 
             <h2>One More for the Beach Bag</h2>
 
@@ -973,7 +973,7 @@ const blogPosts = [
 
             <p>What dog-loving kids respond to: the personalities feel real. Frankie charges in headfirst. Henry would prefer a nap and a biscuit. They argue, they squabble, they look out for each other when it counts. Anyone who has ever lived with two dogs will recognise the dynamic instantly — and so will any child who has watched their family dog and understood, on some level, that there's a whole personality going on in there.</p>
 
-            <p><em>If you want a bit more on why Yorkies make brilliant adventure heroes, you might enjoy <a href="#blog/why-yorkshire-terriers-make-best-adventure-heroes">this post on the Frankie/Henry dynamic</a>.</em></p>
+            <p><em>If you want a bit more on why Yorkies make brilliant adventure heroes, you might enjoy <a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">this post on the Frankie/Henry dynamic</a>.</em></p>
 
             <h2>2. Hairy Maclary from Donaldson's Dairy — Lynley Dodd</h2>
 
@@ -1037,13 +1037,13 @@ const blogPosts = [
 
             <p>That's why picture books with dog heroes are such powerful tools at this age. They teach kindness, bravery, loyalty, and empathy — but they teach them through a lens the child already trusts. By the time Frankie charges into the Wild Place to save a jackal cub, or Harry runs home filthy and exhausted, or Gloria performs her last secret pantomime, the child isn't being lectured. They're being shown.</p>
 
-            <p>If you'd like to read a little more on why these stories work so well at ages 4–8, you might enjoy <a href="#blog/teaching-kids-about-courage-through-picture-books">my post on teaching kids about courage through picture books</a> — or, for the bigger picture-book question, <a href="#blog/best-read-aloud-picture-books-for-bedtime">my pick of the best read-aloud picture books for bedtime</a>.</p>
+            <p>If you'd like to read a little more on why these stories work so well at ages 4–8, you might enjoy <a href="/blog/teaching-kids-about-courage-through-picture-books">my post on teaching kids about courage through picture books</a> — or, for the bigger picture-book question, <a href="/blog/best-read-aloud-picture-books-for-bedtime">my pick of the best read-aloud picture books for bedtime</a>.</p>
 
             <h2>One Last Dog Book for the Stack</h2>
 
             <p>If you do nothing else with this list, slip a copy of <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer"><strong>Frankie & Henry and the Brave River Rescue</strong></a> into your child's pile. Two scruffy little Yorkshire Terrier brothers. One enormous African adventure. A story written for every child who has ever looked at a small dog and known, somehow, that there was a whole brave heart in there.</p>
 
-            <p>Available in Kindle and paperback on Amazon. And if you want a peek at the real dogs behind the story, <a href="#blog/the-real-frankie-and-henry-behind-the-book">meet the real Frankie and Henry here</a> — they're every bit as scruffy, stubborn, and loveable as their book counterparts.</p>
+            <p>Available in Kindle and paperback on Amazon. And if you want a peek at the real dogs behind the story, <a href="/blog/the-real-frankie-and-henry-behind-the-book">meet the real Frankie and Henry here</a> — they're every bit as scruffy, stubborn, and loveable as their book counterparts.</p>
 
             <p>Happy reading. And give your dog a scratch behind the ears from me.</p>
 

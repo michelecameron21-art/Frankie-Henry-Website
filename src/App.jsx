@@ -37,7 +37,7 @@ const NAV_ITEMS = [
     {
         label: 'Stories',
         links: [
-            { label: 'Blog', href: '#blog' },
+            { label: 'Blog', href: '/blog' },
         ],
     },
     {
@@ -123,41 +123,87 @@ function DropdownMenu({ item, closeAll }) {
     );
 }
 
-function useHashRoute() {
-    const [hash, setHash] = useState(window.location.hash);
+// Client-side navigation using real URLs (History API)
+function navigate(href) {
+    const url = new URL(href, window.location.origin);
+    const samePath = url.pathname === window.location.pathname;
+    window.history.pushState({}, '', url.pathname + url.search + url.hash);
+    window.dispatchEvent(new Event('locationchange'));
+    if (url.hash) {
+        const doScroll = () => {
+            const el = document.getElementById(url.hash.slice(1));
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+            else window.scrollTo(0, 0);
+        };
+        setTimeout(doScroll, samePath ? 0 : 180);
+    } else {
+        window.scrollTo(0, 0);
+    }
+}
 
-    useEffect(() => {
-        const onHashChange = () => setHash(window.location.hash);
-        window.addEventListener('hashchange', onHashChange);
-        return () => window.removeEventListener('hashchange', onHashChange);
-    }, []);
-
-    // Parse the hash into a route
-    if (hash === '#blog' || hash === '#blog/') {
+// Parse a pathname into a route
+function getRoute(pathname) {
+    if (pathname === '/blog' || pathname === '/blog/') {
         return { page: 'blog' };
     }
-    if (hash.startsWith('#blog/')) {
-        return { page: 'blogPost', slug: hash.replace('#blog/', '') };
+    if (pathname.startsWith('/blog/')) {
+        return { page: 'blogPost', slug: pathname.replace('/blog/', '').replace(/\/$/, '') };
     }
-    if (hash === '#michele-hq' || hash === '#michele-hq/') {
+    if (pathname === '/michele-hq' || pathname === '/michele-hq/') {
         return { page: 'dashboard', sub: 'home' };
     }
-    if (hash === '#michele-hq/seo') {
+    if (pathname === '/michele-hq/seo') {
         return { page: 'dashboard', sub: 'seo' };
     }
-    if (hash === '#michele-hq/outreach') {
+    if (pathname === '/michele-hq/outreach') {
         return { page: 'dashboard', sub: 'outreach' };
     }
-    if (hash === '#michele-hq/content') {
+    if (pathname === '/michele-hq/content') {
         return { page: 'dashboard', sub: 'content' };
     }
     return { page: 'home' };
 }
 
+function usePathRoute() {
+    const [pathname, setPathname] = useState(window.location.pathname);
+
+    useEffect(() => {
+        const onChange = () => setPathname(window.location.pathname);
+        window.addEventListener('popstate', onChange);
+        window.addEventListener('locationchange', onChange);
+        return () => {
+            window.removeEventListener('popstate', onChange);
+            window.removeEventListener('locationchange', onChange);
+        };
+    }, []);
+
+    return getRoute(pathname);
+}
+
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [mobileOpenItem, setMobileOpenItem] = useState(null);
-    const route = useHashRoute();
+    const route = usePathRoute();
+
+    // Intercept internal link clicks for SPA navigation (real URLs, no page reload)
+    useEffect(() => {
+        const onClick = (e) => {
+            if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+            const a = e.target.closest && e.target.closest('a');
+            if (!a) return;
+            const href = a.getAttribute('href');
+            const target = a.getAttribute('target');
+            if (!href || target === '_blank') return;
+            if (/^(https?:|mailto:|tel:)/.test(href)) return;
+            // Let the browser handle links to real files (e.g. /privacy-policy.html, images)
+            const lastSeg = href.split('#')[0].split('?')[0].split('/').pop();
+            if (lastSeg && lastSeg.includes('.')) return;
+            if (href.startsWith('/')) { e.preventDefault(); navigate(href); return; }
+            if (href.startsWith('#')) { e.preventDefault(); navigate('/' + href); return; } // home-page section anchor
+        };
+        document.addEventListener('click', onClick);
+        return () => document.removeEventListener('click', onClick);
+    }, []);
 
     // Scroll to top when navigating to blog pages
     useEffect(() => {
@@ -393,18 +439,18 @@ function App() {
                 overflow: 'visible',
             }}>
                 <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '60px' }}>
-                    <a href="#" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                    <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
                         <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: '160px', width: 'auto', marginTop: '20px' }} />
                     </a>
                     <nav style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
-                        <a href="#" style={{
+                        <a href="/" style={{
                             fontFamily: "'Fredoka', sans-serif",
                             fontWeight: 600,
                             fontSize: '1rem',
                             color: 'rgba(255,255,255,0.9)',
                             textDecoration: 'none',
                         }}>Home</a>
-                        <a href="#blog" style={{
+                        <a href="/blog" style={{
                             fontFamily: "'Fredoka', sans-serif",
                             fontWeight: 600,
                             fontSize: '1rem',

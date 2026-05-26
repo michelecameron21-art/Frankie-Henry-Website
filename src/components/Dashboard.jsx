@@ -19,7 +19,7 @@ function SEODashboard() {
 
     return (
         <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem 1.5rem' }}>
-            <a href="#michele-hq" style={{ color: 'rgba(255,220,140,0.9)', textDecoration: 'none', fontFamily: "'Fredoka', sans-serif", fontSize: '0.9rem' }}>&larr; Back to HQ</a>
+            <a href="/michele-hq" style={{ color: 'rgba(255,220,140,0.9)', textDecoration: 'none', fontFamily: "'Fredoka', sans-serif", fontSize: '0.9rem' }}>&larr; Back to HQ</a>
 
             <h1 style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '2.2rem', color: '#FFD200', margin: '1.5rem 0 0.5rem' }}>
                 SEO Roadmap
@@ -112,7 +112,7 @@ function OutreachDashboard() {
 
     return (
         <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem 1.5rem' }}>
-            <a href="#michele-hq" style={{ color: 'rgba(255,220,140,0.9)', textDecoration: 'none', fontFamily: "'Fredoka', sans-serif", fontSize: '0.9rem' }}>&larr; Back to HQ</a>
+            <a href="/michele-hq" style={{ color: 'rgba(255,220,140,0.9)', textDecoration: 'none', fontFamily: "'Fredoka', sans-serif", fontSize: '0.9rem' }}>&larr; Back to HQ</a>
 
             <h1 style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '2.2rem', color: '#FFD200', margin: '1.5rem 0 0.5rem' }}>
                 PR &amp; Outreach
@@ -245,7 +245,7 @@ function ContentDashboard() {
 
     return (
         <div style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem 1.5rem' }}>
-            <a href="#michele-hq" style={{ color: 'rgba(255,220,140,0.9)', textDecoration: 'none', fontFamily: "'Fredoka', sans-serif", fontSize: '0.9rem' }}>&larr; Back to HQ</a>
+            <a href="/michele-hq" style={{ color: 'rgba(255,220,140,0.9)', textDecoration: 'none', fontFamily: "'Fredoka', sans-serif", fontSize: '0.9rem' }}>&larr; Back to HQ</a>
 
             <h1 style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '2.2rem', color: '#FFD200', margin: '1.5rem 0 0.5rem' }}>
                 Content Plan
@@ -340,7 +340,7 @@ export default function Dashboard({ page }) {
             {/* Minimal header */}
             <div style={{ background: 'rgba(0,0,0,0.3)', padding: '0.75rem 2rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <span style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '1rem', color: '#FFD200' }}>Michele's HQ</span>
-                <a href="#" style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Back to site</a>
+                <a href="/" style={{ fontFamily: "'Fredoka', sans-serif", fontSize: '0.85rem', color: 'rgba(255,255,255,0.5)', textDecoration: 'none' }}>Back to site</a>
             </div>
 
             {page === 'seo' ? (
@@ -360,7 +360,7 @@ export default function Dashboard({ page }) {
                     </p>
 
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                        <a href="#michele-hq/seo" style={{
+                        <a href="/michele-hq/seo" style={{
                             display: 'block',
                             background: 'rgba(255,255,255,0.1)',
                             border: '2px solid rgba(255,210,0,0.3)',
@@ -376,7 +376,7 @@ export default function Dashboard({ page }) {
                             <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)' }}>Blog posts, keywords, technical improvements</div>
                         </a>
 
-                        <a href="#michele-hq/outreach" style={{
+                        <a href="/michele-hq/outreach" style={{
                             display: 'block',
                             background: 'rgba(255,255,255,0.1)',
                             border: '2px solid rgba(255,210,0,0.3)',
@@ -392,7 +392,7 @@ export default function Dashboard({ page }) {
                             <div style={{ fontFamily: "'Nunito', sans-serif", fontSize: '0.9rem', color: 'rgba(255,255,255,0.6)' }}>Email drafts, influencers, communities, daily to-dos</div>
                         </a>
 
-                        <a href="#michele-hq/content" style={{
+                        <a href="/michele-hq/content" style={{
                             display: 'block',
                             background: 'rgba(255,255,255,0.1)',
                             border: '2px solid rgba(245,158,11,0.4)',
