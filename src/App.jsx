@@ -19,9 +19,9 @@ const NAV_ITEMS = [
     {
         label: 'About',
         links: [
-            { label: 'Meet the Characters', href: '#characters' },
-            { label: 'Meet the Real Frankie & Henry', href: '#meet-brothers' },
-            { label: 'The Brave River Rescue', href: '#gallery' },
+            { label: 'The Brave River Rescue', href: '/the-brave-river-rescue' },
+            { label: 'Meet Frankie & Henry', href: '/meet-frankie-and-henry' },
+            { label: 'Safari Heroes', href: '/safari-heroes' },
             { label: 'Buy on Amazon', href: 'https://www.amazon.com/dp/B0GTVVPPH6', external: true },
         ],
     },
@@ -29,14 +29,13 @@ const NAV_ITEMS = [
         label: 'Play',
         links: [
             { label: 'Rescue Run Game', href: '#game' },
-            { label: 'Colouring Pages', href: '#extras' },
-            { label: 'Spot the Difference', href: '#extras' },
-            { label: 'Sing Along', href: '#extras' },
+            { label: 'Free Activities', href: '/freebies' },
         ],
     },
     {
         label: 'Stories',
         links: [
+            { label: 'Reviews', href: '/reviews' },
             { label: 'Blog', href: '/blog' },
         ],
     },
@@ -161,7 +160,60 @@ function getRoute(pathname) {
     if (pathname === '/michele-hq/content') {
         return { page: 'dashboard', sub: 'content' };
     }
+    // Sub-pages (real URLs for Google sitelink targets)
+    if (pathname === '/the-brave-river-rescue' || pathname === '/the-brave-river-rescue/') return { page: 'braveriver' };
+    if (pathname === '/meet-frankie-and-henry' || pathname === '/meet-frankie-and-henry/') return { page: 'meet' };
+    if (pathname === '/safari-heroes' || pathname === '/safari-heroes/') return { page: 'heroes' };
+    if (pathname === '/freebies' || pathname === '/freebies/') return { page: 'freebies' };
+    if (pathname === '/reviews' || pathname === '/reviews/') return { page: 'reviews' };
     return { page: 'home' };
+}
+
+// Per-page <title> and <meta description> for sub-pages
+// Pipes ( | ) used instead of em-dashes per project style
+const PAGE_META = {
+    '/the-brave-river-rescue': {
+        title: "The Brave River Rescue | Frankie & Henry's First Adventure",
+        description: "Two Yorkshire Terrier brothers, a lost jackal cub, and a monitor lizard closing in. A safari picture book for kids aged 4 to 8.",
+    },
+    '/meet-frankie-and-henry': {
+        title: "Meet Frankie & Henry | The Real Brothers Behind the Book",
+        description: "The real Yorkshire Terrier brothers whose walks together inspired the Wild Place. Their story, their photos and how the book came to be.",
+    },
+    '/safari-heroes': {
+        title: "Safari Heroes | The Cast of the Wild Place",
+        description: "Meet the lion king, the rhino guardian, the giraffe lookout and every safari hero the brothers encounter in the Wild Place.",
+    },
+    '/freebies': {
+        title: "Free Safari Colouring Pages and Activity Sheets",
+        description: "Free downloadable safari colouring pages, activity sheets and bedtime printables for kids who love Frankie and Henry.",
+    },
+    '/reviews': {
+        title: "Reviews | Frankie & Henry: The Brave River Rescue",
+        description: "Reviews from parents, teachers and small readers of the Brave River Rescue. Honest takes on the picture book inspired by two real Yorkies.",
+    },
+};
+
+// Update document.title, meta description and canonical link on client-side navigation.
+// (The prerender bakes the initial HTML for first-load + Googlebot.)
+function usePageHead(pathname) {
+    useEffect(() => {
+        const meta = PAGE_META[pathname.replace(/\/$/, '')];
+        if (!meta) return;
+        const prevTitle = document.title;
+        document.title = meta.title;
+        const desc = document.querySelector('meta[name="description"]');
+        const prevDesc = desc ? desc.getAttribute('content') : null;
+        if (desc) desc.setAttribute('content', meta.description);
+        const can = document.querySelector('link[rel="canonical"]');
+        const prevCan = can ? can.getAttribute('href') : null;
+        if (can) can.setAttribute('href', `https://www.frankiehenryadventures.com${pathname.replace(/\/$/, '')}`);
+        return () => {
+            document.title = prevTitle;
+            if (desc && prevDesc !== null) desc.setAttribute('content', prevDesc);
+            if (can && prevCan !== null) can.setAttribute('href', prevCan);
+        };
+    }, [pathname]);
 }
 
 function usePathRoute() {
@@ -177,13 +229,15 @@ function usePathRoute() {
         };
     }, []);
 
-    return getRoute(pathname);
+    return { route: getRoute(pathname), pathname };
 }
 
 function App() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [mobileOpenItem, setMobileOpenItem] = useState(null);
-    const route = usePathRoute();
+    const { route, pathname } = usePathRoute();
+    usePageHead(pathname);
+    const SUB_PAGES = ['braveriver', 'meet', 'heroes', 'freebies', 'reviews'];
 
     // Intercept internal link clicks for SPA navigation (real URLs, no page reload)
     useEffect(() => {
@@ -205,9 +259,9 @@ function App() {
         return () => document.removeEventListener('click', onClick);
     }, []);
 
-    // Scroll to top when navigating to blog pages
+    // Scroll to top when navigating to blog or sub-pages
     useEffect(() => {
-        if (route.page === 'blog' || route.page === 'blogPost' || route.page === 'dashboard') {
+        if (route.page === 'blog' || route.page === 'blogPost' || route.page === 'dashboard' || SUB_PAGES.includes(route.page)) {
             window.scrollTo(0, 0);
         }
     }, [route.page, route.slug]);
@@ -487,6 +541,26 @@ function App() {
             ) : route.page === 'blogPost' ? (
                 <main className="relative z-10">
                     <BlogPost slug={route.slug} />
+                </main>
+            ) : route.page === 'braveriver' ? (
+                <main className="relative z-10">
+                    <BraveRiverRescue />
+                </main>
+            ) : route.page === 'meet' ? (
+                <main className="relative z-10">
+                    <MeetTheBrothers />
+                </main>
+            ) : route.page === 'heroes' ? (
+                <main className="relative z-10">
+                    <SafariHeroes />
+                </main>
+            ) : route.page === 'freebies' ? (
+                <main className="relative z-10">
+                    <Extras />
+                </main>
+            ) : route.page === 'reviews' ? (
+                <main className="relative z-10">
+                    <Reviews />
                 </main>
             ) : (
                 <main className="relative z-10">
