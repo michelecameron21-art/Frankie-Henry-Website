@@ -1,3 +1,6 @@
+@keyframes fh-spin { to { transform: rotate(360deg); } }
+.spin { animation: fh-spin 0.8s linear infinite; }
+
 :root {
     /* Colors */
     --color-bg: #FFFBF0;

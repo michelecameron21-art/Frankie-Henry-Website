@@ -4,6 +4,7 @@ import SafariHeroes from './components/SafariHeroes'
 import MeetTheBrothers from './components/MeetTheBrothers'
 import BraveRiverRescue from './components/BraveRiverRescue'
 import Extras from './components/Extras'
+import FreeBook from './components/FreeBook'
 
 import Game from './components/Game'
 import Story from './components/Story'
@@ -556,6 +557,7 @@ function App() {
                 </main>
             ) : route.page === 'freebies' ? (
                 <main className="relative z-10">
+                    <FreeBook />
                     <Extras />
                 </main>
             ) : route.page === 'reviews' ? (
