@@ -14,7 +14,9 @@ export default async function handler(req, res) {
       return res.status(405).json({ error: 'method_not_allowed' });
     }
 
-    const apiKey = (process.env.MAILERLITE_API_KEY || '').trim();
+    // Strip ALL whitespace: pasting the key can introduce line breaks, which
+    // would make the Authorization header invalid. A token never contains spaces.
+    const apiKey = (process.env.MAILERLITE_API_KEY || '').replace(/\s+/g, '');
     if (!apiKey) {
       return res.status(500).json({ error: 'not_configured' });
     }
@@ -49,23 +51,16 @@ export default async function handler(req, res) {
       clearTimeout(timer);
     }
 
-    const detail = await r.text();
-
     // 200/201 = success (also when the subscriber already exists).
     if (r.ok) {
       return res.status(200).json({ ok: true });
     }
 
-    return res.status(502).json({
-      error: 'subscribe_failed',
-      upstream_status: r.status,
-      upstream_detail: detail.slice(0, 400),
-    });
+    const detail = await r.text();
+    console.error('MailerLite error', r.status, detail);
+    return res.status(502).json({ error: 'subscribe_failed' });
   } catch (err) {
-    return res.status(500).json({
-      error: 'exception',
-      name: String((err && err.name) || ''),
-      message: String((err && err.message) || err),
-    });
+    console.error('subscribe exception', err && err.name, err && err.message);
+    return res.status(500).json({ error: 'server_error' });
   }
 }
