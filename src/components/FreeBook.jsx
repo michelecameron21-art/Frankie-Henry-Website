@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BookOpen, Loader2, CheckCircle2 } from 'lucide-react';
 
 const BOOK_FILE = '/assets/frankie-and-henry-free-book.pdf';
-const BOOK_FILENAME = 'Frankie-and-Henry-The-Brave-River-Rescue.pdf';
+const BOOK_FILENAME = 'Frankie and Henry Free Book Final.pdf';
 
 export default function FreeBook() {
     const [email, setEmail] = useState('');

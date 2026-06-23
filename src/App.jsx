@@ -569,6 +569,7 @@ function App() {
                     <SafariHeroes />
                     <MeetTheBrothers />
                     <BraveRiverRescue />
+                    <FreeBook />
                     <Reviews />
                     <Game />
                     <Extras />
