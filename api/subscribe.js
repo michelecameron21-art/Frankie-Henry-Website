@@ -31,6 +31,15 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'invalid_email' });
     }
 
+    // Human checks: a filled honeypot, or a submit faster than a person could
+    // realistically manage, means it's almost certainly a bot. Respond OK so the
+    // bot isn't tipped off, but never add it to the mailing list.
+    const honeypot = body && body.hp ? String(body.hp).trim() : '';
+    const elapsed = Number(body && body.t) || 0;
+    if (honeypot || elapsed < 1000) {
+      return res.status(200).json({ ok: true });
+    }
+
     // Guard against a hung outbound request so the function always responds.
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), 8000);

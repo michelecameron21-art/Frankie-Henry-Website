@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { BookOpen, Loader2, CheckCircle2 } from 'lucide-react';
 
 const BOOK_FILE = '/assets/frankie-and-henry-free-book.pdf';
@@ -7,6 +7,8 @@ const BOOK_FILENAME = 'Frankie and Henry Free Book Final.pdf';
 export default function FreeBook() {
     const [email, setEmail] = useState('');
     const [status, setStatus] = useState('idle'); // idle | loading | success | error
+    const [hp, setHp] = useState(''); // honeypot: real people never fill this; bots do
+    const startRef = useRef(Date.now()); // form-open time, to catch instant bot submits
 
     function triggerDownload() {
         const a = document.createElement('a');
@@ -30,7 +32,7 @@ export default function FreeBook() {
             const res = await fetch('/api/subscribe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email: value }),
+                body: JSON.stringify({ email: value, hp, t: Date.now() - startRef.current }),
             });
             if (res.ok) {
                 setStatus('success');
@@ -95,6 +97,17 @@ export default function FreeBook() {
                             display: 'flex', flexWrap: 'wrap', gap: '0.75rem',
                             justifyContent: 'center', maxWidth: '520px', margin: '0 auto',
                         }}>
+                            {/* Honeypot: hidden from people, tempting to bots. Leave empty. */}
+                            <input
+                                type="text"
+                                name="company"
+                                value={hp}
+                                onChange={(e) => setHp(e.target.value)}
+                                tabIndex={-1}
+                                autoComplete="off"
+                                aria-hidden="true"
+                                style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0 }}
+                            />
                             <input
                                 type="email"
                                 value={email}
