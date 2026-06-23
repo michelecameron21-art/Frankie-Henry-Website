@@ -50,7 +50,7 @@ export default async function handler(req, res) {
     // 422 = validation (e.g. malformed). Anything else = upstream issue.
     const detail = await r.text();
     console.error('MailerLite error', r.status, detail);
-    return res.status(502).json({ error: 'subscribe_failed' });
+    return res.status(502).json({ error: 'subscribe_failed', upstream_status: r.status, upstream_detail: detail.slice(0, 400) });
   } catch (err) {
     console.error('subscribe exception', err);
     return res.status(502).json({ error: 'subscribe_failed' });
