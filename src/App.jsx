@@ -308,8 +308,8 @@ function App() {
                             src="/assets/book-mockup.png"
                             alt="Frankie and Henry: The Brave River Rescue — children's picture book"
                             style={{
-                                height: '50vh',
-                                maxHeight: '450px',
+                                height: '42vh',
+                                maxHeight: '380px',
                                 width: 'auto',
                                 filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.45))',
                                 transform: 'rotate(-4deg)',
@@ -317,24 +317,15 @@ function App() {
                         />
                         <a
                             href="#free-book"
-                            style={{
-                                marginTop: '0.75rem',
-                                background: '#FFD200',
-                                color: '#78350F',
-                                fontFamily: "'Fredoka', sans-serif",
-                                fontWeight: 700,
-                                fontSize: '1.4rem',
-                                padding: '0.75rem 3rem',
-                                borderRadius: '9999px',
-                                textDecoration: 'none',
-                                boxShadow: '0 6px 0 #B8960A',
-                                display: 'inline-block',
-                                transition: 'transform 0.15s',
-                            }}
-                            onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
-                            onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
+                            className="free-book-sticker"
+                            aria-label="Read the whole picture book for free. Get your free copy."
                         >
-                            Read it Free
+                            <span className="free-book-sticker-inner">
+                                <span className="fb-small">READ THE</span>
+                                <span className="fb-small">WHOLE BOOK</span>
+                                <span className="fb-big">FREE</span>
+                                <span className="fb-tap">tap to read &rarr;</span>
+                            </span>
                         </a>
                         <a
                             href="https://www.amazon.com/dp/B0GTVVPPH6"
