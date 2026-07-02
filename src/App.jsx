@@ -294,7 +294,7 @@ function App() {
                 {/* Desktop: Book left + Tagline right */}
                 <div className="hero-book-tagline" style={{
                     position: 'absolute',
-                    bottom: '8%',
+                    bottom: '5%',
                     left: '5%',
                     right: '2%',
                     zIndex: 20,
@@ -397,8 +397,8 @@ function App() {
                 </div>
 
                 {/* Logo — top left */}
-                <div className="hero-logo" style={{ position: 'absolute', top: '1.25rem', left: '3rem', zIndex: 50 }}>
-                    <img src="/assets/fh-logo-sharp.png" alt="Frankie & Henry" style={{ width: 'clamp(240px, 25vw, 360px)', height: 'auto' }} />
+                <div className="hero-logo" style={{ position: 'absolute', top: '0.75rem', left: '2.5rem', zIndex: 50 }}>
+                    <img src="/assets/fh-logo-sharp.png" alt="Frankie & Henry" style={{ width: 'clamp(220px, 22vw, 320px)', height: 'auto' }} />
                 </div>
 
                 {/* Nav */}
