@@ -398,7 +398,7 @@ function App() {
 
                 {/* Logo — top left */}
                 <div className="hero-logo" style={{ position: 'absolute', top: '0.75rem', left: '2.5rem', zIndex: 50 }}>
-                    <img src="/assets/fh-logo-sharp.png" alt="Frankie & Henry" style={{ width: 'clamp(220px, 22vw, 320px)', height: 'auto' }} />
+                    <img src="/assets/fh-logo-sharp.png" alt="Frankie & Henry" style={{ width: 'clamp(180px, 18vw, 265px)', height: 'auto' }} />
                 </div>
 
                 {/* Nav */}
