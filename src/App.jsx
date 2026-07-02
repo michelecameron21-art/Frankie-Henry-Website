@@ -288,6 +288,15 @@ function App() {
                     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '55% 40%' }}
                 />
 
+                {/* Frankie's ear cut from the photo — sits ABOVE the logo so the leash tucks behind it (desktop) */}
+                <img
+                    src="/assets/frankie-ear.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="hero-image-desktop"
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', zIndex: 55, pointerEvents: 'none' }}
+                />
+
                 {/* Gradient — darkens top for nav, fades bottom into gold section */}
                 <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, transparent 20%, transparent 88%, #C07848 100%)' }} />
 
@@ -397,7 +406,7 @@ function App() {
                 </div>
 
                 {/* Logo — top left */}
-                <div className="hero-logo" style={{ position: 'absolute', top: '0.75rem', left: '2.5rem', zIndex: 50 }}>
+                <div className="hero-logo" style={{ position: 'absolute', top: '2.5rem', left: '14.5%', zIndex: 50 }}>
                     <img src="/assets/fh-logo-sharp.png" alt="Frankie & Henry" style={{ width: 'clamp(220px, 22vw, 320px)', height: 'auto' }} />
                 </div>
 
