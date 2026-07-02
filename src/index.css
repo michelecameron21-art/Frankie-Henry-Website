@@ -1588,13 +1588,14 @@ button {
         bottom: 25% !important;
     }
 
-    /* Hero logo — bigger but clear of Lwazi's wing on mobile */
+    /* Hero logo — sharper transparent logo, sit near the top on mobile */
     .hero-logo {
-        left: -1rem !important;
-        top: -3.5rem !important;
+        left: 0.75rem !important;
+        top: 0.75rem !important;
     }
     .hero-logo img {
-        height: 310px !important;
+        width: 240px !important;
+        height: auto !important;
     }
 
     /* Nav — move hamburger higher on mobile */

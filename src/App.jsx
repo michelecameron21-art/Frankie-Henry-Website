@@ -321,10 +321,10 @@ function App() {
                             aria-label="Read the whole picture book for free. Get your free copy."
                         >
                             <span className="free-book-sticker-inner">
-                                <span className="fb-small">READ THE</span>
+                                <span className="fb-small">DOWNLOAD THE</span>
                                 <span className="fb-small">WHOLE BOOK</span>
                                 <span className="fb-big">FREE</span>
-                                <span className="fb-tap">tap to read &rarr;</span>
+                                <span className="fb-tap">tap to download &rarr;</span>
                             </span>
                         </a>
                         <a
@@ -397,8 +397,8 @@ function App() {
                 </div>
 
                 {/* Logo — top left */}
-                <div className="hero-logo" style={{ position: 'absolute', top: '-3rem', left: '6rem', zIndex: 50 }}>
-                    <img src="/assets/fh-logo.png" alt="Frankie & Henry" style={{ height: 'clamp(240px, 40vw, 550px)', width: 'auto' }} />
+                <div className="hero-logo" style={{ position: 'absolute', top: '1.25rem', left: '3rem', zIndex: 50 }}>
+                    <img src="/assets/fh-logo-sharp.png" alt="Frankie & Henry" style={{ width: 'clamp(240px, 25vw, 360px)', height: 'auto' }} />
                 </div>
 
                 {/* Nav */}
