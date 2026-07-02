@@ -5,7 +5,6 @@ import MeetTheBrothers from './components/MeetTheBrothers'
 import BraveRiverRescue from './components/BraveRiverRescue'
 import Extras from './components/Extras'
 import FreeBook from './components/FreeBook'
-import FreeBookBadge from './components/FreeBookBadge'
 
 import Game from './components/Game'
 import Story from './components/Story'
@@ -274,9 +273,6 @@ function App() {
             {route.page === 'home' ? (
             <header style={{ height: '100vh', minHeight: '650px', position: 'relative', overflow: 'hidden', width: '100%' }}>
 
-                {/* Free-book sticker badge — sits on the hero beside Henry */}
-                <FreeBookBadge />
-
                 {/* Hero image — desktop (wide) */}
                 <img
                     src="/assets/hero-bros.jpg"
@@ -320,9 +316,7 @@ function App() {
                             }}
                         />
                         <a
-                            href="https://www.amazon.com/dp/B0GTVVPPH6"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="#free-book"
                             style={{
                                 marginTop: '0.75rem',
                                 background: '#FFD200',
@@ -340,18 +334,26 @@ function App() {
                             onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
                             onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
                         >
-                            Buy Now
+                            Read it Free
                         </a>
-                        <p style={{
-                            marginTop: '0.5rem',
-                            fontFamily: "'Fredoka', sans-serif",
-                            fontSize: '0.85rem',
-                            color: 'rgba(255,220,140,0.9)',
-                            fontWeight: 600,
-                            letterSpacing: '0.03em',
-                        }}>
-                            Available in Kindle &amp; Paperback
-                        </p>
+                        <a
+                            href="https://www.amazon.com/dp/B0GTVVPPH6"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                                marginTop: '0.5rem',
+                                fontFamily: "'Fredoka', sans-serif",
+                                fontSize: '0.85rem',
+                                color: 'rgba(255,220,140,0.9)',
+                                fontWeight: 600,
+                                letterSpacing: '0.03em',
+                                textDecoration: 'none',
+                            }}
+                            onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
+                            onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
+                        >
+                            Or buy on Amazon (Kindle &amp; Paperback)
+                        </a>
                     </div>
 
                     {/* Tagline — angled to the right */}
@@ -460,9 +462,7 @@ function App() {
                                 </div>
                             ))}
                             <a
-                                href="https://www.amazon.com/dp/B0GTVVPPH6"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                href="#free-book"
                                 onClick={() => setIsMenuOpen(false)}
                                 style={{
                                     marginTop: '1rem', display: 'block', textAlign: 'center',
@@ -472,19 +472,27 @@ function App() {
                                     boxShadow: '0 4px 0 #B8960A',
                                 }}
                             >
-                                Buy Now on Amazon
+                                Read the Book Free
                             </a>
-                            <p style={{
-                                marginTop: '0.4rem',
-                                textAlign: 'center',
-                                fontFamily: "'Fredoka', sans-serif",
-                                fontSize: '0.8rem',
-                                color: 'rgba(255,220,140,0.9)',
-                                fontWeight: 600,
-                                letterSpacing: '0.03em',
-                            }}>
-                                Available in Kindle &amp; Paperback
-                            </p>
+                            <a
+                                href="https://www.amazon.com/dp/B0GTVVPPH6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setIsMenuOpen(false)}
+                                style={{
+                                    marginTop: '0.5rem',
+                                    display: 'block',
+                                    textAlign: 'center',
+                                    fontFamily: "'Fredoka', sans-serif",
+                                    fontSize: '0.8rem',
+                                    color: 'rgba(255,220,140,0.9)',
+                                    fontWeight: 600,
+                                    letterSpacing: '0.03em',
+                                    textDecoration: 'none',
+                                }}
+                            >
+                                Or buy on Amazon (Kindle &amp; Paperback)
+                            </a>
                         </div>
                     )}
                 </nav>
