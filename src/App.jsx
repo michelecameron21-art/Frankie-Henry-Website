@@ -23,7 +23,7 @@ const NAV_ITEMS = [
             { label: 'The Brave River Rescue', href: '/the-brave-river-rescue' },
             { label: 'Meet Frankie & Henry', href: '/meet-frankie-and-henry' },
             { label: 'Safari Heroes', href: '/safari-heroes' },
-            { label: 'Buy on Amazon', href: 'https://www.amazon.com/dp/B0GTVVPPH6', external: true },
+            { label: 'Buy the paperback', href: 'https://www.amazon.com/dp/1067638504', external: true },
         ],
     },
     {
@@ -308,8 +308,8 @@ function App() {
                             src="/assets/book-mockup.png"
                             alt="Frankie and Henry: The Brave River Rescue — children's picture book"
                             style={{
-                                height: '42vh',
-                                maxHeight: '380px',
+                                height: '37vh',
+                                maxHeight: '338px',
                                 width: 'auto',
                                 filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.45))',
                                 transform: 'rotate(-4deg)',
@@ -328,22 +328,23 @@ function App() {
                             </span>
                         </a>
                         <a
-                            href="https://www.amazon.com/dp/B0GTVVPPH6"
+                            href="https://www.amazon.com/dp/1067638504"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
-                                marginTop: '0.5rem',
+                                marginTop: '0.85rem',
                                 fontFamily: "'Fredoka', sans-serif",
-                                fontSize: '0.85rem',
-                                color: 'rgba(255,220,140,0.9)',
-                                fontWeight: 600,
-                                letterSpacing: '0.03em',
+                                fontSize: '1.15rem',
+                                color: '#FFE9A8',
+                                fontWeight: 700,
+                                letterSpacing: '0.02em',
+                                textShadow: '1px 1px 3px rgba(0,0,0,0.55)',
                                 textDecoration: 'none',
                             }}
                             onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
                             onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
                         >
-                            Or buy on Amazon (Kindle &amp; Paperback)
+                            Or buy the paperback on Amazon
                         </a>
                     </div>
 
@@ -466,7 +467,7 @@ function App() {
                                 Read the Book Free
                             </a>
                             <a
-                                href="https://www.amazon.com/dp/B0GTVVPPH6"
+                                href="https://www.amazon.com/dp/1067638504"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={() => setIsMenuOpen(false)}
@@ -475,14 +476,14 @@ function App() {
                                     display: 'block',
                                     textAlign: 'center',
                                     fontFamily: "'Fredoka', sans-serif",
-                                    fontSize: '0.8rem',
-                                    color: 'rgba(255,220,140,0.9)',
-                                    fontWeight: 600,
-                                    letterSpacing: '0.03em',
+                                    fontSize: '1rem',
+                                    color: 'rgba(255,220,140,0.95)',
+                                    fontWeight: 700,
+                                    letterSpacing: '0.02em',
                                     textDecoration: 'none',
                                 }}
                             >
-                                Or buy on Amazon (Kindle &amp; Paperback)
+                                Or buy the paperback on Amazon
                             </a>
                         </div>
                     )}
@@ -516,7 +517,7 @@ function App() {
                             textDecoration: 'none',
                         }}>Blog</a>
                         <a
-                            href="https://www.amazon.com/dp/B0GTVVPPH6"
+                            href="https://www.amazon.com/dp/1067638504"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
@@ -530,7 +531,7 @@ function App() {
                                 textDecoration: 'none',
                                 boxShadow: '0 3px 0 #B8960A',
                             }}
-                        >Buy the Book</a>
+                        >Buy the paperback</a>
                     </nav>
                 </div>
             </header>
