@@ -5,6 +5,7 @@ import MeetTheBrothers from './components/MeetTheBrothers'
 import BraveRiverRescue from './components/BraveRiverRescue'
 import Extras from './components/Extras'
 import FreeBook from './components/FreeBook'
+import FreeBookBadge from './components/FreeBookBadge'
 
 import Game from './components/Game'
 import Story from './components/Story'
@@ -272,6 +273,9 @@ function App() {
             {/* Full-bleed Hero — image only for now */}
             {route.page === 'home' ? (
             <header style={{ height: '100vh', minHeight: '650px', position: 'relative', overflow: 'hidden', width: '100%' }}>
+
+                {/* Free-book sticker badge — sits on the hero beside Henry */}
+                <FreeBookBadge />
 
                 {/* Hero image — desktop (wide) */}
                 <img

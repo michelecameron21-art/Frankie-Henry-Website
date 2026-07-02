@@ -1470,6 +1470,88 @@ button {
 }
 
 /* =========================================
+   FREE-BOOK STICKER BADGE (hero, beside Henry)
+   ========================================= */
+
+.free-book-badge {
+    position: absolute;
+    top: 40%;
+    right: 4%;
+    z-index: 40;
+    width: clamp(128px, 13vw, 168px);
+    height: clamp(128px, 13vw, 168px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background: radial-gradient(circle at 38% 32%, #FFE375 0%, #FFD200 55%, #F6B700 100%);
+    border: 5px solid #ffffff;
+    box-shadow: 0 12px 26px rgba(120, 53, 15, 0.35),
+                inset 3px 3px 6px rgba(255, 255, 255, 0.9),
+                inset -4px -6px 10px rgba(182, 150, 10, 0.4);
+    transform: rotate(-9deg);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.free-book-badge:hover {
+    transform: rotate(-9deg) scale(1.06);
+    box-shadow: 0 16px 30px rgba(120, 53, 15, 0.4),
+                inset 3px 3px 6px rgba(255, 255, 255, 0.9),
+                inset -4px -6px 10px rgba(182, 150, 10, 0.4);
+}
+
+.free-book-badge-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.05rem;
+    line-height: 1;
+    padding: 0.5rem;
+}
+
+.free-book-badge .fb-small {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: clamp(0.6rem, 1.1vw, 0.75rem);
+    letter-spacing: 0.06em;
+    color: #78350F;
+}
+
+.free-book-badge .fb-big {
+    font-family: 'Alfa Slab One', serif;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    color: #E11D48;
+    -webkit-text-stroke: 1.5px #ffffff;
+    paint-order: stroke fill;
+    letter-spacing: 0.02em;
+    margin: 0.05rem 0;
+    line-height: 0.9;
+}
+
+.free-book-badge .fb-tap {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 600;
+    font-size: clamp(0.55rem, 1vw, 0.7rem);
+    color: #78350F;
+    opacity: 0.85;
+}
+
+/* Mobile: sit on the right, clear of the hamburger nav above it */
+@media (max-width: 768px) {
+    .free-book-badge {
+        top: 19%;
+        right: 3.5%;
+        width: 104px;
+        height: 104px;
+        border-width: 4px;
+    }
+}
+
+/* =========================================
    HERO IMAGE — DESKTOP/MOBILE SWAP
    ========================================= */
 
