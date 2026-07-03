@@ -4,7 +4,6 @@ import SafariHeroes from './components/SafariHeroes'
 import MeetTheBrothers from './components/MeetTheBrothers'
 import BraveRiverRescue from './components/BraveRiverRescue'
 import Extras from './components/Extras'
-import FreeBook from './components/FreeBook'
 
 import Game from './components/Game'
 import Story from './components/Story'
@@ -23,7 +22,7 @@ const NAV_ITEMS = [
             { label: 'The Brave River Rescue', href: '/the-brave-river-rescue' },
             { label: 'Meet Frankie & Henry', href: '/meet-frankie-and-henry' },
             { label: 'Safari Heroes', href: '/safari-heroes' },
-            { label: 'Buy the paperback', href: 'https://www.amazon.com/dp/1067638504', external: true },
+            { label: 'Buy on Amazon', href: 'https://www.amazon.com/dp/B0GTVVPPH6', external: true },
         ],
     },
     {
@@ -294,7 +293,7 @@ function App() {
                 {/* Desktop: Book left + Tagline right */}
                 <div className="hero-book-tagline" style={{
                     position: 'absolute',
-                    bottom: '5%',
+                    bottom: '8%',
                     left: '5%',
                     right: '2%',
                     zIndex: 20,
@@ -308,44 +307,46 @@ function App() {
                             src="/assets/book-mockup.png"
                             alt="Frankie and Henry: The Brave River Rescue — children's picture book"
                             style={{
-                                height: '37vh',
-                                maxHeight: '338px',
+                                height: '42vh',
+                                maxHeight: '380px',
                                 width: 'auto',
                                 filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.45))',
                                 transform: 'rotate(-4deg)',
                             }}
                         />
                         <a
-                            href="#free-book"
-                            className="free-book-sticker"
-                            aria-label="Read the whole picture book for free. Get your free copy."
-                        >
-                            <span className="free-book-sticker-inner">
-                                <span className="fb-small">DOWNLOAD THE</span>
-                                <span className="fb-small">WHOLE BOOK</span>
-                                <span className="fb-big">FREE</span>
-                                <span className="fb-tap">tap to download &rarr;</span>
-                            </span>
-                        </a>
-                        <a
-                            href="https://www.amazon.com/dp/1067638504"
+                            href="https://www.amazon.com/dp/B0GTVVPPH6"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
-                                marginTop: '0.85rem',
+                                marginTop: '0.75rem',
+                                background: '#FFD200',
+                                color: '#78350F',
                                 fontFamily: "'Fredoka', sans-serif",
-                                fontSize: '1.15rem',
-                                color: '#FFE9A8',
                                 fontWeight: 700,
-                                letterSpacing: '0.02em',
-                                textShadow: '1px 1px 3px rgba(0,0,0,0.55)',
+                                fontSize: '1.4rem',
+                                padding: '0.75rem 3rem',
+                                borderRadius: '9999px',
                                 textDecoration: 'none',
+                                boxShadow: '0 6px 0 #B8960A',
+                                display: 'inline-block',
+                                transition: 'transform 0.15s',
                             }}
-                            onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
-                            onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
+                            onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+                            onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
                         >
-                            Or buy the paperback on Amazon
+                            Buy on Amazon
                         </a>
+                        <p style={{
+                            marginTop: '0.5rem',
+                            fontFamily: "'Fredoka', sans-serif",
+                            fontSize: '0.85rem',
+                            color: 'rgba(255,220,140,0.9)',
+                            fontWeight: 600,
+                            letterSpacing: '0.03em',
+                        }}>
+                            Available in Kindle &amp; Paperback
+                        </p>
                     </div>
 
                     {/* Tagline — angled to the right */}
@@ -454,7 +455,9 @@ function App() {
                                 </div>
                             ))}
                             <a
-                                href="#free-book"
+                                href="https://www.amazon.com/dp/B0GTVVPPH6"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 onClick={() => setIsMenuOpen(false)}
                                 style={{
                                     marginTop: '1rem', display: 'block', textAlign: 'center',
@@ -464,27 +467,19 @@ function App() {
                                     boxShadow: '0 4px 0 #B8960A',
                                 }}
                             >
-                                Read the Book Free
+                                Buy on Amazon
                             </a>
-                            <a
-                                href="https://www.amazon.com/dp/1067638504"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={() => setIsMenuOpen(false)}
-                                style={{
-                                    marginTop: '0.5rem',
-                                    display: 'block',
-                                    textAlign: 'center',
-                                    fontFamily: "'Fredoka', sans-serif",
-                                    fontSize: '1rem',
-                                    color: 'rgba(255,220,140,0.95)',
-                                    fontWeight: 700,
-                                    letterSpacing: '0.02em',
-                                    textDecoration: 'none',
-                                }}
-                            >
-                                Or buy the paperback on Amazon
-                            </a>
+                            <p style={{
+                                marginTop: '0.4rem',
+                                textAlign: 'center',
+                                fontFamily: "'Fredoka', sans-serif",
+                                fontSize: '0.8rem',
+                                color: 'rgba(255,220,140,0.9)',
+                                fontWeight: 600,
+                                letterSpacing: '0.03em',
+                            }}>
+                                Available in Kindle &amp; Paperback
+                            </p>
                         </div>
                     )}
                 </nav>
@@ -517,7 +512,7 @@ function App() {
                             textDecoration: 'none',
                         }}>Blog</a>
                         <a
-                            href="https://www.amazon.com/dp/1067638504"
+                            href="https://www.amazon.com/dp/B0GTVVPPH6"
                             target="_blank"
                             rel="noopener noreferrer"
                             style={{
@@ -531,7 +526,7 @@ function App() {
                                 textDecoration: 'none',
                                 boxShadow: '0 3px 0 #B8960A',
                             }}
-                        >Buy the paperback</a>
+                        >Buy the Book</a>
                     </nav>
                 </div>
             </header>
@@ -561,7 +556,6 @@ function App() {
                 </main>
             ) : route.page === 'freebies' ? (
                 <main className="relative z-10">
-                    <FreeBook />
                     <Extras />
                 </main>
             ) : route.page === 'reviews' ? (
@@ -573,7 +567,6 @@ function App() {
                     <SafariHeroes />
                     <MeetTheBrothers />
                     <BraveRiverRescue />
-                    <FreeBook />
                     <Reviews />
                     <Game />
                     <Extras />
