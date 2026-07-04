@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import blogPosts from '../data/blogPosts';
+import blogPosts, { getRelatedPosts } from '../data/blogPosts';
 
 function formatDate(dateStr) {
     const date = new Date(dateStr + 'T00:00:00');
@@ -12,20 +12,18 @@ function formatDate(dateStr) {
 
 function BlogPost({ slug }) {
     const post = blogPosts.find(p => p.id === slug);
-    const relatedPosts = post
-        ? blogPosts.filter(p => p.id !== post.id).slice(0, 3)
-        : [];
+    const relatedPosts = post ? getRelatedPosts(post, 3) : [];
 
     useEffect(() => {
         if (post) {
-            document.title = `${post.title} — Frankie & Henry Adventures`;
+            document.title = `${post.title} | Frankie & Henry`;
             const metaDesc = document.querySelector('meta[name="description"]');
             if (metaDesc) metaDesc.setAttribute('content', post.metaDescription);
         }
         return () => {
-            document.title = "Frankie & Henry — African Safari Adventure Children's Picture Book for Ages 4–8";
+            document.title = "Frankie & Henry | Yorkshire Terrier Safari Adventure Book for Kids Ages 4-8";
             const metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc) metaDesc.setAttribute('content', "An African safari adventure picture book for children ages 4–8. Join Yorkshire Terriers Frankie & Henry as they explore Africa's Wild Place, rescue a lost jackal cub, and discover that brave hearts come in small packages.");
+            if (metaDesc) metaDesc.setAttribute('content', "A Yorkshire Terrier children's book with heart. Join Frankie and Henry, two brave little Yorkies, on a safari picture book adventure for ages 4-8. This dog adventure book for kids is on Amazon in Kindle and Paperback, plus free games and colouring pages here.");
         };
     }, [post]);
 
@@ -68,23 +66,41 @@ function BlogPost({ slug }) {
         <section className="blog-post-section" style={{ background: '#C07848', minHeight: '100vh' }}>
             <div className="container" style={{ paddingTop: '3rem', paddingBottom: '4rem' }}>
 
-                {/* Back to Blog link */}
-                <a
-                    href="/blog"
-                    style={{
-                        display: 'inline-block',
-                        marginBottom: '2rem',
-                        color: '#FFD200',
+                {/* Breadcrumb navigation (matches the BreadcrumbList structured data) */}
+                <nav aria-label="Breadcrumb" style={{ marginBottom: '2rem' }}>
+                    <ol style={{
+                        listStyle: 'none',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        alignItems: 'center',
+                        gap: '0.5rem',
+                        margin: 0,
+                        padding: 0,
                         fontFamily: "'Fredoka', sans-serif",
                         fontWeight: 600,
-                        fontSize: '1rem',
-                        textDecoration: 'none',
-                    }}
-                    onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
-                    onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
-                >
-                    &larr; Back to Blog
-                </a>
+                        fontSize: '0.95rem',
+                    }}>
+                        <li>
+                            <a href="/" style={{ color: '#FFD200', textDecoration: 'none' }}
+                                onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
+                                onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}>
+                                Home
+                            </a>
+                        </li>
+                        <li aria-hidden="true" style={{ color: 'rgba(255,255,255,0.6)' }}>&rsaquo;</li>
+                        <li>
+                            <a href="/blog" style={{ color: '#FFD200', textDecoration: 'none' }}
+                                onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
+                                onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}>
+                                Blog
+                            </a>
+                        </li>
+                        <li aria-hidden="true" style={{ color: 'rgba(255,255,255,0.6)' }}>&rsaquo;</li>
+                        <li aria-current="page" style={{ color: 'rgba(255,255,255,0.85)' }}>
+                            {post.title}
+                        </li>
+                    </ol>
+                </nav>
 
                 <article className="blog-post">
                     {/* Hero image */}

@@ -3,7 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import blogPosts from './src/data/blogPosts.js';
+import blogPosts, { getRelatedPosts } from './src/data/blogPosts.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const dist = path.join(__dirname, 'dist');
@@ -52,28 +52,52 @@ for (const p of blogPosts) {
   const canonical = `${SITE}/blog/${p.id}`;
   const image = p.image ? (p.image.startsWith('http') ? p.image : SITE + p.image) : null;
   const description = p.metaDescription || p.excerpt || '';
-  const bodyHtml = `<article><h1>${text(p.title)}</h1>${p.excerpt ? `<p>${text(p.excerpt)}</p>` : ''}${image ? `<img src="${attr(p.image)}" alt="${attr(p.imageAlt || p.title)}" />` : ''}${p.content || ''}</article>`;
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: p.title,
-    description,
-    datePublished: p.date,
-    author: { '@type': 'Person', name: p.author || 'Michele Cameron' },
-    publisher: { '@type': 'Organization', name: 'Liabri Studios' },
-    mainEntityOfPage: canonical,
-    url: canonical,
-    ...(image ? { image: [image] } : {}),
-  };
+  // Breadcrumb trail (Home > Blog > Post) baked into the crawlable HTML
+  const breadcrumbHtml = `<nav aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/blog">Blog</a> &rsaquo; <span>${text(p.title)}</span></nav>`;
+  // Related posts by tag affinity, baked in for internal linking
+  const related = getRelatedPosts(p, 3);
+  const relatedHtml = related.length
+    ? `<section><h2>More from the Wild Place</h2><ul>${related.map((r) => `<li><a href="/blog/${r.id}">${text(r.title)}</a></li>`).join('')}</ul></section>`
+    : '';
+  const bodyHtml = `${breadcrumbHtml}<article><h1>${text(p.title)}</h1>${p.excerpt ? `<p>${text(p.excerpt)}</p>` : ''}${image ? `<img src="${attr(p.image)}" alt="${attr(p.imageAlt || p.title)}" />` : ''}${p.content || ''}</article>${relatedHtml}`;
+  const jsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: p.title,
+      description,
+      datePublished: p.date,
+      author: { '@type': 'Person', name: p.author || 'Michele Cameron' },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Liabri Studios',
+        logo: { '@type': 'ImageObject', url: `${SITE}/assets/fh-logo.png` },
+      },
+      mainEntityOfPage: canonical,
+      url: canonical,
+      inLanguage: 'en-US',
+      ...(p.targetKeyword ? { keywords: p.targetKeyword } : {}),
+      ...(image ? { image: [image] } : {}),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE}/blog` },
+        { '@type': 'ListItem', position: 3, name: p.title, item: canonical },
+      ],
+    },
+  ];
   write(`blog/${p.id}`, buildPage(template, { title: `${p.title} | Frankie & Henry`, description, canonical, image, type: 'article', jsonLd, bodyHtml }));
 }
 
 // --- Blog index page ---
 const items = blogPosts
-  .map((p) => `<li><a href="/blog/${p.id}">${text(p.title)}</a>${p.excerpt ? ` — ${text(p.excerpt)}` : ''}</li>`)
+  .map((p) => `<li><a href="/blog/${p.id}">${text(p.title)}</a>${p.excerpt ? `: ${text(p.excerpt)}` : ''}</li>`)
   .join('');
 write('blog', buildPage(template, {
-  title: 'Blog | Frankie & Henry',
+  title: 'Stories from the Wild Place | Frankie & Henry Adventures Blog',
   description: 'Stories, safari facts and reading tips from the world of Frankie and Henry, the brave Yorkshire Terriers.',
   canonical: `${SITE}/blog`,
   bodyHtml: `<h1>The Frankie &amp; Henry Blog</h1><ul>${items}</ul>`,

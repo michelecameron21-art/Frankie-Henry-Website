@@ -12,13 +12,13 @@ function formatDate(dateStr) {
 
 function Blog() {
     useEffect(() => {
-        document.title = 'Stories from the Wild Place — Frankie & Henry Adventures Blog';
+        document.title = 'Stories from the Wild Place | Frankie & Henry Adventures Blog';
         const metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc) metaDesc.setAttribute('content', 'Blog posts about Frankie and Henry, Yorkshire Terrier adventures, African safari stories, courage, read-aloud picture books, and free activities for children ages 4–8.');
+        if (metaDesc) metaDesc.setAttribute('content', 'Blog posts about Frankie and Henry, Yorkshire Terrier adventures, African safari stories, courage, read-aloud picture books, and free activities for children ages 4-8.');
         return () => {
-            document.title = "Frankie & Henry — African Safari Adventure Children's Picture Book for Ages 4–8";
+            document.title = "Frankie & Henry | Yorkshire Terrier Safari Adventure Book for Kids Ages 4-8";
             const metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc) metaDesc.setAttribute('content', "An African safari adventure picture book for children ages 4–8. Join Yorkshire Terriers Frankie & Henry as they explore Africa's Wild Place, rescue a lost jackal cub, and discover that brave hearts come in small packages.");
+            if (metaDesc) metaDesc.setAttribute('content', "A Yorkshire Terrier children's book with heart. Join Frankie and Henry, two brave little Yorkies, on a safari picture book adventure for ages 4-8. This dog adventure book for kids is on Amazon in Kindle and Paperback, plus free games and colouring pages here.");
         };
     }, []);
 
@@ -68,7 +68,7 @@ function Blog() {
                 </p>
 
                 <div className="blog-grid">
-                    {blogPosts.map(post => (
+                    {[...blogPosts].sort((a, b) => (a.date < b.date ? 1 : -1)).map(post => (
                         <a
                             key={post.id}
                             href={`/blog/${post.id}`}
@@ -79,6 +79,7 @@ function Blog() {
                                 <img
                                     src={post.image}
                                     alt={post.imageAlt}
+                                    loading="lazy"
                                     style={{
                                         width: '100%',
                                         height: '100%',
