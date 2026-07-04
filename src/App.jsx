@@ -7,6 +7,7 @@ import Extras from './components/Extras'
 
 import Game from './components/Game'
 import Story from './components/Story'
+import Faq from './components/Faq'
 import Reviews from './components/Reviews'
 import Footer from './components/Footer'
 import CookieBanner from './components/CookieBanner'
@@ -570,6 +571,7 @@ function App() {
                     <Reviews />
                     <Game />
                     <Extras />
+                    <Faq />
                     <Story />
                 </main>
             )}
