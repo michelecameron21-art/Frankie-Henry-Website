@@ -2,10 +2,11 @@ const blogPosts = [
     {
         id: 'welcome-to-the-wild-place',
         title: 'Welcome to the Wild Place',
-        metaDescription: 'Meet Frankie and Henry — two brave Yorkshire Terriers on a magical safari adventure. Discover the story behind the book and this brand-new website.',
+        metaDescription: 'Meet Frankie and Henry, two brave Yorkshire Terriers on a magical safari adventure. Discover the story behind the book and this brand-new website.',
         date: '2026-03-29',
         author: 'Michele Cameron',
         targetKeyword: 'Frankie and Henry children\'s book',
+        tags: ['behind-the-scenes', 'wild-place'],
         excerpt: 'Welcome to the official home of Frankie and Henry! We\'re so excited to share the story of two brave little Yorkshire Terriers and their magical safari adventure. Come and explore the Wild Place with us.',
         content: `
             <p>Hello, and welcome to the Wild Place!</p>
@@ -24,6 +25,8 @@ const blogPosts = [
             <p>We hope you enjoy exploring the Wild Place as much as we enjoyed creating it. There's so much more to come — new stories, new characters, and new adventures are already on their way.</p>
             <p>In the meantime, why not <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of the book</a> and join Frankie and Henry on their first big adventure?</p>
             <p>Happy reading!</p>
+            <p><em>Want to keep exploring? Read <a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">why Yorkshire Terriers make the best adventure heroes</a> or meet <a href="/blog/the-real-frankie-and-henry-behind-the-book">the real dogs behind the book</a>.</em></p>
+
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/hero-bros.jpg',
@@ -36,6 +39,7 @@ const blogPosts = [
         date: '2026-03-30',
         author: 'Michele Cameron',
         targetKeyword: 'Yorkshire Terrier children\'s book',
+        tags: ['yorkies', 'dogs', 'behind-the-scenes'],
         excerpt: 'They\'re small. They\'re stubborn. They think they\'re ten times their actual size. And that\'s exactly what makes Yorkshire Terriers the perfect heroes for a children\'s adventure book.',
         content: `
             <p>They're small. They're stubborn. They think they're ten times their actual size. And that's exactly what makes Yorkshire Terriers the perfect heroes for a children's adventure book.</p>
@@ -84,10 +88,12 @@ const blogPosts = [
 
             <p>And if you've got a Yorkie at home, or you've ever loved one? You already know exactly what I'm talking about.</p>
 
+            <p><em>Keep reading: meet <a href="/blog/the-real-frankie-and-henry-behind-the-book">the real Frankie and Henry behind the book</a>, or dive into <a href="/blog/teaching-kids-about-courage-through-picture-books">how picture books teach kids about courage</a>.</em></p>
+
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/frankie.jpg',
-        imageAlt: 'Frankie the Yorkshire Terrier — brave adventure dog from the Frankie and Henry children\'s book',
+        imageAlt: 'Frankie the Yorkshire Terrier, brave adventure dog from the Frankie and Henry children\'s book',
     },
     {
         id: '5-amazing-african-animals-your-kids-will-love',
@@ -96,7 +102,8 @@ const blogPosts = [
         date: '2026-04-02',
         author: 'Michele Cameron',
         targetKeyword: 'African adventure children\'s book',
-        excerpt: 'The African wilderness is home to some of the most extraordinary animals on Earth. Here are five incredible creatures your children will meet in the Wild Place — and the surprising real facts behind each one.',
+        tags: ['safari', 'animals'],
+        excerpt: 'The African wilderness is home to some of the most extraordinary animals on Earth. Here are five incredible creatures your children will meet in the Wild Place, plus the surprising real facts behind each one.',
         content: `
             <p>The African wilderness is home to some of the most extraordinary animals on Earth. When I was writing <strong>Frankie & Henry and the Brave River Rescue</strong>, I wanted children to meet animals they might never have heard of before — not just the lions and elephants, but the quieter, stranger, more surprising creatures that make Africa's wild places so magical.</p>
 
@@ -150,10 +157,12 @@ const blogPosts = [
 
             <p>Happy exploring!</p>
 
+            <p><em>More safari reading: browse <a href="/blog/best-african-safari-books-for-children">the best African safari books for children ages 4-8</a> or print our <a href="/blog/free-safari-colouring-pages-for-kids">free safari colouring pages</a>.</em></p>
+
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/eagle.jpg',
-        imageAlt: 'Martial Eagle — Africa\'s largest eagle and sky king of the Wild Place',
+        imageAlt: 'Martial Eagle, Africa\'s largest eagle and sky king of the Wild Place',
     },
     {
         id: 'teaching-kids-about-courage-through-picture-books',
@@ -162,6 +171,7 @@ const blogPosts = [
         date: '2026-04-03',
         author: 'Michele Cameron',
         targetKeyword: 'children\'s book about courage',
+        tags: ['courage', 'reading-tips'],
         excerpt: 'Courage isn\'t the absence of fear. It\'s being scared and doing the thing anyway. And there\'s no better way to teach that to a child than through a picture book.',
         content: `
             <p>Courage isn't the absence of fear. It's being scared and doing the thing anyway. And there's no better way to teach that to a child than through a picture book.</p>
@@ -230,10 +240,12 @@ const blogPosts = [
 
             <p>If you'd like to read Frankie and Henry's story with your little ones, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of The Brave River Rescue</a>. It's available in Kindle and paperback — perfect for bedtime bravery.</p>
 
+            <p><em>More on brave little readers: <a href="/blog/helping-children-overcome-fear-through-stories">how stories help children overcome fear</a> and <a href="/blog/best-read-aloud-picture-books-for-bedtime">the best read-aloud picture books for bedtime</a>.</em></p>
+
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/all-characters-river.jpg',
-        imageAlt: 'Frankie, Henry, Lwazi and the jackals together by the river — courage and friendship in the Wild Place',
+        imageAlt: 'Frankie, Henry, Lwazi and the jackals together by the river, showing courage and friendship in the Wild Place',
     },
     {
         id: 'best-african-safari-books-for-children',
@@ -242,6 +254,7 @@ const blogPosts = [
         date: '2026-04-05',
         author: 'Michele Cameron',
         targetKeyword: 'African safari children\'s book',
+        tags: ['book-lists', 'safari'],
         excerpt: 'There\'s something magical about Africa for children. The vast open landscapes, the incredible animals, the sense that anything could happen. Here are the best African safari picture books to spark that wonder in your little ones.',
         content: `
             <p>There's something magical about Africa for children. The vast open landscapes, the incredible animals, the sense that anything could happen around the next acacia tree. It's why African safari stories make some of the most captivating children's picture books — and why kids ask to read them again and again.</p>
@@ -299,18 +312,21 @@ const blogPosts = [
 
             <p>Happy exploring!</p>
 
+            <p><em>More from the Wild Place: meet <a href="/blog/5-amazing-african-animals-your-kids-will-love">5 amazing African animals your kids will love</a> or grab our <a href="/blog/summer-reading-list-for-kids-ages-4-8">summer reading list for kids ages 4-8</a>.</em></p>
+
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/wild-place-running.jpg',
-        imageAlt: 'Frankie and Henry running through the African savannah — safari adventure for children',
+        imageAlt: 'Frankie and Henry running through the African savannah on a safari adventure for children',
     },
     {
         id: 'the-real-frankie-and-henry-behind-the-book',
-        title: 'The Real Frankie & Henry — Meet the Dogs Behind the Book',
-        metaDescription: 'Meet the real Frankie and Henry — two Yorkshire Terriers whose walks and personalities inspired the children\'s picture book Frankie & Henry and the Brave River Rescue.',
+        title: 'The Real Frankie & Henry: Meet the Dogs Behind the Book',
+        metaDescription: 'Meet the real Frankie and Henry, two Yorkshire Terriers whose walks and personalities inspired the children\'s picture book Frankie & Henry and the Brave River Rescue.',
         date: '2026-04-06',
         author: 'Michele Cameron',
         targetKeyword: 'Frankie and Henry book',
+        tags: ['behind-the-scenes', 'yorkies', 'dogs'],
         excerpt: 'Every great children\'s book has a secret. Ours is this: Frankie and Henry are real. Two tiny Yorkshire Terriers whose walks and personalities inspired every page.',
         content: `
             <p>Every great children's book has a secret. Ours is this: Frankie and Henry are real.</p>
@@ -369,10 +385,12 @@ const blogPosts = [
 
             <p>Small paws. Brave hearts. Big adventures. That was Frankie and Henry from the very beginning.</p>
 
+            <p><em>More about the boys: <a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">why Yorkshire Terriers make the best adventure heroes</a>, and <a href="/blog/helping-children-overcome-fear-through-stories">how Henry\'s quiet bravery helps children face fear</a>.</em></p>
+
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/real-frankie-henry.jpg',
-        imageAlt: 'The real Frankie and Henry — two Yorkshire Terrier brothers at golden hour',
+        imageAlt: 'The real Frankie and Henry, two Yorkshire Terrier brothers at golden hour',
     },
     {
         id: 'free-safari-colouring-pages-for-kids',
@@ -381,7 +399,8 @@ const blogPosts = [
         date: '2026-04-08',
         author: 'Michele Cameron',
         targetKeyword: 'safari colouring pages for kids',
-        excerpt: 'Looking for free safari colouring pages your little ones will actually love? Meet Frankie and Henry — two brave Yorkshire Terriers whose African adventure is now ready for crayons, colouring pencils, and imagination.',
+        tags: ['activities', 'safari'],
+        excerpt: 'Looking for free safari colouring pages your little ones will actually love? Meet Frankie and Henry, two brave Yorkshire Terriers whose African adventure is now ready for crayons, colouring pencils, and imagination.',
         content: `
             <p>Looking for free safari colouring pages your little ones will actually love? You're in the right place.</p>
 
@@ -466,6 +485,8 @@ const blogPosts = [
 
             <p>Happy colouring!</p>
 
+            <p><em>Keep the safari going: <a href="/blog/5-amazing-african-animals-your-kids-will-love">5 amazing African animals your kids will love</a> and <a href="/blog/best-african-safari-books-for-children">the best African safari books for children</a>.</em></p>
+
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/colouring-page-preview.png',
@@ -474,11 +495,12 @@ const blogPosts = [
     {
         id: 'best-read-aloud-picture-books-for-bedtime',
         title: 'The Best Read-Aloud Picture Books for Bedtime (and Why They Matter)',
-        metaDescription: 'Looking for the best read-aloud picture books for bedtime? Here\'s what makes a story work out loud — and why read-aloud time is one of the most powerful things you can do with your child.',
+        metaDescription: 'Looking for the best read-aloud picture books for bedtime? Here\'s what makes a story work out loud, and why read-aloud time is one of the most powerful things you can do with your child.',
         date: '2026-04-14',
         author: 'Michele Cameron',
         targetKeyword: 'read aloud picture books',
-        excerpt: 'Not every picture book reads well out loud. Here\'s what to look for when choosing bedtime stories — and the small, quiet reasons read-aloud time matters more than we think.',
+        tags: ['reading-tips', 'bedtime', 'book-lists'],
+        excerpt: 'Not every picture book reads well out loud. Here\'s what to look for when choosing bedtime stories, and the small, quiet reasons read-aloud time matters more than we think.',
         content: `
             <p>There's something special that happens in the ten minutes before sleep.</p>
 
@@ -561,7 +583,7 @@ const blogPosts = [
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/lizard-snoozing.jpg',
-        imageAlt: 'A sleepy monitor lizard at bedtime — a calming scene from Frankie and Henry\'s safari adventure',
+        imageAlt: 'A sleepy monitor lizard at bedtime, a calming scene from Frankie and Henry\'s safari adventure',
     },
     {
         id: 'helping-children-overcome-fear-through-stories',
@@ -570,7 +592,8 @@ const blogPosts = [
         date: '2026-04-20',
         author: 'Michele Cameron',
         targetKeyword: 'helping children overcome fear',
-        excerpt: 'Every child is afraid of something. Stories give them a safe way to face those feelings — and discover that bravery isn\'t about not being scared. It\'s about what you do next.',
+        tags: ['courage', 'reading-tips'],
+        excerpt: 'Every child is afraid of something. Stories give them a safe way to face those feelings and discover that bravery isn\'t about not being scared. It\'s about what you do next.',
         content: `
             <p>Every child is afraid of something.</p>
 
@@ -660,16 +683,17 @@ const blogPosts = [
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/scene-rumble.jpg',
-        imageAlt: 'A dramatic stormy scene from Frankie and Henry — showing the kind of fear children learn to face through stories',
+        imageAlt: 'A dramatic stormy scene from Frankie and Henry, showing the kind of fear children learn to face through stories',
         imagePosition: 'center 40%',
     },
     {
         id: 'river-adventures-in-childrens-books',
         title: 'Why Rivers Make the Best Adventures in Children\'s Books',
-        metaDescription: 'From rushing rapids to quiet riverbanks, rivers have always been at the heart of the best children\'s adventure stories. Here\'s why — and what rivers teach children about life.',
+        metaDescription: 'From rushing rapids to quiet riverbanks, rivers have always been at the heart of the best children\'s adventure stories. Here\'s why, and what rivers teach children about life.',
         date: '2026-04-20',
         author: 'Michele Cameron',
         targetKeyword: 'river adventure children\'s book',
+        tags: ['adventure', 'wild-place'],
         excerpt: 'Rivers move. Rivers change. Rivers carry you somewhere you\'ve never been. That\'s why they\'ve been at the heart of children\'s adventure stories for over a hundred years.',
         content: `
             <p>There's a reason so many of the greatest children's adventure stories happen on or near a river.</p>
@@ -744,17 +768,18 @@ const blogPosts = [
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/running-into-river.jpg',
-        imageAlt: 'Frankie and Henry running into the river — the brave rescue moment from the picture book',
+        imageAlt: 'Frankie and Henry running into the river: the brave rescue moment from the picture book',
         imagePosition: 'center 35%',
     },
     {
         id: 'best-childrens-books-about-brothers-and-siblings',
         title: 'The Best Children\'s Books About Brothers and Siblings',
-        metaDescription: 'Discover heartfelt children\'s books about brothers, sisters, and sibling bonds. From Frankie & Henry to classic favourites — perfect picture books for ages 4–8 about loving the one beside you.',
+        metaDescription: 'Discover heartfelt children\'s books about brothers, sisters, and sibling bonds. From Frankie & Henry to classic favourites: perfect picture books for ages 4–8 about loving the one beside you.',
         date: '2026-05-04',
         author: 'Michele Cameron',
         targetKeyword: 'children\'s books about brothers',
-        excerpt: 'Some of the best children\'s books are the ones about the people who drive us mad and save us at the same time — our brothers and sisters. Here are the picture books that get sibling love just right.',
+        tags: ['book-lists', 'family'],
+        excerpt: 'Some of the best children\'s books are the ones about the people who drive us mad and save us at the same time: our brothers and sisters. Here are the picture books that get sibling love just right.',
         content: `
             <p>If you've ever watched two siblings argue about who pressed the lift button and then, ten minutes later, share a packet of crisps without saying a word — you already know what makes a great brother-and-sister story.</p>
 
@@ -850,17 +875,18 @@ const blogPosts = [
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/book-mockup.jpg',
-        imageAlt: 'Frankie and Henry book cover — two Yorkshire Terrier brothers on the front of the picture book',
+        imageAlt: 'Frankie and Henry book cover with two Yorkshire Terrier brothers on the front of the picture book',
         imagePosition: 'center 35%',
     },
     {
         id: 'summer-reading-list-for-kids-ages-4-8',
         title: 'Summer Reading List for Kids Ages 4–8: 7 Picture Books for Adventure-Loving Children',
-        metaDescription: 'A curated summer reading list for kids ages 4–8. Seven brilliant picture books for adventure-loving children — perfect for long summer days, garden picnics, and lazy holiday afternoons.',
+        metaDescription: 'A curated summer reading list for kids ages 4–8. Seven brilliant picture books for adventure-loving children, perfect for long summer days, garden picnics, and lazy holiday afternoons.',
         date: '2026-05-14',
         author: 'Michele Cameron',
         targetKeyword: 'summer reading list for kids ages 4-8',
-        excerpt: 'The school holidays are coming. The garden is waiting. And there\'s no better way to fill those long, golden afternoons than with a good picture book. Here are seven of the best for kids ages 4–8 — all chosen for summer.',
+        tags: ['book-lists', 'adventure'],
+        excerpt: 'The school holidays are coming. The garden is waiting. And there\'s no better way to fill those long, golden afternoons than with a good picture book. Here are seven of the best for kids ages 4-8, all chosen for summer.',
         content: `
             <p>The school holidays are nearly here. The garden is waiting. The picnic blanket is somewhere in the cupboard, probably under the camping chairs. And the long, golden afternoons are about to stretch out in front of us like nothing else does — slow, sunny, and gloriously unstructured.</p>
 
@@ -948,16 +974,17 @@ const blogPosts = [
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/wild-place-running.jpg',
-        imageAlt: 'Frankie and Henry running through the Wild Place in summer sunshine — a summer reading list adventure book for kids',
+        imageAlt: 'Frankie and Henry running through the Wild Place in summer sunshine, a summer reading list adventure book for kids',
     },
     {
         id: 'childrens-books-for-kids-who-love-dogs',
         title: 'Children\'s Books for Kids Who Love Dogs: 8 Picture Books With Dog Heroes',
-        metaDescription: 'The best children\'s books for dog lovers — 8 picture books with dog heroes that kids ages 4–8 will adore. From Yorkshire Terrier adventurers to loyal sheepdogs and snack-loving spaniels.',
+        metaDescription: 'The best children\'s books for dog lovers: 8 picture books with dog heroes that kids ages 4-8 will adore. From Yorkshire Terrier adventurers to loyal sheepdogs and snack-loving spaniels.',
         date: '2026-05-20',
         author: 'Michele Cameron',
         targetKeyword: 'children\'s books for dog lovers',
-        excerpt: 'If you\'ve got a child who loves dogs — really, properly, head-over-heels loves them — these are the children\'s books to put on their shelf. Eight picture books with dog heroes, all chosen for kids ages 4–8.',
+        tags: ['book-lists', 'dogs'],
+        excerpt: 'If you\'ve got a child who loves dogs (really, properly, head-over-heels loves them), these are the children\'s books to put on their shelf. Eight picture books with dog heroes, all chosen for kids ages 4–8.',
         content: `
             <p>If you've got a child who loves dogs — really, properly, head-over-heels loves them — you'll know the look. The one where they crouch down on the pavement to greet every dog they pass. The one where they ask, again, whether <em>this</em> might be the year we get a puppy. The one they get when they spot a dog on the cover of a book in the library and absolutely have to have it.</p>
 
@@ -1050,8 +1077,432 @@ const blogPosts = [
             <p><em>— Michele x</em></p>
         `,
         image: '/assets/henry.jpg',
-        imageAlt: 'Henry the Yorkshire Terrier — one of the dog heroes from the Frankie and Henry children\'s book series, perfect for kids who love dogs',
+        imageAlt: 'Henry the Yorkshire Terrier, one of the dog heroes from the Frankie and Henry children\'s book series, perfect for kids who love dogs',
+    },
+    {
+        id: 'yorkshire-terrier-facts-for-kids',
+        title: 'Yorkshire Terrier Facts for Kids: 12 Fun Facts About Yorkies',
+        metaDescription: 'Fun Yorkshire Terrier facts for kids! Discover 12 amazing things about Yorkies, from their coal mine beginnings to a real Yorkie war hero, plus the two Yorkies who star in their own picture book.',
+        date: '2026-05-24',
+        author: 'Michele Cameron',
+        targetKeyword: 'Yorkshire Terrier facts for kids',
+        tags: ['yorkies', 'dogs', 'animals'],
+        excerpt: 'How much does a Yorkie weigh? Why were they bred to work in coal mines? And did a Yorkshire Terrier really become a war hero? Here are 12 fun Yorkshire Terrier facts for kids.',
+        content: `
+            <p>Yorkshire Terriers are tiny dogs with enormous personalities. Most Yorkies weigh less than 7 pounds, they were originally bred to catch rats in the mines and mills of northern England, and one famous Yorkie even became a decorated war hero. If your child loves little dogs with big hearts, here are 12 Yorkshire Terrier facts for kids that will make story time even more fun.</p>
+
+            <h2>How Big Is a Yorkshire Terrier?</h2>
+
+            <p><strong>Fact 1:</strong> Most Yorkshire Terriers weigh between 4 and 7 pounds. That is lighter than a gallon of milk! They usually stand about 7 to 8 inches tall at the shoulder, which means a Yorkie could comfortably sit inside a school backpack (though they would much rather be out exploring).</p>
+
+            <p><strong>Fact 2:</strong> Even though they are tiny, Yorkies have absolutely no idea how small they are. Ask anyone who lives with one. A Yorkie will happily stand its ground against a dog ten times its size, which is either very brave or very silly, depending on who you ask.</p>
+
+            <h2>Why Were Yorkies Bred to Work in Mines and Mills?</h2>
+
+            <p><strong>Fact 3:</strong> Yorkshire Terriers come from Yorkshire, a county in northern England, and they first appeared in the 1800s. They were bred to be small, quick, and fearless so they could squeeze into tight spaces and catch rats in coal mines and cotton mills.</p>
+
+            <p><strong>Fact 4:</strong> That working history is why Yorkies are so determined today. Underneath the silky coat is a proper working terrier: gritty, stubborn, and completely unbothered by things much bigger than itself.</p>
+
+            <p><strong>Fact 5:</strong> Yorkies later became fashionable lap dogs for wealthy Victorian ladies. So the same little dog went from chasing rats in a mine to riding around in a handbag. Talk about a promotion!</p>
+
+            <h2>What Is Special About a Yorkie's Coat?</h2>
+
+            <p><strong>Fact 6:</strong> A Yorkshire Terrier's coat is more like human hair than dog fur. It grows long and silky, and it keeps growing, just like the hair on your head. That is why some show Yorkies have coats that sweep all the way to the floor.</p>
+
+            <p><strong>Fact 7:</strong> Because their coat is hair rather than fur, Yorkies shed very little. Many families who sneeze around other dogs find Yorkies much easier to live with.</p>
+
+            <p><strong>Fact 8:</strong> Yorkie puppies are born black and tan. Their beautiful blue and gold colouring only develops as they grow up, so a Yorkie puppy and a grown-up Yorkie can look like two different dogs.</p>
+
+            <h2>Was There Really a Yorkie War Hero?</h2>
+
+            <p><strong>Fact 9:</strong> Yes! During the Second World War, a tiny Yorkshire Terrier named Smoky was found in the jungle of New Guinea. She ran a communication cable through a narrow 70-foot pipe under an airfield, survived over 150 air raids, and was awarded eight battle stars. Smoky proved forever that small really can be mighty.</p>
+
+            <p><strong>Fact 10:</strong> Smoky is also considered one of the first therapy dogs. She visited wounded soldiers in hospitals and cheered them up, decades before therapy dogs became common.</p>
+
+            <h2>What Are Yorkies Like as Family Dogs?</h2>
+
+            <p><strong>Fact 11:</strong> Yorkies are famously loyal. They pick their people and stick to them like glue. They are also smart, curious, and a little bit bossy, which makes every day with a Yorkie an adventure.</p>
+
+            <p><strong>Fact 12:</strong> No two Yorkies are the same. Some charge into everything nose-first, and some prefer to think it over from a safe distance, ideally with a snack. I know this better than most, because I shared my life with one of each.</p>
+
+            <h2>How Can Kids Spot a Yorkshire Terrier?</h2>
+
+            <p>Next time you are at the park, here is how to spot a Yorkie. Look for a very small dog with a confident strut, ears that stand up like little radar dishes, and a silky coat in steel blue and warm tan. Then watch how it behaves. If the smallest dog in the park is marching around like it owns the place, inspecting everything, and keeping one eye on the biggest dog there, congratulations. You have almost certainly found a Yorkshire Terrier.</p>
+
+            <p>Yorkies also have a famous bark that is much bigger than they are. They were bred to be alert little watchdogs, so they like to announce visitors, delivery drivers, squirrels, suspicious leaves, and sometimes absolutely nothing at all.</p>
+
+            <h2>Meet Two Very Famous Yorkies</h2>
+
+            <p>The two Yorkies I know best are Frankie and Henry, the real Yorkshire Terrier brothers who inspired my picture book <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer"><strong>Frankie and Henry: The Brave River Rescue</strong></a>. Frankie is the fearless one who charges in headfirst. Henry was the thoughtful one who considered every option carefully, usually between snacks.</p>
+
+            <p>In the book, the brothers discover a secret tunnel into the Wild Place, a magical African savanna, where they must find the courage to rescue a lost jackal cub. It is a safari adventure for kids ages 4 to 8, and every bit of Yorkie personality in it is completely real.</p>
+
+            <p>If your child enjoyed these facts, they will love reading about <a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">why Yorkshire Terriers make the best adventure heroes</a> and meeting <a href="/blog/the-real-frankie-and-henry-behind-the-book">the real Frankie and Henry behind the book</a>.</p>
+
+            <p>And when you are ready for a Yorkie adventure of your own, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">the book is on Amazon in Kindle and Paperback</a>.</p>
+
+            <p>Small paws. Brave hearts. Big adventures.</p>
+
+            <p><em>Michele x</em></p>
+        `,
+        image: '/assets/frankie-closeup.png',
+        imageAlt: 'Frankie the Yorkshire Terrier up close, a fun way for kids to learn Yorkshire Terrier facts',
+    },
+    {
+        id: 'safari-animals-for-kids',
+        title: 'Safari Animals for Kids: 8 Amazing African Animals to Discover',
+        metaDescription: 'Explore safari animals for kids! Fun facts about lions, giraffes, rhinos, jackals, cranes and more African animals, plus a safari picture book that brings them all to life for ages 4-8.',
+        date: '2026-05-31',
+        author: 'Michele Cameron',
+        targetKeyword: 'safari animals for kids',
+        tags: ['safari', 'animals'],
+        excerpt: 'Which safari animals should every child know? From the lion\'s famous roar to the blue crane\'s graceful dance, here are 8 amazing African animals with fun facts kids will love.',
+        content: `
+            <p>The African savanna is home to some of the most amazing animals on Earth. Lions that roar loud enough to be heard five miles away. Giraffes taller than a two-story house. Little jackal families where everyone helps babysit. Here are 8 safari animals every child should know, with fun facts that make learning about them feel like an adventure.</p>
+
+            <h2>1. Why Do Lions Roar?</h2>
+
+            <p>A lion's roar can be heard up to five miles away. Lions roar to tell other lions where they are, to call their family together, and to warn strangers to stay away. Lions are also the only big cats that live in family groups, called prides. In our Wild Place, the Lion King watches over everyone.</p>
+
+            <h2>2. How Tall Is a Giraffe?</h2>
+
+            <p>Giraffes are the tallest animals in the world. A grown-up giraffe can be 18 feet tall, which is taller than three grown-ups standing on each other's shoulders. Their long necks make them brilliant lookouts. They can spot trouble coming from far away, which is exactly the job the Giraffe Lookout does in the Wild Place.</p>
+
+            <h2>3. What Makes Rhinos So Special?</h2>
+
+            <p>Rhinos look like tanks, but they are gentle giants who spend most of the day munching grass. A rhino's horn is made of keratin, the same material as your fingernails. Sadly, rhinos need our protection more than almost any other safari animal, which is why they make such wonderful guardians in stories.</p>
+
+            <h2>4. Do Jackal Families Really Babysit?</h2>
+
+            <p>Yes! Black-backed jackals are some of the most devoted parents in Africa. Both mom and dad raise the pups together, and older brothers and sisters often stay home to help look after the new babies. When one parent goes hunting, another family member stays behind to babysit. A little lost jackal cub is at the heart of <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue</a>, and his very worried mom sets the whole adventure in motion.</p>
+
+            <h2>5. Which Bird Dances to Find a Friend?</h2>
+
+            <p>The blue crane, South Africa's national bird, is famous for its beautiful dancing. Blue cranes leap, bow, and toss grass into the air to impress each other, and once they choose a partner, they stay together for life. With their pale blue-gray feathers and long trailing plumes, they look like they stepped out of a fairy tale. Lwazi the blue crane is the wise guide of the Wild Place, and children who meet him in the book never forget him.</p>
+
+            <h2>6. How Big Is a Martial Eagle?</h2>
+
+            <p>The martial eagle is Africa's largest eagle, with wings that stretch over six feet from tip to tip. Its eyesight is so sharp it can spot a meal from miles away. When a martial eagle circles overhead, every small animal on the savanna pays attention, including two small Yorkshire Terriers a very long way from home.</p>
+
+            <h2>7. What Is a Monitor Lizard?</h2>
+
+            <p>Water monitor lizards are the biggest lizards in Africa, growing up to six feet long. They are excellent swimmers, they flick their forked tongues to smell the air just like snakes, and they take their riverbank territory very seriously. The grumpy Monitor Lizard guarding the river is the biggest obstacle Frankie and Henry must face.</p>
+
+            <h2>8. Why Are Elephants Called Gentle Giants?</h2>
+
+            <p>African elephants are the largest land animals on Earth, yet they are famously gentle and clever. Elephants comfort each other when they are sad, celebrate when babies are born, and remember friends they have not seen for years. Every safari story is better with an elephant or two somewhere on the horizon.</p>
+
+            <h2>Safari Animal Questions Kids Love to Ask</h2>
+
+            <p><strong>Which safari animal is the fastest?</strong> The cheetah, which can sprint at around 70 miles per hour in short bursts. That is highway speed on four paws.</p>
+
+            <p><strong>Why do zebras have stripes?</strong> Scientists believe the stripes confuse biting flies and may help zebras keep cool and recognize each other. Every zebra's stripe pattern is unique, like a fingerprint.</p>
+
+            <p><strong>Do any of these animals live near people?</strong> Some do! Black-backed jackals are famously adaptable and often live close to farms and towns, which is one reason they are such clever, resourceful characters in stories.</p>
+
+            <h2>How Can Kids Keep Exploring Safari Animals?</h2>
+
+            <p>The best way to help a child fall in love with safari animals is to mix stories with facts. Read an adventure set on the savanna, then look up the real animals together. Here are some easy next steps:</p>
+
+            <ul>
+                <li><strong>Read a safari story</strong> where the animals are characters, like <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue</a>, a picture book for ages 4 to 8 set in the African Wild Place</li>
+                <li><strong>Learn the real facts</strong> in our post about <a href="/blog/5-amazing-african-animals-your-kids-will-love">5 amazing African animals your kids will love</a></li>
+                <li><strong>Get creative</strong> with our <a href="/blog/free-safari-colouring-pages-for-kids">free safari colouring pages</a></li>
+                <li><strong>Build a book stack</strong> from <a href="/blog/best-african-safari-books-for-children">the best African safari books for children</a></li>
+            </ul>
+
+            <p>One story about a brave blue crane or a lost jackal cub can spark a lifelong love of wildlife. That is the real magic of safari animals for kids: they turn learning into wonder.</p>
+
+            <p><em>Michele x</em></p>
+        `,
+        image: '/assets/lwazi.jpg',
+        imageAlt: 'Lwazi the blue crane from the Wild Place, one of the safari animals kids meet in the Frankie and Henry picture book',
+    },
+    {
+        id: 'picture-books-for-5-year-olds-who-love-adventure',
+        title: 'Picture Books for 5-Year-Olds Who Love Adventure: 7 Exciting Reads',
+        metaDescription: 'The best picture books for 5-year-olds who love adventure. Seven exciting, age-perfect reads full of journeys, bravery and wild places, chosen for kids who never sit still.',
+        date: '2026-06-07',
+        author: 'Michele Cameron',
+        targetKeyword: 'picture books for 5 year olds',
+        tags: ['book-lists', 'adventure'],
+        excerpt: 'Five-year-olds want action, humour, and heroes they can root for. Here are seven adventure picture books that are pitched perfectly for this wonderful, wiggly age.',
+        content: `
+            <p>The best picture books for 5-year-olds who love adventure combine real excitement with a story they can follow on their own. At five, children want action on every page, characters who feel like friends, and just enough danger to make their eyes go wide. Here are seven adventure picture books that deliver exactly that.</p>
+
+            <h2>What Makes a Great Adventure Book for a 5-Year-Old?</h2>
+
+            <p>Five is a golden age for picture books. Most 5-year-olds can follow a proper plot with a beginning, a problem, and a triumphant ending. They love repetition and rhythm, they adore animals, and they are starting to understand big feelings like courage and worry. The sweet spot is a book that:</p>
+
+            <ul>
+                <li><strong>Moves quickly</strong>, with something new happening on every spread</li>
+                <li><strong>Has a real problem to solve</strong>, because five-year-olds love a mission</li>
+                <li><strong>Stars characters with big personalities</strong> they can do voices for</li>
+                <li><strong>Ends safely</strong>, so the excitement never tips into scary</li>
+            </ul>
+
+            <h2>7 Adventure Picture Books for 5-Year-Olds</h2>
+
+            <h3>1. Frankie and Henry: The Brave River Rescue</h3>
+            <p>Two Yorkshire Terrier brothers discover a secret tunnel into the Wild Place, a breathtaking African savanna, where a lost jackal cub needs rescuing before a grumpy monitor lizard gets any grumpier. Frankie charges in headfirst; Henry thinks it through, between snacks. Five-year-olds love the mission, the animals, and the message that you can be scared and brave at the same time. <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Available on Amazon in Kindle and Paperback</a>.</p>
+
+            <h3>2. We're Going on a Bear Hunt by Michael Rosen</h3>
+            <p>The classic expedition story. Swishy grass, splashy rivers, squelchy mud, and a chant your 5-year-old will still be doing at dinner. Perfect for kids who like their adventures loud and participatory.</p>
+
+            <h3>3. The Snail and the Whale by Julia Donaldson</h3>
+            <p>A tiny snail hitches a ride around the world on the tail of a whale, then saves the day when the whale is stranded. A gorgeous rhyming journey with the same big idea at its heart as Frankie and Henry: small creatures can do enormous things.</p>
+
+            <h3>4. How to Catch a Star by Oliver Jeffers</h3>
+            <p>A boy wants a star of his own and tries everything to get one. Gentle, funny, and quietly persistent, this one is perfect for dreamier adventurers who plan their missions carefully, just like Henry would.</p>
+
+            <h3>5. The Lion Inside by Rachel Bright</h3>
+            <p>A timid mouse decides to learn how to roar and has to face the scariest creature on the savanna to do it. A brilliant rhyming read-aloud about finding your brave, set against the same golden grasslands as the Wild Place.</p>
+
+            <h3>6. Rosie Revere, Engineer by Andrea Beaty</h3>
+            <p>Adventure does not always mean jungles and rivers. Rosie invents flying machines, fails spectacularly, and learns that the only true failure is quitting. Wonderful for five-year-olds who build, tinker, and dream.</p>
+
+            <h3>7. Room on the Broom by Julia Donaldson</h3>
+            <p>A witch, a cat, a dog, a bird, a frog, and one very hungry dragon. A journey story with a rescue at its heart and a rhythm that makes it almost impossible to read badly. A guaranteed repeat request.</p>
+
+            <h2>How Long Should Reading Time Be for a 5-Year-Old?</h2>
+
+            <p>Aim for ten to fifteen minutes of shared reading a day, and let your child set the pace. Some days that is one book read three times. Other days it is three books read once. Both count. At five, the goal is not quantity. It is the growing belief that books are where the good stuff lives.</p>
+
+            <p>You will also start to notice signs that your five-year-old is ready for meatier stories: they predict what happens next, they ask questions about why characters do things, and they remember details from yesterday's chapter. When that happens, keep the picture books coming (they are doing important work), and simply choose ones with richer plots and real problems to solve.</p>
+
+            <h2>Do Adventure Books Help With Anything Besides Fun?</h2>
+
+            <p>Absolutely. Adventure stories are quietly brilliant teachers. They show children characters who set goals, hit obstacles, feel scared, and keep going. Researchers call it narrative rehearsal; five-year-olds call it a great story. Either way, the child who watches Henry cross the river tonight is a little more ready for their own big moments tomorrow, whether that is the first day of school or the deep end of the pool.</p>
+
+            <h2>How Do You Keep an Adventure-Loving 5-Year-Old Reading?</h2>
+
+            <p>Follow the energy. If your child loves animal adventures, stack the shelf with them. If they beg for the same book every night, say yes, because repetition is exactly how five-year-olds fall in love with reading. And make story time active: do the voices, act out the river crossing, let them shout the repeated lines.</p>
+
+            <p>For more ideas, browse our <a href="/blog/summer-reading-list-for-kids-ages-4-8">summer reading list for kids ages 4-8</a> or find out <a href="/blog/best-read-aloud-picture-books-for-bedtime">what makes a picture book brilliant to read aloud</a>.</p>
+
+            <p>And if your five-year-old is ready for a safari, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry are waiting on Amazon</a>. Two small dogs, one wild place, and a rescue they will want to hear again tomorrow night.</p>
+
+            <p><em>Michele x</em></p>
+        `,
+        image: '/assets/scene-hole.jpg',
+        imageAlt: 'Frankie and Henry discovering the secret tunnel into the Wild Place, an adventure picture book scene for 5-year-olds',
+    },
+    {
+        id: 'best-bedtime-books-for-4-year-olds',
+        title: 'The Best Bedtime Books for 4-Year-Olds: 7 Stories That Help Kids Sleep',
+        metaDescription: 'The best bedtime books for 4-year-olds, chosen to calm busy minds and end the day gently. Seven stories that actually help kids wind down and drift off to sleep.',
+        date: '2026-06-14',
+        author: 'Michele Cameron',
+        targetKeyword: 'bedtime books for 4 year olds',
+        tags: ['book-lists', 'bedtime'],
+        excerpt: 'The best bedtime books for 4-year-olds do two jobs at once: they hold a busy mind still, and then they gently let it go. Here are seven stories that do both beautifully.',
+        content: `
+            <p>The best bedtime books for 4-year-olds share one secret: they end more quietly than they begin. A great bedtime story catches a busy four-year-old mind, holds it gently for ten minutes, and then sets it down soft and sleepy. Here are seven books that do exactly that, night after night.</p>
+
+            <h2>What Makes a Good Bedtime Book for a 4-Year-Old?</h2>
+
+            <p>Four-year-olds are wonderful and exhausting in equal measure. By bedtime they have usually had a very big day, and their minds are still going at full speed. A good bedtime book needs to:</p>
+
+            <ul>
+                <li><strong>Start interesting enough to compete</strong> with whatever game got interrupted for bath time</li>
+                <li><strong>Have a soothing rhythm</strong>, because the sound of the words matters as much as the story</li>
+                <li><strong>Land gently</strong>, with a calm final page instead of a cliffhanger</li>
+                <li><strong>Take about ten minutes</strong>, long enough to settle, short enough for a school night</li>
+            </ul>
+
+            <h2>7 Bedtime Books for 4-Year-Olds</h2>
+
+            <h3>1. Goodnight Moon by Margaret Wise Brown</h3>
+            <p>The gold standard for a reason. The slow goodnight to every object in the great green room works like a lullaby in book form. Even the most wide-awake four-year-old starts to blink slower by the last page.</p>
+
+            <h3>2. Time for Bed by Mem Fox</h3>
+            <p>Animal parents tucking in their babies, in a rhyme so soft it practically whispers. Short, warm, and perfect for nights when everyone is running on empty.</p>
+
+            <h3>3. Frankie and Henry: The Brave River Rescue</h3>
+            <p>An adventure at bedtime? Yes, when it is built for it. Two Yorkshire Terrier brothers rescue a lost jackal cub in the African Wild Place, and the story is paced for a ten-minute read-aloud with distinct voices for every character. Most importantly, it lands gently: the cub is home, the brothers are safe, and the last page closes as quietly as a bedroom door. <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Available on Amazon in Kindle and Paperback</a>.</p>
+
+            <h3>4. Llama Llama Red Pajama by Anna Dewdney</h3>
+            <p>Little Llama worries when Mama goes downstairs, and every four-year-old who has ever called out one more question after lights-out will feel understood. Reassuring, rhyming, and just the right length.</p>
+
+            <h3>5. The Going to Bed Book by Sandra Boynton</h3>
+            <p>Silly animals on a boat brush their teeth, find pajamas, and rock to sleep on the sea. Boynton's bouncy rhythm gets the last giggles out before the lights go down.</p>
+
+            <h3>6. Owl Babies by Martin Waddell</h3>
+            <p>Three little owls wait for their mother to come home. It names the worry, then resolves it with one of the most comforting endings in picture books. Lovely for four-year-olds working through separation wobbles.</p>
+
+            <h3>7. I Love You to the Moon and Back by Amelia Hepworth</h3>
+            <p>A bear and cub spend the day together and end it under the stars. Short, sweet, and a warm final note for the very end of the routine.</p>
+
+            <h2>Should You Read the Same Bedtime Book Every Night?</h2>
+
+            <p>Yes, if your four-year-old asks for it. Repetition feels boring to grown-ups, but for children it is the whole point. A familiar story is predictable, and predictable feels safe, which is exactly the feeling you want at lights-out. Repeated readings also build vocabulary and memory, because each pass lets your child notice something new. So when the same book comes off the shelf for the fourteenth night running, take it as a compliment. It is working.</p>
+
+            <h2>What Should You Avoid in a Bedtime Book?</h2>
+
+            <p>A few things reliably backfire at bedtime. Books that end on a cliffhanger send children to bed with spinning minds. Stories that are genuinely scary belong in the afternoon, when there is plenty of daylight left to talk them over. And anything interactive that asks your child to shout, jump, or find twenty hidden objects is wonderful fun at four in the afternoon and a disaster at seven at night.</p>
+
+            <p>Save the wild stuff for daytime reading, and keep the bedtime shelf stocked with books that slope gently downhill toward sleep.</p>
+
+            <h2>How Many Books Should You Read at Bedtime?</h2>
+
+            <p>Two is the sweet spot for most four-year-olds. One is over too fast and five becomes a negotiation marathon. Announce the number before you start, stick to it warmly, and let your child know that the books will still be there tomorrow. A predictable ending to story time is part of what makes it soothing.</p>
+
+            <h2>How Do You Build a Bedtime Reading Routine That Works?</h2>
+
+            <p>Keep it the same every night: bath, pajamas, teeth, two books, lights out. Four-year-olds relax when they know exactly what comes next. Let them choose one book and you choose the other, so you can steer the last read toward something calm. And end with the same phrase every night, because rituals tell little bodies it is safe to switch off.</p>
+
+            <p>If you want to go deeper, here is <a href="/blog/best-read-aloud-picture-books-for-bedtime">what makes a picture book truly great to read aloud</a>, and here is <a href="/blog/teaching-kids-about-courage-through-picture-books">how bedtime stories quietly teach kids about courage</a>.</p>
+
+            <p>And if tonight needs a small brave dog and a happy ending, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry are ready on Amazon</a>. Read it slowly. Do the voices. Close it gently.</p>
+
+            <p>Sleep tight!</p>
+
+            <p><em>Michele x</em></p>
+        `,
+        image: '/assets/jackal-cub.jpg',
+        imageAlt: 'The little jackal cub from Frankie and Henry, a gentle character from a bedtime picture book for 4-year-olds',
+    },
+    {
+        id: 'read-aloud-tips-for-reluctant-listeners',
+        title: 'How to Read Aloud to a Child Who Won\'t Sit Still: 9 Tips That Work',
+        metaDescription: 'Read-aloud tips for reluctant listeners. Nine practical ways to get a wiggly child to love story time, from doing the voices to letting them move while they listen.',
+        date: '2026-06-21',
+        author: 'Michele Cameron',
+        targetKeyword: 'how to read aloud to a child',
+        tags: ['reading-tips', 'bedtime'],
+        excerpt: 'Some kids melt into story time. Others treat it like a wrestling match. Here are nine practical tips for reading aloud to a child who would rather be doing anything else.',
+        content: `
+            <p>The secret to reading aloud to a child who will not sit still is simple: stop asking them to sit still. Wiggly kids can absolutely fall in love with stories. They just need story time to work with their energy instead of against it. Here are nine tips that turn reluctant listeners into kids who ask for one more chapter.</p>
+
+            <h2>1. Let Them Move While They Listen</h2>
+
+            <p>Listening and sitting are two different skills. Plenty of children actually listen better while their hands or bodies are busy. Let them build blocks, draw, or flop upside down on the sofa while you read. If the questions and giggles keep coming, they are listening just fine.</p>
+
+            <h2>2. Pick Books With a Mission</h2>
+
+            <p>Reluctant listeners tune out of quiet, meandering stories. Give them a problem to root for instead: a lost cub to rescue, a river to cross, a lizard to sneak past. When I wrote <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer"><strong>Frankie and Henry: The Brave River Rescue</strong></a>, I built it around a mission for exactly this reason. Two small dogs, one stranded jackal cub, and a clock that is ticking. Wiggly kids lean in because they need to know if the cub makes it.</p>
+
+            <h2>3. Do the Voices. Yes, Even If You Feel Silly</h2>
+
+            <p>A deep growl for the big animal. A tiny squeak for the scared one. A slow drawl for the villain. Voices are the single fastest way to hook a distracted child, and nobody is grading your performance. In our house, Frankie gets a bold, quick voice and Henry gets a slow, worried one, and the difference makes children giggle before anything has even happened.</p>
+
+            <h2>4. Keep It Shorter Than You Think</h2>
+
+            <p>Five engaged minutes beat twenty resentful ones. Start with short sessions and stop while it is still fun, ideally mid-adventure. A child who is left wanting more tomorrow is a child who is learning to love books.</p>
+
+            <h2>5. Give Them a Job</h2>
+
+            <p>Turn listening into doing. Your child can turn the pages, shout the repeated line, make the animal sounds, or hunt for a detail in every picture. Jobs turn a passive listener into a co-performer, and co-performers do not wander off.</p>
+
+            <h2>6. Follow Their Obsessions</h2>
+
+            <p>A child who will not sit through a gentle tale about feelings might sit through anything with a dog in it. Dinosaurs, diggers, dogs, whatever the current obsession is, feed it. You can branch out later. First, prove that books contain the things they love. If your child is a dog kid, start with our list of <a href="/blog/childrens-books-for-kids-who-love-dogs">children's books for kids who love dogs</a>.</p>
+
+            <h2>7. Ask Questions That Have No Wrong Answers</h2>
+
+            <p>Skip the quiz. Instead of testing what they remember, invite them into the story. What would you do? Do you think Henry is scared? Which animal would you want as a friend? Questions like these give restless minds somewhere to go, and they often unlock the best conversations of the day.</p>
+
+            <h2>8. Read When the Tank Is Full, Not Empty</h2>
+
+            <p>Bedtime is the classic story slot, but for some kids it is the worst one. After a huge day of school, gym class, and running around, some children simply have nothing left for listening. Try breakfast stories, bath stories, or a Saturday morning sofa read. Find the moment your child listens best and claim it.</p>
+
+            <h2>9. Let Them See You Enjoying It</h2>
+
+            <p>Children copy what we love, not what we lecture. If story time feels like a chore to you, they will treat it like one too. Pick books you genuinely enjoy performing, laugh at the funny parts, and gasp at the cliffhangers. Enthusiasm is contagious.</p>
+
+            <h2>A Note From a Henry Household</h2>
+
+            <p>If it helps, remember that reluctance is often personality, not a problem. My Henry was a reluctant everything. Reluctant walker, reluctant swimmer, extremely enthusiastic napper. But when something finally caught his interest, usually involving food, he was all in, and his loyalty was bottomless. Reluctant listeners are often the same. They are not refusing stories. They are waiting for the right one, told the right way, at the right moment. Your job is not to force the door open. It is to keep leaving it invitingly ajar.</p>
+
+            <h2>What If They Still Will Not Listen?</h2>
+
+            <p>Keep the pressure low and the books visible. Leave a basket of picture books where they play. Read aloud to yourself and see who drifts over. And remember that listening grows with practice, like any other skill. The child who cannot manage three pages today will happily demand three books in a few months.</p>
+
+            <p>For more on this, read our guide to <a href="/blog/best-read-aloud-picture-books-for-bedtime">the best read-aloud picture books for bedtime</a>, or discover <a href="/blog/helping-children-overcome-fear-through-stories">how stories help children with big feelings</a>.</p>
+
+            <p>And if you need a mission-driven story with voices built in, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue is on Amazon</a> in Kindle and Paperback. Fair warning: you will be asked to do the lizard voice again.</p>
+
+            <p><em>Michele x</em></p>
+        `,
+        image: '/assets/monitor.jpg',
+        imageAlt: 'The grumpy monitor lizard from Frankie and Henry, a favourite character voice for parents reading aloud to reluctant listeners',
+    },
+    {
+        id: 'books-like-dog-man-for-younger-kids',
+        title: 'What to Read After Dog Man: 7 Dog Books for Kids Ages 4-8',
+        metaDescription: 'Looking for books like Dog Man for younger kids? Seven funny, action-packed dog books for ages 4-8, from picture book heroes to a brave Yorkshire Terrier safari rescue.',
+        date: '2026-06-28',
+        author: 'Michele Cameron',
+        targetKeyword: 'books like Dog Man for kids',
+        tags: ['book-lists', 'dogs'],
+        excerpt: 'Your child is obsessed with Dog Man but the younger sibling wants in, or you need something for the 4-8 crowd with the same dog-powered fun. Here are seven great picks.',
+        content: `
+            <p>If your child loves Dog Man, the best books to hand them next are funny, fast-moving stories with dog heroes at the center. That is easy for older kids, but what about the 4 to 8 crowd who want the same dog-powered action in picture book form? Here are seven brilliant dog books for younger Dog Man fans.</p>
+
+            <h2>Why Do Kids Love Dog Man So Much?</h2>
+
+            <p>Dav Pilkey's Dog Man series works because it never slows down. There is a lovable hero, a ridiculous villain, constant action, and jokes on every page. Younger siblings watch the big kids laughing and want in, but the graphic novel format can be a stretch before age 6 or 7. The good news: everything that makes Dog Man great exists in picture books too.</p>
+
+            <h2>7 Dog Books for Kids Ages 4-8</h2>
+
+            <h3>1. Frankie and Henry: The Brave River Rescue</h3>
+            <p>Two Yorkshire Terrier brothers find a secret tunnel into the African Wild Place and have to rescue a lost jackal cub before a grumpy monitor lizard closes in. It has the Dog Man essentials: dog heroes, a real mission, a scaly antagonist, and plenty of laughs (Henry would like the rescue to pause for snacks). It also sneaks in something extra: the idea that being brave does not mean being fearless. For ages 4 to 8, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">available on Amazon in Kindle and Paperback</a>.</p>
+
+            <h3>2. Pig the Pug by Aaron Blabey</h3>
+            <p>Pig is the greediest pug in the world, and his selfishness backfires spectacularly. Rude, ridiculous, and rhyming, this is the closest thing picture books have to Dog Man's naughty energy. Kids howl at it.</p>
+
+            <h3>3. Harry the Dirty Dog by Gene Zion</h3>
+            <p>A classic since 1956 and still funny today. Harry hates baths so much he runs away, gets gloriously filthy, and comes home unrecognizable. A perfect mix of mischief and a warm ending.</p>
+
+            <h3>4. Officer Buckle and Gloria by Peggy Rathmann</h3>
+            <p>A police dog secretly performs behind her officer's back during school safety talks. The kids are in on the joke and the grown-up is not, which is exactly the kind of humour Dog Man fans adore. A Caldecott Medal winner.</p>
+
+            <h3>5. Clifford the Big Red Dog by Norman Bridwell</h3>
+            <p>An oldie but a mighty one. Clifford's enormous size causes enormous problems, and young kids love watching each disaster unfold. Great for the younger end of the 4 to 8 range.</p>
+
+            <h3>6. Biscuit by Alyssa Satin Capucilli</h3>
+            <p>For kids starting to read on their own, the Biscuit early readers are the gentlest on-ramp there is. Short sentences, a very good puppy, and the proud feeling of finishing a whole book by yourself.</p>
+
+            <h3>7. Dogs Don't Do Ballet by Anna Kemp</h3>
+            <p>Biff the dog is convinced he is a ballerina, whatever anyone says. Silly, heartfelt, and brilliant for reading aloud with maximum drama.</p>
+
+            <h2>Is Dog Man Itself Okay for a 4 or 5-Year-Old?</h2>
+
+            <p>Plenty of younger kids enjoy Dog Man as a read-aloud with a parent, especially if an older sibling is a fan. The humour is harmless and the violence is entirely cartoon slapstick. The challenges are practical: the panel-by-panel format is hard for pre-readers to follow alone, the jokes sometimes rely on wordplay that sails over younger heads, and the sheer length can outlast a four-year-old's attention span.</p>
+
+            <p>A good approach is to let little ones share Dog Man with you or a sibling for the fun of it, while giving them picture books like the ones above as their own books. That way they get the big-kid thrill and a story pitched exactly at their level.</p>
+
+            <h2>What Makes Dog Books So Good for This Age?</h2>
+
+            <p>Dogs are the perfect picture book heroes for ages 4 to 8. They are loyal, funny, and expressive, and children instinctively root for them. A dog hero also gives kids a safe way to explore big feelings. When Henry is frightened of the river, a child can think about their own fears from a comfortable distance, which is exactly why dog stories so often become the most-requested books on the shelf.</p>
+
+            <h2>How Do You Pick the Right One for Your Child?</h2>
+
+            <p>Match the flavour of Dog Man your child loves most. If it is the naughtiness, go for Pig the Pug or Harry the Dirty Dog. If it is the heroics and missions, start with Frankie and Henry or Officer Buckle and Gloria. If they are itching to read solo, hand them Biscuit and let them feel like a champion.</p>
+
+            <p>For more dog-hero ideas, see our full list of <a href="/blog/childrens-books-for-kids-who-love-dogs">children's books for kids who love dogs</a>, and find out <a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">why Yorkshire Terriers make the best adventure heroes</a>.</p>
+
+            <p>And if your Dog Man fan is ready for a safari mission tonight, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue is on Amazon</a>. Small dogs. Big rescue. Zero fleas.</p>
+
+            <p><em>Michele x</em></p>
+        `,
+        image: '/assets/scene-clawdius.jpg',
+        imageAlt: 'Clawdius the mischievous cat from Frankie and Henry, a funny character in a dog book for kids who love Dog Man',
     },
 ];
+
+// Related posts by tag affinity: shared tags first, newest first as tie-break,
+// padded with the most recent other posts if there aren't enough tag matches.
+export function getRelatedPosts(post, count = 3) {
+    const tags = post.tags || [];
+    const scored = blogPosts
+        .filter((p) => p.id !== post.id)
+        .map((p) => ({
+            post: p,
+            score: (p.tags || []).filter((t) => tags.includes(t)).length,
+        }))
+        .sort((a, b) => b.score - a.score || (a.post.date < b.post.date ? 1 : -1));
+    return scored.slice(0, count).map((s) => s.post);
+}
 
 export default blogPosts;

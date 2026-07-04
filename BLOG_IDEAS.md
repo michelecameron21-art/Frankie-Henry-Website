@@ -12,8 +12,8 @@ Source-of-truth list of upcoming blog posts. The weekly agent should pick the ne
 
 - [ ] **Best Yorkshire Terrier Gifts for Dog Lovers** — kw: *yorkshire terrier gifts*
 - [x] **Children's Books for Kids Who Love Dogs** — kw: *children's books for dog lovers* *(published 2026-05-20)*
-- [ ] **Picture Books for 5-Year-Olds Who Love Adventure** — kw: *picture books for 5 year olds*
-- [ ] **Best Bedtime Books for 4-Year-Olds** — kw: *bedtime books for 4 year olds*
+- [x] **Picture Books for 5-Year-Olds Who Love Adventure** — kw: *picture books for 5 year olds* *(published 2026-06-07)*
+- [x] **Best Bedtime Books for 4-Year-Olds** — kw: *bedtime books for 4 year olds* *(published 2026-06-14)*
 - [ ] **Picture Books About Dogs for Toddlers** — kw: *dog books for toddlers*
 - [ ] **Best New Children's Books 2026** — kw: *new children's books 2026* (F&H listed)
 - [ ] **Independent Children's Book Authors to Discover** — kw: *indie children's book authors*
@@ -99,3 +99,9 @@ Pick the image that best matches the post's emotional tone. If a great fit doesn
 11. The Best Children's Books About Brothers and Siblings — *children's books about brothers* (2026-05-04)
 12. Summer Reading List for Kids Ages 4–8 — *summer reading list for kids ages 4-8* (2026-05-14)
 13. Children's Books for Kids Who Love Dogs — *children's books for dog lovers* (2026-05-20)
+14. Yorkshire Terrier Facts for Kids: 12 Fun Facts About Yorkies — *Yorkshire Terrier facts for kids* (2026-05-24)
+15. Safari Animals for Kids: 8 Amazing African Animals to Discover — *safari animals for kids* (2026-05-31)
+16. Picture Books for 5-Year-Olds Who Love Adventure — *picture books for 5 year olds* (2026-06-07)
+17. The Best Bedtime Books for 4-Year-Olds — *bedtime books for 4 year olds* (2026-06-14)
+18. How to Read Aloud to a Child Who Won't Sit Still — *how to read aloud to a child* (2026-06-21)
+19. What to Read After Dog Man: 7 Dog Books for Kids Ages 4-8 — *books like Dog Man for kids* (2026-06-28)
