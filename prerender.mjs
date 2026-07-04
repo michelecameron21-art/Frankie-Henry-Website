@@ -123,6 +123,15 @@ const SUB_PAGES = [
   },
 ];
 
+const RELATED = [
+  ['/the-brave-river-rescue', 'The Brave River Rescue'],
+  ['/meet-frankie-and-henry', 'Meet Frankie & Henry'],
+  ['/safari-heroes', 'Safari Heroes of the Wild Place'],
+  ['/reviews', 'Reviews'],
+  ['/freebies', 'Free colouring pages & activities'],
+  ['/blog', 'The Frankie & Henry blog'],
+];
+
 for (const p of SUB_PAGES) {
   const canonical = `${SITE}/${p.path}`;
   const jsonLd = {
@@ -134,7 +143,9 @@ for (const p of SUB_PAGES) {
     isPartOf: { '@type': 'WebSite', name: 'Frankie & Henry Adventures', url: SITE },
     primaryImageOfPage: { '@type': 'ImageObject', url: p.image },
   };
-  const bodyHtml = `<article><h1>${text(p.h1)}</h1>${p.body}</article>`;
+  const related = RELATED.filter(([href]) => href !== `/${p.path}`)
+    .map(([href, label]) => `<li><a href="${href}">${text(label)}</a></li>`).join('');
+  const bodyHtml = `<article><h1>${text(p.h1)}</h1>${p.body}<nav aria-label="Explore more"><h2>Explore more of the Wild Place</h2><ul>${related}</ul></nav></article>`;
   write(p.path, buildPage(template, {
     title: p.title,
     description: p.description,
@@ -144,6 +155,28 @@ for (const p of SUB_PAGES) {
     bodyHtml,
   }));
 }
+
+// --- Home page: bake a real, crawlable snapshot into #root so Google (and
+// non-JS crawlers) get headings, the book blurb, internal links and the Amazon
+// CTA on the most important page. Keeps index.html's existing meta + schema. ---
+const homeBody = `<article>
+<h1>Frankie &amp; Henry and the Brave River Rescue</h1>
+<p>An African safari adventure picture book for children aged 4 to 8. Two Yorkshire Terrier brothers, Frankie the fearless one and Henry the thoughtful one, squeeze through a secret tunnel in their garden and burst out into the Wild Place, a magical African safari. There they find a stranded jackal cub with a monitor lizard closing in, and must find the courage to rescue it before it is too late.</p>
+<p>Inspired by two real Yorkshire Terriers who walked together every morning, it is a warm, beautifully illustrated story about friendship, bravery and the idea that the bravest hearts come in the smallest packages.</p>
+<p><a href="https://www.amazon.com/dp/B0GTVVPPH6">Buy Frankie &amp; Henry and the Brave River Rescue on Amazon</a>, available in Kindle and paperback.</p>
+<nav aria-label="Explore Frankie and Henry">
+<ul>
+<li><a href="/the-brave-river-rescue">The Brave River Rescue, the story</a></li>
+<li><a href="/meet-frankie-and-henry">Meet Frankie &amp; Henry, the real brothers</a></li>
+<li><a href="/safari-heroes">Safari Heroes of the Wild Place</a></li>
+<li><a href="/reviews">Reader reviews</a></li>
+<li><a href="/freebies">Free safari colouring pages and activities</a></li>
+<li><a href="/blog">The Frankie &amp; Henry blog</a></li>
+</ul>
+</nav>
+</article>`;
+const homeHtml = template.replace(/<div id="root">\s*<\/div>/, () => `<div id="root">${homeBody}</div>`);
+fs.writeFileSync(path.join(dist, 'index.html'), homeHtml);
 
 // --- Sitemap ---
 const today = new Date().toISOString().slice(0, 10);
@@ -160,4 +193,4 @@ ${urls.map((u) => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</
 `;
 fs.writeFileSync(path.join(dist, 'sitemap.xml'), sitemap);
 
-console.log(`Prerendered ${blogPosts.length} blog posts + blog index + sitemap (${urls.length} URLs).`);
+console.log(`Prerendered home + ${blogPosts.length} blog posts + blog index + ${SUB_PAGES.length} sub-pages + sitemap (${urls.length} URLs).`);
