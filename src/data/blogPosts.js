@@ -1145,7 +1145,7 @@ const blogPosts = [
 
             <p><em>Michele x</em></p>
         `,
-        image: '/assets/frankie-closeup.png',
+        image: '/assets/frankie-headshot.jpg',
         imageAlt: 'Frankie the Yorkshire Terrier up close, a fun way for kids to learn Yorkshire Terrier facts',
     },
     {
