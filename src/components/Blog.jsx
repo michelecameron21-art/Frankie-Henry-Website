@@ -75,16 +75,29 @@ function Blog() {
                             className="blog-card"
                             style={{ textDecoration: 'none', color: 'inherit' }}
                         >
-                            <div className="blog-card-image" style={{ width: '100%', aspectRatio: '16 / 10', overflow: 'hidden', borderRadius: 'var(--radius-lg) var(--radius-lg) 0 0' }}>
+                            <div className="blog-card-image" style={{ position: 'relative', width: '100%', aspectRatio: '16 / 10', overflow: 'hidden', borderRadius: 'var(--radius-lg) var(--radius-lg) 0 0', background: '#FFF1F2' }}>
+                                {/* Blurred fill of the same image so nothing is ever cropped */}
+                                <div aria-hidden="true" style={{
+                                    position: 'absolute',
+                                    inset: 0,
+                                    backgroundImage: `url(${post.image})`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center',
+                                    filter: 'blur(20px)',
+                                    transform: 'scale(1.15)',
+                                    opacity: 0.55,
+                                }} />
                                 <img
                                     src={post.image}
                                     alt={post.imageAlt}
                                     loading="lazy"
                                     style={{
+                                        position: 'relative',
+                                        zIndex: 1,
                                         width: '100%',
                                         height: '100%',
-                                        objectFit: 'cover',
-                                        objectPosition: post.imagePosition || 'center center',
+                                        objectFit: 'contain',
+                                        objectPosition: 'center',
                                         display: 'block',
                                     }}
                                 />
