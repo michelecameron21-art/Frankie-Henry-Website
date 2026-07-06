@@ -1,5 +1,38 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import blogPosts from '../data/blogPosts';
+
+// Blog thumbnail: wide images fill the card (cover); tall/portrait images
+// (book cover, close-up faces, standing animals) show in full over a soft
+// blurred fill of themselves, so nothing is ever cropped. The fit is chosen
+// automatically from each image's real shape once it loads.
+function BlogCardImage({ post }) {
+    const [tall, setTall] = useState(false);
+    return (
+        <div className="blog-card-image" style={{ position: 'relative', width: '100%', aspectRatio: '16 / 10', overflow: 'hidden', borderRadius: 'var(--radius-lg) var(--radius-lg) 0 0', background: '#FFF1F2' }}>
+            {tall && (
+                <div aria-hidden="true" style={{
+                    position: 'absolute', inset: 0,
+                    backgroundImage: `url(${post.image})`,
+                    backgroundSize: 'cover', backgroundPosition: 'center',
+                    filter: 'blur(16px)', transform: 'scale(1.15)', opacity: 0.5,
+                }} />
+            )}
+            <img
+                src={post.image}
+                alt={post.imageAlt}
+                loading="lazy"
+                onLoad={(e) => { setTall((e.target.naturalWidth / e.target.naturalHeight) < 1.25); }}
+                style={{
+                    position: 'relative', zIndex: 1,
+                    width: '100%', height: '100%',
+                    objectFit: tall ? 'contain' : 'cover',
+                    objectPosition: post.imagePosition || 'center center',
+                    display: 'block',
+                }}
+            />
+        </div>
+    );
+}
 
 function formatDate(dateStr) {
     const date = new Date(dateStr + 'T00:00:00');
