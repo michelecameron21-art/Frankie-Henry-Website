@@ -183,6 +183,11 @@ for (const p of SUB_PAGES) {
 // --- Home page: bake a real, crawlable snapshot into #root so Google (and
 // non-JS crawlers) get headings, the book blurb, internal links and the Amazon
 // CTA on the most important page. Keeps index.html's existing meta + schema. ---
+// 6 most recent posts, linked DIRECTLY from the homepage so Google has a strong
+// crawl path straight to individual posts (not just via the /blog index).
+const recentPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 6);
+const recentPostsHtml = `<section aria-labelledby="home-blog-h"><h2 id="home-blog-h">Stories from the Wild Place</h2><ul>${recentPosts.map((p) => `<li><a href="/blog/${p.id}">${text(p.title)}</a>${p.excerpt ? `: ${text(p.excerpt)}` : ''}</li>`).join('')}</ul></section>`;
+
 const homeBody = `<article>
 <h1>Frankie &amp; Henry and the Brave River Rescue</h1>
 <p>An African safari adventure picture book for children aged 4 to 8. Two Yorkshire Terrier brothers, Frankie the fearless one and Henry the thoughtful one, squeeze through a secret tunnel in their garden and burst out into the Wild Place, a magical African safari. There they find a stranded jackal cub with a monitor lizard closing in, and must find the courage to rescue it before it is too late.</p>
@@ -198,6 +203,7 @@ const homeBody = `<article>
 <li><a href="/blog">The Frankie &amp; Henry blog</a></li>
 </ul>
 </nav>
+${recentPostsHtml}
 </article>`;
 const homeHtml = template.replace(/<div id="root">\s*<\/div>/, () => `<div id="root">${homeBody}</div>`);
 fs.writeFileSync(path.join(dist, 'index.html'), homeHtml);

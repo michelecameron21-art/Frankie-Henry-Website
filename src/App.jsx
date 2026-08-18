@@ -14,6 +14,7 @@ import CookieBanner from './components/CookieBanner'
 import Dashboard from './components/Dashboard'
 import Blog from './components/Blog'
 import BlogPost from './components/BlogPost'
+import BlogHighlights from './components/BlogHighlights'
 
 
 const NAV_ITEMS = [
@@ -571,6 +572,7 @@ function App() {
                     <Reviews />
                     <Game />
                     <Extras />
+                    <BlogHighlights />
                     <Faq />
                     <Story />
                 </main>
