@@ -1,7 +1,7 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/pin-gallery", "destination": "/blog/free-safari-colouring-pages-for-kids", "permanent": false }
+    { "source": "/pin-gallery", "destination": "/freebies", "permanent": false }
   ],
   "rewrites": [
     { "source": "/((?!api/).*)", "destination": "/index.html" }
