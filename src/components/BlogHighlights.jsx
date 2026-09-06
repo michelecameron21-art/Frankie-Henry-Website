@@ -12,7 +12,7 @@ function BlogHighlights() {
     return (
         <section
             aria-labelledby="blog-highlights-heading"
-            style={{ background: '#FFF1F2', padding: 'clamp(3rem, 6vw, 5rem) 0' }}
+            style={{ background: 'linear-gradient(to bottom, #B86040 0%, #D4906A 12%, #F0D090 30%, #FFF8E8 55%, #FFF8E8 80%, #F0D090 100%)', padding: 'clamp(3rem, 6vw, 5rem) 0' }}
         >
             <div className="container">
                 <h2
@@ -59,7 +59,7 @@ function BlogHighlights() {
                                 background: '#FFFFFF',
                                 borderRadius: 'var(--radius-lg)',
                                 overflow: 'hidden',
-                                border: '3px solid #FBCFE8',
+                                border: '3px solid #F0D090',
                                 textDecoration: 'none',
                                 color: 'inherit',
                                 boxShadow: '0 6px 0 rgba(251, 207, 232, 0.6)',

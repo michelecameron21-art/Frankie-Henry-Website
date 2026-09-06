@@ -33,7 +33,7 @@ const FAQS = [
 
 function Faq() {
     return (
-        <section id="faq" style={{ background: '#FFF1F2', padding: '4rem 1.5rem' }}>
+        <section id="faq" style={{ background: 'linear-gradient(to bottom, #F0D090 0%, #FFF8E8 20%, #FFF8E8 60%, #F0D090 78%, #D4906A 90%, #B86040 100%)', padding: '4rem 1.5rem' }}>
             <div style={{ maxWidth: '820px', margin: '0 auto' }}>
                 <h2 style={{
                     fontFamily: "'Fredoka', sans-serif",
