@@ -54,7 +54,7 @@ function Reviews() {
         <section
             id="reviews"
             style={{
-                background: 'linear-gradient(180deg, #C07848 0%, #A85830 100%)',
+                background: 'linear-gradient(180deg, #D4906A 0%, #C07848 16%, #A85830 50%, #C07848 84%, #D4906A 100%)',
                 padding: 'clamp(3rem, 7vw, 6rem) 1.5rem',
                 position: 'relative',
             }}
