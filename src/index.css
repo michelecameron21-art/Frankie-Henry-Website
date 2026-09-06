@@ -1898,3 +1898,55 @@ button {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08), inset 1px 1px 4px rgba(255, 255, 255, 0.9) !important;
     background: rgba(255, 255, 255, 0.7) !important;
 }
+/* Clear paperback purchase choices for visitors arriving from social posts. */
+.book-buy-button {
+    display: inline-block;
+    background: #FFD200;
+    color: #78350f;
+    font: 700 1.08rem 'Fredoka', sans-serif;
+    padding: .85rem 1.5rem;
+    border-radius: 9999px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 0 #B8960A;
+    transition: transform .15s;
+}
+.book-buy-button:hover { transform: translateY(-2px); }
+.book-buy-button:focus-visible, .book-format-link:focus-visible, .book-other-options:focus-visible {
+    outline: 3px solid #157c93;
+    outline-offset: 5px;
+}
+.book-purchase {
+    scroll-margin-top: 1.5rem;
+    max-width: 335px;
+    margin: -1.5rem auto 1rem;
+    position: relative;
+    padding: 1.35rem;
+    background: #fff8e7;
+    border: 2px solid #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 6px 20px #78350f20;
+    color: #78350f;
+    text-align: center;
+}
+.book-purchase h3 { font: 600 1.3rem 'Fredoka', sans-serif; margin: 0 0 .4rem; }
+.book-purchase > p { margin: 0 0 1rem; font-size: .9rem; }
+.book-store-options { display: grid; gap: .8rem; margin-top: 1.1rem; font-size: .9rem; }
+.book-format-link { color: #78350f; text-decoration: underline; text-underline-offset: 3px; font-weight: 800; }
+.book-store-options > span { margin-top: .25rem; }
+.book-purchase .book-price-note { font-size: .72rem; line-height: 1.5; margin: 1rem 0 0; color: #6c5545; }
+.book-rating { color: #78350f; font-weight: 800; margin: .8rem 0 .2rem; }
+.book-rating-date { color: #78350f; font-size: .75rem; margin: 0; }
+.book-purchase-compact { padding: 1rem 1.25rem; background: #fff8e7f2; border-radius: 1.25rem; text-align: center; box-shadow: 0 5px 20px #0002; }
+.book-purchase-compact p { color: #78350f; font-weight: 800; margin: 0 0 .65rem; font-size: .95rem; }
+.book-other-options { color: #78350f; display: block; margin-top: .9rem; font-size: .85rem; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+.hero-purchase-mobile { display: none; }
+.freebies-book-link { text-align: center; color: white; margin: -1rem auto 2.5rem; }
+.freebies-book-link p { margin-bottom: 1rem; }
+@media (max-width: 768px) {
+    .hero-purchase-mobile { display: block; position: absolute; bottom: 3%; left: 1rem; right: 1rem; z-index: 21; }
+    .hero-purchase-mobile .book-purchase-compact { max-width: 355px; margin: auto; padding: .85rem; }
+    .hero-tagline-mobile { bottom: 31% !important; }
+    .book-purchase { max-width: 100%; }
+    .book-buy-button { max-width: 100%; }
+}

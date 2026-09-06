@@ -7,7 +7,7 @@ const FAQS = [
     },
     {
         q: 'Where can I buy Frankie and Henry: The Brave River Rescue?',
-        a: <>The book is available on Amazon in both Kindle and Paperback. You can find it at <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer" style={{ color: '#A85830', fontWeight: 700 }}>amazon.com/dp/B0GTVVPPH6</a>.</>,
+        a: <>Choose the paperback or Kindle edition on Amazon. <a href="/the-brave-river-rescue#buy" style={{ color: '#A85830', fontWeight: 700 }}>See buying options for the UK and US</a>.</>,
     },
     {
         q: 'What is the book about?',

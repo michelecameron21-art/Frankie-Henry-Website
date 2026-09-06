@@ -23,7 +23,7 @@ const blogPosts = [
             <h2>The Real Frankie and Henry</h2>
             <p>The best part? Frankie and Henry are real dogs! They're two Yorkshire Terriers who live with our family and inspire us every single day with their big personalities and even bigger hearts. Frankie really is the fearless one, and Henry really does think about snacks more than anything else.</p>
             <p>We hope you enjoy exploring the Wild Place as much as we enjoyed creating it. There's so much more to come — new stories, new characters, and new adventures are already on their way.</p>
-            <p>In the meantime, why not <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of the book</a> and join Frankie and Henry on their first big adventure?</p>
+            <p>In the meantime, why not <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">grab a copy of the book</a> and join Frankie and Henry on their first big adventure?</p>
             <p>Happy reading!</p>
             <p><em>Want to keep exploring? Read <a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">why Yorkshire Terriers make the best adventure heroes</a> or meet <a href="/blog/the-real-frankie-and-henry-behind-the-book">the real dogs behind the book</a>.</em></p>
 
@@ -84,7 +84,7 @@ const blogPosts = [
 
             <p>That history makes them perfect adventure heroes. They're small enough for children to relate to, brave enough to carry a story, and funny enough to keep everyone laughing along the way.</p>
 
-            <p>If you haven't met Frankie and Henry yet, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of The Brave River Rescue</a> and see for yourself why two little Yorkshire Terriers might just be the bravest heroes in children's books.</p>
+            <p>If you haven't met Frankie and Henry yet, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">grab a copy of The Brave River Rescue</a> and see for yourself why two little Yorkshire Terriers might just be the bravest heroes in children's books.</p>
 
             <p>And if you've got a Yorkie at home, or you've ever loved one? You already know exactly what I'm talking about.</p>
 
@@ -151,7 +151,7 @@ const blogPosts = [
 
             <h2>Explore the Wild Place</h2>
 
-            <p>These five animals — plus a neighbourhood cat called Clawdius who you definitely shouldn't trust — are all waiting in the Wild Place. If your children love animals, adventure, and stories about courage and friendship, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of Frankie & Henry and the Brave River Rescue</a> and let them discover the Wild Place for themselves.</p>
+            <p>These five animals — plus a neighbourhood cat called Clawdius who you definitely shouldn't trust — are all waiting in the Wild Place. If your children love animals, adventure, and stories about courage and friendship, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">grab a copy of Frankie & Henry and the Brave River Rescue</a> and let them discover the Wild Place for themselves.</p>
 
             <p>You can also <a href="#characters">meet all the characters</a> right here on our website, play the <a href="#game">Rescue Run game</a>, and download free <a href="#extras">colouring pages and activities</a>.</p>
 
@@ -238,7 +238,7 @@ const blogPosts = [
 
             <p>By the time the story ends and the brave characters have made it through, the child falls asleep having rehearsed courage one more time. And tomorrow, when they face their own small brave moment, something inside them remembers: <em>I can do this. Henry was scared too, and he still did it.</em></p>
 
-            <p>If you'd like to read Frankie and Henry's story with your little ones, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of The Brave River Rescue</a>. It's available in Kindle and paperback — perfect for bedtime bravery.</p>
+            <p>If you'd like to read Frankie and Henry's story with your little ones, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">grab a copy of The Brave River Rescue</a>. It's available in Kindle and paperback — perfect for bedtime bravery.</p>
 
             <p><em>More on brave little readers: <a href="/blog/helping-children-overcome-fear-through-stories">how stories help children overcome fear</a> and <a href="/blog/best-read-aloud-picture-books-for-bedtime">the best read-aloud picture books for bedtime</a>.</em></p>
 
@@ -278,7 +278,7 @@ const blogPosts = [
 
             <h3>Frankie & Henry and the Brave River Rescue</h3>
             <p>Two Yorkshire Terrier brothers discover a secret tunnel into the African Wild Place — a breathtaking savannah teeming with blue cranes, monitor lizards, martial eagles, and black-backed jackals. When a lost jackal cub is stranded by the river, Frankie and Henry must find the courage to help. Set against stunning African landscapes with Pixar-quality illustrations, this is an African safari adventure about courage, friendship, and proving that brave hearts come in small packages. <strong>Ages 4–8.</strong></p>
-            <p><a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Available on Amazon in Kindle and Paperback →</a></p>
+            <p><a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Available on Amazon in Kindle and Paperback →</a></p>
 
             <h3>Safari, So Good! (Cat in the Hat's Learning Library)</h3>
             <p>The Cat in the Hat takes readers on a safari through the African savannah, introducing real animals and habitats in the classic Dr Seuss rhyming style. Brilliant for children who love facts wrapped in fun. A staple of the African safari children's book category.</p>
@@ -307,7 +307,7 @@ const blogPosts = [
                 <li><strong>Colouring pages</strong> — we've got free downloadable safari colouring pages at <a href="#extras">our extras page</a></li>
                 <li><strong>The Rescue Run game</strong> — help Frankie navigate the river in our free <a href="#game">browser game</a></li>
                 <li><strong>Meet the characters</strong> — explore all the Wild Place animals on <a href="#characters">our characters page</a></li>
-                <li><strong>Read the book</strong> — <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab Frankie & Henry on Amazon</a> and bring the safari to bedtime</li>
+                <li><strong>Read the book</strong> — <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">grab Frankie & Henry on Amazon</a> and bring the safari to bedtime</li>
             </ul>
 
             <p>Happy exploring!</p>
@@ -379,7 +379,7 @@ const blogPosts = [
 
             <h2>The Book That Keeps Them Running</h2>
 
-            <p>If you've got a child who loves animals, adventure, or two tiny dogs with enormous hearts, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">grab a copy of Frankie & Henry and the Brave River Rescue</a>. Kindle or paperback — both take you to the Wild Place.</p>
+            <p>If you've got a child who loves animals, adventure, or two tiny dogs with enormous hearts, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">grab a copy of Frankie & Henry and the Brave River Rescue</a>. Kindle or paperback — both take you to the Wild Place.</p>
 
             <p>And if you've got a Yorkie of your own, or you've ever loved a small dog with a huge personality, I hope the story feels familiar. That's the point.</p>
 
@@ -422,7 +422,7 @@ const blogPosts = [
 
             <h2>The Frankie &amp; Henry Safari Colouring Pages</h2>
 
-            <p>Our free safari colouring pages feature scenes from <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie &amp; Henry and the Brave River Rescue</a> — the picture book about two Yorkshire Terriers who discover a secret tunnel into an African wilderness and must rescue a lost jackal cub.</p>
+            <p>Our free safari colouring pages feature scenes from <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Frankie &amp; Henry and the Brave River Rescue</a> — the picture book about two Yorkshire Terriers who discover a secret tunnel into an African wilderness and must rescue a lost jackal cub.</p>
 
             <p>The pages include:</p>
 
@@ -481,7 +481,7 @@ const blogPosts = [
 
             <h2>And When You're Ready for the Story…</h2>
 
-            <p>Once your little one has coloured in Frankie and Henry, they'll want to know what happens to them. <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Grab a copy of The Brave River Rescue on Amazon</a> — it's available in Kindle and paperback — and watch the adventure come to life.</p>
+            <p>Once your little one has coloured in Frankie and Henry, they'll want to know what happens to them. <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Grab a copy of The Brave River Rescue on Amazon</a> — it's available in Kindle and paperback — and watch the adventure come to life.</p>
 
             <p>Happy colouring!</p>
 
@@ -576,7 +576,7 @@ const blogPosts = [
 
             <h2>Try It Tonight</h2>
 
-            <p>If you're looking for a new bedtime book to add to the rotation, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie &amp; Henry is available in Kindle and paperback on Amazon</a>. Read it aloud. Do the voices. Watch your little one's face when the dogs run into the river.</p>
+            <p>If you're looking for a new bedtime book to add to the rotation, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Frankie &amp; Henry is available in Kindle and paperback on Amazon</a>. Read it aloud. Do the voices. Watch your little one's face when the dogs run into the river.</p>
 
             <p>And then close the book gently, turn off the lamp, and enjoy the quiet.</p>
 
@@ -676,7 +676,7 @@ const blogPosts = [
 
             <h2>Let Them Meet Henry</h2>
 
-            <p>If your child is working through something scary — or if you just want a bedtime story that shows them what quiet bravery looks like — <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie &amp; Henry and the Brave River Rescue is available on Amazon</a> in Kindle and paperback.</p>
+            <p>If your child is working through something scary — or if you just want a bedtime story that shows them what quiet bravery looks like — <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Frankie &amp; Henry and the Brave River Rescue is available on Amazon</a> in Kindle and paperback.</p>
 
             <p>Henry was scared too. And he did it anyway.</p>
 
@@ -763,7 +763,7 @@ const blogPosts = [
 
             <h2>Join the Adventure</h2>
 
-            <p>Ready to see what happens at the river? <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Grab a copy of Frankie &amp; Henry and the Brave River Rescue on Amazon</a> — available in Kindle and paperback. Read it together, do the voices, and find out if two small dogs can do something very, very brave.</p>
+            <p>Ready to see what happens at the river? <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Grab a copy of Frankie &amp; Henry and the Brave River Rescue on Amazon</a> — available in Kindle and paperback. Read it together, do the voices, and find out if two small dogs can do something very, very brave.</p>
 
             <p><em>— Michele x</em></p>
         `,
@@ -803,7 +803,7 @@ const blogPosts = [
 
             <p>It's a story about how two completely different personalities make the perfect team — and how being brave doesn't mean being fearless. Sometimes it means being the brother who follows the brave one anyway, even though you're terrified.</p>
 
-            <p><a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Available in Kindle and paperback on Amazon</a>. Ages 4–8.</p>
+            <p><a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Available in Kindle and paperback on Amazon</a>. Ages 4–8.</p>
 
             <h2>2. The Pain and the Great One — Judy Blume</h2>
 
@@ -870,7 +870,7 @@ const blogPosts = [
 
             <h2>Meet the Brothers</h2>
 
-            <p>Want to meet Frankie and Henry properly? <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Grab a copy of Frankie & Henry and the Brave River Rescue on Amazon</a> — available in Kindle and paperback. Two brothers. One enormous adventure. A story about the kind of love that doesn't need to say very much at all.</p>
+            <p>Want to meet Frankie and Henry properly? <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Grab a copy of Frankie & Henry and the Brave River Rescue on Amazon</a> — available in Kindle and paperback. Two brothers. One enormous adventure. A story about the kind of love that doesn't need to say very much at all.</p>
 
             <p><em>— Michele x</em></p>
         `,
@@ -967,7 +967,7 @@ const blogPosts = [
 
             <h2>One More for the Beach Bag</h2>
 
-            <p>If you do nothing else this summer, get a copy of <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer"><strong>Frankie & Henry and the Brave River Rescue</strong></a> into the beach bag. It's a true summer adventure — sun, river, wildlife, two little brothers who are about to discover what they're made of — and it reads aloud beautifully on a picnic blanket.</p>
+            <p>If you do nothing else this summer, get a copy of <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer"><strong>Frankie & Henry and the Brave River Rescue</strong></a> into the beach bag. It's a true summer adventure — sun, river, wildlife, two little brothers who are about to discover what they're made of — and it reads aloud beautifully on a picnic blanket.</p>
 
             <p>Happy summer reading. May your garden be sunny, your picnic blanket be free of ants, and your child's favourite line from a story turn up in conversation at the dinner table for the rest of the year.</p>
 
@@ -1068,7 +1068,7 @@ const blogPosts = [
 
             <h2>One Last Dog Book for the Stack</h2>
 
-            <p>If you do nothing else with this list, slip a copy of <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer"><strong>Frankie & Henry and the Brave River Rescue</strong></a> into your child's pile. Two scruffy little Yorkshire Terrier brothers. One enormous African adventure. A story written for every child who has ever looked at a small dog and known, somehow, that there was a whole brave heart in there.</p>
+            <p>If you do nothing else with this list, slip a copy of <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer"><strong>Frankie & Henry and the Brave River Rescue</strong></a> into your child's pile. Two scruffy little Yorkshire Terrier brothers. One enormous African adventure. A story written for every child who has ever looked at a small dog and known, somehow, that there was a whole brave heart in there.</p>
 
             <p>Available in Kindle and paperback on Amazon. And if you want a peek at the real dogs behind the story, <a href="/blog/the-real-frankie-and-henry-behind-the-book">meet the real Frankie and Henry here</a> — they're every bit as scruffy, stubborn, and loveable as their book counterparts.</p>
 
@@ -1133,13 +1133,13 @@ const blogPosts = [
 
             <h2>Meet Two Very Famous Yorkies</h2>
 
-            <p>The two Yorkies I know best are Frankie and Henry, the real Yorkshire Terrier brothers who inspired my picture book <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer"><strong>Frankie and Henry: The Brave River Rescue</strong></a>. Frankie is the fearless one who charges in headfirst. Henry was the thoughtful one who considered every option carefully, usually between snacks.</p>
+            <p>The two Yorkies I know best are Frankie and Henry, the real Yorkshire Terrier brothers who inspired my picture book <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer"><strong>Frankie and Henry: The Brave River Rescue</strong></a>. Frankie is the fearless one who charges in headfirst. Henry was the thoughtful one who considered every option carefully, usually between snacks.</p>
 
             <p>In the book, the brothers discover a secret tunnel into the Wild Place, a magical African savanna, where they must find the courage to rescue a lost jackal cub. It is a safari adventure for kids ages 4 to 8, and every bit of Yorkie personality in it is completely real.</p>
 
             <p>If your child enjoyed these facts, they will love reading about <a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">why Yorkshire Terriers make the best adventure heroes</a> and meeting <a href="/blog/the-real-frankie-and-henry-behind-the-book">the real Frankie and Henry behind the book</a>.</p>
 
-            <p>And when you are ready for a Yorkie adventure of your own, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">the book is on Amazon in Kindle and Paperback</a>.</p>
+            <p>And when you are ready for a Yorkie adventure of your own, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">the book is on Amazon in Kindle and Paperback</a>.</p>
 
             <p>Small paws. Brave hearts. Big adventures.</p>
 
@@ -1174,7 +1174,7 @@ const blogPosts = [
 
             <h2>4. Do Jackal Families Really Babysit?</h2>
 
-            <p>Yes! Black-backed jackals are some of the most devoted parents in Africa. Both mom and dad raise the pups together, and older brothers and sisters often stay home to help look after the new babies. When one parent goes hunting, another family member stays behind to babysit. A little lost jackal cub is at the heart of <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue</a>, and his very worried mom sets the whole adventure in motion.</p>
+            <p>Yes! Black-backed jackals are some of the most devoted parents in Africa. Both mom and dad raise the pups together, and older brothers and sisters often stay home to help look after the new babies. When one parent goes hunting, another family member stays behind to babysit. A little lost jackal cub is at the heart of <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue</a>, and his very worried mom sets the whole adventure in motion.</p>
 
             <h2>5. Which Bird Dances to Find a Friend?</h2>
 
@@ -1205,7 +1205,7 @@ const blogPosts = [
             <p>The best way to help a child fall in love with safari animals is to mix stories with facts. Read an adventure set on the savanna, then look up the real animals together. Here are some easy next steps:</p>
 
             <ul>
-                <li><strong>Read a safari story</strong> where the animals are characters, like <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue</a>, a picture book for ages 4 to 8 set in the African Wild Place</li>
+                <li><strong>Read a safari story</strong> where the animals are characters, like <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue</a>, a picture book for ages 4 to 8 set in the African Wild Place</li>
                 <li><strong>Learn the real facts</strong> in our post about <a href="/blog/5-amazing-african-animals-your-kids-will-love">5 amazing African animals your kids will love</a></li>
                 <li><strong>Get creative</strong> with our <a href="/blog/free-safari-colouring-pages-for-kids">free safari colouring pages</a></li>
                 <li><strong>Build a book stack</strong> from <a href="/blog/best-african-safari-books-for-children">the best African safari books for children</a></li>
@@ -1244,7 +1244,7 @@ const blogPosts = [
             <h2>7 Adventure Picture Books for 5-Year-Olds</h2>
 
             <h3>1. Frankie and Henry: The Brave River Rescue</h3>
-            <p>Two Yorkshire Terrier brothers discover a secret tunnel into the Wild Place, a breathtaking African savanna, where a lost jackal cub needs rescuing before a grumpy monitor lizard gets any grumpier. Frankie charges in headfirst; Henry thinks it through, between snacks. Five-year-olds love the mission, the animals, and the message that you can be scared and brave at the same time. <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Available on Amazon in Kindle and Paperback</a>.</p>
+            <p>Two Yorkshire Terrier brothers discover a secret tunnel into the Wild Place, a breathtaking African savanna, where a lost jackal cub needs rescuing before a grumpy monitor lizard gets any grumpier. Frankie charges in headfirst; Henry thinks it through, between snacks. Five-year-olds love the mission, the animals, and the message that you can be scared and brave at the same time. <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Available on Amazon in Kindle and Paperback</a>.</p>
 
             <h3>2. We're Going on a Bear Hunt by Michael Rosen</h3>
             <p>The classic expedition story. Swishy grass, splashy rivers, squelchy mud, and a chant your 5-year-old will still be doing at dinner. Perfect for kids who like their adventures loud and participatory.</p>
@@ -1280,7 +1280,7 @@ const blogPosts = [
 
             <p>For more ideas, browse our <a href="/blog/summer-reading-list-for-kids-ages-4-8">summer reading list for kids ages 4-8</a> or find out <a href="/blog/best-read-aloud-picture-books-for-bedtime">what makes a picture book brilliant to read aloud</a>.</p>
 
-            <p>And if your five-year-old is ready for a safari, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry are waiting on Amazon</a>. Two small dogs, one wild place, and a rescue they will want to hear again tomorrow night.</p>
+            <p>And if your five-year-old is ready for a safari, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Frankie and Henry are waiting on Amazon</a>. Two small dogs, one wild place, and a rescue they will want to hear again tomorrow night.</p>
 
             <p><em>Michele x</em></p>
         `,
@@ -1319,7 +1319,7 @@ const blogPosts = [
             <p>Animal parents tucking in their babies, in a rhyme so soft it practically whispers. Short, warm, and perfect for nights when everyone is running on empty.</p>
 
             <h3>3. Frankie and Henry: The Brave River Rescue</h3>
-            <p>An adventure at bedtime? Yes, when it is built for it. Two Yorkshire Terrier brothers rescue a lost jackal cub in the African Wild Place, and the story is paced for a ten-minute read-aloud with distinct voices for every character. Most importantly, it lands gently: the cub is home, the brothers are safe, and the last page closes as quietly as a bedroom door. <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Available on Amazon in Kindle and Paperback</a>.</p>
+            <p>An adventure at bedtime? Yes, when it is built for it. Two Yorkshire Terrier brothers rescue a lost jackal cub in the African Wild Place, and the story is paced for a ten-minute read-aloud with distinct voices for every character. Most importantly, it lands gently: the cub is home, the brothers are safe, and the last page closes as quietly as a bedroom door. <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Available on Amazon in Kindle and Paperback</a>.</p>
 
             <h3>4. Llama Llama Red Pajama by Anna Dewdney</h3>
             <p>Little Llama worries when Mama goes downstairs, and every four-year-old who has ever called out one more question after lights-out will feel understood. Reassuring, rhyming, and just the right length.</p>
@@ -1353,7 +1353,7 @@ const blogPosts = [
 
             <p>If you want to go deeper, here is <a href="/blog/best-read-aloud-picture-books-for-bedtime">what makes a picture book truly great to read aloud</a>, and here is <a href="/blog/teaching-kids-about-courage-through-picture-books">how bedtime stories quietly teach kids about courage</a>.</p>
 
-            <p>And if tonight needs a small brave dog and a happy ending, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry are ready on Amazon</a>. Read it slowly. Do the voices. Close it gently.</p>
+            <p>And if tonight needs a small brave dog and a happy ending, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Frankie and Henry are ready on Amazon</a>. Read it slowly. Do the voices. Close it gently.</p>
 
             <p>Sleep tight!</p>
 
@@ -1380,7 +1380,7 @@ const blogPosts = [
 
             <h2>2. Pick Books With a Mission</h2>
 
-            <p>Reluctant listeners tune out of quiet, meandering stories. Give them a problem to root for instead: a lost cub to rescue, a river to cross, a lizard to sneak past. When I wrote <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer"><strong>Frankie and Henry: The Brave River Rescue</strong></a>, I built it around a mission for exactly this reason. Two small dogs, one stranded jackal cub, and a clock that is ticking. Wiggly kids lean in because they need to know if the cub makes it.</p>
+            <p>Reluctant listeners tune out of quiet, meandering stories. Give them a problem to root for instead: a lost cub to rescue, a river to cross, a lizard to sneak past. When I wrote <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer"><strong>Frankie and Henry: The Brave River Rescue</strong></a>, I built it around a mission for exactly this reason. Two small dogs, one stranded jackal cub, and a clock that is ticking. Wiggly kids lean in because they need to know if the cub makes it.</p>
 
             <h2>3. Do the Voices. Yes, Even If You Feel Silly</h2>
 
@@ -1420,7 +1420,7 @@ const blogPosts = [
 
             <p>For more on this, read our guide to <a href="/blog/best-read-aloud-picture-books-for-bedtime">the best read-aloud picture books for bedtime</a>, or discover <a href="/blog/helping-children-overcome-fear-through-stories">how stories help children with big feelings</a>.</p>
 
-            <p>And if you need a mission-driven story with voices built in, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue is on Amazon</a> in Kindle and Paperback. Fair warning: you will be asked to do the lizard voice again.</p>
+            <p>And if you need a mission-driven story with voices built in, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue is on Amazon</a> in Kindle and Paperback. Fair warning: you will be asked to do the lizard voice again.</p>
 
             <p><em>Michele x</em></p>
         `,
@@ -1446,7 +1446,7 @@ const blogPosts = [
             <h2>7 Dog Books for Kids Ages 4-8</h2>
 
             <h3>1. Frankie and Henry: The Brave River Rescue</h3>
-            <p>Two Yorkshire Terrier brothers find a secret tunnel into the African Wild Place and have to rescue a lost jackal cub before a grumpy monitor lizard closes in. It has the Dog Man essentials: dog heroes, a real mission, a scaly antagonist, and plenty of laughs (Henry would like the rescue to pause for snacks). It also sneaks in something extra: the idea that being brave does not mean being fearless. For ages 4 to 8, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">available on Amazon in Kindle and Paperback</a>.</p>
+            <p>Two Yorkshire Terrier brothers find a secret tunnel into the African Wild Place and have to rescue a lost jackal cub before a grumpy monitor lizard closes in. It has the Dog Man essentials: dog heroes, a real mission, a scaly antagonist, and plenty of laughs (Henry would like the rescue to pause for snacks). It also sneaks in something extra: the idea that being brave does not mean being fearless. For ages 4 to 8, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">available on Amazon in Kindle and Paperback</a>.</p>
 
             <h3>2. Pig the Pug by Aaron Blabey</h3>
             <p>Pig is the greediest pug in the world, and his selfishness backfires spectacularly. Rude, ridiculous, and rhyming, this is the closest thing picture books have to Dog Man's naughty energy. Kids howl at it.</p>
@@ -1482,7 +1482,7 @@ const blogPosts = [
 
             <p>For more dog-hero ideas, see our full list of <a href="/blog/childrens-books-for-kids-who-love-dogs">children's books for kids who love dogs</a>, and find out <a href="/blog/why-yorkshire-terriers-make-best-adventure-heroes">why Yorkshire Terriers make the best adventure heroes</a>.</p>
 
-            <p>And if your Dog Man fan is ready for a safari mission tonight, <a href="https://www.amazon.com/dp/B0GTVVPPH6" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue is on Amazon</a>. Small dogs. Big rescue. Zero fleas.</p>
+            <p>And if your Dog Man fan is ready for a safari mission tonight, <a href="/the-brave-river-rescue#buy" target="_blank" rel="noopener noreferrer">Frankie and Henry: The Brave River Rescue is on Amazon</a>. Small dogs. Big rescue. Zero fleas.</p>
 
             <p><em>Michele x</em></p>
         `,

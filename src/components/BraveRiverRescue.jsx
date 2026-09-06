@@ -1,3 +1,4 @@
+import BookPurchase from './BookPurchase';
 import { Moon, Heart, Users, Compass, Gift } from 'lucide-react';
 
 export default function BraveRiverRescue() {
@@ -30,11 +31,13 @@ export default function BraveRiverRescue() {
                 {/* Section heading */}
                 <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
                     <p style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.1rem', color: '#78350f', fontWeight: '700', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.75rem' }}>
-                        Book 1 in the series
+                        A picture book for dog-loving children aged 4–8
                     </p>
                     <h2 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '2.8rem', color: '#78350f', marginBottom: '0' }}>
                         The Brave River Rescue
                     </h2>
+                    <p className="book-rating">★★★★★ · 5.0 from 17 global Amazon ratings</p>
+                    <p className="book-rating-date">Checked 6 September 2026</p>
                 </div>
 
                 {/* Book mockup + blurb */}
@@ -52,35 +55,7 @@ export default function BraveRiverRescue() {
                                 transform: 'rotate(-2deg)',
                             }}
                         />
-                        <div style={{ marginTop: '-2rem' }}>
-                            <a
-                                href="https://www.amazon.com/dp/B0GTVVPPH6"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{
-                                    display: 'inline-block',
-                                    background: '#FFD200', color: '#78350F',
-                                    fontFamily: 'Fredoka, sans-serif',
-                                    fontWeight: '700', fontSize: '1.1rem',
-                                    padding: '0.65rem 2rem',
-                                    borderRadius: '9999px',
-                                    textDecoration: 'none',
-                                    boxShadow: '0 4px 0 #B8960A',
-                                }}
-                            >
-                                Buy Now
-                            </a>
-                            <p style={{
-                                marginTop: '0.5rem',
-                                fontFamily: 'Fredoka, sans-serif',
-                                fontSize: '0.8rem',
-                                color: '#78350f',
-                                fontWeight: '600',
-                                letterSpacing: '0.03em',
-                            }}>
-                                Available in Kindle &amp; Paperback
-                            </p>
-                        </div>
+                        <BookPurchase placement="book-section" />
                     </div>
 
                     {/* Blurb */}
@@ -101,6 +76,11 @@ export default function BraveRiverRescue() {
 
                     </div>
                 </div>
+
+                <p style={{ textAlign: 'center', color: '#78350f', margin: '1.5rem auto 2.5rem', lineHeight: '1.7' }}>
+                    Keep the adventure going after story time.{' '}
+                    <a href="/freebies" className="book-format-link">Get the free colouring pages and activities</a>.
+                </p>
 
                 {/* Perfect for */}
                 <div style={{ textAlign: 'center', marginBottom: '3rem' }}>

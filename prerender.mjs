@@ -111,7 +111,7 @@ const SUB_PAGES = [
     description: 'Two Yorkshire Terrier brothers, a lost jackal cub, and a monitor lizard closing in. A safari picture book for kids aged 4 to 8.',
     image: `${SITE}/assets/book-mockup.png`,
     h1: 'The Brave River Rescue',
-    body: `<p>Frankie and Henry's first picture book adventure. Two Yorkshire Terrier brothers discover a secret tunnel in their garden and burst out into the Wild Place, a magical African safari. There they find a stranded jackal cub and a monitor lizard closing in. The brothers must find the courage to rescue the cub before it is too late.</p><p>A picture book for children aged 4 to 8, inspired by two real Yorkshire Terriers who used to walk together every morning.</p><p><a href="https://www.amazon.com/dp/B0GTVVPPH6">Buy on Amazon</a></p>`,
+    body: `<p>Frankie and Henry's first picture book adventure. Two Yorkshire Terrier brothers discover a secret tunnel in their garden and burst out into the Wild Place, a magical African safari. There they find a stranded jackal cub and a monitor lizard closing in. The brothers must find the courage to rescue the cub before it is too late.</p><p>A picture book for children aged 4 to 8, inspired by two real Yorkshire Terriers who used to walk together every morning.</p><p><a href="https://www.amazon.co.uk/dp/1067638504">Buy the paperback on Amazon UK — £7.99</a></p><p>★★★★★ · 5.0 from 17 global Amazon ratings (checked 6 September 2026). Kindle and US buying options are also available on this page.</p>`,
   },
   {
     path: 'meet-frankie-and-henry',
@@ -192,7 +192,7 @@ const homeBody = `<article>
 <h1>Frankie &amp; Henry and the Brave River Rescue</h1>
 <p>An African safari adventure picture book for children aged 4 to 8. Two Yorkshire Terrier brothers, Frankie the fearless one and Henry the thoughtful one, squeeze through a secret tunnel in their garden and burst out into the Wild Place, a magical African safari. There they find a stranded jackal cub with a monitor lizard closing in, and must find the courage to rescue it before it is too late.</p>
 <p>Inspired by two real Yorkshire Terriers who walked together every morning, it is a warm, beautifully illustrated story about friendship, bravery and the idea that the bravest hearts come in the smallest packages.</p>
-<p><a href="https://www.amazon.com/dp/B0GTVVPPH6">Buy Frankie &amp; Henry and the Brave River Rescue on Amazon</a>, available in Kindle and paperback.</p>
+<p><a href="https://www.amazon.co.uk/dp/1067638504">Buy Frankie &amp; Henry and the Brave River Rescue paperback on Amazon UK — £7.99</a>. <a href="/the-brave-river-rescue#buy">Kindle and US buying options</a>.</p>
 <nav aria-label="Explore Frankie and Henry">
 <ul>
 <li><a href="/the-brave-river-rescue">The Brave River Rescue, the story</a></li>

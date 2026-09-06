@@ -53,6 +53,10 @@ export default function Extras() {
                     <h2 className="heading-lg" style={{ color: 'white' }}>Colour, Play, Sing Along</h2>
                 </div>
 
+                <div className="freebies-book-link">
+                    <p>Enjoying the activities? Discover the story behind them.</p>
+                    <a className="book-buy-button" href="/the-brave-river-rescue">Explore the picture book · ages 4–8</a>
+                </div>
                 <div className="extras-grid">
                     {extras.map((item) => (
                         <ExtraCard key={item.id} item={item} />

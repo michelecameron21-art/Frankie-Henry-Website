@@ -51,7 +51,7 @@ export default function Story() {
                             </p>
                             <div className="social-buttons" style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap', marginTop: 'auto', alignItems: 'center' }}>
                                 <a
-                                    href="https://www.instagram.com/frankieandhenrybooks?igsh=dDFtM3duc3BydnFt"
+                                    href="https://www.instagram.com/frankieandhenryyorkies/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     style={{
@@ -101,7 +101,7 @@ export default function Story() {
                         }}>
                             <div style={{ marginBottom: '0.75rem', color: '#C07848' }}><Mail size={36} strokeWidth={1.5} /></div>
                             <h3 style={{ fontFamily: 'Fredoka, sans-serif', fontSize: '1.5rem', marginBottom: '0.75rem', color: '#1e293b' }}>Stay Close to Frankie &amp; Henry!</h3>
-                            <p style={{ color: '#475569', fontSize: '1.2rem', lineHeight: '1.9', marginBottom: '1.25rem' }}>Win prizes, grab freebies, and get the latest news from Frankie &amp; Henry and their friends in the Wild Place.</p>
+                            <p style={{ color: '#475569', fontSize: '1.2rem', lineHeight: '1.9', marginBottom: '1.25rem' }}>Join the pack for book news, new activities, and more from Frankie &amp; Henry and their friends in the Wild Place.</p>
                             <div id="mlb2-38818852" className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-38818852">
                                 <div className="ml-form-align-center">
                                     <div className="ml-form-embedWrapper embedForm">

@@ -3,6 +3,7 @@ import { Menu, X, ChevronDown } from 'lucide-react'
 import SafariHeroes from './components/SafariHeroes'
 import MeetTheBrothers from './components/MeetTheBrothers'
 import BraveRiverRescue from './components/BraveRiverRescue'
+import BookPurchase from './components/BookPurchase'
 import Extras from './components/Extras'
 
 import Game from './components/Game'
@@ -24,7 +25,7 @@ const NAV_ITEMS = [
             { label: 'The Brave River Rescue', href: '/the-brave-river-rescue' },
             { label: 'Meet Frankie & Henry', href: '/meet-frankie-and-henry' },
             { label: 'Safari Heroes', href: '/safari-heroes' },
-            { label: 'Buy on Amazon', href: 'https://www.amazon.com/dp/B0GTVVPPH6', external: true },
+            { label: 'Buy the Book', href: '/the-brave-river-rescue#buy' },
         ],
     },
     {
@@ -45,7 +46,7 @@ const NAV_ITEMS = [
         label: 'Follow',
         links: [
             { label: 'Newsletter', href: '#newsletter' },
-            { label: 'Instagram', href: 'https://www.instagram.com/frankieandhenrybooks', external: true },
+            { label: 'Instagram', href: 'https://www.instagram.com/frankieandhenryyorkies/', external: true },
             { label: 'TikTok', href: 'https://www.tiktok.com/@frankieandhenrybooks', external: true },
         ],
     },
@@ -264,7 +265,10 @@ function App() {
     // Scroll to top when navigating to blog or sub-pages
     useEffect(() => {
         if (route.page === 'blog' || route.page === 'blogPost' || route.page === 'dashboard' || SUB_PAGES.includes(route.page)) {
-            window.scrollTo(0, 0);
+            const anchor = window.location.hash.slice(1);
+            const target = anchor && document.getElementById(anchor);
+            if (target) target.scrollIntoView();
+            else window.scrollTo(0, 0);
         }
     }, [route.page, route.slug]);
 
@@ -316,39 +320,7 @@ function App() {
                                 transform: 'rotate(-4deg)',
                             }}
                         />
-                        <a
-                            href="https://www.amazon.com/dp/B0GTVVPPH6"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{
-                                marginTop: '0.75rem',
-                                background: '#FFD200',
-                                color: '#78350F',
-                                fontFamily: "'Fredoka', sans-serif",
-                                fontWeight: 700,
-                                fontSize: '1.4rem',
-                                padding: '0.75rem 3rem',
-                                borderRadius: '9999px',
-                                textDecoration: 'none',
-                                boxShadow: '0 6px 0 #B8960A',
-                                display: 'inline-block',
-                                transition: 'transform 0.15s',
-                            }}
-                            onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
-                            onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
-                        >
-                            Buy on Amazon
-                        </a>
-                        <p style={{
-                            marginTop: '0.5rem',
-                            fontFamily: "'Fredoka', sans-serif",
-                            fontSize: '0.85rem',
-                            color: 'rgba(255,220,140,0.9)',
-                            fontWeight: 600,
-                            letterSpacing: '0.03em',
-                        }}>
-                            Available in Kindle &amp; Paperback
-                        </p>
+                        <BookPurchase compact placement="desktop-hero" />
                     </div>
 
                     {/* Tagline — angled to the right */}
@@ -397,6 +369,10 @@ function App() {
                         Small paws. Brave hearts.<br />
                         Big adventures.
                     </span>
+                </div>
+
+                <div className="hero-purchase-mobile">
+                    <BookPurchase compact placement="mobile-hero" />
                 </div>
 
                 {/* Logo — top left */}
@@ -457,9 +433,7 @@ function App() {
                                 </div>
                             ))}
                             <a
-                                href="https://www.amazon.com/dp/B0GTVVPPH6"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                href="/the-brave-river-rescue#buy"
                                 onClick={() => setIsMenuOpen(false)}
                                 style={{
                                     marginTop: '1rem', display: 'block', textAlign: 'center',
@@ -469,7 +443,7 @@ function App() {
                                     boxShadow: '0 4px 0 #B8960A',
                                 }}
                             >
-                                Buy on Amazon
+                                Buy the Book
                             </a>
                             <p style={{
                                 marginTop: '0.4rem',
@@ -514,9 +488,7 @@ function App() {
                             textDecoration: 'none',
                         }}>Blog</a>
                         <a
-                            href="https://www.amazon.com/dp/B0GTVVPPH6"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="/the-brave-river-rescue#buy"
                             style={{
                                 fontFamily: "'Fredoka', sans-serif",
                                 fontWeight: 700,

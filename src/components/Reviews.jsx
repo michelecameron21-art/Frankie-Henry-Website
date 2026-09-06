@@ -92,7 +92,7 @@ function Reviews() {
                         color: 'rgba(255,248,231,0.9)',
                         margin: 0,
                     }}>
-                        5.0 average from {reviews.length} Amazon reviews
+                        5.0 from 17 global Amazon ratings · checked 6 September 2026
                     </p>
                 </div>
 
@@ -142,7 +142,7 @@ function Reviews() {
 
                 <div style={{ textAlign: 'center', marginTop: 'clamp(2.5rem, 5vw, 4rem)' }}>
                     <a
-                        href="https://www.amazon.com/dp/B0GTVVPPH6"
+                        href="https://www.amazon.co.uk/dp/1067638504#customerReviews"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
